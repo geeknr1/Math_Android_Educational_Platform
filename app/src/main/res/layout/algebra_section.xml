@@ -37,6 +37,53 @@
             android:textSize="20sp"
             android:textColor="@color/black"/>
 
+        <CheckBox
+            android:id="@+id/checkDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Definition Task done"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/definitionPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done with definition!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/checkProperties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Properties Task done"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/propertiesPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done with properties!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/checkExamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Examples Task done"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/examplesPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done with examples!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+
         <RadioGroup
             android:id="@+id/radioAlg"
             android:layout_marginTop="80dp"
@@ -63,19 +110,6 @@
                 android:checked="false"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"
-                android:background="#00008B"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"/>
-
-            <RadioButton
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Operations"
-                android:id="@+id/operations"
-                android:layout_gravity="center_horizontal"
-                android:checked="false"
-                android:textSize="15sp"
-                android:textColor="@android:color/white"
                 android:background="#00008B"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"/>
