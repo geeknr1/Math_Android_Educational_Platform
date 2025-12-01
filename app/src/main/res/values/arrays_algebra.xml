@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Whole_Numbers_And_Fractions">
+        <item>Whole_Numbers_And_Fractions</item>
+        <item>Arithmetic_Operations_on_Whole_Numbers</item>
+        <item>Prime_and_Composite_Natural_Numbers </item>
+        <item>Common_Divisors_and_Multiples___
+              Least_Common_Multiple</item>
+        <item>Fractions_and_Arithmetic_Operations_on_Them</item>
+        <item>Rational_Numbers___
+              Periodic_Fractions.</item>
+        <item>Number_Line___
+              Modulus_of_a_Number</item>
+        <item>Exercises_Chapter1</item>
+    </string-array>
+
+    <string-array name="Approximate_Calculations">
+        <item>Approximate_Calculations</item>
+        <item>Exact_and_Composite_Values_of_Quantities___
+              Method_of_Bounds</item>
+        <item>Absolute_and_Relative_Errors</item>
+        <item>Notation_of_Approximate_Values_of_Numbers</item>
+        <item>Multiplication_and_Division_of_Approximate_Values_of_Numbers</item>
+        <item>Exercises_Chapter2</item>
+    </string-array>
+
+    <string-array name="Powers_and_Roots___Real_Numbers">
+        <item>Raising_Rational_Numbers_to_a_Power_with_a_Natural_Exponent___Taking_the_Root</item>
+        <item>Concept_of_an_Irrational_Number</item>
+        <item>Real_Numbers___Arithmetical_Roots___Rectangular_Coordinates_in_the_Planes</item>
+        <item>Powers_with_a_Natural_Exponent</item>
+        <item>Arithmetical_Square_Root</item>
+        <item>Powers_with_an_Integral_Exponent</item>
+        <item>Notion_of_a_Power_with_an_Irrational_Exponent___The_Properties_of_a_Power_With_a_Real_Exponent</item>
+        <item>Exercises_Chapter3</item>
+    </string-array>
+
+    <string-array name="Whole_Numbers_And_Fractions1">
+        <item>Whole Numbers And Fractions</item>
+        <item>Arithmetic Operations on Whole Numbers</item>
+        <item>Prime and Composite Natural Numbers </item>
+        <item>Common Divisors and Multiples.Least Common Multiple</item>
+        <item>Fractions and Arithmetic Operations on Them</item>
+        <item>Rational Numbers. Periodic Fractions.</item>
+        <item>Number Line. Modulus of a Number</item>
+        <item>Exercises</item>
+    </string-array>
+
+    <string-array name="Whole_Numbers_And_Fractions2">
+        <item>Whole Numbers And Fractions</item>
+        <item>Arithmetic Operations on Whole Numbers</item>
+        <item>Prime and Composite Natural Numbers </item>
+        <item>Common Divisors and Multiples.Least Common Multiple</item>
+        <item>Fractions and Arithmetic Operations on Them</item>
+        <item>Rational Numbers. Periodic Fractions.</item>
+        <item>Number Line. Modulus of a Number</item>
+        <item>Exercises</item>
+    </string-array>
+
+    <string-array name="Whole_Numbers_And_Fractions3">
+        <item>Whole Numbers And Fractions</item>
+        <item>Arithmetic Operations on Whole Numbers</item>
+        <item>Prime and Composite Natural Numbers </item>
+        <item>Common Divisors and Multiples.Least Common Multiple</item>
+        <item>Fractions and Arithmetic Operations on Them</item>
+        <item>Rational Numbers. Periodic Fractions.</item>
+        <item>Number Line. Modulus of a Number</item>
+        <item>Exercises</item>
+    </string-array>
+
+    <string-array name="Whole_Numbers_And_Fractions4">
+        <item>Whole Numbers And Fractions</item>
+        <item>Arithmetic Operations on Whole Numbers</item>
+        <item>Prime and Composite Natural Numbers </item>
+        <item>Common Divisors and Multiples.Least Common Multiple</item>
+        <item>Fractions and Arithmetic Operations on Them</item>
+        <item>Rational Numbers. Periodic Fractions.</item>
+        <item>Number Line. Modulus of a Number</item>
+        <item>Exercises</item>
+    </string-array>
+
+</resources>

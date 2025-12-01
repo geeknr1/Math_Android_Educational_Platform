@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Geometry">
+
+    <LinearLayout
+        android:id="@+id/mainPage"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_hello"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="WELCOME TO GEOMETRY" />
+
+        <TextView
+            android:id="@+id/choose_destination"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="CHOOSE YOUR CHAPTER"
+            />
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter1Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text=" Fundamental Concepts of Geometry and
+Geometric Figures"
+            />
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter2Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Straight Lines"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter3Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Circles"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter4Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text=" Similarity of Polygons"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter5Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Transformation of Figures"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter6Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text=" Vectors in the Plane and Trigonometric Functions of the Angle"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter7Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Areas of Polygons"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter8Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Regular Polygons. Length of Circumference.
+Area of a Circle"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter9Geo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Fundamentals of Solid Geometry"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

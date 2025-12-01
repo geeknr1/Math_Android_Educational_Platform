@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">License_Project_2</string>
+    <string name="SectionOneTheory3">1</string>
+    <string name="SectionTwoTheory3">1</string>
+    <string name="SectionThreeTheory3">1</string>
+    <string name="SectionFourTheory3">1</string>
+    <string name="SectionFiveTheory3">1</string>
+    <string name="SectionSixTheory3">1</string>
+    <string name="ExercisesThree">1</string>
+</resources>

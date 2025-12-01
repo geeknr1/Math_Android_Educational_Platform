@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_2">License_Project_2</string>
+    <string name="SectionOneTheory2">2</string>
+    <string name="SectionTwoTheory2">2</string>
+    <string name="SectionThreeTheory2">2</string>
+    <string name="SectionFourTheory2">2</string>
+<!--    <string name="SectionFiveTheory2">2</string>-->
+<!--    <string name="SectionSixTheory2">2</string>-->
+    <string name="ExercisesTwo">2</string>
+</resources>

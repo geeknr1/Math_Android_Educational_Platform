@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Algebra">
+
+    <LinearLayout
+        android:id="@+id/mainPage"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+            android:id="@+id/welcome"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="WELCOME TO ALGEBRA" />
+
+        <TextView
+            android:id="@+id/choose"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="CHOOSE YOUR CHAPTER"
+            />
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter1Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Whole Numbers And Fractions"
+            />
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter2Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Approximate Calculations"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter3Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Powers and Roots. Real Numbers"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter4Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Expressions"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter5Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Equations and Inequalities"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter6Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Functions and Graphs"/>
+
+        <Spinner
+            android:background="#ADD8E6"
+            android:id="@+id/spinnerChapter7Alg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Arithmetic and Geometric Progressions. Logarithms"/>
+
+        <Button
+            android:id="@+id/backToTutorial"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Back"
+            android:backgroundTint="#0000ff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
