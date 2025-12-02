@@ -1,11 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name_2">License_Project_2</string>
-    <string name="SectionOneTheory2">2</string>
-    <string name="SectionTwoTheory2">2</string>
-    <string name="SectionThreeTheory2">2</string>
-    <string name="SectionFourTheory2">2</string>
-<!--    <string name="SectionFiveTheory2">2</string>-->
-<!--    <string name="SectionSixTheory2">2</string>-->
-    <string name="ExercisesTwo">2</string>
+
+    <string name="SectionOneTheoryDef_2">Definition of the comparison between the Exact and Approximate Values: While some quantities can be known precisely, many values obtained from measurements are inherently approximate. It is often impossible to find the exact value, and instead, one can only obtain an approximate value with either a deficit (less than the true value) or an excess (greater than the true value).
+</string>
+    <string name="SectionOneTheoryProperties_2">Properties:\n • Method of Bounds: When an exact value is unknown, it can be constrained within a range defined by a lower bound and an upper bound. For example, if a mass m is measured to be more than 19 g but less than 21 g, we can write this as 19 &lt; m &lt; 21. Here, 19 is the lower bound (an approximate value with deficit) and 21 is the upper bound (an approximate value with excess).
+\n• Estimating Dependent Quantities: Knowing the bounds of one quantity allows for the estimation of the bounds of a dependent quantity. For instance, if 3 &lt; x &lt; 5, then the bounds for the quantity 1/x can be found. Since x > 0, the inequality signs are reversed, resulting in 1/5 &lt; 1/x &lt; 1/3. It is common practice to express these bounds using decimal fractions, which may require replacing a bound with a slightly lesser value (for a lower bound) or a greater value (for an upper bound) to maintain the integrity of the inequality. </string>
+    <string name="SectionOneTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionOneQuiz_2">!!! Solve the quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_2">Definitions:\n • Error of Approximation: This is the numerical difference between the exact value (x) and its approximate value (a). The error is positive if the approximation has a deficit (x - a > 0) and negative if it has an excess (x - a &lt; 0).
+\n• Absolute Error (Δ): The absolute error is defined as the modulus (absolute value) of the difference between the exact and approximate values: Δ = |x - a|. The smaller the absolute error, the closer the approximate value is to the exact value. Geometrically, the absolute error represents the distance between the points for x and a on the number line.
+\n• Bound of the Absolute Error (h): In practice, the exact value x is often unknown, so the absolute error cannot be calculated directly. Instead, we estimate an upper limit for this error, called the bound of the absolute error, denoted by h, where |x - a| ≤ h. This is written as x = a ± h, which defines the interval a - h ≤ x ≤ a + h.
+\n• Relative Error (δ): The absolute error alone can be insufficient to characterize the accuracy of a measurement. For instance, an error of 0.5 cm is large for the thickness of a book but small for the height of a table. To account for this, the relative error is introduced. It is defined as the ratio of the absolute error to the modulus of the approximate value: δ = Δ / |a| = |x - a| / |a|. Relative error is often expressed as a percentage.
+\n• Bound of the Relative Error (ε): Similar to the absolute error, we often use the bound of the relative error, denoted by ε, where ε = h / |a|. The notation can then be written as x = a(1 ± ε).
+</string>
+    <string name="SectionTwoTheoryProperties_2">Properties: !!! Empty !!! </string>
+    <string name="SectionTwoTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionTwoQuiz_2">!!! Solve the quiz !!!</string>
+
+    <string name="SectionThreeTheoryDef_2">Definitions:\n• Significant Digits: The accuracy of an approximate number is often characterized by its number of correct significant digits.
+    \n◦ For a decimal fraction, significant digits include all digits from the first non-zero digit onwards. For example, 4.321 has four significant digits, and 0.0170 has three.
+    \n◦ For a whole number, all digits are significant unless zeros at the end are used for rounding, in which case they are not significant. For instance, 1200 might have been rounded from 1234, giving it two significant digits, or from 1150, giving it two significant digits. To avoid ambiguity, the significant digits in such cases are sometimes underlined.
+\n• Correct Digits: A digit in an approximate number is considered correct if the absolute error of the number does not exceed one-half of the unit of the decimal place of that digit. Digits that do not meet this criterion are considered doubtful. In computational practice, it is recommended to work with numbers that contain only correct digits.
+</string>
+    <string name="SectionThreeTheoryProperties_2">Properties:\n • Rules for Rounding Off Numbers: \n To ensure a rounded number is as close as possible to the original, the following rules are applied:
+    \n 1. If the first discarded digit is less than 5, the last kept digit remains unchanged.
+    \n 2. If the first discarded digit is greater than 5 (or is 5 followed by non-zero digits), the last kept digit is increased by one.
+    \n 3. If the first discarded digit is exactly 5 followed only by zeros, the last kept digit is unchanged if it is even, and increased by one if it is odd (this is often called the "round half to even" rule).
+\n • Standard Form (Scientific Notation): To clearly indicate the number of correct digits and handle very large or very small numbers, the standard form a · 10ⁿ is used, where 1 ≤ a &lt; 10 and n is an integer. In this notation, the absolute error does not exceed one unit of the last decimal place of a, multiplied by 10ⁿ. </string>
+    <string name="SectionThreeTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_2">!!! Solve the quiz !!!</string>
+
+    <string name="SectionFourTheoryDef_2">Definitions:\n • Bound of the Absolute Error of a Sum/Difference:
+    \n ◦ The bound of the absolute error of a sum is the sum of the bounds of the absolute errors of the terms: h_(a+b) = h_a + h_b. This rule extends to any finite number of terms.
+    \n ◦ Similarly, for a difference, the bound of the absolute error is also the sum of the individual bounds: h_(a-b) = h_a + h_b.
+\n • Relative Error of a Sum/Difference:
+    \n ◦ The bound of the relative error of a sum is ε_(a+b) = (h_a + h_b) / (a + b).
+    \n ◦ The bound of the relative error of a difference is ε_(a-b) = (h_a + h_b) / |a - b|. A significant loss of accuracy can occur when subtracting two nearly equal approximate numbers, as the denominator |a - b| becomes very small, making the relative error large.
+</string>
+    <string name="SectionFourTheoryProperties_2">Properties: \n Practical Rules for Addition/Subtraction:
+    \n 1. Identify the addend (term) with the least number of correct decimal digits (the least accurate).
+    \n 2. Round the other addends to have one extra digit compared to the least accurate one.
+    \n 3. Perform the addition or subtraction.
+    \n 4. Round the final result back to the same number of decimal digits as the least accurate initial term. </string>
+    <string name="SectionFourTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_2">!!! Solve the quiz !!!</string>
+
+
+    <string name="SectionFiveTheoryDef_2">Definitions:\n • Bound of the Absolute Error of a Product: For a product xy, where x = a ± h_a and y = b ± h_b, the bound of the absolute error is approximately h_ab ≈ ah_b + bh_a. The term h_a h_b is considered negligible.
+\n • Bound of the Relative Error of a Product/Quotient:
+    \n ◦ The bound of the relative error of a product is approximately the sum of the relative errors of the factors: ε_ab ≈ ε_a + ε_b.
+    \n ◦ The formula for estimating the relative error of a quotient is given without proof as ε_(a/b) = ε_a + ε_b. It is common to first find the relative error and then use it to find the bound of the absolute error.
+</string>
+    <string name="SectionFiveTheoryProperties_2">Properties:\n • Practical Rule for Multiplication/Division:
+    \n 1. Identify the factor with the least number of correct significant digits.
+    \n 2. Round off the other factors, leaving one extra significant digit compared to the least accurate factor.
+    \n 3. Carry out the multiplication/division with all retained digits.
+    \n 4. Round the final result to the same number of significant digits as the least accurate initial factor. </string>
+    <string name="SectionFiveTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_2">!!! Solve the quiz !!!</string>
+
+
 </resources>

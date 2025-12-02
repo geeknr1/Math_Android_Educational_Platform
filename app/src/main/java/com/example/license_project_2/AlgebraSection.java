@@ -20,7 +20,10 @@ public class AlgebraSection extends AppCompatActivity {
     private RadioButton properties;
     private RadioButton workedExamples;
     private RadioButton quiz;
-    private TextView theory;
+    private TextView theoryDefinition;
+    private TextView theoryProperties;
+    private TextView theoryWorkedExamples;
+    private TextView quizPrime;
     private TextView taskDoneOne;
     private TextView taskDoneTwo;
     private TextView taskDoneThree;
@@ -29,6 +32,8 @@ public class AlgebraSection extends AppCompatActivity {
     private CheckBox checkProperties;
     private CheckBox checkExamples;
     private int scorePercentage=0;
+    private ProgressManager pm;
+    private String currentLessonName;
 
     protected void onCreate(Bundle savedInstanceState){
         getSupportActionBar().hide();
@@ -37,8 +42,15 @@ public class AlgebraSection extends AppCompatActivity {
 
         AlgebraSections sectionAlg = AlgebraSections.detachFrom(getIntent());
         bindText(sectionAlg);
+        pm = new ProgressManager(this);
+        currentLessonName = sectionAlg.name();
 
-        theory = findViewById(R.id.sectionTheory);
+
+        theoryDefinition = findViewById(R.id.sectionDefinition);
+        theoryProperties = findViewById(R.id.sectionProperties);
+        theoryWorkedExamples = findViewById(R.id.sectionWorkedExamples);
+        quizPrime = findViewById(R.id.sectionQuiz);
+
         taskDoneOne = findViewById(R.id.definitionPercentage);
         taskDoneTwo = findViewById(R.id.propertiesPercentage);
         taskDoneThree = findViewById(R.id.examplesPercentage);
@@ -54,6 +66,15 @@ public class AlgebraSection extends AppCompatActivity {
         checkProperties = findViewById(R.id.checkProperties);
         checkExamples = findViewById(R.id.checkExamples);
 
+        theoryDefinition.setVisibility(View.GONE);
+        theoryProperties.setVisibility(View.GONE);
+        theoryWorkedExamples.setVisibility(View.GONE);
+        quizPrime.setVisibility(View.GONE);
+
+        taskDoneOne.setVisibility(View.GONE);
+        taskDoneTwo.setVisibility(View.GONE);
+        taskDoneThree.setVisibility(View.GONE);
+
         algebraSubject.setVisibility(VISIBLE);
         definition.setVisibility(VISIBLE);
         properties.setVisibility(VISIBLE);
@@ -64,9 +85,9 @@ public class AlgebraSection extends AppCompatActivity {
         checkProperties.setVisibility(View.GONE);
         checkExamples.setVisibility(View.GONE);
 
-        taskDoneOne.setVisibility(View.GONE);
-        taskDoneTwo.setVisibility(View.GONE);
-        taskDoneThree.setVisibility(View.GONE);
+        checkDefinition.setChecked(pm.isTaskDone(currentLessonName, "definition"));
+        checkProperties.setChecked(pm.isTaskDone(currentLessonName, "properties"));
+        checkExamples.setChecked(pm.isTaskDone(currentLessonName, "examples"));
 
         checkDefinition.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,9 +97,10 @@ public class AlgebraSection extends AppCompatActivity {
                 taskDoneTwo.setVisibility(View.GONE);
                 taskDoneThree.setVisibility(View.GONE);
 
+                pm.setTaskDone(currentLessonName, "definition", checkDefinition.isChecked());
                 if(checkDefinition.isChecked()){
                     taskDoneOne.setVisibility(VISIBLE);
-//            scorePercentage += 10;
+                    scorePercentage -= 10;
                 }
                 else{
                     taskDoneOne.setVisibility(View.GONE);
@@ -94,9 +116,10 @@ public class AlgebraSection extends AppCompatActivity {
                 taskDoneTwo.setVisibility(View.VISIBLE);
                 taskDoneThree.setVisibility(View.GONE);
 
+                pm.setTaskDone(currentLessonName, "properties", checkProperties.isChecked());
                 if(checkProperties.isChecked()){
                     taskDoneTwo.setVisibility(VISIBLE);
-//            scorePercentage += 10;
+                    scorePercentage -= 10;
                 }
                 else{
                     taskDoneTwo.setVisibility(View.GONE);
@@ -107,14 +130,15 @@ public class AlgebraSection extends AppCompatActivity {
         checkExamples.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                scorePercentage += 10;
+                scorePercentage += 20;
                 taskDoneOne.setVisibility(View.GONE);
                 taskDoneTwo.setVisibility(View.GONE);
                 taskDoneThree.setVisibility(View.VISIBLE);
 
+                pm.setTaskDone(currentLessonName, "examples", checkExamples.isChecked());
                 if(checkExamples.isChecked()){
                     taskDoneThree.setVisibility(VISIBLE);
-//            scorePercentage += 10;
+                    scorePercentage -= 20;
                 }
                 else{
                     taskDoneThree.setVisibility(View.GONE);
@@ -126,25 +150,41 @@ public class AlgebraSection extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if(definition.isChecked()){
-                    theory.setVisibility(View.VISIBLE);
+                    theoryDefinition.setVisibility(View.VISIBLE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.GONE);
+
                     checkDefinition.setVisibility(View.VISIBLE);
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.GONE);
                 }
                 if(properties.isChecked()){
-                    theory.setVisibility(View.VISIBLE);
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.VISIBLE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.GONE);
+
                     checkDefinition.setVisibility(View.GONE);
                     checkProperties.setVisibility(View.VISIBLE);
                     checkExamples.setVisibility(View.GONE);
                 }
                 if(workedExamples.isChecked()){
-                    theory.setVisibility(View.GONE);
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.VISIBLE);
+                    quizPrime.setVisibility(View.GONE);
+
                     checkDefinition.setVisibility(View.GONE);
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.VISIBLE);
                 }
                 if(quiz.isChecked()){
-                    theory.setVisibility(View.GONE);
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.VISIBLE);
+
                     checkDefinition.setVisibility(View.GONE);
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.GONE);
@@ -166,6 +206,9 @@ public class AlgebraSection extends AppCompatActivity {
         text.setText(res);
     }
     public void bindText(AlgebraSections algSection){
-        setText(R.id.sectionTheory, algSection.theory);
+        setText(R.id.sectionDefinition, algSection.theoryDef);
+        setText(R.id.sectionProperties, algSection.theoryProperties);
+        setText(R.id.sectionWorkedExamples, algSection.theoryWorkedExamples);
+        setText(R.id.sectionQuiz, algSection.quiz);
     }
 }

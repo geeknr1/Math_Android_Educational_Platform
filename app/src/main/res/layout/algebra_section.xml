@@ -31,10 +31,32 @@
             android:textColor="@color/white"/>
 
         <TextView
-            android:id="@+id/sectionTheory"
+            android:id="@+id/sectionDefinition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/sectionProperties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/sectionWorkedExamples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/sectionQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
             android:textColor="@color/black"/>
 
         <CheckBox

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    <string name="app_name">License_Project_2</string>-->
-<!--    <string name="SectionOneTheory">1</string>-->
-<!--    <string name="SectionTwoTheory">1</string>-->
-<!--    <string name="SectionThreeTheory">1</string>-->
-<!--    <string name="SectionFourTheory">1</string>-->
-<!--    <string name="SectionFiveTheory">1</string>-->
-<!--    <string name="SectionSixTheory">1</string>-->
+    <string name="app_name_6">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_6">!!! Empty !!!</string>
+    <string name="SectionOneTheoryProperties_6">!!! Empty !!!</string>
+    <string name="SectionOneTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
+    <string name="SectionOneQuiz_6">!!! Solve the Quiz !!!</string>
 </resources>

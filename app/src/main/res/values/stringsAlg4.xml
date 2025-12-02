@@ -1,10 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    <string name="app_name">License_Project_2</string>-->
-<!--    <string name="SectionOneTheory">1</string>-->
-<!--    <string name="SectionTwoTheory">1</string>-->
-<!--    <string name="SectionThreeTheory">1</string>-->
-<!--    <string name="SectionFourTheory">1</string>-->
-<!--    <string name="SectionFiveTheory">1</string>-->
-<!--    <string name="SectionSixTheory">1</string>-->
+    <string name="app_name_4">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_4">• A numerical expression is composed of numbers and signs that indicate the operations to be performed on them.
+    \n • An algebraic expression is composed of numbers and letters (denoting quantities) linked by algebraic operations like addition, subtraction, multiplication, division, raising to a power, and taking an arithmetical root. For example, a + b, x³ - y² / z, and √2xy + 3x²y - 1 are algebraic expressions.
+</string>
+    <string name="SectionOneTheoryProperties_4">• Properties of Numerical Expressions:
+        \n ◦ An expression is said to have sense if all the indicated operations are feasible. For instance, 12, √5² - 3², and 3 · (10² + 1) have sense, and their results are called the numerical value of the expression.
+    \n ◦ Expressions that involve infeasible operations, such as 6 - 3 · 2 / (4 - 4) or √9 - 25, are said to have no sense.
+
+    \n • Properties of Algebraic Expressions:
+        \n ◦ The permissible values for the letters in an algebraic expression are the values for which all indicated operations are feasible. These values form the domain of definition of the expression.
+    \n ◦ The numerical value of an algebraic expression is the result obtained when the letters are replaced by their permissible numerical values and the computations are performed.
+    \n ◦ Unless stated otherwise, algebraic expressions are considered on the set of real numbers.
+
+    \n • Identities and Equations:
+    ◦ Two algebraic expressions, A and B, set equal to each other form an equality A = B.
+    ◦ An identity is an equality that is true for all permissible values of the quantities involved. The identity sign is ≡. Examples include the fundamental properties of arithmetic, like a + b = b + a.
+    ◦ An equation is an equality that is not true for all permissible values of the quantities involved. It is only true for specific values. For example, 3x + 1 = x + 1 is true only for x = 1.</string>
+    <string name="SectionOneTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionOneQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_4">• Ratios: The numbers forming a ratio are called its terms. The first term is the antecedent, and the second is the consequent. \n
+• Per Cents are represented by ratios of two numbers, often expressed in hundredths.
+    </string>
+    <string name="SectionTwoTheoryProperties_4">Ratio properties:
+        \n ◦ The ratio of two homogeneous quantities (quantities of the same kind) is the ratio of their numerical values when measured with the same unit. This ratio is independent of the unit of measurement chosen.
+    \n ◦ It is sometimes possible to consider ratios of heterogeneous quantities, such as distance to time (velocity) or mass to volume (density). These ratios represent new quantities and their values depend on the units used.
+
+        \n Per Cent properties:
+        \n ◦ The word "per cent" following a number is equivalent to dividing that number by 100. For example, the ratio 4:5 is 0.8, which is 80 hundredths or 80 per cent (80%).
+    \n ◦ The formula to express the ratio of a to b as a percentage is r = (a/b) · 100.
+    \n ◦ The section provides several worked problems involving percentages, such as calculating the percentage of students present, yield from oil refining, price reductions, and the composition of materials.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionTwoQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionThreeTheoryDef_4">Definition: A proportion is a true equality of two ratios, a/b = c/d, where a, b, c, and d are non-zero numbers. It can also be written as a:b = c:d and is read "a is to b as c is to d".</string>
+    <string name="SectionThreeTheoryProperties_4">Properties:
+    \n ◦ Principal Property: In any proportion, the product of the extremes (a and d) is equal to the product of the means (b and c): ad = bc.
+    \n ◦ Derived Proportions: From a given proportion, various other proportions can be derived. The text shows several examples, including the general form (ka + lb) / (ma + nb) = (kc + ld) / (mc + nd).
+    \n ◦ Property of Equal Ratios: For a series of equal ratios a₁/b₁ = a₂/b₂ = ... = aₙ/bₙ, the ratio of the sum of the antecedents to the sum of the consequents is equal to each of the original ratios: (a₁ + a₂ + ... + aₙ) / (b₁ + b₂ + ... + bₙ) = a₁/b₁.</string>
+    <string name="SectionThreeTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFourTheoryDef_4">Definition of Monomial: The monomial is defined as a product of several numbers denoted by digits or letters.
+    \n Definition of a Polynomial: The polynomial is defined as an algebraic expression representing the sum of several monomials.</string>
+    <string name="SectionFourTheoryProperties_4">• Standard Form of a Monomial:
+    \n ◦ The standard form of a monomial is defined as a notation in which only one numerical factor occupies the first place, followed by some literal factors or their powers with natural exponents.
+    \n ◦ Any monomial can be written in standard form by multiplying all the numerical factors together to obtain the coefficient, and then writing the products of identical literal factors in the form of a power.
+
+    \n • Standard Form of a Polynomial: A polynomial is in the polynomial of standard form when all its terms are written in standard form and like terms are collected.
+\n • Types of Polynomials (by number of terms): Depending on the number of terms, polynomials can be called:
+    \n ◦ Binomials (two terms).
+    \n ◦ Trinomials (three terms).
+    \n ◦ A monomial can also be regarded as a polynomial consisting of one term.
+\n • Degree of a Polynomial: The degree of a polynomial is the greatest degree of a monomial contained in the polynomial.
+
+    \n • Addition and Subtraction of Polynomials: When adding or subtracting several polynomials, it is necessary to collect like terms to obtain a polynomial, which is then generally expressed in standard form.
+\n • Multiplication of Polynomials: To multiply a polynomial by a polynomial, it is necessary to multiply each term of one polynomial by each term of the other polynomial. The result should again be expressed in standard form.</string>
+    <string name="SectionFourTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFiveTheoryDef_4">• Square of a Sum / Difference:
+    \n ◦ (a + b)² = a² + 2ab + b²
+    \n ◦ (a - b)² = a² - 2ab + b²
+    \n ◦ These can be extended to three terms: (a - b + c)² = a² + b² + c² - 2ab + 2ac - 2bc.
+\n • Cube of a Sum/Difference:
+    \n ◦ (a + b)³ = a³ + 3a²b + 3ab² + b³
+    \n ◦ (a - b)³ = a³ - 3a²b + 3ab² - b³.
+\n • Difference of Squares:
+    \n ◦ (a + b)(a - b) = a² - b².
+\n • Rewritten Identities: The formulas can be rearranged to express sums or differences of powers, for example:
+    \n ◦ a² + b² = (a + b)² - 2ab
+    \n ◦ a³ + b³ = (a + b)³ - 3ab(a + b).
+\n • Approximate Calculations: These formulas can also be used for approximate computations. For example, (1 + a)² ≈ 1 + 2a when a is small.</string>
+    <string name="SectionFiveTheoryProperties_4">!!! Empty !!!</string>
+    <string name="SectionFiveTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionSixTheoryDef_4">• Definition: A polynomial of degree n in a variable x has the form P(x) = a₀xⁿ + a₁xⁿ⁻¹ + ... + aₙ, where a₀, ..., aₙ are numerical coefficients and a₀ ≠ 0.
+\n • Standard Form: A polynomial is in standard form when its terms are arranged in decreasing order of powers of the variable.</string>
+    <string name="SectionSixTheoryProperties_4">• Equality: Two polynomials P(x) and Q(x) are identically equal if and only if the coefficients of equal powers of x are equal.
+\n • Operations: Polynomials can be added, subtracted, and multiplied. These operations follow the fundamental properties of arithmetic.
+\n • Factorization:
+    \n ◦ Factorization is the process of reducing a polynomial to a product of two or more polynomials of non-zero degrees.
+    \n ◦ A polynomial that can be factorized is called reducible; otherwise, it is irreducible. Irreducible polynomials are analogous to prime numbers, while reducible ones are analogous to composite numbers.
+    \n ◦ For example, x² - a² is reducible into (x + a)(x - a), but x² + 1 is irreducible in the field of real numbers.</string>
+    <string name="SectionSixTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionSixQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionSevenTheoryDef_4">• Method of Undetermined Coefficients: This technique is used to find an expression of a definite form. It involves setting up an equality, expanding it, and comparing coefficients of like powers to form a system of equations for the unknown coefficients.
+\n • Factorization: The text notes that while certain particular techniques can be applied, there is no general method to determine if a given polynomial is factorable.</string>
+    <string name="SectionSevenTheoryProperties_4">!!! Empty !!!</string>
+    <string name="SectionSevenTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionSevenQuiz_4">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionEightTheoryDef_4">\n • Algebraic Fractions:
+    \n ◦ An algebraic fraction is a fraction of the form P(x)/Q(x), where P(x) and Q(x) are polynomials, and Q(x) is considered only for permissible values where it is not zero.
+    \n ◦ The fundamental properties and rules for arithmetic operations (addition, subtraction, multiplication, division) on numerical fractions are retained for algebraic fractions.
+    \n ◦ To perform addition or subtraction, fractions are reduced to a common denominator, typically the polynomial of the least degree that is divisible by all the denominators.
+\n • Irrational Expressions and Rationalization:
+    \n ◦ Transformations of irrational algebraic expressions (those containing radicals) are performed using the general laws of arithmetic and rules for operations over roots.
+    \n ◦ Rationalizing a numerator or denominator involves multiplying it by its conjugate factor to remove the radicals. A conjugate factor is an expression that, when multiplied by the original, produces a result without radicals.
+    \n ◦ Examples of conjugate pairs are provided, such as √X - √Y and √X + √Y, whose product is X - Y.</string>
+    <string name="SectionEightTheoryProperties_4">!!! Empty !!!</string>
+    <string name="SectionEightTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionEightQuiz_4">!!! Solve the Quiz !!!</string>
+
 </resources>

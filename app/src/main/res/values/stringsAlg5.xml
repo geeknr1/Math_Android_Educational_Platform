@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    <string name="app_name">License_Project_2</string>-->
-<!--    <string name="SectionOneTheory">1</string>-->
-<!--    <string name="SectionTwoTheory">1</string>-->
-<!--    <string name="SectionThreeTheory">1</string>-->
-<!--    <string name="SectionFourTheory">1</string>-->
-<!--    <string name="SectionFiveTheory">1</string>-->
-<!--    <string name="SectionSixTheory">1</string>-->
+    <string name="app_name_5">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionOneTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionOneTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionOneQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionTwoTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionTwoTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTwoQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionThreeTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionThreeTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionThreeTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFourTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionFourTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionFourTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFiveTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionFiveTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionFiveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionSixTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionSixTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionSixTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionSixQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionSevenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionSevenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionSevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionSevenQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionEightTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionEightTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionEightTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionEightQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionNineTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionNineTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionNineTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionNineQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionTenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionTenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTenQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionElevenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionElevenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionElevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionElevenQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwelveTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionTwelveTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionTwelveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTwelveQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionThirteenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionThirteenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionThirteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionThirteenQuiz_5">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFourteenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionFourteenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionFourteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFourteenQuiz_5">!!! Solve the Quiz !!!</string>
 </resources>

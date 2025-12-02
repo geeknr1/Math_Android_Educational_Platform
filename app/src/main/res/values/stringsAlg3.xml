@@ -1,11 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">License_Project_2</string>
-    <string name="SectionOneTheory3">1</string>
-    <string name="SectionTwoTheory3">1</string>
-    <string name="SectionThreeTheory3">1</string>
-    <string name="SectionFourTheory3">1</string>
-    <string name="SectionFiveTheory3">1</string>
-    <string name="SectionSixTheory3">1</string>
-    <string name="ExercisesThree">1</string>
+    <string name="app_name_3">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_3">• Power with a Natural Exponent:
+    \n ◦ Definition: For a rational number a and a natural number n ≥ 2, the power aⁿ is the product of n factors, each equal to a. a¹ is defined to be a.
+    \n ◦ Terminology: In aⁿ, a is the base, n is the exponent, and the result aⁿ is the power. Special names include a² (square) and a³ (cube).
+
+       \n • Taking the Root (Evolution):
+    \n ◦ Definition: Evolution is the inverse operation of involution. The nth root of a number a (where n ≥ 2) is a number which, when raised to the nth power, produces a.
+    \n ◦ Notation: The nth root is symbolized as ⁿ√a, where n is the index of the root and a is the integrand. For n=2 (square root), the index is usually omitted (√a). The third root is called the cube root.
+</string>
+    <string name="SectionOneTheoryProperties_3">• Power with a Natural Exponent, properties: \n
+    1. An even power of a negative number is positive.
+        \n 2. An odd power of a negative number is negative.
+        \n 3. Any power of a positive number is positive.
+        \n 4. Raising zero to any natural exponent results in zero (0ⁿ = 0).
+        \n 5. Raising unity to any natural exponent results in unity (1ⁿ = 1).
+
+    \n • Taking the Root (Evolution), properties:
+        \n ◦ Existence: Taking the root is not always possible within the set of rational numbers. For instance, √2 is not a rational number, a fact proven by contradiction in the text.
+    \n ◦ Approximate Roots: While exact roots of any rational number may not exist, approximate values always do. An approximate value b of ⁿ√a (with deficit and accuracy α) satisfies bⁿ &lt; a &lt; (b + α)ⁿ. The text provides examples of finding approximate square roots.</string>
+    <string name="SectionOneTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionOneQuiz_3">!!! Solve the quiz !!!</string>
+
+
+    <string name="SectionTwoTheoryDef_3">• Definition:
+    ◦ An irrational number is represented by a nonterminating, nonperiodic decimal of the form a = c.b₁b₂b₃....
+    ◦ Every positive irrational number has a corresponding negative irrational number.
+    ◦ Two irrational numbers are considered equal if their integer parts and all corresponding decimal digits are equal.
+</string>
+    <string name="SectionTwoTheoryProperties_3">• Origin of Irrational Numbers: The process of taking roots can result in nonterminating, nonperiodic decimal fractions. For example, the decimal representation of √2 begins 1.41421... and is not periodic, which was proven in the preceding section. These non-repeating, non-ending decimals define a new type of number.
+    \n• Comparing Irrational Numbers: The comparison of two positive irrational numbers is done by comparing their integer parts and then their decimal digits sequentially. To compare an irrational number with a rational one, the rational number is represented as a periodic decimal.
+\n• Examples:
+    \n◦ Roots of natural numbers that are not perfect squares (e.g., √2, √3, √5) are irrational.
+    \n◦ The number π (pi), the ratio of a circle's circumference to its diameter, is an irrational number (approximately 3.14...).
+    \n◦ Values of logarithms and trigonometric functions are also often irrational.</string>
+    <string name="SectionTwoTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionTwoQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionThreeTheoryDef_3">• Real Numbers:
+    \n ◦ The union of the set of rational and irrational numbers forms the set of real numbers.
+    \n ◦ A real number is either rational (represented by a terminating or periodic decimal) or irrational (represented by a nonperiodic decimal).
+    \n ◦ The basic properties of arithmetic operations (commutative, associative, distributive) defined for whole numbers also hold for real numbers.
+    \n ◦ Operations on irrational numbers can lead to either rational or irrational results. For example, (5 + √2) - √2 = 5 (rational), but the sum or product of a rational and an irrational number is always irrational (if the rational number is not zero).
+\n • Arithmetical nth Root:
+    \n ◦ Definition: The arithmetical nth root of a non-negative number a is the non-negative number b for which bⁿ = a. This definition is only for non-negative values of a.
+    \n ◦ Uniqueness: For any a ≥ 0, the arithmetical root ⁿ√a exists and is unique.
+    \n ◦ Modulus: The basic properties of the modulus (absolute value) extend from rational numbers to all real numbers.
+\n • Rectangular Coordinates (Cartesian Plane):
+    \n ◦ The plane is defined by two mutually perpendicular number lines, the x-axis (horizontal axis of abscissas) and the y-axis (vertical axis of ordinates), which intersect at the origin O(0,0).
+    \n ◦ These axes divide the plane into four quadrants.
+    \n ◦ Coordinates: Any point M in the plane corresponds to a unique ordered pair of numbers (x, y), its coordinates. The abscissa x and the ordinate y are found by projecting the point onto the axes.
+    \n ◦ Distance Formula: The distance between two points M₁(x₁, y₁) and M₂(x₂, y₂) is given by the formula: |M₁M₂| = √((x₂ - x₁)² + (y₂ - y₁)²).
+</string>
+    <string name="SectionThreeTheoryProperties_3">!!! Empty !!!</string>
+    <string name="SectionThreeTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionFourTheoryDef_3">• Power Operation Rules:
+    \n • (1) Multiplying powers with the same base: Add the exponents: aᵐ · aⁿ = aᵐ⁺ⁿ.
+\n • (2) Dividing powers with the same base: Subtract the exponents: aᵐ / aⁿ = aᵐ⁻ⁿ (for m > n).
+\n • (3) Raising a power to a power: Multiply the exponents: (aᵐ)ⁿ = aᵐⁿ.
+\n • (4) Power of a negative number: (-a)ⁿ is aⁿ if n is even, and -aⁿ if n is odd.
+\n • (5) Raising a product to a power: Distribute the exponent: (ab)ⁿ = aⁿbⁿ.
+\n • (6) Raising a fraction to a power: Distribute the exponent to the numerator and denominator: (a/b)ⁿ = aⁿ / bⁿ (for b ≠ 0).
+
+</string>
+    <string name="SectionFourTheoryProperties_3">!!! Empty !!!</string>
+    <string name="SectionFourTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionFiveTheoryDef_3">• Definition: The arithmetical square root of a non-negative number a is a non-negative number b such that b² = a. It is denoted √a = b. The expression √a is called the radicand.
+\n • Uniqueness: For any real number a ≥ 0, it is possible to take only one arithmetical square root.
+\n • Key Identity: For any real number a, √a² = |a|.
+</string>
+    <string name="SectionFiveTheoryProperties_3">• Properties of Arithmetical Square Roots (for a ≥ 0, b > 0):
+    \n 1. Root of a product: √ab = √a · √b.
+    \n 2. Root of a fraction: √(a/b) = √a / √b.
+    \n 3. Comparison: If a > b > 0, then √a > √b.
+\n • Transformations:
+    \n 1. Removing a factor from the radicand: √a²b = |a|√b.
+    \n 2. Bringing a factor into the radicand: a√b = √a²b (for a ≥ 0).</string>
+    <string name="SectionFiveTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionSixTheoryDef_3">Definitions:
+    \n ◦ Zero exponent: For any a ≠ 0, a⁰ = 1. The expression 0⁰ has no sense.
+    \n ◦ Negative exponent: For a ≠ 0 and a natural number n, a⁻ⁿ = 1 / aⁿ. The expression 0⁻ⁿ has no sense.
+</string>
+    <string name="SectionSixTheoryProperties_3">Properties: The properties of powers with natural exponents (listed in Sec. 4.4) hold true for any integer exponents p and q:
+    \n 1. aᵖ · a⁹ = aᵖ⁺⁹
+    \n 2. (aᵖ)⁹ = aᵖ⁹
+    \n 3. aᵖ / a⁹ = aᵖ⁻⁹
+    \n 4. (ab)ᵖ = aᵖbᵖ
+    \n 5. (a/b)ᵖ = aᵖ / bᵖ</string>
+    <string name="SectionSixTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionSixQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionSevenTheoryDef_3">• Definition: For a real number a ≥ 0 and a natural number n ≥ 2, the arithmetical nth root, ⁿ√a, is the non-negative number b such that bⁿ = a. The expression ⁿ√a only has sense for a ≥ 0.
+• Basic Rules for Operations with Arithmetical Roots (for a ≥ 0, b > 0):
+    1. Changing the index: The value is unchanged if the index and the exponent of the radicand are multiplied by the same natural number k: ⁿ√a = ⁿᵏ√aᵏ.
+    2. Multiplying roots: ⁿ√a · ⁿ√b = ⁿ√ab.
+    3. Dividing roots: ⁿ√a / ⁿ√b = ⁿ√(a/b).
+    4. Raising a root to a power: (ⁿ√a)ᵐ = ⁿ√aᵐ.
+    5. Taking the root of a root: ᵐ√ⁿ√a = ᵐⁿ√a.
+• Like Roots: Roots are considered like (or similar) if their radicands and indices are equal. Simplification of sums and differences is only possible for like roots.
+• Key Identity: The identity ⁿ√aⁿ = |a| holds if n is an even number; ⁿ√aⁿ = a if n is an odd number.
+</string>
+    <string name="SectionSevenTheoryProperties_3"> !!! Empty !!!</string>
+    <string name="SectionSevenTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionSevenQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionEightTheoryDef_3">Definition: If a > 0 and x is a rational number p/q (where p is an integer and q is a natural number ≥ 2), then aˣ = a^(p/q) = ⁹√aᵖ. \n
+        Special Cases: If a = 0 and x > 0, then aˣ = 0.
+
+</string>
+    <string name="SectionEightTheoryProperties_3"> The properties of powers with integral exponents also extend to powers with any rational exponent and a positive base. </string>
+    <string name="SectionEightTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionEightQuiz_3">!!! Solve the quiz !!!</string>
+
+    <string name="SectionNineTheoryDef_3">Notion of a Power with an Irrational Exponent: The value of aˣ where x is irrational is defined via sequences of decimal approximations. For a > 0, this process yields a unique number. The definition a⁻ˣ = 1/aˣ also holds for a positive irrational number x.
+</string>
+    <string name="SectionNineTheoryProperties_3"> The Properties of Powers with a Real Exponent are represented by the fact that, for any real numbers x and y and admissible a and b, we have that:
+    \n 1. aˣ · aʸ = aˣ⁺ʸ
+    \n 2. (aˣ)ʸ = aˣʸ
+    \n 3. aˣ / aʸ = aˣ⁻ʸ
+    \n 4. (ab)ˣ = aˣbˣ
+    \n 5. (a/b)ˣ = aˣ / bˣ </string>
+    <string name="SectionNineTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionNineQuiz_3">!!! Solve the quiz !!!</string>
 </resources>
