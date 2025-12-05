@@ -33,8 +33,8 @@ public class Algebra extends AppCompatActivity {
         spinnerSetup(R.id.spinnerChapter1Alg, R.array.Whole_Numbers_And_Fractions);
         spinnerSetup(R.id.spinnerChapter2Alg, R.array.Approximate_Calculations);
         spinnerSetup(R.id.spinnerChapter3Alg, R.array.Powers_and_Roots___Real_Numbers);
-        spinnerSetup(R.id.spinnerChapter4Alg, R.array.Whole_Numbers_And_Fractions1);
-        spinnerSetup(R.id.spinnerChapter5Alg, R.array.Whole_Numbers_And_Fractions2);
+        spinnerSetup(R.id.spinnerChapter4Alg, R.array.Expressions);
+        spinnerSetup(R.id.spinnerChapter5Alg, R.array.Equations_and_Inequalities);
         spinnerSetup(R.id.spinnerChapter6Alg, R.array.Whole_Numbers_And_Fractions3);
         spinnerSetup(R.id.spinnerChapter7Alg, R.array.Whole_Numbers_And_Fractions4);
 

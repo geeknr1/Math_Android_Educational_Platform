@@ -11,10 +11,10 @@ public enum AlgebraSections {
     Rational_Numbers___Periodic_Fractions(R.string.SectionFiveTheoryDef, R.string.SectionFiveTheoryProperties, R.string.SectionFiveTheoryWorkedExamples, R.string.SectionFiveQuiz),
     Number_Line___Modulus_of_a_Number(R.string.SectionSixTheoryDef, R.string.SectionSixTheoryProperties, R.string.SectionSixTheoryWorkedExamples, R.string.SectionSixQuiz),
     Exact_and_Composite_Values_of_Quantities___Method_of_Bounds(R.string.SectionOneTheoryDef_2, R.string.SectionOneTheoryProperties_2, R.string.SectionOneTheoryWorkedExamples_2, R.string.SectionOneQuiz_2),
-    Absolute_and_Relative_Errors(R.string.SectionTwoTheoryDef_2, R.string.SectionTwoTheoryProperties_2, R.string.SectionTwoTheoryWorkedExamples_2, R.string.SectionTwoQuiz_2),
+    Absolute_and_Relative_Errors(R.string.SectionTwoTheoryDef_2, R.string.SectionTwoTheoryProperties_2, R.string.SectionTwoTheoryWorkedExamples_2, R.string.SectionTwoTheoryQuiz_2),
     Notation_of_Approximate_Values_of_Numbers(R.string.SectionThreeTheoryDef_2, R.string.SectionThreeTheoryProperties_2, R.string.SectionThreeTheoryWorkedExamples_2, R.string.SectionThreeQuiz_2),
     Addition_and_Subtraction_of_Approximate_Values_of_Numbers(R.string.SectionFourTheoryDef_2, R.string.SectionFourTheoryProperties_2, R.string.SectionFourTheoryWorkedExamples_2, R.string.SectionFourQuiz_2),
-    Multiplication_and_Division_of_Approximate_Values_of_Numbers(R.string.SectionFiveTheoryDef_2, R.string.SectionFiveTheoryProperties_2, R.string.SectionFiveTheoryWorkedExamples_2, R.string.SectionFiveQuiz_2),
+    Multiplication_and_Division_of_Approximate_Values_of_Numbers(R.string.SectionFiveTheoryDef_2, R.string.SectionFiveTheoryProperties_2, R.string.SectionFiveTheoryWorkedExamples_2, R.string.SectionFiveQuiz_2);
 //    Concept_of_an_Irrational_Number(R.string.SectionOneTheory3),
 //    Real_Numbers___Arithmetical_Roots___Rectangular_Coordinates_in_the_Planes(R.string.SectionTwoTheory3),
 //    Powers_with_a_Natural_Exponent(R.string.SectionThreeTheory3),

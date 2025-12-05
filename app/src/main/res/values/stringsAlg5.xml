@@ -2,72 +2,206 @@
 <resources>
     <string name="app_name_5">License_Project_2</string>
 
-    <string name="SectionOneTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionOneTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionOneTheoryDef_5">An equation expresses equality between two expressions, A=B.
+\n It holds for specific permissible values of the variables.
+\n Unknowns are usually denoted by x, y, z, and parameters by a, b, c.
+\n We mainly study equations in one unknown, written as A(x)=B(x).</string>
+
+    <string name="SectionOneTheoryProperties_5">A root (solution) makes the equation a true equality.
+\n Solving means finding all roots within the permissible domain.
+\n Two equations are equivalent if they share the same roots.
+\n You may add, subtract, or multiply both sides by the same nonzero term.
+\n Be careful—transformations can cause loss or creation of extraneous roots.</string>
+
     <string name="SectionOneTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionOneQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionTwoTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionTwoTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionTwoTheoryDef_5">Definition and Standard Form:
+\n • A first-degree equation in one unknown contains the unknown only to the first power.
+\n • Such equations are called linear equations.
+\n • Any first-degree equation can be reduced to the form ax=b, where a and b are known numbers.
+\n • The equation ax=b, where a≠0, is called a linear equation.
+\n • Here, a is the coefficient of x, and b is the constant term.</string>
+
+    <string name="SectionTwoTheoryProperties_5">Solutions and Special Cases:
+\n • If a≠0, the linear equation ax=b has one root: x=b/a.
+\n • If a=0, the equation may have no roots or infinitely many roots.
+\n • Example (Infinite Roots): 0·x=0 is true for all real x.
+\n • Example (No Roots): 0·x=3 has no solution (∅).
+\n • For ax=x+1, we get x(a−1)=1 → one root if a≠1, no root if a=1.</string>
+
     <string name="SectionTwoTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionTwoQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionThreeTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionThreeTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionThreeTheoryDef_5">Solving Quadratic Equations
+\n • The general quadratic equation is ax² + bx + c = 0, with a≠0.
+\n • The discriminant D = b² - 4ac determines the nature of the roots:
+    \n ◦ D>0 → two distinct real roots, D=0 → one real root, D&lt;0 → no real roots.
+\n • Quadratic formula: x₁,₂ = (-b ± √D) / 2a.
+\n • Reduced form (a=1): x² + px + q = 0.
+\n • Viète's Theorem relates roots and coefficients: x₁+x₂=-b/a, x₁x₂=c/a.</string>
+
+    <string name="SectionThreeTheoryProperties_5">• Viète\'s Theorem is useful for expressing sums and products of roots without solving.
+\n • It helps construct a quadratic equation from given roots.
+\n • Roots depend on the discriminant: two, one, or none.
+\n • Quadratic formula directly finds the roots from coefficients.
+\n • Reduced form simplifies calculations when a=1.</string>
+
     <string name="SectionThreeTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionThreeQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionFourTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionFourTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionFourTheoryDef_5">Definition: A quadratic trinomial is a polynomial of the form ax² + bx + c. The roots of the trinomial are the values of x for which it equals zero.</string>
+    <string name="SectionFourTheoryProperties_5">• Factorization Theorem: If x₁ and x₂ are the roots of the quadratic trinomial y = ax² + bx + c (with a non-negative discriminant), then the trinomial can be factored as: ax² + bx + c = a(x - x₁)(x - x₂).
+\n • This factorization is derived using Viète's theorem and is applied in simplifying algebraic expressions.</string>
     <string name="SectionFourTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionFourQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionFiveTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionFiveTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionFiveTheoryDef_5">Algebraic Equations of Higher Degree:
+\n • An equation of degree n: a₀xⁿ + ... + aₙ = 0.
+\n • Factorization: split the polynomial and set each factor to zero.
+\n • Substitution: introduce a new unknown for repeating expressions.
+\n • Biquadratic equations: ax⁴ + bx² + c = 0, substitute y=x² to reduce to quadratic.
+\n • Irrational equations: unknown under a radical, solved by raising to a power or substitution.</string>
+
+    <string name="SectionFiveTheoryProperties_5">• Factorization reduces degree by solving simpler equations.
+\n • Substitution can transform complex expressions into quadratics.
+\n • Biquadratic roots depend on the auxiliary quadratic\'s roots.
+\n • Raising powers may create extraneous roots; always check solutions.
+\n • Substitution simplifies radicals for easier solving.</string>
+
     <string name="SectionFiveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionFiveQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionSixTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionSixTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionSixTheoryDef_5">Equations in Several Unknowns:
+\n • Equations may contain two or more unknowns, e.g., x+2y=3 or x²+y²=z².
+\n • A solution is an ordered pair, triple, or set of values reducing the equation to a true equality.
+\n • Example: x+2y=3 → solutions (0,2/3), (3,0), general form (x,2/3−x).
+\n • Example: x²+y²=z² → infinite solutions, general form (x,±√(z²−x²)).
+\n • Systems of equations involve multiple equations solved simultaneously for unknowns.</string>
+
+    <string name="SectionSixTheoryProperties_5">• Solving a system finds values that satisfy all equations.
+\n • Systems can have one, two, or more unknowns.
+\n • Example 2 unknowns: {x+y=2, x−y=0} → solution (1,1).
+\n • Example 3 unknowns: {x+y=z, 2x−y=2z} → solution (1,0,1).
+\n • Equivalent systems have identical solution sets; inconsistent systems have none.</string>
+
     <string name="SectionSixTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionSixQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionSevenTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionSevenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionSevenTheoryDef_5">Standard Form of the System:
+\n • A system of two first-degree equations in x and y:\n
+{ a₁x + b₁y = c₁
+  a₂x + b₂y = c₂ } ,
+\n with given real numbers and at least one nonzero coefficient in each equation.
+\n • Method of Substitution: solve one equation for y, substitute into the other, then find x and y.
+\n • Example: {2x+5y=15, 3x+8y=-1} → x=125, y=-47.
+\n • Method of Algebraic Addition: add or subtract equations to eliminate one unknown, then solve.
+\n • Example: {5x+y=7, 2x-3y=-4} → x=1, y=2.</string>
+
+    <string name="SectionSevenTheoryProperties_5">Special Cases of Systems:
+\n • Infinite Solutions: e.g., {2x−y=1, 4x−2y=2} → y=2x−1, x arbitrary.
+\n • No Solution (Incompatible): e.g., {2x+3y=4, 6x+9y=2} → false equality 0=10.
+\n • Geometric interpretation: three cases for two lines:
+ \n 1. Unique solution → lines intersect.
+ \n 2. No solution → lines parallel.
+ \n 3. Infinite solutions → lines coincide.
+\n • Substitution and addition methods can handle any solvable system.
+\n • Always check for special cases to avoid incorrect assumptions.</string>
+
     <string name="SectionSevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionSevenQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionEightTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionEightTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionEightTheoryDef_5">General Principles of Solving Problems:
+\n • Always maintain equivalence when transforming equations or systems.
+\n • Investigate solutions depending on parameter values; results may vary.
+\n • Introducing a new unknown can simplify complex problems.
+\n • Linear, quadratic, irrational, and system equations may all involve parameters.
+\n • Check restrictions and domains carefully when solving equations with parameters.</string>
+
+    <string name="SectionEightTheoryProperties_5">Worked Examples with Parameters:
+\n • Linear equation with parameter: solve under conditions on denominators.
+\n • Quadratic with parameter: analyze discriminant and special parameter values.
+\n • Irrational equations: observe domain restrictions, check solutions for extraneous roots.
+\n • Systems of linear equations with parameter: use substitution or addition methods; handle unique, infinite, or no solutions.
+\n • Symmetric and homogeneous systems: introduce new unknowns to reduce complexity and find solutions.</string>
+
     <string name="SectionEightTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionEightQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionNineTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionNineTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionNineTheoryDef_5">Core Strategy for Solving Word Problems:
+\n • Introduce unknowns for the required quantities.
+\n • Express problem conditions using these unknowns.
+\n • Choose an effective solution method.
+\n • Equations or systems may have fewer unknowns than the original problem.
+\n • Proper choice of unknowns and method ensures success.</string>
+
+    <string name="SectionNineTheoryProperties_5">Worked Examples for Word Problems:
+\n • Number/Digit Problem: set up system with digits as unknowns, solve for tens and units.
+\n • Motion Problem: use speed, distance, and time equations; solve quadratic for speed.
+\n • River Current Problem: set time equations downstream/upstream; find travel time.
+\n • Work/Flow Rate Problem: express rates, form quadratic equations, check valid roots.
+\n • Team Competition/Output Problem: form system from given conditions; solve for relative outputs.</string>
+
     <string name="SectionNineTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionNineQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionTenTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionTenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionTenTheoryDef_5">Definitions and Terminology of Inequalities:
+\n • An inequality relates two numbers or expressions using &gt;, &lt;, ≥, ≤.
+\n • Strict inequalities: > or &lt;; slack inequalities: ≥ or ≤.
+\n • Domain: values of variables making both expressions meaningful.
+\n • Solution: a value reducing the inequality to a true statement.
+\n • Direction: sign points to the lesser quantity; same sense if signs match.</string>
+
+    <string name="SectionTenTheoryProperties_5">Properties and Equivalence of Inequalities:
+\n • Fundamental relations: for real numbers a and b, exactly one of a>b, a=b, a&lt;b holds.
+\n • Transitivity, addition, multiplication (positive/negative), termwise addition/multiplication, powers/roots.
+\n • Double inequalities like a&lt;b&lt;c or a≤b≤c are allowed.
+\n • Equivalent inequalities: same solution set or no solution; denoted ⇔.
+\n • Equivalence rules: A>B⇔A+C>B+C, A>B⇔AC>BC (C positive).</string>
+
     <string name="SectionTenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionTenQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionElevenTheoryDef_5">!!! Empty !!!</string>
-    <string name="SectionElevenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionElevenTheoryDef_5">Methods for Proving Inequalities:
+\n • Direct transformation: reduce inequality to a known valid one.
+\n • Equivalent transformations: simplify inequality to an obvious or known inequality.
+\n • Combination: use both direct and equivalent transformations with basic properties.
+\n • Introduce fundamental inequalities: AM-Squared Term, Triangle, Modulus of Difference.
+\n • Use AM-GM, Quadratic Form, Cubic Term inequalities for proofs and analysis.</string>
+
+    <string name="SectionElevenTheoryProperties_5">Illustrative Examples and Properties:
+\n • Prove inequalities by reducing to (a−b)²≥0 or known inequalities.
+\n • Arithmetic Mean (AM) - Geometric Mean (GM) inequality: two or n numbers.
+\n • Triangle inequality: |a+b|≤|a|+|b|, equality when numbers same sign.
+\n • Modulus and difference inequalities: |a−b|≤|a|+|b|, |a−b|≥||a|−|b||.
+\n • Use fundamental inequalities to solve more complex expressions or systems.</string>
+
     <string name="SectionElevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionElevenQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionTwelveTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionTwelveTheoryDef_5">• Linear Inequalities: An inequality of the form ax + b > 0 (or with other inequality signs). The solution depends on the sign of a. The solution set is typically a ray on the number axis.
+\n • Quadratic Inequalities: An inequality of the form ax² + bx + c > 0. The solution method depends on the discriminant D = b² - 4ac and the sign of the leading coefficient a.
+    \n ◦ If D > 0, the trinomial has two roots, and the solution is the interval(s) where the corresponding parabola is above or below the x-axis.
+    \n ◦ If D ≤ 0, the trinomial does not change sign (or is zero at one point). Its sign is the same as the sign of a.</string>
     <string name="SectionTwelveTheoryProperties_5">!!! Empty !!!</string>
     <string name="SectionTwelveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionTwelveQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionThirteenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionThirteenTheoryDef_5">• Systems of Inequalities: To solve a system, one must find all values of the unknown that satisfy all inequalities in the system. The solution set is the intersection of the solution sets of the individual inequalities.
+\n • Inequalities with Modulus:
+    \n ◦ |x| ≤ a (for a > 0) is equivalent to the double inequality -a ≤ x ≤ a.
+    \n ◦ |x| ≥ a (for a > 0) is equivalent to the set of two inequalities x ≥ a or x ≤ -a.
+    \n ◦ For more complex inequalities involving moduli, the number line is broken into intervals based on the points where the expressions inside the moduli become zero. The inequality is then solved on each interval.</string>
     <string name="SectionThirteenTheoryProperties_5">!!! Empty !!!</string>
     <string name="SectionThirteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionThirteenQuiz_5">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionFourteenTheoryDef_5">!!! Empty !!!</string>
+    <string name="SectionFourteenTheoryDef_5"> Method of Intervals: This is a general method for solving inequalities of the form P(x)/Q(x) > 0 (or with other inequality signs), where P(x) and Q(x) are polynomials.
+    \n 1. Find all the real roots of the polynomials P(x) and Q(x).
+    \n 2. Mark these roots on the number axis, which divides it into intervals.
+    \n 3. Within each interval, the sign of the fraction P(x)/Q(x) is constant.
+    \n 4. Determine the sign in one interval (e.g., by testing a point) and then alternate signs for subsequent intervals (unless there are roots of even multiplicity).
+    \n 5. Select the intervals that satisfy the given inequality.</string>
     <string name="SectionFourteenTheoryProperties_5">!!! Empty !!!</string>
     <string name="SectionFourteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionFourteenQuiz_5">!!! Solve the Quiz !!!</string>

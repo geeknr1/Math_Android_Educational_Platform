@@ -1,82 +1,81 @@
 <resources>
     <string name="app_name_1">License_Project_2</string>
-    <string name="SectionOneTheoryDef">The natural numbers are used for counting objects (1, 2, 3, ...) and are represented by the digits 0 through 9. The set of natural numbers is infinite, has a smallest number (1, called unity), but no largest number.\n The whole numbers expand upon natural numbers to include zero and negative integers (..., -2, -1, 0, 1, 2, ...)</string>
-    <string name="SectionOneTheoryProperties">For any whole numbers a, b, and c, the following properties apply to addition and multiplication:
-    \n◦ Commutative Property: a + b = b + a (for addition) and a · b = b · a (for multiplication).
-    \n◦ Associative Property: (a + b) + c = a + (b + c) (for addition) and (a · b) · c = a · (b · c) (for multiplication).
-    \n◦ Distributive Property: Multiplication distributes over addition: (a + b) · c = a · c + b · c.
-    \n◦ Zero: Adding zero to any number does not change it (a + 0 = a), and multiplying any number by zero results in zero (a · 0 = 0).
-    \n◦ Unity (1): Multiplying any number by one does not change it (a · 1 = a).</string>
+
+    <string name="SectionOneTheoryDef">Natural numbers are used for counting objects (1, 2, 3, ...). They have a smallest number (1) but no largest. Whole numbers extend them by including zero and negatives (..., -2, -1, 0, 1, 2, ...).</string>
+
+    <string name="SectionOneTheoryProperties">For any whole numbers a, b, and c:\n
+◦ Commutative: a + b = b + a, a·b = b·a.\n
+◦ Associative: (a + b) + c = a + (b + c).\n
+◦ Distributive: (a + b)·c = a·c + b·c.\n
+◦ Zero and Unity: a + 0 = a, a·0 = 0, a·1 = a.</string>
+
     <string name="SectionOneTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionOneQuiz">!!! Solve the quiz !!!</string>
 
 
-    <string name="SectionTwoTheoryDef">Definitions:
-    \n◦ Divisor: A natural number is a divisor of another number if the division results in a remainder of zero.
-    \n◦ Prime Number: A natural number greater than 1 that has only two divisors: 1 and itself. The smallest prime is 2, which is also the only even prime number.
-    \n◦ Composite Number: A natural number that has more than two divisors.
-    \n◦ Unity: The number 1 is considered neither prime nor composite.</string>
-    <string name="SectionTwoTheoryProperties">Fundamental Theorem of Arithmetic: Any natural number greater than one can be expressed as a product of prime factors in a unique way, regardless of the order of the factors.\n
-    Divisibility Tests: The text provides rules to quickly check for divisibility by certain numbers:
-    \n◦ By 2 or 5: A number is divisible by 2 or 5 if its last digit is divisible by 2 or 5.
-    \n◦ By 4: A number is divisible by 4 if the number formed by its last two digits is divisible by 4.
-    \n◦ By 3 or 9: A number is divisible by 3 or 9 if the sum of its digits is divisible by 3 or 9.
-    \n◦ By 6: A number is divisible by 6 if it is divisible by both 2 and 3.
-    \n◦ Among any n consecutive whole numbers, one and only one of them is divisible by n.</string>
+    <string name="SectionTwoTheoryDef">Definitions:\n
+◦ Divisor: divides another number with no remainder.\n
+◦ Prime: has only two divisors (1 and itself).\n
+◦ Composite: has more than two divisors.\n
+◦ Unity (1): neither prime nor composite.</string>
+
+    <string name="SectionTwoTheoryProperties">Any number >1 can be written uniquely as a product of primes.\n
+Divisibility rules:\n
+◦ By 2 or 5: check whether the last digit is even (divisibility by 2) ; whether the last digit is 5 or 0.\n
+◦ By 3 or 9: sum of digits divisible by 3 or 9.\n
+◦ By 6: divisible by both 2 and 3.</string>
+
     <string name="SectionTwoTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionTwoQuiz">!!! Solve the quiz !!!</string>
 
-    <string name="SectionThreeTheoryDef">Definitions:\n • Common Divisor: Given natural numbers a,b,…,l, a natural number d is their common divisor if d divides all of them without a remainder.
-\n• Greatest Common Divisor (G.C.D.): The largest of all common divisors is called the greatest common divisor, abbreviated as G.C.D..
-\n• Relatively Prime: If the G.C.D. of a set of numbers a,b,…,l is equal to unity (1), then these numbers are said to be relatively prime.
-\n• Multiple: A multiple of a natural number a is defined as a natural number k which is divisible by a without a remainder.
-\n• Common Multiple: Any natural number that is entirely divisible by each of the natural numbers a,b,…,l is called their common multiple.
-\n• Least Common Multiple (L.C.M.): The smallest of common multiples is called the least common multiple, abbreviated as L.C.M..
-</string>
-    <string name="SectionThreeTheoryProperties">Properties of Relatively Prime Numbers The document lists two properties (given without proof) concerning relatively prime numbers:\n
-1. Divisibility by Product: If a number a is divisible by each of two relatively prime numbers, it is also divisible by the product of these numbers.\n
-    ◦ Illustration: A number divisible by 3 and 5 is divisible by 15. However, a number divisible by 4 and 6 (whose G.C.D. is not 1) is not necessarily divisible by 24 (e.g., 36 is divisible by 4 and 6, but not 24).\n
-2. Product Divisibility: If a product ab is divisible by c, and b and c are relatively prime numbers, then a is divisible by c.
-</string>
+
+    <string name="SectionThreeTheoryDef">Definitions:\n
+• Common Divisor: divides all given numbers.\n
+• G.C.D.: largest common divisor.\n
+• Relatively Prime: G.C.D. = 1.\n
+• L.C.M.: smallest common multiple.</string>
+
+    <string name="SectionThreeTheoryProperties">Relatively prime numbers have these properties:\n
+1. If a number is divisible by two relatively prime numbers, it’s divisible by their product.\n
+2. If ab is divisible by c and b, c are relatively prime, then a is divisible by c.</string>
+
     <string name="SectionThreeTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionThreeQuiz">!!! Solve the quiz !!!</string>
 
-    <string name="SectionFourTheoryDef">Definition: A fraction is the result of dividing two whole numbers a (the numerator) and b (the denominator), where b is not zero, written as a/b. \n</string>
-    <string name="SectionFourTheoryProperties">Properties:\n◦ Two fractions a/b and c/d are equal if ad = bc. For positive denominators, a/b > c/d if ad > bc.
-    \n◦ The fundamental property is represented by the fact that the value of a fraction is unchanged if its numerator and denominator are both multiplied or divided by the same non-zero number. This is used to reduce fractions or bring them to a common denominator.
-    \nOperations on Fractions: Rules for arithmetic are defined:
-    \n◦ Addition/Subtraction: a/b ± c/d = (ad ± bc) / bd
-    \n◦ Multiplication: (a/b) · (c/d) = ac / bd
-    \n◦ Division: (a/b) ÷ (c/d) = ad / bc
-        \nTypes of Fractions:
-    \n◦ Proper vs. Improper: A fraction is proper if its numerator is less than its denominator and improper otherwise. An improper fraction can be expressed as a mixed number, which consists of an integer part and a proper fraction.
-    \n◦ Decimal Fractions: These are fractions with a denominator that is a power of 10. They are useful for comparing and performing operations. The sources detail the methods for adding, multiplying, and dividing decimals, including rules for placing the decimal point and shifting it when multiplying or dividing by powers of 10.
-</string>
+
+    <string name="SectionFourTheoryDef">A fraction is the result of dividing two whole numbers a and b (b ≠ 0), written as a/b.</string>
+
+    <string name="SectionFourTheoryProperties">Properties:\n
+◦ a/b = c/d if ad = bc.\n
+◦ Multiplying or dividing numerator and denominator by the same number doesn’t change its value.\n
+◦ Addition: a/b + c/d = (ad + bc)/bd.\n
+◦ Division: (a/b) ÷ (c/d) = ad/bc.</string>
+
     <string name="SectionFourTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionFourQuiz">!!! Solve the quiz !!!</string>
 
 
-    <string name="SectionFiveTheoryDef">Definition: A number is rational if it can be written in the form a/b, where a and b are integers and b ≠ 0. The set of rational numbers includes all whole numbers and fractions. \n</string>
-    <string name="SectionFiveTheoryProperties">The Decimal Representations are the following: \n◦ Terminating (Finite) Decimals: An irreducible fraction a/b can be converted to a terminating decimal if and only if the prime factors of its denominator b are only 2s and 5s.
-    \n◦ Nonterminating Decimals: If the denominator of an irreducible fraction has prime factors other than 2 or 5, its decimal representation will be nonterminating.
-    \n◦ Periodic Decimals: These are nonterminating decimals where a digit or a block of digits (the period) repeats infinitely. They can be pure periodic (e.g., 0.(13)) or mixed periodic.
-    \n◦ Key Theorem: A fundamental theorem states that every rational number can be represented as either a terminating or a periodic decimal, and conversely, every periodic decimal represents a rational number.
-</string>
+    <string name="SectionFiveTheoryDef">A rational number can be written as a/b, where a and b are integers and b ≠ 0. All whole numbers and fractions are rational.</string>
+
+    <string name="SectionFiveTheoryProperties">Decimal forms:\n
+◦ Terminating: denominator has only 2s or 5s.\n
+◦ Nonterminating: denominator has other primes.\n
+◦ Periodic: digits or blocks repeat infinitely.</string>
+
     <string name="SectionFiveTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionFiveQuiz">!!! Solve the quiz !!!</string>
 
 
-    <string name="SectionSixTheoryDef">Definitions:\n • Number Line: Numbers can be represented as points on a line, with positive numbers to the right of the origin (point O) and negative numbers to the left.
-\n• Modulus (Absolute Value): The modulus of a number a, denoted as |a|, is defined as its distance from zero on the number line. Formally:
-    \n◦ |a| = a if a ≥ 0
-    \n◦ |a| = -a if a&lt;0 \n</string>
-    <string name="SectionSixTheoryProperties"> Properties of Moduli:\n Key properties include:
-    \n◦ |a| ≥ 0 and |a| = 0 only for a=0.
-    \n◦ |a| = |-a|.
-    \n◦ |ab| = |a|*|b| and |a/b| = |a|/|b| (for b ≠ 0).
-</string>
+    <string name="SectionSixTheoryDef">Numbers are shown on a line: positives right, negatives left.\n
+|a| (modulus) means distance from zero:\n
+◦ |a| = a if a ≥ 0.\n
+◦ |a| = -a if a &lt; 0.</string>
+
+    <string name="SectionSixTheoryProperties">Modulus properties:\n
+◦ |a| ≥ 0 and |a| = 0 only for a=0.\n
+◦ |a| = |-a|.\n
+◦ |ab| = |a||b|, |a/b| = |a|/|b| (b ≠ 0).</string>
+
     <string name="SectionSixTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionSixQuiz">!!! Solve the quiz !!!</string>
-
 </resources>
-
