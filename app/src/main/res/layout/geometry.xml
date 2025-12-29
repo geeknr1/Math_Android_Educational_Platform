@@ -19,7 +19,7 @@
 
 
         <TextView
-            android:id="@+id/tv_hello"
+            android:id="@+id/welcome"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:text="WELCOME TO GEOMETRY" />
 
         <TextView
-            android:id="@+id/choose_destination"
+            android:id="@+id/chapter"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,6 +130,19 @@ Area of a Circle"/>
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:text="Fundamentals of Solid Geometry"/>
+
+        <Button
+            android:id="@+id/backToTutorial_2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Back"
+            android:backgroundTint="#0000ff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>

@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Back"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/sectionDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/sectionProperties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/sectionWorkedExamples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/sectionQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/checkDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Definition Task done"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/definitionPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done with definition!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/checkProperties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Properties Task done"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/propertiesPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done with properties!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/checkExamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Examples Task done"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/examplesPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done with examples!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+
+        <RadioGroup
+            android:id="@+id/radioAlg"
+            android:layout_marginTop="80dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Definition"
+                android:id="@+id/definition"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:background="#00008B"/>
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Properties"
+                android:id="@+id/properties"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:background="#00008B"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Worked Examples"
+                android:id="@+id/workedExamples"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="#00008B"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:id="@+id/quiz"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="#00008B"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

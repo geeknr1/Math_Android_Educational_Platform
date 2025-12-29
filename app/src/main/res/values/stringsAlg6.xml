@@ -2,86 +2,34 @@
 <resources>
     <string name="app_name_6">License_Project_2</string>
 
-    <string name="SectionOneTheoryDef_6">Definitions and Terminology of Functions:
-\n • Constants vs. Variables: constants do not change, variables do.
-\n • Function: a rule assigning each x in domain E to a unique y.
-\n • Independent variable (x) and dependent variable (y); domain and range.
-\n • Notation: y=f(x) or y(x) expresses dependency of y on x.
-\n • Representations: analytical (formulas), tabular (tables), graphical (coordinate plane).</string>
-
-    <string name="SectionOneTheoryProperties_6">Methods and Properties of Functions:
-\n • Analytical method: formulas define function values explicitly.
-\n • Tabular method: list argument values and corresponding function values.
-\n • Graphical method: plot points M(x,y) to find function values from the graph.
-\n • Domain: all permissible x values; Range: all attainable y values.
-\n • Practical uses: formulas for calculation, tables for observation, graphs for visualization.</string>
-
+    <string name="SectionOneTheoryDef_6">Function: assigns each x in domain to one y. x–independent, y–dependent. Forms: analytic, tabular, graphical. Notation: y=f(x).</string>
+    <string name="SectionOneTheoryProperties_6">Analytic: formula; Tabular: values; Graphical: plot points. Domain → x, Range → y. Used for calc, observation, visualization.</string>
     <string name="SectionOneTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionOneQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionTwoTheoryDef_6">Even, Odd, and Monotone Functions:
-\n • Even function: f(-x)=f(x), symmetric about y-axis.
-\n • Odd function: f(-x)=-f(x), symmetric about origin.
-\n • Many functions are neither even nor odd.
-\n • Monotone: increasing (x₁&lt;x₂ ⇒ f(x₁)&lt;f(x₂)), decreasing (x₁&lt;x₂ ⇒ f(x₁)>f(x₂)).
-\n • Intervals of constant sign and roots: where f(x) keeps sign or f(x)=0 (x-axis intersections).</string>
-
-    <string name="SectionTwoTheoryProperties_6">Properties and Graphical Interpretation:
-\n • Graph of even function mirrors across y-axis; odd function across origin.
-\n • Increasing function rises; decreasing function falls on interval.
-\n • Monotone functions maintain order: either always rising or falling.
-\n • Intervals of constant sign: function remains positive or negative.
-\n • Roots (zeros) are points where graph intersects x-axis.</string>
-
+    <string name="SectionTwoTheoryDef_6">Even: f(-x)=f(x). Odd: f(-x)=-f(x). Monotone: increasing or decreasing. Constant sign: f(x)&gt;0 or &lt;0. Roots: f(x)=0.</string>
+    <string name="SectionTwoTheoryProperties_6">Even → y-axis symmetry; Odd → origin symmetry. Increasing rises, decreasing falls. Roots at x-axis intersections.</string>
     <string name="SectionTwoTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionTwoQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionThreeTheoryDef_6">Inverse Functions: Definition and Existence
-\n • y=f(x) has an inverse if each y₀ in range corresponds to a unique x₀ in domain.
-\n • Inverse function: x=g(y), defined on original range E, called inverse of y=f(x).
-\n • Monotone functions (increasing or decreasing) guarantee existence of inverse.
-\n • If f(x) increasing, g(y) increasing; if f(x) decreasing, g(y) decreasing.
-\n • Find inverse algebraically: solve for x in terms of y; notation y=g(x).</string>
-
-    <string name="SectionThreeTheoryProperties_6">Properties and Graphical Interpretation:
-\n • Graphs of f(x) and g(x) symmetric about line y=x.
-\n • Point M(x₀,y₀) on f(x) corresponds to N(y₀,x₀) on g(x).
-\n • Inverse preserves order: increasing ↔ increasing, decreasing ↔ decreasing.
-\n • Symmetry used to visualize and verify inverses graphically.
-\n • Practical use: compute inverse values and check graphically.</string>
-
+    <string name="SectionThreeTheoryDef_6">Inverse: exists if each y has unique x. f(x)↔g(x). Monotone functions have inverses. Find inverse by solving for x in terms of y.</string>
+    <string name="SectionThreeTheoryProperties_6">Graphs symmetric about y=x. M(x₀,y₀) ↔ N(y₀,x₀). Increasing↔increasing, decreasing↔decreasing. Used for checking inverses.</string>
     <string name="SectionThreeTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionThreeQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionFourTheoryDef_6">Basic Functions: Linear, Inverse, Quadratic
-\n • Linear: y=kx+b, graph is a straight line; k>0 increasing, k&lt;0 decreasing.
-\n • Inverse Proportionality: y=k/x, graph is a hyperbola, odd function symmetric about origin.
-\n • Quadratic: y=ax²+bx+c, graph is parabola; vertex x₀=-b/2a, symmetry line x=x₀.
-\n • Power Function: y=xⁿ, even n symmetric about y-axis, odd n symmetric about origin.
-\n • Logarithmic Function: y=logₐx, defined x>0, inverse of exponential y=aˣ, increasing if a>1.</string>
-
-    <string name="SectionFourTheoryProperties_6">Function Graphs and Modulus
-\n • Graphs of modulus functions: y=|x|, y=|2x+1|, y=x|x|, piecewise construction.
-\n • y=|f(x)| obtained by reflecting negative part of y=f(x) about x-axis.
-\n • Linear and quadratic functions: increasing/decreasing behavior determined by coefficients.
-\n • Inverse proportionality: branches in first/third or second/fourth quadrants depending on sign of k.
-\n • Quadratic parabola: branches up if a>0, down if a&lt;0; vertex is max/min point.</string>
-
+    <string name="SectionFourTheoryDef_6">Basic: Linear y=kx+b, Inverse y=k/x, Quadratic y=ax²+bx+c, Power y=xⁿ, Logarithmic y=logₐx. Shapes: line, hyperbola, parabola.</string>
+    <string name="SectionFourTheoryProperties_6">|f(x)| reflects negative part over x-axis. Linear/quadratic shape from coefficients. Hyperbola position → sign of k. Parabola opens up (a&gt;0) or down (a&lt;0).</string>
     <string name="SectionFourTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionFourQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionFiveTheoryDef_6">!!! Empty !!!</string>
+    <string name="SectionFiveTheoryDef_6">Solve f(x)=0 → find x-intercepts. g(x)=h(x) → intersection points. Circle: x²+y²=r². Systems: intersections of graphs; lines → one, none, or ∞ solutions.</string>
     <string name="SectionFiveTheoryProperties_6">!!! Empty !!!</string>
     <string name="SectionFiveTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionFiveQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionSixTheoryDef_6">!!! Empty !!!</string>
+    <string name="SectionSixTheoryDef_6">Solve f(x)&gt;0 → x where graph above axis. Systems: intersection of solution sets. In 2 vars → half-planes; system → overlap region.</string>
     <string name="SectionSixTheoryProperties_6">!!! Empty !!!</string>
     <string name="SectionSixTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionSixQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionSevenTheoryDef_6">!!! Empty !!!</string>
-    <string name="SectionSevenTheoryProperties_6">!!! Empty !!!</string>
-    <string name="SectionSevenTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
-    <string name="SectionSevenQuiz_6">!!! Solve the Quiz !!!</string>
 </resources>

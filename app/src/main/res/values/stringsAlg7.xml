@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name_7">License_Project_2</string>
+<string name="app_name_7">License_Project_2</string>
 
-    <string name="SectionOneTheoryDef_7">!!! Empty !!!</string>
-    <string name="SectionOneTheoryProperties_7">!!! Empty !!!</string>
+    <string name="SectionOneTheoryDef_7">A sequence assigns each natural number n a term aₙ; it’s a function on ℕ. Terms: a₁, a₂, a₃…</string>
+    <string name="SectionOneTheoryProperties_7">Finite → first n terms; Infinite → all n. Defined by formula aₙ=f(n) or recurrence rule (e.g. Fibonacci: a₁=1,a₂=1,aₙ₊₂=aₙ₊₁+aₙ). Increasing: aₙ₊₁&gt;aₙ; Decreasing: aₙ₊₁&lt;aₙ; Constant → equal terms.</string>
     <string name="SectionOneTheoryWorkedExamples_7">!!! Worked Examples !!!</string>
     <string name="SectionOneQuiz_7">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_7">Arithmetic progression (A.P.): each term = previous term + constant d.</string>
+    <string name="SectionTwoTheoryProperties_7">Common difference d=aₙ₊₁−aₙ. Property: aₙ₊₁=(aₙ+aₙ₊₂)/2. nth term: aₙ=a₁+(n−1)d. Sum: Sₙ=(a₁+aₙ)n/2.</string>
+    <string name="SectionTwoTheoryWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionTwoQuiz_7">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionThreeTheoryDef_7">Geometric progression (G.P.): each term = previous term × constant q.</string>
+    <string name="SectionThreeTheoryProperties_7">Common ratio q=aₙ₊₁/aₙ. Property: aₙ₊₁=√(aₙaₙ₊₂). nth term: aₙ=a₁qⁿ⁻¹. Sum: Sₙ=a₁(qⁿ−1)/(q−1), q≠1.</string>
+    <string name="SectionThreeTheoryWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_7">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFourTheoryDef_7">Problems on Progressions: apply arithmetic and geometric formulas to solve number problems.</string>
+    <string name="SectionFourTheoryProperties_7">Dual-nature: only equal terms (q=1). Insert arithmetic means: e.g., 3 through 19 → d=(19−3)/4=4 → 3,7,11,15,19. Natural sums: e.g., 2-digit numbers sum=4905. Insert geometric means: 1 through 256 → q=4 → 1,1*4,4*4,16*4,64*4. Sequence change: G.P. may become A.P. if term adjusted.</string>
+    <string name="SectionFourWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_7">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionFiveTheoryDef_7">Taking Logarithms and Antilogarithms: simplify algebraic expressions using log laws.</string>
+    <string name="SectionFiveTheoryProperties_7">logₐ(ab)=logₐa+logₐb. logₐ(a/b)=logₐa−logₐb. logₐ(xᵏ)=k·logₐx. Based on a^(logₐb)=b identity.</string>
+    <string name="SectionFiveWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_7">!!! Solve the Quiz !!!</string>
 </resources>

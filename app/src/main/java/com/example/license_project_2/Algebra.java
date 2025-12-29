@@ -35,8 +35,8 @@ public class Algebra extends AppCompatActivity {
         spinnerSetup(R.id.spinnerChapter3Alg, R.array.Powers_and_Roots___Real_Numbers);
         spinnerSetup(R.id.spinnerChapter4Alg, R.array.Expressions);
         spinnerSetup(R.id.spinnerChapter5Alg, R.array.Equations_and_Inequalities);
-        spinnerSetup(R.id.spinnerChapter6Alg, R.array.Whole_Numbers_And_Fractions3);
-        spinnerSetup(R.id.spinnerChapter7Alg, R.array.Whole_Numbers_And_Fractions4);
+        spinnerSetup(R.id.spinnerChapter6Alg, R.array.Functions_and_Graphs);
+        spinnerSetup(R.id.spinnerChapter7Alg, R.array.Arithmetic_and_Geometric_Progressions___Logarithms);
 
         back = findViewById(R.id.backToTutorial);
         back.setVisibility(VISIBLE);
