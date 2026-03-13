@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_12">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_12">• A transformation moves every point to form a new figure.
+\n • Central symmetry reflects points across a center.
+\n • Axial symmetry reflects across a line; homothety scales from a center.</string>
+
+    <string name="SectionOneTheoryProperties_12">• Circles and parallelograms have centers of symmetry.
+\n • Shapes like triangles and squares have specific symmetry axes.
+\n • Homothetic figures share the same shape and center.</string>
+
+    <string name="SectionOneTheoryWorkedExamples_12">• Find point M on line p minimizing AM+MB.
+\n • Reflect B across p to get B′ and join A to B′.
+\n • Intersection with p gives the required M.</string>
+
+    <string name="SectionOneQuiz_12">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_12">• A motion keeps distances unchanged (isometry).
+\n • Translation shifts points equally in one direction.
+\n • Rotation turns a figure around a fixed point.</string>
+
+    <string name="SectionTwoTheoryProperties_12">• Motions preserve shapes, lengths, and angles.
+\n • Combining motions yields another motion.
+\n • Every figure is congruent to itself and others by motion.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_12">• Symmetries are motions since they preserve distance.
+\n • Each translation between points is unique.
+\n • Proves key isometric properties.</string>
+
+    <string name="SectionTwoQuiz_12">!!! Solve the Quiz !!!</string>
+
+<!--    <string name="SectionThreeTheoryDef_12">• A similitude scales distances by a constant ratio k.-->
+<!--\n • Figures are similar if one maps to the other by such a transformation.-->
+<!--\n • Homothety is a special case of similitude.</string>-->
+
+<!--    <string name="SectionThreeTheoryProperties_12">• Similitude keeps lines straight and angles equal.-->
+<!--\n • Preserves order of points along a line.-->
+<!--\n • Homothety is always a type of similitude.</string>-->
+
+<!--    <string name="SectionThreeTheoryWorkedExamples_12">• Homothety with ratio k multiplies all distances by k.-->
+<!--\n • Proven using similar triangles MON and M′ON′.-->
+<!--\n • Confirms it’s a transformation of similitude.</string>-->
+
+<!--    <string name="SectionThreeQuiz_12">!!! Solve the Quiz !!!</string>-->
+</resources>

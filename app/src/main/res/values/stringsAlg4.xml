@@ -28,66 +28,66 @@
     <string name="SectionTwoQuiz_4">!!! Solve the Quiz !!!</string>
 
 
-    <string name="SectionThreeTheoryDef_4">• A proportion is an equality between two ratios: a/b = c/d or a:b = c:d, read “a is to b as c is to d.”</string>
+<!--    <string name="SectionThreeTheoryDef_4">• A proportion is an equality between two ratios: a/b = c/d or a:b = c:d, read “a is to b as c is to d.”</string>-->
 
-    <string name="SectionThreeTheoryProperties_4">• Main rule: product of extremes = product of means (ad = bc).\n
-• New proportions can be derived by combining or transforming terms.\n
-• For equal ratios, (a₁ + a₂ + ... + aₙ)/(b₁ + b₂ + ... + bₙ) = a₁/b₁.</string>
+<!--    <string name="SectionThreeTheoryProperties_4">• Main rule: product of extremes = product of means (ad = bc).\n-->
+<!--• New proportions can be derived by combining or transforming terms.\n-->
+<!--• For equal ratios, (a₁ + a₂ + ... + aₙ)/(b₁ + b₂ + ... + bₙ) = a₁/b₁.</string>-->
 
-    <string name="SectionThreeTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
-    <string name="SectionThreeQuiz_4">!!! Solve the Quiz !!!</string>
-
-
-    <string name="SectionFourTheoryDef_4">• A monomial is a product of numbers and letters (e.g., 3xy²).\n
-• A polynomial is a sum of monomials (e.g., x² + 3x + 2).</string>
-
-    <string name="SectionFourTheoryProperties_4">• In standard form, coefficients come first, followed by variables with powers.\n
-• Polynomials can be monomials, binomials, or trinomials.\n
-• The degree is the highest power of any term.\n
-• Add/subtract by combining like terms; multiply each term with each other.</string>
-
-    <string name="SectionFourTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
-    <string name="SectionFourQuiz_4">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionThreeTheoryWorkedExamples_4">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionThreeQuiz_4">!!! Solve the Quiz !!!</string>-->
 
 
-    <string name="SectionFiveTheoryDef_4">• Key identities:\n
-(a + b)² = a² + 2ab + b²\n
-(a − b)² = a² − 2ab + b²\n
-(a + b)(a − b) = a² − b²\n
-(a ± b)³ = a³ ± 3a²b + 3ab² ± b³.\n
-• Used also for approximations, e.g., (1 + a)² ≈ 1 + 2a for small a.</string>
+<!--    <string name="SectionFourTheoryDef_4">• A monomial is a product of numbers and letters (e.g., 3xy²).\n-->
+<!--• A polynomial is a sum of monomials (e.g., x² + 3x + 2).</string>-->
 
-    <string name="SectionFiveTheoryProperties_4">!!! Empty !!!</string>
-    <string name="SectionFiveTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
-    <string name="SectionFiveQuiz_4">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionFourTheoryProperties_4">• In standard form, coefficients come first, followed by variables with powers.\n-->
+<!--• Polynomials can be monomials, binomials, or trinomials.\n-->
+<!--• The degree is the highest power of any term.\n-->
+<!--• Add/subtract by combining like terms; multiply each term with each other.</string>-->
 
-
-    <string name="SectionSixTheoryDef_4">• A polynomial of degree n has the form P(x) = a₀xⁿ + a₁xⁿ⁻¹ + ... + aₙ.\n
-• Terms are written in descending order of powers.</string>
-
-    <string name="SectionSixTheoryProperties_4">• Two polynomials are equal if all coefficients of matching powers are equal.\n
-• Operations: add, subtract, multiply using arithmetic rules.\n
-• Factorization rewrites a polynomial as a product (e.g., x² − a² = (x + a)(x − a)).\n
-• Irreducible polynomials can’t be factored (like primes).</string>
-
-    <string name="SectionSixTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
-    <string name="SectionSixQuiz_4">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionFourTheoryWorkedExamples_4">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFourQuiz_4">!!! Solve the Quiz !!!</string>-->
 
 
-    <string name="SectionSevenTheoryDef_4">• Method of Undetermined Coefficients: assume a form, expand, and compare coefficients to find unknowns.\n
-• Some polynomials can’t be factorized; no general test exists.</string>
+<!--    <string name="SectionFiveTheoryDef_4">• Key identities:\n-->
+<!--(a + b)² = a² + 2ab + b²\n-->
+<!--(a − b)² = a² − 2ab + b²\n-->
+<!--(a + b)(a − b) = a² − b²\n-->
+<!--(a ± b)³ = a³ ± 3a²b + 3ab² ± b³.\n-->
+<!--• Used also for approximations, e.g., (1 + a)² ≈ 1 + 2a for small a.</string>-->
 
-    <string name="SectionSevenTheoryProperties_4">!!! Empty !!!</string>
-    <string name="SectionSevenTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
-    <string name="SectionSevenQuiz_4">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionFiveTheoryProperties_4">!!! Empty !!!</string>-->
+<!--    <string name="SectionFiveTheoryWorkedExamples_4">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFiveQuiz_4">!!! Solve the Quiz !!!</string>-->
 
 
-    <string name="SectionEightTheoryDef_4">• Algebraic fraction: P(x)/Q(x), where Q(x) ≠ 0.\n
-• Operations (add, subtract, multiply, divide) follow the same rules as with numbers.\n
-• Fractions must have a common denominator before adding or subtracting.\n
-• Rationalization removes radicals using conjugate pairs (√X − √Y)(√X + √Y) = X − Y.</string>
+<!--    <string name="SectionSixTheoryDef_4">• A polynomial of degree n has the form P(x) = a₀xⁿ + a₁xⁿ⁻¹ + ... + aₙ.\n-->
+<!--• Terms are written in descending order of powers.</string>-->
 
-    <string name="SectionEightTheoryProperties_4">!!! Empty !!!</string>
-    <string name="SectionEightTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
-    <string name="SectionEightQuiz_4">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionSixTheoryProperties_4">• Two polynomials are equal if all coefficients of matching powers are equal.\n-->
+<!--• Operations: add, subtract, multiply using arithmetic rules.\n-->
+<!--• Factorization rewrites a polynomial as a product (e.g., x² − a² = (x + a)(x − a)).\n-->
+<!--• Irreducible polynomials can’t be factored (like primes).</string>-->
+
+<!--    <string name="SectionSixTheoryWorkedExamples_4">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionSixQuiz_4">!!! Solve the Quiz !!!</string>-->
+
+
+<!--    <string name="SectionSevenTheoryDef_4">• Method of Undetermined Coefficients: assume a form, expand, and compare coefficients to find unknowns.\n-->
+<!--• Some polynomials can’t be factorized; no general test exists.</string>-->
+
+<!--    <string name="SectionSevenTheoryProperties_4">!!! Empty !!!</string>-->
+<!--    <string name="SectionSevenTheoryWorkedExamples_4">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionSevenQuiz_4">!!! Solve the Quiz !!!</string>-->
+
+
+<!--    <string name="SectionEightTheoryDef_4">• Algebraic fraction: P(x)/Q(x), where Q(x) ≠ 0.\n-->
+<!--• Operations (add, subtract, multiply, divide) follow the same rules as with numbers.\n-->
+<!--• Fractions must have a common denominator before adding or subtracting.\n-->
+<!--• Rationalization removes radicals using conjugate pairs (√X − √Y)(√X + √Y) = X − Y.</string>-->
+
+<!--    <string name="SectionEightTheoryProperties_4">!!! Empty !!!</string>-->
+<!--    <string name="SectionEightTheoryWorkedExamples_4">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionEightQuiz_4">!!! Solve the Quiz !!!</string>-->
 </resources>

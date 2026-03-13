@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_11">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_11">• Proportional segments have equal ratios.
+\n • Ratios show how lengths compare.
+\n • Units don’t affect proportionality.</string>
+
+    <string name="SectionOneTheoryProperties_11">• Ratios stay constant when units change.
+\n • Parallel lines create proportional segments.
+\n • Related segments on both sides are proportional.</string>
+
+    <string name="SectionOneTheoryWorkedExamples_11">• Construct a fourth segment with given ratios.
+\n • Use parallel lines and an arbitrary angle.
+\n • Demonstrates geometric proportionality.</string>
+
+    <string name="SectionOneQuiz_11">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_11">• Similar triangles have equal angles and proportional sides.
+\n • Their sides share a constant ratio called the ratio of similitude.
+\n • Shapes keep the same form but scale differently.</string>
+
+    <string name="SectionTwoTheoryProperties_11">• Similarity is reflexive, symmetric, and transitive.
+\n • A line parallel to a triangle side forms a similar triangle.
+\n • Triangles are similar by angles, sides, or proportionality tests.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_11">• Find segment MN parallel to trapezoid bases: ∣MN∣=(2ab)/(a+b).
+\n • Use similarity to prove median ratios.
+\n • Applies to triangle and parallelogram relations.</string>
+
+    <string name="SectionTwoQuiz_11">!!! Solve the Quiz !!!</string>
+
+<!--    <string name="SectionThreeTheoryDef_11">• The mean proportional x satisfies a:x=x:b.-->
+<!--\n • It equals the square root of their product.-->
+<!--\n • Used in geometry and right triangles.</string>-->
+
+<!--    <string name="SectionThreeTheoryProperties_11">• In right triangles, altitude is mean proportional between hypotenuse parts.-->
+<!--\n • Each leg is mean proportional to its adjacent part.-->
+<!--\n • Pythagoras: c²=a²+b², and its converse defines right triangles.</string>-->
+
+<!--    <string name="SectionThreeTheoryWorkedExamples_11">• Construct mean proportional using a semicircle.-->
+<!--\n • Perpendicular gives x=sqrt(ab).-->
+<!--\n • Apply proportionality to hypotenuse and altitude.</string>-->
+
+<!--    <string name="SectionThreeQuiz_11">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFourTheoryDef_11">!!! EMPTY !!!</string>-->
+
+<!--    <string name="SectionFourTheoryProperties_11">• Angle bisector divides the opposite side proportionally.-->
+<!--\n • Intersecting chords have equal segment products.-->
+<!--\n • Tangent-secant rule: tangent² = external × total secant.</string>-->
+
+<!--    <string name="SectionFourTheoryWorkedExamples_11">• In right triangles, altitude divides hypotenuse by square ratios.-->
+<!--\n • Circle radius found with r=sqrt(ab+d²).-->
+<!--\n • Combines similarity and power of a point.</string>-->
+
+<!--    <string name="SectionFourQuiz_11">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFiveTheoryDef_11">• Similar polygons have equal angles and proportional sides.-->
+<!--\n • Homothety scales shapes from a center with ratio k.-->
+<!--\n • Figures remain similar under transformation.</string>-->
+
+<!--    <string name="SectionFiveTheoryProperties_11">• Perimeter ratio equals the ratio of similitude.-->
+<!--\n • Similar polygons decompose into similar triangles.-->
+<!--\n • Corresponding vertices connect identical structures.</string>-->
+
+<!--    <string name="SectionFiveTheoryWorkedExamples_11">• Construct an inscribed square using homothety.-->
+<!--\n • Start with a square on one triangle side.-->
+<!--\n • Scale it from the vertex to fit inside.</string>-->
+
+<!--    <string name="SectionFiveQuiz_11">!!! Solve the Quiz !!!</string>-->
+</resources>

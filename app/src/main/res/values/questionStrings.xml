@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="questionOne">question1</string>
+    <string name="Answer1.1">answer1</string>
+    <string name="Answer1.2">answer2</string>
+    <string name="Answer1.3">answer3</string>
+    <string name="Answer1.4">answer4</string>
+
+    <string name="questionTwo">question2</string>
+    <string name="Answer2.1">answer1</string>
+    <string name="Answer2.2">answer2</string>
+    <string name="Answer2.3">answer3</string>
+    <string name="Answer2.4">answer4</string>
+
+    <string name="questionThree">question3</string>
+    <string name="Answer3.1">answer1</string>
+    <string name="Answer3.2">answer2</string>
+    <string name="Answer3.3">answer3</string>
+    <string name="Answer3.4">answer4</string>
+
+    <string name="questionFour">question4</string>
+    <string name="Answer4.1">answer1</string>
+    <string name="Answer4.2">answer2</string>
+    <string name="Answer4.3">answer3</string>
+    <string name="Answer4.4">answer4</string>
+
+    <string name="questionFive">question5</string>
+    <string name="Answer5.1">answer1</string>
+    <string name="Answer5.2">answer2</string>
+    <string name="Answer5.3">answer3</string>
+    <string name="Answer5.4">answer4</string>
+</resources>

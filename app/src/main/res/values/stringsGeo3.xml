@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_10">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_10">• A tangent touches a circle at one point.
+\n • Circles may touch or intersect.
+\n • Concentric circles share the same center.</string>
+
+    <string name="SectionOneTheoryProperties_10">• If R&gt;d, line cuts circle; if R=d, it’s tangent.
+\n • A tangent is perpendicular to the radius.
+\n • Tangent segments from one point are equal.</string>
+
+    <string name="SectionOneTheoryWorkedExamples_10">• Tangent parallel to a line found via perpendicular from center.
+\n • Common tangent between circles uses an auxiliary circle.
+\n • Both cases show geometric construction steps.</string>
+
+    <string name="SectionOneQuiz_10">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_10">• An arc is part of a circle.
+\n • A central angle has its vertex at the center.
+\n • An inscribed angle has its vertex on the circle.</string>
+
+    <string name="SectionTwoTheoryProperties_10">• Arc measure equals its central angle.
+\n • Inscribed angle equals half the central one.
+\n • Angles on the same arc are equal; semicircle gives 90°.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_10">• Theorem proof covers three diameter cases.
+\n • Shows inscribed angle equals half the central one.
+\n • Demonstrates all geometric configurations.</string>
+
+    <string name="SectionTwoQuiz_10">!!! Solve the Quiz !!!</string>
+
+<!--    <string name="SectionThreeTheoryDef_10">!!! EMPTY !!!</string>-->
+
+<!--    <string name="SectionThreeTheoryProperties_10">• The diameter is the longest chord.-->
+<!--\n • Equal chords create equal arcs.-->
+<!--\n • Diameter perpendicular to a chord bisects it.</string>-->
+
+<!--    <string name="SectionThreeTheoryWorkedExamples_10">• Perpendicular diameter proven using congruent triangles.-->
+<!--\n • Parallel chord shown longer than non-parallel one.-->
+<!--\n • Geometry demonstrates chord relationships.</string>-->
+
+<!--    <string name="SectionThreeQuiz_10">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFourTheoryDef_10">• An inscribed polygon has all vertices on a circle.-->
+<!--\n • A circumscribed polygon has all sides tangent to a circle.-->
+<!--\n • Circles define these polygon relationships.</string>-->
+
+<!--    <string name="SectionFourTheoryProperties_10">• Every triangle has one inscribed and one circumscribed circle.-->
+<!--\n • For a quadrilateral, opposite angles sum 180° for a circumscribed circle.-->
+<!--\n • Equal opposite side sums allow an inscribed circle.</string>-->
+
+<!--    <string name="SectionFourTheoryWorkedExamples_10">• Opposite angles summing to 180° prove cyclic quadrilateral.-->
+<!--\n • Equal tangent lengths prove circumscribed quadrilateral.-->
+<!--\n • Demonstrates circle-polygon conditions.</string>-->
+
+<!--    <string name="SectionFourQuiz_10">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFiveTheoryDef_10">• The centroid is where medians meet.-->
+<!--\n • The orthocenter is where altitudes intersect.-->
+<!--\n • Both are special triangle points.</string>-->
+
+<!--    <string name="SectionFiveTheoryProperties_10">• Medians meet at a point two-thirds from each vertex.-->
+<!--\n • Altitudes always meet at one point.-->
+<!--\n • Defines triangle centers and relations.</string>-->
+
+<!--    <string name="SectionFiveTheoryWorkedExamples_10">• Construct triangle using median lengths.-->
+<!--\n • Prove centroid divides median in a 2:1 ratio.-->
+<!--\n • Uses parallelogram and midline reasoning.</string>-->
+
+<!--    <string name="SectionFiveQuiz_10">!!! Solve the Quiz !!!</string>-->
+</resources>

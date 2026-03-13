@@ -25,52 +25,52 @@
     <string name="SectionTwoTheoryQuiz_2">!!! Solve the quiz !!!</string>
 
 
-    <string name="SectionThreeTheoryDef_2">Definitions:\n
-• Significant Digits: all digits known with certainty, plus one doubtful digit.\n
-• For decimals, count from first non-zero digit.\n
-• For whole numbers, zeros at the end may or may not be significant.\n
-• Correct Digits: digits that stay within half a unit of their place value.</string>
+<!--    <string name="SectionThreeTheoryDef_2">Definitions:\n-->
+<!--• Significant Digits: all digits known with certainty, plus one doubtful digit.\n-->
+<!--• For decimals, count from first non-zero digit.\n-->
+<!--• For whole numbers, zeros at the end may or may not be significant.\n-->
+<!--• Correct Digits: digits that stay within half a unit of their place value.</string>-->
 
-    <string name="SectionThreeTheoryProperties_2">Properties:\n
-• Rounding Rules:\n
-1. If first discarded digit &lt; 5, leave unchanged.\n
-2. If &gt; 5, increase last kept digit by 1.\n
-3. If exactly 5 followed by zeros, round to even.\n
-• Scientific Notation: numbers written as a·10ⁿ with 1 ≤ a &lt; 10 to show correct digits clearly.</string>
+<!--    <string name="SectionThreeTheoryProperties_2">Properties:\n-->
+<!--• Rounding Rules:\n-->
+<!--1. If first discarded digit &lt; 5, leave unchanged.\n-->
+<!--2. If &gt; 5, increase last kept digit by 1.\n-->
+<!--3. If exactly 5 followed by zeros, round to even.\n-->
+<!--• Scientific Notation: numbers written as a·10ⁿ with 1 ≤ a &lt; 10 to show correct digits clearly.</string>-->
 
-    <string name="SectionThreeTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
-    <string name="SectionThreeQuiz_2">!!! Solve the quiz !!!</string>
-
-
-    <string name="SectionFourTheoryDef_2">Definitions:\n
-• Bound of Absolute Error (Sum/Diff): h_(a±b) = h_a + h_b.\n
-• Bound of Relative Error:\n
-ε_(a+b) = (h_a + h_b)/(a + b), ε_(a-b) = (h_a + h_b)/|a - b|.\n
-• Subtraction of similar numbers increases relative error.</string>
-
-    <string name="SectionFourTheoryProperties_2">Properties:\n
-Practical Rule for Add/Subtract:\n
-1. Find the least accurate term.\n
-2. Round others to one more decimal.\n
-3. Compute result.\n
-4. Round result to same accuracy as the least precise term.</string>
-
-    <string name="SectionFourTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
-    <string name="SectionFourQuiz_2">!!! Solve the quiz !!!</string>
+<!--    <string name="SectionThreeTheoryWorkedExamples_2">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionThreeQuiz_2">!!! Solve the quiz !!!</string>-->
 
 
-    <string name="SectionFiveTheoryDef_2">Definitions:\n
-• Bound of Absolute Error (Product): h_ab ≈ ah_b + bh_a.\n
-• Bound of Relative Error (Product/Quotient): ε_ab ≈ ε_a + ε_b, ε_(a/b) = ε_a + ε_b.\n
-• Relative error is often found first, then absolute error.</string>
+<!--    <string name="SectionFourTheoryDef_2">Definitions:\n-->
+<!--• Bound of Absolute Error (Sum/Diff): h_(a±b) = h_a + h_b.\n-->
+<!--• Bound of Relative Error:\n-->
+<!--ε_(a+b) = (h_a + h_b)/(a + b), ε_(a-b) = (h_a + h_b)/|a - b|.\n-->
+<!--• Subtraction of similar numbers increases relative error.</string>-->
 
-    <string name="SectionFiveTheoryProperties_2">Properties:\n
-Practical Rule for Multiply/Divide:\n
-1. Identify least accurate factor.\n
-2. Round others to one more significant digit.\n
-3. Compute normally.\n
-4. Round result to match least accurate factor.</string>
+<!--    <string name="SectionFourTheoryProperties_2">Properties:\n-->
+<!--Practical Rule for Add/Subtract:\n-->
+<!--1. Find the least accurate term.\n-->
+<!--2. Round others to one more decimal.\n-->
+<!--3. Compute result.\n-->
+<!--4. Round result to same accuracy as the least precise term.</string>-->
 
-    <string name="SectionFiveTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
-    <string name="SectionFiveQuiz_2">!!! Solve the quiz !!!</string>
+<!--    <string name="SectionFourTheoryWorkedExamples_2">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFourQuiz_2">!!! Solve the quiz !!!</string>-->
+
+
+<!--    <string name="SectionFiveTheoryDef_2">Definitions:\n-->
+<!--• Bound of Absolute Error (Product): h_ab ≈ ah_b + bh_a.\n-->
+<!--• Bound of Relative Error (Product/Quotient): ε_ab ≈ ε_a + ε_b, ε_(a/b) = ε_a + ε_b.\n-->
+<!--• Relative error is often found first, then absolute error.</string>-->
+
+<!--    <string name="SectionFiveTheoryProperties_2">Properties:\n-->
+<!--Practical Rule for Multiply/Divide:\n-->
+<!--1. Identify least accurate factor.\n-->
+<!--2. Round others to one more significant digit.\n-->
+<!--3. Compute normally.\n-->
+<!--4. Round result to match least accurate factor.</string>-->
+
+<!--    <string name="SectionFiveTheoryWorkedExamples_2">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFiveQuiz_2">!!! Solve the quiz !!!</string>-->
 </resources>

@@ -38,7 +38,7 @@ public class GeometrySection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.algebra_section);
+        setContentView(R.layout.geometry_section);
 
         AlgebraSections sectionAlg = AlgebraSections.detachFrom(getIntent());
         bindText(sectionAlg);

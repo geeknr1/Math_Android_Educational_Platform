@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_8">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_8">• Geometry studies shapes and space.
+\n • Points, lines, and planes are basic ideas.
+\n • Figures are made of points and follow axioms and theorems.</string>
+
+    <string name="SectionOneTheoryProperties_8">• Through two points passes one line.
+\n • Distance is always positive or zero.
+\n • Triangle sides obey the triangle inequality.</string>
+
+    <string name="SectionOneTheoryWorkedExamples_8">• Proofs show how distances relate in triangles.
+\n • Example: ∣AC∣≥∣AB∣−∣BC∣ and ∣AC∣&lt;∣AB∣+∣BC∣ for non-collinear points.</string>
+
+    <string name="SectionOneQuiz_8">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_8">• A segment joins two endpoints.
+\n • A ray starts at one point and goes on endlessly.
+\n • Angles, polygons, and circles are key geometric figures.</string>
+
+    <string name="SectionTwoTheoryProperties_8">• A line divides a plane into two parts.
+\n • Vertical angles are equal.
+\n • The sum of adjacent angles equals 180°.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_8">!!! Worked Examples !!!</string>
+
+    <string name="SectionTwoQuiz_8">!!! Solve the Quiz !!!</string>
+</resources>

@@ -10,6 +10,8 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import com.example.license_project_2.Quiz;
+import com.example.license_project_2.Question;
 
 import androidx.appcompat.app.AppCompatActivity;
 

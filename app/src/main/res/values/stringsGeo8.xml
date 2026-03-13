@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="app_name_15">License_Project_2</string>-->
+
+<!--    <string name="SectionOneTheoryDef_15">• A regular polygon has equal sides and angles.-->
+<!--\n • Its centre is intersection of inscribed and circumscribed circles.-->
+<!--\n • Apothem = perpendicular to side; radius = centre to vertex.</string>-->
+
+<!--    <string name="SectionOneTheoryProperties_15">• Interior angle α=(180°*(n−2))/n.-->
+<!--\n • Inscribed and circumscribed circles share the same centre.-->
+<!--\n • Area = ½ × perimeter × apothem = ½ × n × R² × sin(360°/n).-->
+<!--\n • Side length s=2R*sin(180/n).</string>-->
+
+<!--    <string name="SectionOneTheoryWorkedExamples_15">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionOneQuiz_15">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionTwoTheoryDef_15">• Pi (π) ≈ 3.1416, ratio of circumference to diameter.</string>-->
+
+<!--    <string name="SectionTwoTheoryProperties_15">• Circumference ratios = radius or diameter ratios.-->
+<!--\n • C=πD=2πR, where D->diameter of the circle, R->circle radius, C->circle length.-->
+<!--\n • Arc length l=(πR/180°)*n° for central angle n°.</string>-->
+
+<!--    <string name="SectionTwoTheoryWorkedExamples_15">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionTwoQuiz_15">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionThreeTheoryDef_15">• Sector: The portion of a circle bounded by two radii and one of the arcs they intercept.-->
+<!--\n • Segment: The region of a circle bounded by a chord and the arc subtended by that chord.</string>-->
+<!--    <string name="SectionThreeTheoryProperties_15">• Circle Area Formula: Computed by the formula S=πR^2.-->
+<!--\n • Area of a Sector: Calculated as S=[(πR^2)/360∘]*α, where α is the degree measure of the central angle.-->
+<!--\n • Area of a Segment: Computed by S=[(πR^2)/360∘]*α±SΔ, where SΔ is the area of the triangle formed by the centre and the chord's endpoints.</string>-->
+<!--    <string name="SectionThreeTheoryWorkedExamples_15">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionThreeQuiz_15">!!! Solve the Quiz !!!</string>-->
+</resources>

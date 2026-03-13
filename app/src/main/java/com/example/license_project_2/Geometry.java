@@ -30,13 +30,15 @@ public class Geometry extends AppCompatActivity {
         choose = findViewById(R.id.chapter);
         choose.setVisibility(VISIBLE);
 
-        spinnerSetup(R.id.spinnerChapter1Alg, R.array.Whole_Numbers_And_Fractions);
-        spinnerSetup(R.id.spinnerChapter2Alg, R.array.Approximate_Calculations);
-        spinnerSetup(R.id.spinnerChapter3Alg, R.array.Powers_and_Roots___Real_Numbers);
-        spinnerSetup(R.id.spinnerChapter4Alg, R.array.Expressions);
-        spinnerSetup(R.id.spinnerChapter5Alg, R.array.Equations_and_Inequalities);
-        spinnerSetup(R.id.spinnerChapter6Alg, R.array.Functions_and_Graphs);
-        spinnerSetup(R.id.spinnerChapter7Alg, R.array.Arithmetic_and_Geometric_Progressions___Logarithms);
+        spinnerSetup(R.id.spinnerChapter1Geo, R.array.Fundamental_Concepts_of_Geometry_and_Geometric_Figures);
+        spinnerSetup(R.id.spinnerChapter2Geo, R.array.Straight_Lines);
+        spinnerSetup(R.id.spinnerChapter3Geo, R.array.Circles);
+        spinnerSetup(R.id.spinnerChapter4Geo, R.array.Similarity_of_Polygons);
+        spinnerSetup(R.id.spinnerChapter5Geo, R.array.Transformation_of_Figures);
+        spinnerSetup(R.id.spinnerChapter6Geo, R.array.Vectors_in_the_Plane_and_Trigonometric_Functions_of_the_Angle);
+        spinnerSetup(R.id.spinnerChapter7Geo, R.array.Areas_of_Polygons);
+        spinnerSetup(R.id.spinnerChapter8Geo, R.array.Regular_Polygons___Length_of_Circumference___Area_of_a_Circle);
+        spinnerSetup(R.id.spinnerChapter9Geo, R.array.Fundamentals_of_Solid_Geometry);
 
         back = findViewById(R.id.backToTutorial_2);
         back.setVisibility(VISIBLE);

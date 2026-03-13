@@ -29,53 +29,53 @@ Divisibility rules:\n
     <string name="SectionTwoQuiz">!!! Solve the quiz !!!</string>
 
 
-    <string name="SectionThreeTheoryDef">Definitions:\n
-• Common Divisor: divides all given numbers.\n
-• G.C.D.: largest common divisor.\n
-• Relatively Prime: G.C.D. = 1.\n
-• L.C.M.: smallest common multiple.</string>
+<!--    <string name="SectionThreeTheoryDef">Definitions:\n-->
+<!--• Common Divisor: divides all given numbers.\n-->
+<!--• G.C.D.: largest common divisor.\n-->
+<!--• Relatively Prime: G.C.D. = 1.\n-->
+<!--• L.C.M.: smallest common multiple.</string>-->
 
-    <string name="SectionThreeTheoryProperties">Relatively prime numbers have these properties:\n
-1. If a number is divisible by two relatively prime numbers, it’s divisible by their product.\n
-2. If ab is divisible by c and b, c are relatively prime, then a is divisible by c.</string>
+<!--    <string name="SectionThreeTheoryProperties">Relatively prime numbers have these properties:\n-->
+<!--1. If a number is divisible by two relatively prime numbers, it’s divisible by their product.\n-->
+<!--2. If ab is divisible by c and b, c are relatively prime, then a is divisible by c.</string>-->
 
-    <string name="SectionThreeTheoryWorkedExamples">!!! Worked Examples !!!</string>
-    <string name="SectionThreeQuiz">!!! Solve the quiz !!!</string>
-
-
-    <string name="SectionFourTheoryDef">A fraction is the result of dividing two whole numbers a and b (b ≠ 0), written as a/b.</string>
-
-    <string name="SectionFourTheoryProperties">Properties:\n
-◦ a/b = c/d if ad = bc.\n
-◦ Multiplying or dividing numerator and denominator by the same number doesn’t change its value.\n
-◦ Addition: a/b + c/d = (ad + bc)/bd.\n
-◦ Division: (a/b) ÷ (c/d) = ad/bc.</string>
-
-    <string name="SectionFourTheoryWorkedExamples">!!! Worked Examples !!!</string>
-    <string name="SectionFourQuiz">!!! Solve the quiz !!!</string>
+<!--    <string name="SectionThreeTheoryWorkedExamples">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionThreeQuiz">!!! Solve the quiz !!!</string>-->
 
 
-    <string name="SectionFiveTheoryDef">A rational number can be written as a/b, where a and b are integers and b ≠ 0. All whole numbers and fractions are rational.</string>
+<!--    <string name="SectionFourTheoryDef">A fraction is the result of dividing two whole numbers a and b (b ≠ 0), written as a/b.</string>-->
 
-    <string name="SectionFiveTheoryProperties">Decimal forms:\n
-◦ Terminating: denominator has only 2s or 5s.\n
-◦ Nonterminating: denominator has other primes.\n
-◦ Periodic: digits or blocks repeat infinitely.</string>
+<!--    <string name="SectionFourTheoryProperties">Properties:\n-->
+<!--◦ a/b = c/d if ad = bc.\n-->
+<!--◦ Multiplying or dividing numerator and denominator by the same number doesn’t change its value.\n-->
+<!--◦ Addition: a/b + c/d = (ad + bc)/bd.\n-->
+<!--◦ Division: (a/b) ÷ (c/d) = ad/bc.</string>-->
 
-    <string name="SectionFiveTheoryWorkedExamples">!!! Worked Examples !!!</string>
-    <string name="SectionFiveQuiz">!!! Solve the quiz !!!</string>
+<!--    <string name="SectionFourTheoryWorkedExamples">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFourQuiz">!!! Solve the quiz !!!</string>-->
 
 
-    <string name="SectionSixTheoryDef">Numbers are shown on a line: positives right, negatives left.\n
-|a| (modulus) means distance from zero:\n
-◦ |a| = a if a ≥ 0.\n
-◦ |a| = -a if a &lt; 0.</string>
+<!--    <string name="SectionFiveTheoryDef">A rational number can be written as a/b, where a and b are integers and b ≠ 0. All whole numbers and fractions are rational.</string>-->
 
-    <string name="SectionSixTheoryProperties">Modulus properties:\n
-◦ |a| ≥ 0 and |a| = 0 only for a=0.\n
-◦ |a| = |-a|.\n
-◦ |ab| = |a||b|, |a/b| = |a|/|b| (b ≠ 0).</string>
+<!--    <string name="SectionFiveTheoryProperties">Decimal forms:\n-->
+<!--◦ Terminating: denominator has only 2s or 5s.\n-->
+<!--◦ Nonterminating: denominator has other primes.\n-->
+<!--◦ Periodic: digits or blocks repeat infinitely.</string>-->
 
-    <string name="SectionSixTheoryWorkedExamples">!!! Worked Examples !!!</string>
-    <string name="SectionSixQuiz">!!! Solve the quiz !!!</string>
+<!--    <string name="SectionFiveTheoryWorkedExamples">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFiveQuiz">!!! Solve the quiz !!!</string>-->
+
+
+<!--    <string name="SectionSixTheoryDef">Numbers are shown on a line: positives right, negatives left.\n-->
+<!--|a| (modulus) means distance from zero:\n-->
+<!--◦ |a| = a if a ≥ 0.\n-->
+<!--◦ |a| = -a if a &lt; 0.</string>-->
+
+<!--    <string name="SectionSixTheoryProperties">Modulus properties:\n-->
+<!--◦ |a| ≥ 0 and |a| = 0 only for a=0.\n-->
+<!--◦ |a| = |-a|.\n-->
+<!--◦ |ab| = |a||b|, |a/b| = |a|/|b| (b ≠ 0).</string>-->
+
+<!--    <string name="SectionSixTheoryWorkedExamples">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionSixQuiz">!!! Solve the quiz !!!</string>-->
 </resources>

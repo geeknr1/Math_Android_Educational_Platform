@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_13">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_13">• A vector is a directed segment with start and end points.
+\n • Its length is the distance between those points.
+\n • Vectors can be equal, opposite, or null.</string>
+
+    <string name="SectionOneTheoryProperties_13">• Vectors add by triangle or parallelogram rule.
+\n • Addition is associative and commutative.
+\n • Subtraction uses the opposite of a vector.</string>
+
+    <string name="SectionOneTheoryWorkedExamples_13">• Parallelogram shows commutativity of vector addition.
+\n • Vector subtraction equals the vector from end of b to end of a.
+\n • Demonstrates geometric vector rules.</string>
+
+    <string name="SectionOneQuiz_13">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_13">• Multiplying a vector by x changes its length.
+\n • Direction stays the same for x&gt;0 and reverses for x&lt;0.
+\n • Defines scaling of a vector.</string>
+
+    <string name="SectionTwoTheoryProperties_13">• Vector multiplication follows associative and distributive laws.
+\n • Two vectors are collinear if one is a scalar multiple of the other.
+\n • Expresses alignment through scalar ratios.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_13">• Using vector algebra, medians meet at one point.
+\n • The centroid divides each median in a 2:1 ratio.
+\n • Proof uses addition and multiplication of vectors.</string>
+
+    <string name="SectionTwoQuiz_13">!!! Solve the Quiz !!!</string>
+
+<!--    <string name="SectionThreeTheoryDef_13">• A unit vector has length one.-->
+<!--\n • Any vector can be written as r=xi+yj.-->
+<!--\n • Components show direction along axes.</string>-->
+
+<!--    <string name="SectionThreeTheoryProperties_13">• Vector length: ∣r∣=√(x²+y²).-->
+<!--\n • Sums of vectors add by their coordinates.-->
+<!--\n • Coordinate form simplifies operations.</string>-->
+
+<!--    <string name="SectionThreeTheoryWorkedExamples_13">• For A(x,y) and B(x′,y′), AB=(x′−x, y′−y).-->
+<!--\n • Formula defines coordinates of a vector.-->
+<!--\n • Used for position and displacement.</string>-->
+
+<!--    <string name="SectionThreeQuiz_13">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFourTheoryDef_13">• A directed angle measures rotation.-->
+<!--\n • Positive means anticlockwise, negative clockwise.-->
+<!--\n • Zero means no rotation.</string>-->
+
+<!--    <string name="SectionFourTheoryProperties_13">• A rotation is defined by its center and angle.-->
+<!--\n • Rays coincide if β=α+360°×n.-->
+<!--\n • Angles repeat every full turn.</string>-->
+
+<!--    <string name="SectionFourTheoryWorkedExamples_13">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFourQuiz_13">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFiveTheoryDef_13">• Sine is the y-coordinate of a unit circle point.-->
+<!--\n • Cosine is the x-coordinate.-->
+<!--\n • Tangent equals sine divided by cosine.</string>-->
+
+<!--    <string name="SectionFiveTheoryProperties_13">• Sine is odd; cosine is even.-->
+<!--\n • sin²α+cos²α=1.-->
+<!--\n • 1+tan²α=1/(cos²α).</string>-->
+
+<!--    <string name="SectionFiveTheoryWorkedExamples_13">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFiveQuiz_13">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionSixTheoryDef_13">• sinα = opposite/hypotenuse.-->
+<!--\n • cosα = adjacent/hypotenuse.-->
+<!--\n • tanα = opposite/adjacent.</string>-->
+
+<!--    <string name="SectionSixTheoryProperties_13">• sin(90°−α)=cosα, cos(90°−α)=sinα.-->
+<!--\n • sin(180°−α)=sinα, cos(180°−α)=−cosα.-->
+<!--\n • Shows complementary and supplementary relations.</string>-->
+
+<!--    <string name="SectionSixTheoryWorkedExamples_13">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionSixQuiz_13">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionSevenTheoryDef_13">• Theorem of Sines: a/sinα=b/sinβ=c/sinγ=2R.-->
+<!--\n • Theorem of Cosines: a²=b²+c²−2bc·cosα.-->
+<!--\n • Relates sides and angles of a triangle.</string>-->
+
+<!--    <string name="SectionSevenTheoryProperties_13">• In a parallelogram, diagonal squares sum equals side squares.-->
+<!--\n • The greater side lies opposite the greater angle.-->
+<!--\n • Expresses side-angle relationships.</string>-->
+
+<!--    <string name="SectionSevenTheoryWorkedExamples_13">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionSevenQuiz_13">!!! Solve the Quiz !!!</string>-->
+</resources>

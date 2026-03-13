@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="app_name_14">License_Project_2</string>-->
+
+<!--    <string name="SectionOneTheoryDef_14">• A polygonal region includes a polygon and its interior.-->
+<!--\n • Interior points belong to the region; exterior points do not.-->
+<!--\n • Figures with equal area are equivalent, not necessarily congruent.</string>-->
+
+<!--    <string name="SectionOneTheoryProperties_14">• Every polygon has a positive area.-->
+<!--\n • Congruent polygons have equal areas.-->
+<!--\n • Total area of a figure equals sum of its non-overlapping parts.-->
+<!--\n • Area of a square is the side squared.-->
+<!--\n • A part of a figure has area ≤ the whole figure.</string>-->
+
+<!--    <string name="SectionOneTheoryWorkedExamples_14">• Subdivide complex polygons to compute total area.-->
+<!--\n • Area depends on the unit of measurement.-->
+<!--\n • Changing units changes numerical value but not physical space.</string>-->
+
+<!--    <string name="SectionOneQuiz_14">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionTwoTheoryDef_14">• Base: Any chosen side of a figure.-->
+<!--\n • Altitude: Perpendicular from opposite side or vertex to the base.-->
+<!--\n • Used to define areas of triangles and parallelograms.</string>-->
+
+<!--    <string name="SectionTwoTheoryProperties_14">• Rectangle area = base × altitude.-->
+<!--\n • Triangle area = ½ × base × altitude.-->
+<!--\n • Parallelogram area = base × altitude or a*b*sinα.-->
+<!--\n • Triangle area using sides and angle = ½ × b*c*sinα.-->
+<!--\n • Inscribed/circumscribed triangle area: S=pr or S=(a*b*c)/(4R).-->
+<!--\n • Heron's formula: S=√(p(p−a)(p−b)(p−c)).-->
+<!--\n • Trapezoid area = ½ × sum of bases × altitude.</string>-->
+
+<!--    <string name="SectionTwoTheoryWorkedExamples_14">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionTwoQuiz_14">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionThreeTheoryDef_14">• Ratio of similitude (k) = corresponding side lengths ratio of similar polygons.</string>-->
+
+<!--    <string name="SectionThreeTheoryProperties_14">• Compute area by dividing polygons into triangles.-->
+<!--\n • Areas of similar polygons ratio = k².-->
+<!--\n • Convex quadrilateral area = ½ × product of diagonals × sinα.</string>-->
+
+<!--    <string name="SectionThreeTheoryWorkedExamples_14">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionThreeQuiz_14">!!! Solve the Quiz !!!</string>-->
+</resources>

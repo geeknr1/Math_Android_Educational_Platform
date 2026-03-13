@@ -37,6 +37,30 @@
             android:textSize="20sp"
             android:singleLine="false"
             android:textColor="@color/black"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/imageDefOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:spacing="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageDefTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:spacing="15dp"/>
+        </LinearLayout>
+
         <TextView
             android:id="@+id/sectionProperties"
             android:layout_width="wrap_content"
@@ -44,6 +68,24 @@
             android:textSize="20sp"
             android:singleLine="false"
             android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imagePropertiesOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/imagePropertiesTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/sectionWorkedExamples"
             android:layout_width="wrap_content"
@@ -51,6 +93,7 @@
             android:textSize="20sp"
             android:singleLine="false"
             android:textColor="@color/black"/>
+
         <TextView
             android:id="@+id/sectionQuiz"
             android:layout_width="wrap_content"

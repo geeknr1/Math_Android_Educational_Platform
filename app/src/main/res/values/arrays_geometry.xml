@@ -36,6 +36,7 @@
 
     <string-array name="Transformation_of_Figures">
         <item>Transformation_of_Figures</item>
+        <item>Examples_of_Transformations_of_Figures</item>
         <item>Motion___Congruence_of_Figures</item>
         <item>Transformation_of_Similitude</item>
     </string-array>
@@ -46,7 +47,7 @@
         <item>Multiplication_of_a_Vector_by_a_Number</item>
         <item>Coordinates_of_a_Vector_in_the_Plane</item>
         <item>Rotations_Through_Angles_of_Any_Measure</item>
-        <item>Trigonometric_Functions___the_Sine_Cosine_and_Tangent_of_an_Angle)</item>
+        <item>Trigonometric_Functions___the_Sine_Cosine_and_Tangent_of_an_Angle</item>
         <item>Relationships_Between_the_Sides_and_Angles_in_a_Right_Triangle</item>
         <item>Metric_Relationships_in_an_Arbitrary_Triangle___Theorem_of_Sines_and_Theorem_of_Cosines</item>
 
@@ -70,7 +71,7 @@
         <item>Fundamentals_of_Solid_Geometry</item>
         <item>Axioms_of_Solid_Geometry</item>
         <item>Straight_Lines_and_Planes_in_Space</item>
-        <item>Polyhedrons___Right Prism__Rectangular_Parallelepiped__Pyramid_and_Regular_Pyramid</item>
+        <item>Polyhedrons___Right_Prism__Rectangular_Parallelepiped__Pyramid_and_Regular_Pyramid</item>
         <item>Solids_of_Revolution___Cylinder__Cone_and_Ball</item>
     </string-array>
 

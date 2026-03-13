@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_9">License_Project_2</string>
+
+    <string name="SectionOneTheoryDef_9">• A triangle has three sides and angles.
+\n • Includes vertices, sides, and special lines.
+\n • Triangles differ by sides, angles, and congruence.</string>
+
+    <string name="SectionOneTheoryProperties_9">• Every triangle has bisectors, medians, and altitudes.
+\n • Larger sides face larger angles.
+\n • The exterior angle is greater than any interior one.</string>
+
+    <string name="SectionOneTheoryWorkedExamples_9">• Base angles in isosceles triangles are equal.
+\n • The median to the base is also a bisector and altitude.
+\n • Only one perpendicular can be drawn from a point to a line.</string>
+
+    <string name="SectionOneQuiz_9">!!! Solve the Quiz !!!</string>
+
+    <string name="SectionTwoTheoryDef_9">• Geometric construction uses only a ruler and compass.
+\n • The ruler draws lines, the compass marks circles and segments.
+\n • Problems are solved through precise constructions.</string>
+
+    <string name="SectionTwoTheoryProperties_9">• The ruler draws lines but doesn’t measure lengths.
+\n • The compass transfers distances between points.
+\n • Both tools define classic constructions.</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_9">• Triangle construction: Draw base and intersect circles.
+\n • Angle bisector: Use equal-radius arcs from the vertex.
+\n • Find intersection to draw bisecting ray.</string>
+
+    <string name="SectionTwoQuiz_9">!!! Solve the Quiz !!!</string>
+
+<!--    <string name="SectionThreeTheoryDef_9">• Parallel lines never meet.-->
+<!--\n • A transversal cuts two lines at different points.-->
+<!--\n • Creates alternate and corresponding angles.</string>-->
+
+<!--    <string name="SectionThreeTheoryProperties_9">• Through a point, one parallel can be drawn to a line.-->
+<!--\n • Lines parallel to the same line are also parallel.-->
+<!--\n • In a triangle, angles sum to 180°; polygon sums follow 180°×(n−2).</string>-->
+
+<!--    <string name="SectionThreeTheoryWorkedExamples_9">• Proved parallel lines by equal alternate angles.-->
+<!--\n • Triangle angle sum shown using a parallel line.-->
+<!--\n • Exterior angle helps confirm equality.</string>-->
+
+<!--    <string name="SectionThreeQuiz_9">!!! Solve the Quiz !!!</string>-->
+
+<!--    <string name="SectionFourTheoryDef_9">• Parallelogram has opposite sides parallel.-->
+<!--\n • Rectangle, rhombus, and square are special cases.-->
+<!--\n • Trapezoid has one pair of parallel sides.</string>-->
+
+<!--    <string name="SectionFourTheoryProperties_9">• Parallelogram sides and angles are equal.-->
+<!--\n • Rhombus diagonals are perpendicular and bisect angles.-->
+<!--\n • Triangle and trapezoid midlines are parallel and half-lengths.</string>-->
+
+<!--    <string name="SectionFourTheoryWorkedExamples_9">• Parallelogram sides proved equal via congruent triangles.-->
+<!--\n • Thales theorem used to divide a segment equally.-->
+<!--\n • Diagonal helps demonstrate equal relationships.</string>-->
+
+<!--    <string name="SectionFourQuiz_9">!!! Solve the Quiz !!!</string>-->
+</resources>

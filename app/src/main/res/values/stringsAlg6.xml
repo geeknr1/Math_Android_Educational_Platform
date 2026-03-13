@@ -12,24 +12,24 @@
     <string name="SectionTwoTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
     <string name="SectionTwoQuiz_6">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionThreeTheoryDef_6">Inverse: exists if each y has unique x. f(x)↔g(x). Monotone functions have inverses. Find inverse by solving for x in terms of y.</string>
-    <string name="SectionThreeTheoryProperties_6">Graphs symmetric about y=x. M(x₀,y₀) ↔ N(y₀,x₀). Increasing↔increasing, decreasing↔decreasing. Used for checking inverses.</string>
-    <string name="SectionThreeTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
-    <string name="SectionThreeQuiz_6">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionThreeTheoryDef_6">Inverse: exists if each y has unique x. f(x)↔g(x). Monotone functions have inverses. Find inverse by solving for x in terms of y.</string>-->
+<!--    <string name="SectionThreeTheoryProperties_6">Graphs symmetric about y=x. M(x₀,y₀) ↔ N(y₀,x₀). Increasing↔increasing, decreasing↔decreasing. Used for checking inverses.</string>-->
+<!--    <string name="SectionThreeTheoryWorkedExamples_6">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionThreeQuiz_6">!!! Solve the Quiz !!!</string>-->
 
-    <string name="SectionFourTheoryDef_6">Basic: Linear y=kx+b, Inverse y=k/x, Quadratic y=ax²+bx+c, Power y=xⁿ, Logarithmic y=logₐx. Shapes: line, hyperbola, parabola.</string>
-    <string name="SectionFourTheoryProperties_6">|f(x)| reflects negative part over x-axis. Linear/quadratic shape from coefficients. Hyperbola position → sign of k. Parabola opens up (a&gt;0) or down (a&lt;0).</string>
-    <string name="SectionFourTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
-    <string name="SectionFourQuiz_6">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionFourTheoryDef_6">Basic: Linear y=kx+b, Inverse y=k/x, Quadratic y=ax²+bx+c, Power y=xⁿ, Logarithmic y=logₐx. Shapes: line, hyperbola, parabola.</string>-->
+<!--    <string name="SectionFourTheoryProperties_6">|f(x)| reflects negative part over x-axis. Linear/quadratic shape from coefficients. Hyperbola position → sign of k. Parabola opens up (a&gt;0) or down (a&lt;0).</string>-->
+<!--    <string name="SectionFourTheoryWorkedExamples_6">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFourQuiz_6">!!! Solve the Quiz !!!</string>-->
 
-    <string name="SectionFiveTheoryDef_6">Solve f(x)=0 → find x-intercepts. g(x)=h(x) → intersection points. Circle: x²+y²=r². Systems: intersections of graphs; lines → one, none, or ∞ solutions.</string>
-    <string name="SectionFiveTheoryProperties_6">!!! Empty !!!</string>
-    <string name="SectionFiveTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
-    <string name="SectionFiveQuiz_6">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionFiveTheoryDef_6">Solve f(x)=0 → find x-intercepts. g(x)=h(x) → intersection points. Circle: x²+y²=r². Systems: intersections of graphs; lines → one, none, or ∞ solutions.</string>-->
+<!--    <string name="SectionFiveTheoryProperties_6">!!! Empty !!!</string>-->
+<!--    <string name="SectionFiveTheoryWorkedExamples_6">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionFiveQuiz_6">!!! Solve the Quiz !!!</string>-->
 
-    <string name="SectionSixTheoryDef_6">Solve f(x)&gt;0 → x where graph above axis. Systems: intersection of solution sets. In 2 vars → half-planes; system → overlap region.</string>
-    <string name="SectionSixTheoryProperties_6">!!! Empty !!!</string>
-    <string name="SectionSixTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
-    <string name="SectionSixQuiz_6">!!! Solve the Quiz !!!</string>
+<!--    <string name="SectionSixTheoryDef_6">Solve f(x)&gt;0 → x where graph above axis. Systems: intersection of solution sets. In 2 vars → half-planes; system → overlap region.</string>-->
+<!--    <string name="SectionSixTheoryProperties_6">!!! Empty !!!</string>-->
+<!--    <string name="SectionSixTheoryWorkedExamples_6">!!! Worked Examples !!!</string>-->
+<!--    <string name="SectionSixQuiz_6">!!! Solve the Quiz !!!</string>-->
 
 </resources>

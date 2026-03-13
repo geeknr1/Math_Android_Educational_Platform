@@ -37,6 +37,13 @@ public class Tutorial extends AppCompatActivity {
             }
         });
 
+        geometry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Tutorial.this, Geometry.class));
+            }
+        });
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
