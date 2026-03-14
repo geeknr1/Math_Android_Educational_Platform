@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gamesm"
     tools:context=".Games">
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="20dp">
 
     <LinearLayout
     android:layout_width="match_parent"
@@ -17,70 +25,87 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
 
-    <Button
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAKE YOUR PICK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+    <TextView
         android:id="@+id/GameOne"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Game 1"
-        android:backgroundTint="#ff0000"
+        android:gravity="center"
+        android:text="Math Roulette"
+        android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
-    <Button
+    <TextView
         android:id="@+id/GameTwo"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Game 2"
-        android:backgroundTint="#ff0000"
+        android:gravity="center"
+        android:text="Geo Dodge"
+        android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
-    <Button
+    <TextView
         android:id="@+id/GameThree"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Game 3"
-        android:backgroundTint="#ff0000"
+        android:gravity="center"
+        android:text="Result \nShoot"
+        android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
-    <Button
+    <TextView
         android:id="@+id/GameFour"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Game 4"
-        android:backgroundTint="#ff0000"
+        android:gravity="center"
+        android:text="Math \nComplete"
+        android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
-    <Button
+    <TextView
         android:id="@+id/Back"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Back"
-        android:backgroundTint="#ff0000"
+        android:gravity="center"
+        android:text="BACK"
+        android:background="@drawable/rounded_button"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 </ScrollView>

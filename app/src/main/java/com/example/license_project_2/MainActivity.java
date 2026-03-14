@@ -13,12 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private TextView welcome;
-    private Button tutorial;
-    private Button games;
-    private Button quit;
+    private TextView tutorial;
+    private TextView games;
+    private TextView quit;
     protected void onCreate(Bundle savedInstanceState){
-        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
+        //getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         welcome = findViewById(R.id.welcomeMessage);

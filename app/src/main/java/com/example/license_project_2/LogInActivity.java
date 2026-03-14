@@ -42,12 +42,7 @@ public class LogInActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!validateUsername() | !validatePassword()){
-
-                } else{
                     checkUser();
-                    startActivity(new Intent(LogInActivity.this, MainActivity.class));
-                }
             }
         });
 
@@ -98,7 +93,8 @@ public class LogInActivity extends AppCompatActivity {
                 if(snapshot.exists()){
                     loginUsername.setError(null);
                     DataSnapshot userSnapshot = snapshot.getChildren().iterator().next();
-                    String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
+//                    String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
+                    String passwordFromDB = userSnapshot.child("password").getValue(String.class);
 
                     if(Objects.equals(passwordFromDB, userPassword)){
                         loginUsername.setError(null);

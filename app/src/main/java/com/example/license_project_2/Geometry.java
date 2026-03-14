@@ -20,7 +20,7 @@ public class Geometry extends AppCompatActivity {
     private Button back;
 
     protected void onCreate(Bundle savedInstanceState){
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.geometry);
 

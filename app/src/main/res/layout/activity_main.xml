@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
+    android:paddingRight="16dp"
+    android:background="@drawable/digits">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
     <TextView
         android:id="@+id/welcomeMessage"
         android:gravity="center_horizontal"
@@ -17,47 +32,60 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25sp"
+        android:textColor="@color/black"
         android:text="Welcome To Our ELearning Online Educational Platform" />
 
-
-    <Button
+    <TextView
         android:id="@+id/Tutorial"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
         android:layout_gravity="center"
         android:text="TUTORIAL"
-        android:backgroundTint="#0000ff"
-        android:textSize="20sp"
+        android:background="@drawable/rounded_button"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="358dp"/>
 
-    <Button
-        android:id="@+id/Games"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:text="GAMES"
-        android:backgroundTint="#ff0000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Games"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="GAMES"
+                android:background="@drawable/rounded_button"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="358dp"/>
 
-    <Button
+    <TextView
         android:id="@+id/Quit"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
         android:layout_gravity="center"
         android:text="QUIT"
-        android:backgroundTint="@color/white"
-        android:textSize="24sp"
+        android:background="@drawable/rounded_button_3"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
 
 </LinearLayout>

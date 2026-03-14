@@ -6,18 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Games extends AppCompatActivity {
-    private Button gameOne;
-    private Button gameTwo;
-    private Button gameThree;
-    private Button gameFour;
-    private Button back;
+    private TextView gameOne;
+    private TextView gameTwo;
+    private TextView gameThree;
+    private TextView gameFour;
+    private TextView back;
 
     protected void onCreate(Bundle savedInstanceState){
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.games);
 

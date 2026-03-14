@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:id="@+id/scrollRoot">
+    android:id="@+id/scrollRoot"
+    android:background="@drawable/geometrym">
 
 
 
@@ -16,19 +17,6 @@
         android:paddingBottom="16dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
-
-        <Button
-            android:id="@+id/back"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:text="Back"
-            android:backgroundTint="#ff0000"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/sectionDefinition"
@@ -149,63 +137,383 @@
             android:textColor="@color/black"/>
 
 
-        <RadioGroup
-            android:id="@+id/radioAlg"
-            android:layout_marginTop="80dp"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <RadioButton
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Definition"
-                android:id="@+id/definition"
-                android:textSize="15sp"
-                android:textColor="@android:color/white"
-                android:checked="false"
-                android:layout_gravity="center_horizontal"
-                android:background="#00008B"/>
-
-            <RadioButton
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Properties"
-                android:id="@+id/properties"
-                android:layout_gravity="center_horizontal"
-                android:checked="false"
-                android:textColor="@android:color/white"
-                android:textSize="15sp"
-                android:background="#00008B"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"/>
-
-            <RadioButton
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Worked Examples"
-                android:id="@+id/workedExamples"
-                android:layout_gravity="center_horizontal"
-                android:checked="false"
-                android:textSize="15sp"
-                android:textColor="@android:color/white"
-                android:background="#00008B"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"/>
-
-            <RadioButton
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Quiz"
-                android:id="@+id/quiz"
-                android:layout_gravity="center_horizontal"
-                android:checked="false"
-                android:textSize="15sp"
-                android:textColor="@android:color/white"
-                android:background="#00008B"
+            <Button
+                android:id="@+id/previous"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Prev"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
-        </RadioGroup>
+            <Button
+                android:id="@+id/current"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Current"
+                android:backgroundTint="#ff8400"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/firstQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonAnswerOne"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerTwo"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff8400"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerThree"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/buttonAnswerFour"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/secondQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonAnswerOne_2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerTwo_2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff8400"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerThree_2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/buttonAnswerFour_2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thirdQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonAnswerOne_3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerTwo_3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff8400"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerThree_3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/buttonAnswerFour_3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fourthQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonAnswerOne_4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerTwo_4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff8400"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerThree_4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/buttonAnswerFour_4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fifthQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="false"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonAnswerOne_5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerTwo_5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff8400"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAnswerThree_5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/buttonAnswerFour_5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#0000ff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Back"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

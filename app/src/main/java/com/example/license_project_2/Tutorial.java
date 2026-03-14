@@ -6,26 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Tutorial extends AppCompatActivity {
-    private Button roadMap;
-    private Button algebra;
-    private Button geometry;
-    private Button back;
+    private TextView takeYourPick;
+    private TextView algebra;
+    private TextView geometry;
+    private TextView back;
 
     protected void onCreate(Bundle savedInstanceState){
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tutorial);
 
-        roadMap = findViewById(R.id.RoadMap);
+        takeYourPick = findViewById(R.id.PickSubject);
         algebra = findViewById(R.id.Algebra);
         geometry = findViewById(R.id.Geometry);
         back = findViewById(R.id.Back);
 
-        roadMap.setVisibility(VISIBLE);
+        takeYourPick.setVisibility(VISIBLE);
         algebra.setVisibility(VISIBLE);
         geometry.setVisibility(VISIBLE);
         back.setVisibility(VISIBLE);

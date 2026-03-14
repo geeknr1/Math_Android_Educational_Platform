@@ -10,18 +10,17 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import com.example.license_project_2.Quiz;
-import com.example.license_project_2.Question;
+//import com.example.license_project_2.Quiz;
+//import com.example.license_project_2.Question;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AlgebraSection extends AppCompatActivity {
 
-    private RadioGroup algebraSubject;
-    private RadioButton definition;
-    private RadioButton properties;
-    private RadioButton workedExamples;
-    private RadioButton quiz;
+    private int sectionIndex = 0;
+    private Button previous;
+    private Button current;
+    private Button next;
     private TextView theoryDefinition;
     private TextView theoryProperties;
     private TextView theoryWorkedExamples;
@@ -38,7 +37,7 @@ public class AlgebraSection extends AppCompatActivity {
     private String currentLessonName;
 
     protected void onCreate(Bundle savedInstanceState){
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algebra_section);
 
@@ -58,11 +57,15 @@ public class AlgebraSection extends AppCompatActivity {
         taskDoneThree = findViewById(R.id.examplesPercentage);
         back = findViewById(R.id.back);
 
-        algebraSubject = findViewById(R.id.radioAlg);
-        definition = findViewById(R.id.definition);
-        properties = findViewById(R.id.properties);
-        workedExamples = findViewById(R.id.workedExamples);
-        quiz = findViewById(R.id.quiz);
+//        algebraSubject = findViewById(R.id.radioAlg);
+//        definition = findViewById(R.id.definition);
+//        properties = findViewById(R.id.properties);
+//        workedExamples = findViewById(R.id.workedExamples);
+//        quiz = findViewById(R.id.quiz);
+
+        previous = findViewById(R.id.previous);
+        current = findViewById(R.id.current);
+        next = findViewById(R.id.next);
 
         checkDefinition = findViewById(R.id.checkDefinition);
         checkProperties = findViewById(R.id.checkProperties);
@@ -76,12 +79,6 @@ public class AlgebraSection extends AppCompatActivity {
         taskDoneOne.setVisibility(View.GONE);
         taskDoneTwo.setVisibility(View.GONE);
         taskDoneThree.setVisibility(View.GONE);
-
-        algebraSubject.setVisibility(VISIBLE);
-        definition.setVisibility(VISIBLE);
-        properties.setVisibility(VISIBLE);
-        workedExamples.setVisibility(VISIBLE);
-        quiz.setVisibility(VISIBLE);
 
         checkDefinition.setVisibility(View.GONE);
         checkProperties.setVisibility(View.GONE);
@@ -148,10 +145,11 @@ public class AlgebraSection extends AppCompatActivity {
             }
         });
 
-        algebraSubject.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if(definition.isChecked()){
+            public void onClick(View view) {
+                sectionIndex = sectionIndex + 1;
+                if(sectionIndex == 1){
                     theoryDefinition.setVisibility(View.VISIBLE);
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.GONE);
@@ -161,7 +159,7 @@ public class AlgebraSection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.GONE);
                 }
-                if(properties.isChecked()){
+                if(sectionIndex == 2){
                     theoryDefinition.setVisibility(View.GONE);
                     theoryProperties.setVisibility(View.VISIBLE);
                     theoryWorkedExamples.setVisibility(View.GONE);
@@ -171,7 +169,7 @@ public class AlgebraSection extends AppCompatActivity {
                     checkProperties.setVisibility(View.VISIBLE);
                     checkExamples.setVisibility(View.GONE);
                 }
-                if(workedExamples.isChecked()){
+                if(sectionIndex == 3){
                     theoryDefinition.setVisibility(View.GONE);
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.VISIBLE);
@@ -181,7 +179,18 @@ public class AlgebraSection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.VISIBLE);
                 }
-                if(quiz.isChecked()){
+                if(sectionIndex == 4){
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.VISIBLE);
+
+                    checkDefinition.setVisibility(View.GONE);
+                    checkProperties.setVisibility(View.GONE);
+                    checkExamples.setVisibility(View.GONE);
+                }
+                if(sectionIndex > 4){
+                    sectionIndex = sectionIndex-1;
                     theoryDefinition.setVisibility(View.GONE);
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.GONE);
@@ -193,6 +202,110 @@ public class AlgebraSection extends AppCompatActivity {
                 }
             }
         });
+
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sectionIndex = sectionIndex - 1;
+                if(sectionIndex == 1){
+                    theoryDefinition.setVisibility(View.VISIBLE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.GONE);
+
+                    checkDefinition.setVisibility(View.VISIBLE);
+                    checkProperties.setVisibility(View.GONE);
+                    checkExamples.setVisibility(View.GONE);
+                }
+                if(sectionIndex == 2){
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.VISIBLE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.GONE);
+
+                    checkDefinition.setVisibility(View.GONE);
+                    checkProperties.setVisibility(View.VISIBLE);
+                    checkExamples.setVisibility(View.GONE);
+                }
+                if(sectionIndex == 3){
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.VISIBLE);
+                    quizPrime.setVisibility(View.GONE);
+
+                    checkDefinition.setVisibility(View.GONE);
+                    checkProperties.setVisibility(View.GONE);
+                    checkExamples.setVisibility(View.VISIBLE);
+                }
+                if(sectionIndex == 4){
+                    theoryDefinition.setVisibility(View.GONE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.VISIBLE);
+
+                    checkDefinition.setVisibility(View.GONE);
+                    checkProperties.setVisibility(View.GONE);
+                    checkExamples.setVisibility(View.GONE);
+                }
+                if(sectionIndex < 1){
+                    sectionIndex = sectionIndex+1;
+                    theoryDefinition.setVisibility(View.VISIBLE);
+                    theoryProperties.setVisibility(View.GONE);
+                    theoryWorkedExamples.setVisibility(View.GONE);
+                    quizPrime.setVisibility(View.GONE);
+
+                    checkDefinition.setVisibility(View.VISIBLE);
+                    checkProperties.setVisibility(View.GONE);
+                    checkExamples.setVisibility(View.GONE);
+                }
+            }
+        });
+
+//        algebraSubject.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+//                if(definition.isChecked()){
+//                    theoryDefinition.setVisibility(View.VISIBLE);
+//                    theoryProperties.setVisibility(View.GONE);
+//                    theoryWorkedExamples.setVisibility(View.GONE);
+//                    quizPrime.setVisibility(View.GONE);
+//
+//                    checkDefinition.setVisibility(View.VISIBLE);
+//                    checkProperties.setVisibility(View.GONE);
+//                    checkExamples.setVisibility(View.GONE);
+//                }
+//                if(properties.isChecked()){
+//                    theoryDefinition.setVisibility(View.GONE);
+//                    theoryProperties.setVisibility(View.VISIBLE);
+//                    theoryWorkedExamples.setVisibility(View.GONE);
+//                    quizPrime.setVisibility(View.GONE);
+//
+//                    checkDefinition.setVisibility(View.GONE);
+//                    checkProperties.setVisibility(View.VISIBLE);
+//                    checkExamples.setVisibility(View.GONE);
+//                }
+//                if(workedExamples.isChecked()){
+//                    theoryDefinition.setVisibility(View.GONE);
+//                    theoryProperties.setVisibility(View.GONE);
+//                    theoryWorkedExamples.setVisibility(View.VISIBLE);
+//                    quizPrime.setVisibility(View.GONE);
+//
+//                    checkDefinition.setVisibility(View.GONE);
+//                    checkProperties.setVisibility(View.GONE);
+//                    checkExamples.setVisibility(View.VISIBLE);
+//                }
+//                if(quiz.isChecked()){
+//                    theoryDefinition.setVisibility(View.GONE);
+//                    theoryProperties.setVisibility(View.GONE);
+//                    theoryWorkedExamples.setVisibility(View.GONE);
+//                    quizPrime.setVisibility(View.VISIBLE);
+//
+//                    checkDefinition.setVisibility(View.GONE);
+//                    checkProperties.setVisibility(View.GONE);
+//                    checkExamples.setVisibility(View.GONE);
+//                }
+//            }
+//        });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

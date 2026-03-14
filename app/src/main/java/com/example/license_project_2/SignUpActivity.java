@@ -51,8 +51,9 @@ public class SignUpActivity extends AppCompatActivity {
                 String email = signupEmail.getText().toString();
                 String password = signupPassword.getText().toString();
 
-                HelperClass helperClass = new HelperClass(name, surname, username, email, password);
-                reference.child(name).setValue(helperClass);
+//                HelperClass helperClass = new HelperClass(name, surname, username, email, password);
+                HelperClass helperClass = new HelperClass(email, name, password, surname, username);
+                reference.child(username).setValue(helperClass);
 
                 Toast.makeText(SignUpActivity.this, "You've signed up", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SignUpActivity.this, LogInActivity.class);
