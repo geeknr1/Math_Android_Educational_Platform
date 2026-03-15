@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,10 +37,10 @@ public class GeometrySection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.geometry_section);
 
-        AlgebraSections sectionAlg = AlgebraSections.detachFrom(getIntent());
-        bindText(sectionAlg);
+        GeometrySections sectionGeo = GeometrySections.detachFrom(getIntent());
+        bindText(sectionGeo);
         pm = new ProgressManager(this);
-        currentLessonName = sectionAlg.name();
+        currentLessonName = sectionGeo.name();
 
         previous = findViewById(R.id.previous);
         current = findViewById(R.id.current);
@@ -255,7 +253,7 @@ public class GeometrySection extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(GeometrySection.this, Algebra.class));
+                startActivity(new Intent(GeometrySection.this, Geometry.class));
             }
         });
 
@@ -265,10 +263,10 @@ public class GeometrySection extends AppCompatActivity {
         TextView text = findViewById(viewID);
         text.setText(res);
     }
-    public void bindText(AlgebraSections algSection){
-        setText(R.id.sectionDefinition, algSection.theoryDef);
-        setText(R.id.sectionProperties, algSection.theoryProperties);
-        setText(R.id.sectionWorkedExamples, algSection.theoryWorkedExamples);
-        setText(R.id.sectionQuiz, algSection.quiz);
+    public void bindText(GeometrySections geoSection){
+        setText(R.id.sectionDefinition, geoSection.theoryDef);
+        setText(R.id.sectionProperties, geoSection.theoryProperties);
+        setText(R.id.sectionWorkedExamples, geoSection.theoryWorkedExamples);
+        setText(R.id.sectionQuiz, geoSection.quiz);
     }
 }

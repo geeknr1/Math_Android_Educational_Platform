@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.license_project_2.MathRoulette.RouletteMain;
+
 public class Games extends AppCompatActivity {
     private TextView gameOne;
     private TextView gameTwo;
@@ -33,6 +35,15 @@ public class Games extends AppCompatActivity {
         gameThree.setVisibility(VISIBLE);
         gameFour.setVisibility(VISIBLE);
         back.setVisibility(VISIBLE);
+
+        gameOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent gameOneIntent = new Intent(view.getContext(), RouletteMain.class);
+                startActivity(new Intent(Games.this, RouletteMain.class));
+//                finish();
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

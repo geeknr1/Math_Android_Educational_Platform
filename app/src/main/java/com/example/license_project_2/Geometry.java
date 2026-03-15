@@ -59,10 +59,10 @@ public class Geometry extends AppCompatActivity {
                     if(position == 0)
                         return;
                     String label = ((String) parent.getItemAtPosition(position)).trim();
-                    AlgebraSections sectionAlg = AlgebraSections.valueOf(label);
+                    GeometrySections sectionGeo = GeometrySections.valueOf(label);
                     try {
                         Intent intent = new Intent(Geometry.this, GeometrySection.class);
-                        sectionAlg.attachTo(intent);
+                        sectionGeo.attachTo(intent);
                         startActivity(intent);
                     }catch(Exception e){
                         Toast.makeText(Geometry.this, e.toString(), Toast.LENGTH_SHORT).show();

@@ -43,7 +43,7 @@
             android:name=".GeometrySection"
             android:exported="true" />
         <activity
-            android:name=".Quiz"
+            android:name=".MathRoulette.RouletteMain"
             android:exported="true" />
         <activity android:name=".MainActivity"
             android:exported="true"/>
