@@ -39,6 +39,9 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+//    implementation("com.github.kofigyan:StateProgressBar:69b4192777"){
+//        exclude(group = "com.android.support", module = "support-v4")
+//    }
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

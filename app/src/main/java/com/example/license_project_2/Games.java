@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.license_project_2.MathComplete.CompleteMain;
 import com.example.license_project_2.MathRoulette.RouletteMain;
 
 public class Games extends AppCompatActivity {
@@ -42,6 +43,13 @@ public class Games extends AppCompatActivity {
 //                Intent gameOneIntent = new Intent(view.getContext(), RouletteMain.class);
                 startActivity(new Intent(Games.this, RouletteMain.class));
 //                finish();
+            }
+        });
+
+        gameFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Games.this, CompleteMain.class));
             }
         });
 
