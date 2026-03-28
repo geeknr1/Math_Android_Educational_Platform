@@ -3,51 +3,65 @@ package com.example.license_project_2;
 import static android.view.View.VISIBLE;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.license_project_2.MathRoulette.RouletteMain;
+
 public class MainActivity extends AppCompatActivity {
-    private TextView welcome;
-    private TextView tutorial;
-    private TextView games;
-    private TextView quit;
+    private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree;
+
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        //getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
-        welcome = findViewById(R.id.welcomeMessage);
-        tutorial = findViewById(R.id.Tutorial);
-        games = findViewById(R.id.Games);
-        quit = findViewById(R.id.Quit);
+        TextView welcome = findViewById(R.id.welcomeMessage);
+        ImageButton tutorial = findViewById(R.id.Tutorial);
+        ImageButton games = findViewById(R.id.Games);
+        ImageButton quit = findViewById(R.id.Quit);
 
         welcome.setVisibility(VISIBLE);
         tutorial.setVisibility(VISIBLE);
         games.setVisibility(VISIBLE);
         quit.setVisibility(VISIBLE);
 
+        bounceAnimationOne = AnimationUtils.loadAnimation(this, R.anim.bounce);
         tutorial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Tutorial.class));
+                try {
+                    tutorial.startAnimation(bounceAnimationOne);
+                    startActivity(new Intent(MainActivity.this, Tutorial.class));
+                }catch(Exception e){
+                    Toast.makeText((Context) MainActivity.this, (CharSequence) e, Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
+        bounceAnimationTwo = AnimationUtils.loadAnimation(this, R.anim.bounce);
         games.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                games.startAnimation(bounceAnimationTwo);
                 startActivity(new Intent(MainActivity.this, Games.class));
             }
         });
 
+        bounceAnimationThree = AnimationUtils.loadAnimation(this, R.anim.bounce);
         quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                quit.startAnimation(bounceAnimationThree);
                 finishAffinity();
                 System.exit(0);
             }

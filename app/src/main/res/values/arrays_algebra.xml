@@ -2,8 +2,8 @@
 <resources>
 
     <string-array name="Whole_Numbers_And_Fractions">
-        <item>Whole_Numbers_And_Fractions</item>
-        <item>Arithmetic_Operations_on_Whole_Numbers</item>
+        <item>@string/whole_numbers_and_fractions</item>
+        <item>@string/arithmetic_operations_on_whole_numbers</item>
         <item>Prime_and_Composite_Natural_Numbers </item>
         <item>Common_Divisors_and_Multiples___
               Least_Common_Multiple</item>

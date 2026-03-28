@@ -41,15 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="358dp"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/Algebra"
-        android:layout_width="150dp"
+        android:layout_width="220dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:text="ALGEBRA"
+        android:src="@drawable/algebra"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -58,15 +59,16 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="358dp"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/Geometry"
-        android:layout_width="150dp"
+        android:layout_width="220dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:text="GEOMETRY"
+        android:src="@drawable/geometry"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -75,15 +77,16 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="358dp"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/Back"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:text="BACK"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button"
         android:textSize="20sp"
         android:textStyle="bold"

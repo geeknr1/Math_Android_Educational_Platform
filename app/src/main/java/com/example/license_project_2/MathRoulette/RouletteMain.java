@@ -12,10 +12,12 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,17 +42,18 @@ public class RouletteMain extends AppCompatActivity {
     private int degree = 0, degreeAlg = 0, degreeGeo = 0, degreeTrigo = 0, degreeCalc = 0, degreeAnsAlg = 0, degreeAnsGeo = 0, degreeAnsTrigo = 0, degreeAnsCalc = 0;
     private boolean isSpinning = false;
     private ImageView spinningWheel;
-    private Button backButton;
+    private ImageButton backButton;
     private TextView requirement;
     private EditText answer;
-    private TextView checkAnswer;
+    private ImageButton checkAnswer;
+    private Animation zoomInAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_roulette);
 
-        final TextView spinButton = findViewById(R.id.SpinTheWheel);
+        final ImageButton spinButton = findViewById(R.id.SpinTheWheel);
         spinningWheel = findViewById(R.id.imageMathContent);
         backButton = findViewById(R.id.back);
         requirement = findViewById(R.id.selectedProblem);
@@ -67,9 +70,12 @@ public class RouletteMain extends AppCompatActivity {
                 }
             }
         });
+
+        zoomInAnimation = AnimationUtils.loadAnimation(this, R.anim.zoom);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                backButton.startAnimation(zoomInAnimation);
                 startActivity(new Intent(RouletteMain.this, Games.class));
             }
         });
@@ -95,7 +101,6 @@ public class RouletteMain extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                String stringAnswer = answer.getText().toString().trim();
                 checkAnswer.setVisibility(VISIBLE);
                 Toast.makeText(RouletteMain.this, "You've chosen " + sectors[sectors.length - (degree + 1)], Toast.LENGTH_SHORT).show();
                 isSpinning = false;
@@ -109,16 +114,13 @@ public class RouletteMain extends AppCompatActivity {
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            if(stringAnswer.equals(algebraAnswers[degreeAnsAlg - 1])){
-                                SpannableString algebraAnswerString = new SpannableString(answer.getText());
-                                algebraAnswerString.setSpan(new ForegroundColorSpan(Color.GREEN), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(algebraAnswerString);
+                            String stringAnswer = answer.getText().toString().trim();
+                            if(stringAnswer.equals(algebraAnswers[degreeAnsAlg])){
+                                answer.setTextColor(Color.GREEN);
                                 Toast.makeText(RouletteMain.this, "Correct answer", Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                SpannableString algebraAnswerString = new SpannableString(answer.getText());
-                                algebraAnswerString.setSpan(new ForegroundColorSpan(Color.RED), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(algebraAnswerString);
+                                answer.setTextColor(Color.RED);
                                 Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }
                         }
@@ -135,16 +137,13 @@ public class RouletteMain extends AppCompatActivity {
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            String stringAnswer = answer.getText().toString().trim();
                             if(stringAnswer.equals(calculusAnswers[degreeAnsCalc - 1])){
-                                SpannableString calculusAnswerString = new SpannableString(answer.getText());
-                                calculusAnswerString.setSpan(new ForegroundColorSpan(Color.GREEN), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(calculusAnswerString);
-                                Toast.makeText(RouletteMain.this, "Correct answer", Toast.LENGTH_SHORT).show();
+                                answer.setTextColor(Color.GREEN);
+                                Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                SpannableString calculusAnswerString = new SpannableString(answer.getText());
-                                calculusAnswerString.setSpan(new ForegroundColorSpan(Color.RED), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(calculusAnswerString);
+                                answer.setTextColor(Color.RED);
                                 Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }
                         }
@@ -161,16 +160,13 @@ public class RouletteMain extends AppCompatActivity {
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            if(stringAnswer.equals(trigonometryAnswers[degreeAnsTrigo - 1])){
-                                SpannableString calculusAnswerString = new SpannableString(answer.getText());
-                                calculusAnswerString.setSpan(new ForegroundColorSpan(Color.GREEN), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(calculusAnswerString);
-                                Toast.makeText(RouletteMain.this, "Correct answer", Toast.LENGTH_SHORT).show();
+                            String stringAnswer = answer.getText().toString().trim();
+                            if(stringAnswer.equals(trigonometryAnswers[degreeAnsTrigo])){
+                                answer.setTextColor(Color.GREEN);
+                                Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                SpannableString calculusAnswerString = new SpannableString(answer.getText());
-                                calculusAnswerString.setSpan(new ForegroundColorSpan(Color.RED), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(calculusAnswerString);
+                                answer.setTextColor(Color.RED);
                                 Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }
                         }
@@ -179,7 +175,7 @@ public class RouletteMain extends AppCompatActivity {
 
 
                 if(sectors[sectors.length - (degree + 1)].equals("Geometry")){
-                    SpannableString geometryString = new SpannableString(geometryProblems[degreeGeo - 1]);
+                    SpannableString geometryString = new SpannableString(geometryProblems[degreeGeo]);
                     requirement.setText(geometryString);
                     requirement.setVisibility(VISIBLE);
 
@@ -187,16 +183,13 @@ public class RouletteMain extends AppCompatActivity {
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            String stringAnswer = answer.getText().toString().trim();
                             if(stringAnswer.equals(geometryAnswers[degreeAnsGeo])){
-                                SpannableString calculusAnswerString = new SpannableString(answer.getText());
-                                calculusAnswerString.setSpan(new ForegroundColorSpan(Color.GREEN), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(calculusAnswerString);
+                                answer.setTextColor(Color.GREEN);
                                 Toast.makeText(RouletteMain.this, "Correct answer", Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                SpannableString calculusAnswerString = new SpannableString(answer.getText());
-                                calculusAnswerString.setSpan(new ForegroundColorSpan(Color.RED), answer.getSelectionStart(), answer.getSelectionEnd(), 0);
-                                answer.setText(calculusAnswerString);
+                                answer.setTextColor(Color.RED);
                                 Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }
                         }

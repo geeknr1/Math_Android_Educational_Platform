@@ -1,23 +1,30 @@
 package com.example.license_project_2.MathComplete;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.license_project_2.Games;
+import com.example.license_project_2.MathRoulette.RouletteMain;
 import com.example.license_project_2.R;
 
 public class CompleteMain extends AppCompatActivity {
     private TextView problemOne, problemTwo;
     private EditText answerOne, answerTwo;
-    private TextView checkOne, checkTwo;
-    private Button previous, level, next, quit;
+    private ImageButton checkOne, checkTwo, next, quit;
+    private Button level;
+    private Animation bounceAnimationOne, bounceAnimationTwo;
     private static final String[] requirements = {"1. A salesman sold twice as much pears in the afternoon than in the morning.\n If he sold 360 kilograms of pears that day, how many kilograms did he sell in the morning and how many in the afternoon?",
                                                   "2. Mary, Peter, and Lucy were picking chestnuts. Mary picked twice as much chestnuts than Peter. Lucy picked 2 kg more than Peter. Together the three of them picked 26 kg of chestnuts.\n How many kilograms did each of them pick?",
                                                   "3. Sophia finished 2/3 of a book. She calculated that she finished 90 more pages than she has yet to read.\n How long is her book?",
@@ -110,7 +117,9 @@ public class CompleteMain extends AppCompatActivity {
                                                   "72. Writing Variable Expressions for Multiplication: Last hockey season, Jack scored g goals. Patrik scored twice as many goals than Jack. Write an expression that shows how many goals Patrik scored.",
                                                   "73. Writing Variable Expressions for Division: Amanda has c chocolate bars. She wants to distribute the chocolate bars evenly among 3 friends. Write an expression that shows how many chocolate bars 1 of her friends will receive.",
                                                   "74. Solving Two-Variable Equations: This equation shows how the amount Lucas earns from his after-school job depends on how many hours he works:e = 12h. The variable h represents how many hours he works. The variable e represents how much money he earns.\n How much money will Lucas earn after working for 6 hours?"};
-    private int wordProblemIndexOne = 0, wordProblemIndexTwo = 1, sectionIndex = 0, buttonIndex = 1;
+    private int wordProblemIndexOne = 0;
+    private int wordProblemIndexTwo = 1;
+    private int buttonIndex = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -125,7 +134,6 @@ public class CompleteMain extends AppCompatActivity {
         answerTwo = findViewById(R.id.answerGivenTwo);
         checkOne = findViewById(R.id.checkAnswer);
         checkTwo = findViewById(R.id.checkAnswerTwo);
-        previous = findViewById(R.id.previous);
         level = findViewById(R.id.current);
         next = findViewById(R.id.next);
         quit = findViewById(R.id.quitButton);
@@ -133,109 +141,45 @@ public class CompleteMain extends AppCompatActivity {
         problemOne.setText(problemStringOne);
         problemTwo.setText(problemStringTwo);
 
-        if(sectionIndex == 0) {
+
             problemOne.setVisibility(View.VISIBLE);
             problemTwo.setVisibility(View.VISIBLE);
             answerOne.setVisibility(View.VISIBLE);
             answerTwo.setVisibility(View.VISIBLE);
             checkOne.setVisibility(View.VISIBLE);
             checkTwo.setVisibility(View.VISIBLE);
-            previous.setVisibility(View.VISIBLE);
             level.setVisibility(View.VISIBLE);
             next.setVisibility(View.VISIBLE);
             quit.setVisibility(View.VISIBLE);
+
+
+        level.setText("Level " + String.valueOf(buttonIndex));
+
+        bounceAnimationTwo = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        if(buttonIndex >= 1 && buttonIndex <= 37) {
+            next.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    next.startAnimation(bounceAnimationTwo);
+                        buttonIndex = buttonIndex + 1;
+                        wordProblemIndexOne += 2; wordProblemIndexTwo += 2;
+                        SpannableString newProblemStringOne = new SpannableString(requirements[wordProblemIndexOne]);
+                        SpannableString newProblemStringTwo = new SpannableString(requirements[wordProblemIndexTwo]);
+                        problemOne.setText(newProblemStringOne); problemTwo.setText(newProblemStringTwo);
+                        level.setText("Level " + String.valueOf(buttonIndex));
+                }
+            });
+        }
+        else{
+            buttonIndex = 37;
+            level.setText("Level " + String.valueOf(buttonIndex));
         }
 
-        level.setText(String.valueOf(buttonIndex));
-
-        previous.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(buttonIndex >= 1 && buttonIndex <=37) {
-                    level.setText(String.valueOf(buttonIndex + 1));
-                    SpannableString newProblemStringOne = new SpannableString(requirements[wordProblemIndexOne - 1]);
-                    SpannableString newProblemStringTwo = new SpannableString(requirements[wordProblemIndexTwo - 1]);
-                    problemOne.setText(newProblemStringOne);
-                    problemTwo.setText(newProblemStringTwo);
-
-                    problemOne.setVisibility(View.VISIBLE);
-                    problemTwo.setVisibility(View.VISIBLE);
-                    answerOne.setVisibility(View.VISIBLE);
-                    answerTwo.setVisibility(View.VISIBLE);
-                    checkOne.setVisibility(View.VISIBLE);
-                    checkTwo.setVisibility(View.VISIBLE);
-                    previous.setVisibility(View.VISIBLE);
-                    level.setVisibility(View.VISIBLE);
-                    next.setVisibility(View.VISIBLE);
-                    quit.setVisibility(View.VISIBLE);
-                }
-                else if(buttonIndex < 1) {
-                    buttonIndex = buttonIndex - 1;
-                    level.setText(String.valueOf(buttonIndex));
-                    SpannableString newProblemStringOne = new SpannableString(requirements[0]);
-                    SpannableString newProblemStringTwo = new SpannableString(requirements[1]);
-                    problemOne.setText(newProblemStringOne);
-                    problemTwo.setText(newProblemStringTwo);
-
-                    problemOne.setVisibility(View.VISIBLE);
-                    problemTwo.setVisibility(View.VISIBLE);
-                    answerOne.setVisibility(View.VISIBLE);
-                    answerTwo.setVisibility(View.VISIBLE);
-                    checkOne.setVisibility(View.VISIBLE);
-                    checkTwo.setVisibility(View.VISIBLE);
-                    previous.setVisibility(View.VISIBLE);
-                    level.setVisibility(View.VISIBLE);
-                    next.setVisibility(View.VISIBLE);
-                    quit.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(buttonIndex >= 1 && buttonIndex <=37) {
-                    level.setText(buttonIndex + 1);
-                    SpannableString newProblemStringOne = new SpannableString(requirements[wordProblemIndexOne + 1]);
-                    SpannableString newProblemStringTwo = new SpannableString(requirements[wordProblemIndexTwo + 1]);
-                    problemOne.setText(newProblemStringOne);
-                    problemTwo.setText(newProblemStringTwo);
-
-                    problemOne.setVisibility(View.VISIBLE);
-                    problemTwo.setVisibility(View.VISIBLE);
-                    answerOne.setVisibility(View.VISIBLE);
-                    answerTwo.setVisibility(View.VISIBLE);
-                    checkOne.setVisibility(View.VISIBLE);
-                    checkTwo.setVisibility(View.VISIBLE);
-                    previous.setVisibility(View.VISIBLE);
-                    level.setVisibility(View.VISIBLE);
-                    next.setVisibility(View.VISIBLE);
-                    quit.setVisibility(View.VISIBLE);
-                }
-                else if(buttonIndex > 37) {
-                    buttonIndex = buttonIndex - 1;
-                    SpannableString newProblemStringOne = new SpannableString(requirements[73]);
-                    SpannableString newProblemStringTwo = new SpannableString(requirements[74]);
-                    problemOne.setText(newProblemStringOne);
-                    problemTwo.setText(newProblemStringTwo);
-
-                    problemOne.setVisibility(View.VISIBLE);
-                    problemTwo.setVisibility(View.VISIBLE);
-                    answerOne.setVisibility(View.VISIBLE);
-                    answerTwo.setVisibility(View.VISIBLE);
-                    checkOne.setVisibility(View.VISIBLE);
-                    checkTwo.setVisibility(View.VISIBLE);
-                    previous.setVisibility(View.VISIBLE);
-                    level.setVisibility(View.VISIBLE);
-                    next.setVisibility(View.VISIBLE);
-                    quit.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
+        bounceAnimationOne = AnimationUtils.loadAnimation(this, R.anim.bounce);
         quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                quit.startAnimation(bounceAnimationOne);
                 startActivity(new Intent(CompleteMain.this, Games.class));
             }
         });

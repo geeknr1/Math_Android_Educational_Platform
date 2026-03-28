@@ -35,71 +35,77 @@
         android:textColor="@color/black"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"/>
-    <TextView
+
+    <ImageButton
         android:id="@+id/GameOne"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Math Roulette"
+        android:src="@drawable/mathroulette"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/GameTwo"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Geo Dodge"
+        android:src="@drawable/mathshoot"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/GameThree"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Result \nShoot"
+        android:src="@drawable/dodge"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button_4"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/GameFour"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/complete"
+        android:scaleType="fitXY"
+        android:background="@drawable/rounded_button_4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/Back"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Math \nComplete"
-        android:background="@drawable/rounded_button_4"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
-
-    <TextView
-        android:id="@+id/Back"
-        android:layout_width="110dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="BACK"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button"
         android:textSize="24sp"
         android:textStyle="bold"

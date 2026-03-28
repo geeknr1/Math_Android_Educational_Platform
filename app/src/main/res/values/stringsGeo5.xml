@@ -30,17 +30,17 @@
 
     <string name="SectionTwoQuiz_12">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionThreeTheoryDef_12">• A similitude scales distances by a constant ratio k.-->
-<!--\n • Figures are similar if one maps to the other by such a transformation.-->
-<!--\n • Homothety is a special case of similitude.</string>-->
+    <string name="SectionThreeTheoryDef_12">• A similitude scales distances by a constant ratio k.
+\n • Figures are similar if one maps to the other by such a transformation.
+\n • Homothety is a special case of similitude.</string>
 
-<!--    <string name="SectionThreeTheoryProperties_12">• Similitude keeps lines straight and angles equal.-->
-<!--\n • Preserves order of points along a line.-->
-<!--\n • Homothety is always a type of similitude.</string>-->
+    <string name="SectionThreeTheoryProperties_12">• Similitude keeps lines straight and angles equal.
+\n • Preserves order of points along a line.
+\n • Homothety is always a type of similitude.</string>
 
-<!--    <string name="SectionThreeTheoryWorkedExamples_12">• Homothety with ratio k multiplies all distances by k.-->
-<!--\n • Proven using similar triangles MON and M′ON′.-->
-<!--\n • Confirms it’s a transformation of similitude.</string>-->
+    <string name="SectionThreeTheoryWorkedExamples_12">• Homothety with ratio k multiplies all distances by k.
+\n • Proven using similar triangles MON and M′ON′.
+\n • Confirms it’s a transformation of similitude.</string>
 
-<!--    <string name="SectionThreeQuiz_12">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionThreeQuiz_12">!!! Solve the Quiz !!!</string>
 </resources>

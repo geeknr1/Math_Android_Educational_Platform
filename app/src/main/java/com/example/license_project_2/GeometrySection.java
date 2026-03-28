@@ -5,8 +5,11 @@ import static android.view.View.VISIBLE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,14 +19,12 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GeometrySection extends AppCompatActivity {
 
     private int sectionIndex = 0;
-    private Button previous;
     private Button current;
-    private Button next;
 
-    private Button answerone_1, answertwo_1, answerthree_1, answerfour_1, answerone_2,
-            answertwo_2, answerthree_2, answerfour_2, answerone_3, answertwo_3,
-            answerthree_3, answerfour_3, answerone_4, answertwo_4, answerthree_4,
-            answerfour_4, answerone_5, answertwo_5, answerthree_5, answerfour_5;
+    private Button answerone_1, answertwo_1, answerthree_1, answerone_2,
+            answertwo_2, answerthree_2, answerone_3, answertwo_3,
+            answerthree_3, answerone_4, answertwo_4, answerthree_4,
+            answerone_5, answertwo_5, answerthree_5;
     private TextView question1, question2, question3, question4, question5;
     private TextView theoryDefinition;
     private TextView theoryProperties;
@@ -32,13 +33,13 @@ public class GeometrySection extends AppCompatActivity {
     private TextView taskDoneOne;
     private TextView taskDoneTwo;
     private TextView taskDoneThree;
-    private Button back;
     private CheckBox checkDefinition;
     private CheckBox checkProperties;
     private CheckBox checkExamples;
     private int scorePercentage=0;
     private ProgressManager pm;
     private String currentLessonName;
+    private Animation bounceAnimation, bounceAnimationTwo, bounceAnimationThree;
 
     private static final String [] parts = {"Def", "Props", "Examples", "Quiz"};
     private int index;
@@ -57,9 +58,9 @@ public class GeometrySection extends AppCompatActivity {
         pm = new ProgressManager(this);
         currentLessonName = sectionGeo.name();
 
-        previous = findViewById(R.id.previous);
+        ImageButton previous = findViewById(R.id.previous);
         current = findViewById(R.id.current);
-        next = findViewById(R.id.next);
+        ImageButton next = findViewById(R.id.next);
 
         theoryDefinition = findViewById(R.id.sectionDefinition);
         theoryProperties = findViewById(R.id.sectionProperties);
@@ -69,7 +70,7 @@ public class GeometrySection extends AppCompatActivity {
         taskDoneOne = findViewById(R.id.definitionPercentage);
         taskDoneTwo = findViewById(R.id.propertiesPercentage);
         taskDoneThree = findViewById(R.id.examplesPercentage);
-        back = findViewById(R.id.back);
+        ImageButton back = findViewById(R.id.back);
 
         checkDefinition = findViewById(R.id.checkDefinition);
         checkProperties = findViewById(R.id.checkProperties);
@@ -93,31 +94,33 @@ public class GeometrySection extends AppCompatActivity {
         checkExamples.setChecked(pm.isTaskDone(currentLessonName, "examples"));
 
         answerone_1 = findViewById(R.id.buttonAnswerOne); answertwo_1 = findViewById(R.id.buttonAnswerTwo);
-        answerthree_1 = findViewById(R.id.buttonAnswerThree); answerfour_1 = findViewById(R.id.buttonAnswerFour);
+        answerthree_1 = findViewById(R.id.buttonAnswerThree);
 
         answerone_2 = findViewById(R.id.buttonAnswerOne_2); answertwo_2 = findViewById(R.id.buttonAnswerTwo_2);
-        answerthree_2 = findViewById(R.id.buttonAnswerThree_2); answerfour_2 = findViewById(R.id.buttonAnswerFour_2);
+        answerthree_2 = findViewById(R.id.buttonAnswerThree_2);
 
         answerone_3 = findViewById(R.id.buttonAnswerOne_3); answertwo_3 = findViewById(R.id.buttonAnswerTwo_3);
-        answerthree_3 = findViewById(R.id.buttonAnswerThree_3); answerfour_3 = findViewById(R.id.buttonAnswerFour_3);
+        answerthree_3 = findViewById(R.id.buttonAnswerThree_3);
 
         answerone_4 = findViewById(R.id.buttonAnswerOne_4); answertwo_4 = findViewById(R.id.buttonAnswerTwo_4);
-        answerthree_4 = findViewById(R.id.buttonAnswerThree_4); answerfour_4 = findViewById(R.id.buttonAnswerFour_4);
+        answerthree_4 = findViewById(R.id.buttonAnswerThree_4);
 
         answerone_5 = findViewById(R.id.buttonAnswerOne_5); answertwo_5 = findViewById(R.id.buttonAnswerTwo_5);
-        answerthree_5 = findViewById(R.id.buttonAnswerThree_5); answerfour_5 = findViewById(R.id.buttonAnswerFour_5);
+        answerthree_5 = findViewById(R.id.buttonAnswerThree_5);
 
-        answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-        answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-        answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-        answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-        answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+        answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+        answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+        answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+        answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+        answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
         question1 = findViewById(R.id.firstQuestion); question2 = findViewById(R.id.secondQuestion); question3 = findViewById(R.id.thirdQuestion);
         question4 = findViewById(R.id.fourthQuestion); question5 = findViewById(R.id.fifthQuestion);
 
         question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
         question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
+
+        bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,6 +140,7 @@ public class GeometrySection extends AppCompatActivity {
 //                        break;
 //                }
 
+                next.startAnimation(bounceAnimation);
                 sectionIndex = sectionIndex + 1;
                 if(sectionIndex == 1){
                     index = sectionIndex;
@@ -151,11 +155,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.GONE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -173,11 +177,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.VISIBLE);
                     checkExamples.setVisibility(View.GONE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -195,11 +199,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.VISIBLE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -219,11 +223,11 @@ public class GeometrySection extends AppCompatActivity {
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
                     question4.setVisibility(View.VISIBLE); question5.setVisibility(View.VISIBLE);
-                    answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE); answerfour_1.setVisibility(View.VISIBLE);
-                    answerone_2.setVisibility(View.VISIBLE); answertwo_2.setVisibility(View.VISIBLE); answerthree_2.setVisibility(View.VISIBLE); answerfour_2.setVisibility(View.VISIBLE);
-                    answerone_3.setVisibility(View.VISIBLE); answertwo_3.setVisibility(View.VISIBLE); answerthree_3.setVisibility(View.VISIBLE); answerfour_3.setVisibility(View.VISIBLE);
-                    answerone_4.setVisibility(View.VISIBLE); answertwo_4.setVisibility(View.VISIBLE); answerthree_4.setVisibility(View.VISIBLE); answerfour_4.setVisibility(View.VISIBLE);
-                    answerone_5.setVisibility(View.VISIBLE); answertwo_5.setVisibility(View.VISIBLE); answerthree_5.setVisibility(View.VISIBLE); answerfour_5.setVisibility(View.VISIBLE);
+                    answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE);
+                    answerone_2.setVisibility(View.VISIBLE); answertwo_2.setVisibility(View.VISIBLE); answerthree_2.setVisibility(View.VISIBLE);
+                    answerone_3.setVisibility(View.VISIBLE); answertwo_3.setVisibility(View.VISIBLE); answerthree_3.setVisibility(View.VISIBLE);
+                    answerone_4.setVisibility(View.VISIBLE); answertwo_4.setVisibility(View.VISIBLE); answerthree_4.setVisibility(View.VISIBLE);
+                    answerone_5.setVisibility(View.VISIBLE); answertwo_5.setVisibility(View.VISIBLE); answerthree_5.setVisibility(View.VISIBLE);
 
                 }
                 if(sectionIndex > 4){
@@ -242,19 +246,23 @@ public class GeometrySection extends AppCompatActivity {
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
                     question4.setVisibility(View.VISIBLE); question5.setVisibility(View.VISIBLE);
-                    answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE); answerfour_1.setVisibility(View.VISIBLE);
-                    answerone_2.setVisibility(View.VISIBLE); answertwo_2.setVisibility(View.VISIBLE); answerthree_2.setVisibility(View.VISIBLE); answerfour_2.setVisibility(View.VISIBLE);
-                    answerone_3.setVisibility(View.VISIBLE); answertwo_3.setVisibility(View.VISIBLE); answerthree_3.setVisibility(View.VISIBLE); answerfour_3.setVisibility(View.VISIBLE);
-                    answerone_4.setVisibility(View.VISIBLE); answertwo_4.setVisibility(View.VISIBLE); answerthree_4.setVisibility(View.VISIBLE); answerfour_4.setVisibility(View.VISIBLE);
-                    answerone_5.setVisibility(View.VISIBLE); answertwo_5.setVisibility(View.VISIBLE); answerthree_5.setVisibility(View.VISIBLE); answerfour_5.setVisibility(View.VISIBLE);
+                    answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE);
+                    answerone_2.setVisibility(View.VISIBLE); answertwo_2.setVisibility(View.VISIBLE); answerthree_2.setVisibility(View.VISIBLE);
+                    answerone_3.setVisibility(View.VISIBLE); answertwo_3.setVisibility(View.VISIBLE); answerthree_3.setVisibility(View.VISIBLE);
+                    answerone_4.setVisibility(View.VISIBLE); answertwo_4.setVisibility(View.VISIBLE); answerthree_4.setVisibility(View.VISIBLE);
+                    answerone_5.setVisibility(View.VISIBLE); answertwo_5.setVisibility(View.VISIBLE); answerthree_5.setVisibility(View.VISIBLE);
 
                 }
             }
         });
 
+        bounceAnimationTwo =  AnimationUtils.loadAnimation(this, R.anim.bounce);
+
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                previous.startAnimation(bounceAnimationTwo);
                 sectionIndex = sectionIndex - 1;
                 if(sectionIndex == 1){
                     index = sectionIndex;
@@ -268,11 +276,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.GONE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -290,11 +298,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.VISIBLE);
                     checkExamples.setVisibility(View.GONE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -312,11 +320,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.VISIBLE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -336,11 +344,11 @@ public class GeometrySection extends AppCompatActivity {
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
                     question4.setVisibility(View.VISIBLE); question5.setVisibility(View.VISIBLE);
-                    answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE); answerfour_1.setVisibility(View.VISIBLE);
-                    answerone_2.setVisibility(View.VISIBLE); answertwo_2.setVisibility(View.VISIBLE); answerthree_2.setVisibility(View.VISIBLE); answerfour_2.setVisibility(View.VISIBLE);
-                    answerone_3.setVisibility(View.VISIBLE); answertwo_3.setVisibility(View.VISIBLE); answerthree_3.setVisibility(View.VISIBLE); answerfour_3.setVisibility(View.VISIBLE);
-                    answerone_4.setVisibility(View.VISIBLE); answertwo_4.setVisibility(View.VISIBLE); answerthree_4.setVisibility(View.VISIBLE); answerfour_4.setVisibility(View.VISIBLE);
-                    answerone_5.setVisibility(View.VISIBLE); answertwo_5.setVisibility(View.VISIBLE); answerthree_5.setVisibility(View.VISIBLE); answerfour_5.setVisibility(View.VISIBLE);
+                    answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE);
+                    answerone_2.setVisibility(View.VISIBLE); answertwo_2.setVisibility(View.VISIBLE); answerthree_2.setVisibility(View.VISIBLE);
+                    answerone_3.setVisibility(View.VISIBLE); answertwo_3.setVisibility(View.VISIBLE); answerthree_3.setVisibility(View.VISIBLE);
+                    answerone_4.setVisibility(View.VISIBLE); answertwo_4.setVisibility(View.VISIBLE); answerthree_4.setVisibility(View.VISIBLE);
+                    answerone_5.setVisibility(View.VISIBLE); answertwo_5.setVisibility(View.VISIBLE); answerthree_5.setVisibility(View.VISIBLE);
                 }
                 if(sectionIndex < 1){
                     sectionIndex = sectionIndex+1;
@@ -356,11 +364,11 @@ public class GeometrySection extends AppCompatActivity {
                     checkProperties.setVisibility(View.GONE);
                     checkExamples.setVisibility(View.GONE);
 
-                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE); answerfour_1.setVisibility(View.GONE);
-                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE); answerfour_2.setVisibility(View.GONE);
-                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE); answerfour_3.setVisibility(View.GONE);
-                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE); answerfour_4.setVisibility(View.GONE);
-                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE); answerfour_5.setVisibility(View.GONE);
+                    answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
+                    answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
+                    answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
+                    answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
+                    answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -425,9 +433,12 @@ public class GeometrySection extends AppCompatActivity {
             }
         });
 
+        bounceAnimationThree = AnimationUtils.loadAnimation(this, R.anim.bounce);
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                back.startAnimation(bounceAnimationThree);
                 startActivity(new Intent(GeometrySection.this, Geometry.class));
             }
         });

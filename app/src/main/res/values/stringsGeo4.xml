@@ -30,43 +30,43 @@
 
     <string name="SectionTwoQuiz_11">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionThreeTheoryDef_11">• The mean proportional x satisfies a:x=x:b.-->
-<!--\n • It equals the square root of their product.-->
-<!--\n • Used in geometry and right triangles.</string>-->
+    <string name="SectionThreeTheoryDef_11">• The mean proportional x satisfies a:x=x:b.
+\n • It equals the square root of their product.
+\n • Used in geometry and right triangles.</string>
 
-<!--    <string name="SectionThreeTheoryProperties_11">• In right triangles, altitude is mean proportional between hypotenuse parts.-->
-<!--\n • Each leg is mean proportional to its adjacent part.-->
-<!--\n • Pythagoras: c²=a²+b², and its converse defines right triangles.</string>-->
+    <string name="SectionThreeTheoryProperties_11">• In right triangles, altitude is mean proportional between hypotenuse parts.
+\n • Each leg is mean proportional to its adjacent part.
+\n • Pythagoras: c²=a²+b², and its converse defines right triangles.</string>
 
-<!--    <string name="SectionThreeTheoryWorkedExamples_11">• Construct mean proportional using a semicircle.-->
-<!--\n • Perpendicular gives x=sqrt(ab).-->
-<!--\n • Apply proportionality to hypotenuse and altitude.</string>-->
+    <string name="SectionThreeTheoryWorkedExamples_11">• Construct mean proportional using a semicircle.
+\n • Perpendicular gives x=sqrt(ab).
+\n • Apply proportionality to hypotenuse and altitude.</string>
 
-<!--    <string name="SectionThreeQuiz_11">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionThreeQuiz_11">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionFourTheoryDef_11">!!! EMPTY !!!</string>-->
+    <string name="SectionFourTheoryDef_11">!!! EMPTY !!!</string>
 
-<!--    <string name="SectionFourTheoryProperties_11">• Angle bisector divides the opposite side proportionally.-->
-<!--\n • Intersecting chords have equal segment products.-->
-<!--\n • Tangent-secant rule: tangent² = external × total secant.</string>-->
+    <string name="SectionFourTheoryProperties_11">• Angle bisector divides the opposite side proportionally.
+\n • Intersecting chords have equal segment products.
+\n • Tangent-secant rule: tangent² = external × total secant.</string>
 
-<!--    <string name="SectionFourTheoryWorkedExamples_11">• In right triangles, altitude divides hypotenuse by square ratios.-->
-<!--\n • Circle radius found with r=sqrt(ab+d²).-->
-<!--\n • Combines similarity and power of a point.</string>-->
+    <string name="SectionFourTheoryWorkedExamples_11">• In right triangles, altitude divides hypotenuse by square ratios.
+\n • Circle radius found with r=sqrt(ab+d²).
+\n • Combines similarity and power of a point.</string>
 
-<!--    <string name="SectionFourQuiz_11">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionFourQuiz_11">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionFiveTheoryDef_11">• Similar polygons have equal angles and proportional sides.-->
-<!--\n • Homothety scales shapes from a center with ratio k.-->
-<!--\n • Figures remain similar under transformation.</string>-->
+    <string name="SectionFiveTheoryDef_11">• Similar polygons have equal angles and proportional sides.
+\n • Homothety scales shapes from a center with ratio k.
+\n • Figures remain similar under transformation.</string>
 
-<!--    <string name="SectionFiveTheoryProperties_11">• Perimeter ratio equals the ratio of similitude.-->
-<!--\n • Similar polygons decompose into similar triangles.-->
-<!--\n • Corresponding vertices connect identical structures.</string>-->
+    <string name="SectionFiveTheoryProperties_11">• Perimeter ratio equals the ratio of similitude.
+\n • Similar polygons decompose into similar triangles.
+\n • Corresponding vertices connect identical structures.</string>
 
-<!--    <string name="SectionFiveTheoryWorkedExamples_11">• Construct an inscribed square using homothety.-->
-<!--\n • Start with a square on one triangle side.-->
-<!--\n • Scale it from the vertex to fit inside.</string>-->
+    <string name="SectionFiveTheoryWorkedExamples_11">• Construct an inscribed square using homothety.
+\n • Start with a square on one triangle side.
+\n • Scale it from the vertex to fit inside.</string>
 
-<!--    <string name="SectionFiveQuiz_11">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionFiveQuiz_11">!!! Solve the Quiz !!!</string>
 </resources>

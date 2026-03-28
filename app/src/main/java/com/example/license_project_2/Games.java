@@ -5,7 +5,10 @@ import static android.view.View.VISIBLE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,14 +17,10 @@ import com.example.license_project_2.MathComplete.CompleteMain;
 import com.example.license_project_2.MathRoulette.RouletteMain;
 
 public class Games extends AppCompatActivity {
-    private TextView gameOne;
-    private TextView gameTwo;
-    private TextView gameThree;
-    private TextView gameFour;
-    private TextView back;
+    private ImageButton gameOne, gameTwo, gameThree, gameFour, back;
+    private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree, bounceAnimationFour, bounceAnimationFive;
 
     protected void onCreate(Bundle savedInstanceState){
-//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.games);
 
@@ -37,25 +36,45 @@ public class Games extends AppCompatActivity {
         gameFour.setVisibility(VISIBLE);
         back.setVisibility(VISIBLE);
 
+        bounceAnimationOne = AnimationUtils.loadAnimation(this, R.anim.bounce);
         gameOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent gameOneIntent = new Intent(view.getContext(), RouletteMain.class);
+                gameOne.startAnimation(bounceAnimationOne);
                 startActivity(new Intent(Games.this, RouletteMain.class));
-//                finish();
             }
         });
 
+        bounceAnimationTwo = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        gameTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gameTwo.startAnimation(bounceAnimationTwo);
+            }
+        });
+
+        bounceAnimationThree = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        gameThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gameThree.startAnimation(bounceAnimationThree);
+            }
+        });
+
+        bounceAnimationFour = AnimationUtils.loadAnimation(this, R.anim.bounce);
         gameFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                gameFour.startAnimation(bounceAnimationFour);
                 startActivity(new Intent(Games.this, CompleteMain.class));
             }
         });
 
+        bounceAnimationFive = AnimationUtils.loadAnimation(this, R.anim.bounce);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                back.startAnimation(bounceAnimationFive);
                 startActivity(new Intent(Games.this, MainActivity.class));
             }
         });

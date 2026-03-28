@@ -29,90 +29,90 @@
     <string name="SectionTwoQuiz_3">!!! Solve the quiz !!!</string>
 
 
-<!--    <string name="SectionThreeTheoryDef_3">• Real Numbers: include all rationals and irrationals.\n-->
-<!--• Arithmetic laws (commutative, associative, distributive) apply to them.\n-->
-<!--• Irrationals + rationals may yield rational or irrational results.\n-->
-<!--• Arithmetical nth root: for a ≥ 0, there’s one non-negative b such that bⁿ = a.\n-->
-<!--• Coordinates: any point (x, y) lies in the plane; distance |M₁M₂| = √((x₂−x₁)² + (y₂−y₁)²).</string>-->
+    <string name="SectionThreeTheoryDef_3">• Real Numbers: include all rationals and irrationals.\n
+• Arithmetic laws (commutative, associative, distributive) apply to them.\n
+• Irrationals + rationals may yield rational or irrational results.\n
+• Arithmetical nth root: for a ≥ 0, there’s one non-negative b such that bⁿ = a.\n
+• Coordinates: any point (x, y) lies in the plane; distance |M₁M₂| = √((x₂−x₁)² + (y₂−y₁)²).</string>
 
-<!--    <string name="SectionThreeTheoryProperties_3">!!! Empty !!!</string>-->
-<!--    <string name="SectionThreeTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionThreeQuiz_3">!!! Solve the quiz !!!</string>-->
-
-
-<!--    <string name="SectionFourTheoryDef_3">• Power Rules:\n-->
-<!--1. aᵐ·aⁿ = aᵐ⁺ⁿ\n-->
-<!--2. aᵐ / aⁿ = aᵐ⁻ⁿ\n-->
-<!--3. (aᵐ)ⁿ = aᵐⁿ\n-->
-<!--4. (ab)ⁿ = aⁿbⁿ, (a/b)ⁿ = aⁿ/bⁿ\n-->
-<!--5. (-a)ⁿ = aⁿ if n even, -aⁿ if odd.</string>-->
-
-<!--    <string name="SectionFourTheoryProperties_3">!!! Empty !!!</string>-->
-<!--    <string name="SectionFourTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionFourQuiz_3">!!! Solve the quiz !!!</string>-->
+    <string name="SectionThreeTheoryProperties_3">!!! Empty !!!</string>
+    <string name="SectionThreeTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_3">!!! Solve the quiz !!!</string>
 
 
-<!--    <string name="SectionFiveTheoryDef_3">• Square root: √a = b if b² = a (a ≥ 0).\n-->
-<!--• Only one non-negative square root exists.\n-->
-<!--• Key relation: √a² = |a|.</string>-->
+    <string name="SectionFourTheoryDef_3">• Power Rules:\n
+1. aᵐ·aⁿ = aᵐ⁺ⁿ\n
+2. aᵐ / aⁿ = aᵐ⁻ⁿ\n
+3. (aᵐ)ⁿ = aᵐⁿ\n
+4. (ab)ⁿ = aⁿbⁿ, (a/b)ⁿ = aⁿ/bⁿ\n
+5. (-a)ⁿ = aⁿ if n even, -aⁿ if odd.</string>
 
-<!--    <string name="SectionFiveTheoryProperties_3">• √ab = √a·√b, √(a/b) = √a/√b.\n-->
-<!--• If a > b > 0, then √a > √b.\n-->
-<!--• Simplify roots: √a²b = |a|√b; a√b = √a²b.</string>-->
-
-<!--    <string name="SectionFiveTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionFiveQuiz_3">!!! Solve the quiz !!!</string>-->
-
-
-<!--    <string name="SectionSixTheoryDef_3">• Zero exponent: a⁰ = 1 (for a ≠ 0).\n-->
-<!--• Negative exponent: a⁻ⁿ = 1/aⁿ.\n-->
-<!--• 0⁰ and 0⁻ⁿ are undefined.</string>-->
-
-<!--    <string name="SectionSixTheoryProperties_3">• Power laws for integer exponents:\n-->
-<!--1. aᵖ·aᵠ = aᵖ⁺ᵠ\n-->
-<!--2. (aᵖ)ᵠ = aᵖᵠ\n-->
-<!--3. aᵖ/aᵠ = aᵖ⁻ᵠ\n-->
-<!--4. (ab)ᵖ = aᵖbᵖ, (a/b)ᵖ = aᵖ/bᵖ.</string>-->
-
-<!--    <string name="SectionSixTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionSixQuiz_3">!!! Solve the quiz !!!</string>-->
+    <string name="SectionFourTheoryProperties_3">!!! Empty !!!</string>
+    <string name="SectionFourTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_3">!!! Solve the quiz !!!</string>
 
 
-<!--    <string name="SectionSevenTheoryDef_3">• Arithmetical nth root: ⁿ√a = b if bⁿ = a (a ≥ 0).\n-->
-<!--• Rules:\n-->
-<!--1. ⁿ√a = ⁿᵏ√aᵏ\n-->
-<!--2. ⁿ√a·ⁿ√b = ⁿ√(ab)\n-->
-<!--3. ⁿ√a/ⁿ√b = ⁿ√(a/b)\n-->
-<!--4. (ⁿ√a)ᵐ = ⁿ√aᵐ\n-->
-<!--5. ᵐ√ⁿ√a = ᵐⁿ√a.\n-->
-<!--• Like roots: simplifiable only when indices and radicands match.\n-->
-<!--• Key identity: ⁿ√aⁿ = |a| if n even; = a if n odd.</string>-->
+    <string name="SectionFiveTheoryDef_3">• Square root: √a = b if b² = a (a ≥ 0).\n
+• Only one non-negative square root exists.\n
+• Key relation: √a² = |a|.</string>
 
-<!--    <string name="SectionSevenTheoryProperties_3">!!! Empty !!!</string>-->
-<!--    <string name="SectionSevenTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionSevenQuiz_3">!!! Solve the quiz !!!</string>-->
+    <string name="SectionFiveTheoryProperties_3">• √ab = √a·√b, √(a/b) = √a/√b.\n
+• If a > b > 0, then √a > √b.\n
+• Simplify roots: √a²b = |a|√b; a√b = √a²b.</string>
+
+    <string name="SectionFiveTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_3">!!! Solve the quiz !!!</string>
 
 
-<!--    <string name="SectionEightTheoryDef_3">• For a > 0 and x = p/q, aˣ = a^(p/q) = ⁹√aᵖ.\n-->
-<!--• If a = 0 and x > 0, then aˣ = 0.\n-->
-<!--• Extends powers to rational exponents.</string>-->
+    <string name="SectionSixTheoryDef_3">• Zero exponent: a⁰ = 1 (for a ≠ 0).\n
+• Negative exponent: a⁻ⁿ = 1/aⁿ.\n
+• 0⁰ and 0⁻ⁿ are undefined.</string>
 
-<!--    <string name="SectionEightTheoryProperties_3">• Power rules remain valid for rational exponents and positive bases.</string>-->
-<!--    <string name="SectionEightTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionEightQuiz_3">!!! Solve the quiz !!!</string>-->
+    <string name="SectionSixTheoryProperties_3">• Power laws for integer exponents:\n
+1. aᵖ·aᵠ = aᵖ⁺ᵠ\n
+2. (aᵖ)ᵠ = aᵖᵠ\n
+3. aᵖ/aᵠ = aᵖ⁻ᵠ\n
+4. (ab)ᵖ = aᵖbᵖ, (a/b)ᵖ = aᵖ/bᵖ.</string>
+
+    <string name="SectionSixTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionSixQuiz_3">!!! Solve the quiz !!!</string>
 
 
-<!--    <string name="SectionNineTheoryDef_3">• For irrational exponents, aˣ is defined by limits of rational approximations.\n-->
-<!--• a⁻ˣ = 1/aˣ.\n-->
-<!--• The process gives a unique positive result for a > 0.</string>-->
+    <string name="SectionSevenTheoryDef_3">• Arithmetical nth root: ⁿ√a = b if bⁿ = a (a ≥ 0).\n
+• Rules:\n
+1. ⁿ√a = ⁿᵏ√aᵏ\n
+2. ⁿ√a·ⁿ√b = ⁿ√(ab)\n
+3. ⁿ√a/ⁿ√b = ⁿ√(a/b)\n
+4. (ⁿ√a)ᵐ = ⁿ√aᵐ\n
+5. ᵐ√ⁿ√a = ᵐⁿ√a.\n
+• Like roots: simplifiable only when indices and radicands match.\n
+• Key identity: ⁿ√aⁿ = |a| if n even; = a if n odd.</string>
 
-<!--    <string name="SectionNineTheoryProperties_3">• Power laws for real exponents:\n-->
-<!--1. aˣ·aʸ = aˣ⁺ʸ\n-->
-<!--2. (aˣ)ʸ = aˣʸ\n-->
-<!--3. aˣ/aʸ = aˣ⁻ʸ\n-->
-<!--4. (ab)ˣ = aˣbˣ\n-->
-<!--5. (a/b)ˣ = aˣ/bˣ.</string>-->
+    <string name="SectionSevenTheoryProperties_3">!!! Empty !!!</string>
+    <string name="SectionSevenTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionSevenQuiz_3">!!! Solve the quiz !!!</string>
 
-<!--    <string name="SectionNineTheoryWorkedExamples_3">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionNineQuiz_3">!!! Solve the quiz !!!</string>-->
+
+    <string name="SectionEightTheoryDef_3">• For a > 0 and x = p/q, aˣ = a^(p/q) = ⁹√aᵖ.\n
+• If a = 0 and x > 0, then aˣ = 0.\n
+• Extends powers to rational exponents.</string>
+
+    <string name="SectionEightTheoryProperties_3">• Power rules remain valid for rational exponents and positive bases.</string>
+    <string name="SectionEightTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionEightQuiz_3">!!! Solve the quiz !!!</string>
+
+
+    <string name="SectionNineTheoryDef_3">• For irrational exponents, aˣ is defined by limits of rational approximations.\n
+• a⁻ˣ = 1/aˣ.\n
+• The process gives a unique positive result for a > 0.</string>
+
+    <string name="SectionNineTheoryProperties_3">• Power laws for real exponents:\n
+1. aˣ·aʸ = aˣ⁺ʸ\n
+2. (aˣ)ʸ = aˣʸ\n
+3. aˣ/aʸ = aˣ⁻ʸ\n
+4. (ab)ˣ = aˣbˣ\n
+5. (a/b)ˣ = aˣ/bˣ.</string>
+
+    <string name="SectionNineTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionNineQuiz_3">!!! Solve the quiz !!!</string>
 </resources>

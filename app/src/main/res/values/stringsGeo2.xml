@@ -30,31 +30,31 @@
 
     <string name="SectionTwoQuiz_9">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionThreeTheoryDef_9">• Parallel lines never meet.-->
-<!--\n • A transversal cuts two lines at different points.-->
-<!--\n • Creates alternate and corresponding angles.</string>-->
+    <string name="SectionThreeTheoryDef_9">• Parallel lines never meet.
+\n • A transversal cuts two lines at different points.
+\n • Creates alternate and corresponding angles.</string>
 
-<!--    <string name="SectionThreeTheoryProperties_9">• Through a point, one parallel can be drawn to a line.-->
-<!--\n • Lines parallel to the same line are also parallel.-->
-<!--\n • In a triangle, angles sum to 180°; polygon sums follow 180°×(n−2).</string>-->
+    <string name="SectionThreeTheoryProperties_9">• Through a point, one parallel can be drawn to a line.
+\n • Lines parallel to the same line are also parallel.
+\n • In a triangle, angles sum to 180°; polygon sums follow 180°×(n−2).</string>
 
-<!--    <string name="SectionThreeTheoryWorkedExamples_9">• Proved parallel lines by equal alternate angles.-->
-<!--\n • Triangle angle sum shown using a parallel line.-->
-<!--\n • Exterior angle helps confirm equality.</string>-->
+    <string name="SectionThreeTheoryWorkedExamples_9">• Proved parallel lines by equal alternate angles.
+\n • Triangle angle sum shown using a parallel line.
+\n • Exterior angle helps confirm equality.</string>
 
-<!--    <string name="SectionThreeQuiz_9">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionThreeQuiz_9">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionFourTheoryDef_9">• Parallelogram has opposite sides parallel.-->
-<!--\n • Rectangle, rhombus, and square are special cases.-->
-<!--\n • Trapezoid has one pair of parallel sides.</string>-->
+    <string name="SectionFourTheoryDef_9">• Parallelogram has opposite sides parallel.
+\n • Rectangle, rhombus, and square are special cases.
+\n • Trapezoid has one pair of parallel sides.</string>
 
-<!--    <string name="SectionFourTheoryProperties_9">• Parallelogram sides and angles are equal.-->
-<!--\n • Rhombus diagonals are perpendicular and bisect angles.-->
-<!--\n • Triangle and trapezoid midlines are parallel and half-lengths.</string>-->
+    <string name="SectionFourTheoryProperties_9">• Parallelogram sides and angles are equal.
+\n • Rhombus diagonals are perpendicular and bisect angles.
+\n • Triangle and trapezoid midlines are parallel and half-lengths.</string>
 
-<!--    <string name="SectionFourTheoryWorkedExamples_9">• Parallelogram sides proved equal via congruent triangles.-->
-<!--\n • Thales theorem used to divide a segment equally.-->
-<!--\n • Diagonal helps demonstrate equal relationships.</string>-->
+    <string name="SectionFourTheoryWorkedExamples_9">• Parallelogram sides proved equal via congruent triangles.
+\n • Thales theorem used to divide a segment equally.
+\n • Diagonal helps demonstrate equal relationships.</string>
 
-<!--    <string name="SectionFourQuiz_9">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionFourQuiz_9">!!! Solve the Quiz !!!</string>
 </resources>

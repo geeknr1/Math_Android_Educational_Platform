@@ -126,15 +126,16 @@
             android:layout_marginTop="20dp"
             android:text="Arithmetic and Geometric Progressions. Logarithms"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/backToTutorial"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="Back"
-            android:backgroundTint="#0000ff"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:backgroundTint="#ff0000"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/white"/>

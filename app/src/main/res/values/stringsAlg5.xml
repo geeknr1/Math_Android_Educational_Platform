@@ -12,64 +12,64 @@
     <string name="SectionTwoTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
     <string name="SectionTwoQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionThreeTheoryDef_5">Quadratic: ax²+bx+c=0, a≠0. D=b²−4ac decides roots. Formula: x=(-b±√D)/2a. Viète: x₁+x₂=-b/a, x₁x₂=c/a.</string>-->
-<!--    <string name="SectionThreeTheoryProperties_5">Viète links roots and coefficients. D>0→2 roots, D=0→1, D&lt;0→none.</string>-->
-<!--    <string name="SectionThreeTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionThreeQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionThreeTheoryDef_5">Quadratic: ax²+bx+c=0, a≠0. D=b²−4ac decides roots. Formula: x=(-b±√D)/2a. Viète: x₁+x₂=-b/a, x₁x₂=c/a.</string>
+    <string name="SectionThreeTheoryProperties_5">Viète links roots and coefficients. D>0→2 roots, D=0→1, D&lt;0→none.</string>
+    <string name="SectionThreeTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionThreeQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionFourTheoryDef_5">Quadratic trinomial ax²+bx+c=0 → roots x₁,x₂.</string>-->
-<!--    <string name="SectionFourTheoryProperties_5">Factor form: a(x−x₁)(x−x₂), from Viète’s theorem.</string>-->
-<!--    <string name="SectionFourTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionFourQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionFourTheoryDef_5">Quadratic trinomial ax²+bx+c=0 → roots x₁,x₂.</string>
+    <string name="SectionFourTheoryProperties_5">Factor form: a(x−x₁)(x−x₂), from Viète’s theorem.</string>
+    <string name="SectionFourTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFourQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionFiveTheoryDef_5">Higher-degree eq: a₀xⁿ+...+aₙ=0. Use factoring or substitution. Biquadratic: ax⁴+bx²+c=0 → y=x².</string>-->
-<!--    <string name="SectionFiveTheoryProperties_5">Factoring lowers degree. Substitution simplifies radicals. Check for extraneous roots.</string>-->
-<!--    <string name="SectionFiveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionFiveQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionFiveTheoryDef_5">Higher-degree eq: a₀xⁿ+...+aₙ=0. Use factoring or substitution. Biquadratic: ax⁴+bx²+c=0 → y=x².</string>
+    <string name="SectionFiveTheoryProperties_5">Factoring lowers degree. Substitution simplifies radicals. Check for extraneous roots.</string>
+    <string name="SectionFiveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFiveQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionSixTheoryDef_5">Equations with several unknowns (e.g., x+2y=3). Solutions are ordered pairs/triples.</string>-->
-<!--    <string name="SectionSixTheoryProperties_5">Systems solved simultaneously; may have one, none, or ∞ solutions.</string>-->
-<!--    <string name="SectionSixTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionSixQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionSixTheoryDef_5">Equations with several unknowns (e.g., x+2y=3). Solutions are ordered pairs/triples.</string>
+    <string name="SectionSixTheoryProperties_5">Systems solved simultaneously; may have one, none, or ∞ solutions.</string>
+    <string name="SectionSixTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionSixQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionSevenTheoryDef_5">System: a₁x+b₁y=c₁; a₂x+b₂y=c₂. Solve by substitution or addition.</string>-->
-<!--    <string name="SectionSevenTheoryProperties_5">Cases: unique, none, or ∞. Lines intersect, parallel, or coincide.</string>-->
-<!--    <string name="SectionSevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionSevenQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionSevenTheoryDef_5">System: a₁x+b₁y=c₁; a₂x+b₂y=c₂. Solve by substitution or addition.</string>
+    <string name="SectionSevenTheoryProperties_5">Cases: unique, none, or ∞. Lines intersect, parallel, or coincide.</string>
+    <string name="SectionSevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionSevenQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionEightTheoryDef_5">Maintain equivalence. Analyze parameter effects and domains. Substitution helps simplify.</string>-->
-<!--    <string name="SectionEightTheoryProperties_5">Handle linear, quadratic, irrational, and system equations with parameters carefully.</string>-->
-<!--    <string name="SectionEightTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionEightQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionEightTheoryDef_5">Maintain equivalence. Analyze parameter effects and domains. Substitution helps simplify.</string>
+    <string name="SectionEightTheoryProperties_5">Handle linear, quadratic, irrational, and system equations with parameters carefully.</string>
+    <string name="SectionEightTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionEightQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionNineTheoryDef_5">Word Problems: define unknowns, express conditions, form equations, choose solving method.</string>-->
-<!--    <string name="SectionNineTheoryProperties_5">Examples: number, motion, work, flow, or team problems; form and solve systems.</string>-->
-<!--    <string name="SectionNineTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionNineQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionNineTheoryDef_5">Word Problems: define unknowns, express conditions, form equations, choose solving method.</string>
+    <string name="SectionNineTheoryProperties_5">Examples: number, motion, work, flow, or team problems; form and solve systems.</string>
+    <string name="SectionNineTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionNineQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionTenTheoryDef_5">Inequalities: &gt;, &lt;, ≥, ≤. Domain = valid variable values. Solution makes statement true.</string>-->
-<!--    <string name="SectionTenTheoryProperties_5">Use transitivity, addition, multiplication rules. Equivalent inequalities share solutions.</string>-->
-<!--    <string name="SectionTenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionTenQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionTenTheoryDef_5">Inequalities: &gt;, &lt;, ≥, ≤. Domain = valid variable values. Solution makes statement true.</string>
+    <string name="SectionTenTheoryProperties_5">Use transitivity, addition, multiplication rules. Equivalent inequalities share solutions.</string>
+    <string name="SectionTenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTenQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionElevenTheoryDef_5">Prove inequalities via direct/equivalent transformations. Use AM-GM, triangle, modulus properties.</string>-->
-<!--    <string name="SectionElevenTheoryProperties_5">Reduce to known forms like (a−b)²≥0. Apply mean and modulus inequalities.</string>-->
-<!--    <string name="SectionElevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionElevenQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionElevenTheoryDef_5">Prove inequalities via direct/equivalent transformations. Use AM-GM, triangle, modulus properties.</string>
+    <string name="SectionElevenTheoryProperties_5">Reduce to known forms like (a−b)²≥0. Apply mean and modulus inequalities.</string>
+    <string name="SectionElevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionElevenQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionTwelveTheoryDef_5">Linear: ax+b&gt;0 → ray. Quadratic: ax²+bx+c&gt;0 → depends on D and sign of a.</string>-->
-<!--    <string name="SectionTwelveTheoryProperties_5">!!! Empty !!!</string>-->
-<!--    <string name="SectionTwelveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionTwelveQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionTwelveTheoryDef_5">Linear: ax+b&gt;0 → ray. Quadratic: ax²+bx+c&gt;0 → depends on D and sign of a.</string>
+    <string name="SectionTwelveTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionTwelveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTwelveQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionThirteenTheoryDef_5">Systems of inequalities → intersection of solution sets. |x|≤a ⇔ -a≤x≤a; |x|≥a ⇔ x≥a or x≤-a.</string>-->
-<!--    <string name="SectionThirteenTheoryProperties_5">!!! Empty !!!</string>-->
-<!--    <string name="SectionThirteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionThirteenQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionThirteenTheoryDef_5">Systems of inequalities → intersection of solution sets. |x|≤a ⇔ -a≤x≤a; |x|≥a ⇔ x≥a or x≤-a.</string>
+    <string name="SectionThirteenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionThirteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionThirteenQuiz_5">!!! Solve the Quiz !!!</string>
 
-<!--    <string name="SectionFourteenTheoryDef_5">Method of Intervals: find roots of P,Q; mark on axis; check signs; select valid intervals.</string>-->
-<!--    <string name="SectionFourteenTheoryProperties_5">!!! Empty !!!</string>-->
-<!--    <string name="SectionFourteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>-->
-<!--    <string name="SectionFourteenQuiz_5">!!! Solve the Quiz !!!</string>-->
+    <string name="SectionFourteenTheoryDef_5">Method of Intervals: find roots of P,Q; mark on axis; check signs; select valid intervals.</string>
+    <string name="SectionFourteenTheoryProperties_5">!!! Empty !!!</string>
+    <string name="SectionFourteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFourteenQuiz_5">!!! Solve the Quiz !!!</string>
 
 </resources>

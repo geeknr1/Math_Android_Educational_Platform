@@ -35,41 +35,41 @@
         android:textColor="@color/black"
         android:text="Welcome To Our ELearning Online Educational Platform" />
 
-    <TextView
+    <ImageButton
         android:id="@+id/Tutorial"
-        android:layout_width="150dp"
+        android:layout_width="220dp"
         android:layout_height="100dp"
+        android:scaleType="fitXY"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="80dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:text="TUTORIAL"
+        android:src="@drawable/tutorial"
         android:background="@drawable/rounded_button"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="358dp"/>
 
-            <TextView
+            <ImageButton
                 android:id="@+id/Games"
-                android:layout_width="150dp"
+                android:layout_width="220dp"
                 android:layout_height="100dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:text="GAMES"
+                android:src="@drawable/games"
+                android:scaleType="fitXY"
                 android:background="@drawable/rounded_button"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="358dp"/>
 
-    <TextView
+    <ImageButton
         android:id="@+id/Quit"
         android:layout_width="150dp"
         android:layout_height="100dp"
@@ -77,7 +77,8 @@
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:text="QUIT"
+        android:src="@drawable/quit"
+        android:scaleType="fitXY"
         android:background="@drawable/rounded_button_3"
         android:textSize="50sp"
         android:textStyle="bold"

@@ -5,9 +5,12 @@ import static android.view.View.VISIBLE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,10 +20,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Algebra extends AppCompatActivity {
     private TextView welcome;
     private TextView choose;
-    private Button back;
+    private ImageButton back;
+    private Animation bounceAnimation;
+    private char underDash = '_', emptySpace = ' ';
 
     protected void onCreate(Bundle savedInstanceState){
-//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algebra);
 
@@ -41,9 +45,12 @@ public class Algebra extends AppCompatActivity {
         back = findViewById(R.id.backToTutorial);
         back.setVisibility(VISIBLE);
 
+        bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce);
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                back.startAnimation(bounceAnimation);
                 startActivity(new Intent(Algebra.this, Tutorial.class));
             }
         });
