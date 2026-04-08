@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="questionOne">question1</string>
     <string name="Answer1.1">answer1</string>
     <string name="Answer1.2">answer2</string>
     <string name="Answer1.3">answer3</string>

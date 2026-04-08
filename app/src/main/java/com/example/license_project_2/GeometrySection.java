@@ -10,6 +10,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,73 +27,41 @@ public class GeometrySection extends AppCompatActivity {
             answertwo_2, answerthree_2, answerone_3, answertwo_3,
             answerthree_3, answerone_4, answertwo_4, answerthree_4,
             answerone_5, answertwo_5, answerthree_5;
-    private TextView question1, question2, question3, question4, question5;
-    private TextView theoryDefinition;
-    private TextView theoryProperties;
-    private TextView theoryWorkedExamples;
-    private TextView quizPrime;
-    private TextView taskDoneOne;
-    private TextView taskDoneTwo;
-    private TextView taskDoneThree;
-    private CheckBox checkDefinition;
-    private CheckBox checkProperties;
-    private CheckBox checkExamples;
-    private int scorePercentage=0;
-    private ProgressManager pm;
-    private String currentLessonName;
+    private ImageView question1, question2, question3, question4, question5;
+    private TextView theoryDefinition, theoryProperties, theoryWorkedExamples, quizPrime;
+    private ProgressBar progressBarOne, progressBarTwo;
+    private int progressValueOne = 0, progressValueTwo = 0;
     private Animation bounceAnimation, bounceAnimationTwo, bounceAnimationThree;
 
     private static final String [] parts = {"Def", "Props", "Examples", "Quiz"};
     private int index;
-//    private String[] descriptionData = {"Stage 1", "Stage 2", "Stage 3", "Stage 4"};
+    private ImageView definitionImgOne, definitionImgTwo, propertiesImgOne, propertiesImgTwo;
 
     protected void onCreate(Bundle savedInstanceState){
-//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.geometry_section);
 
-//        StateProgressBar stateProgressBar = (StateProgressBar) findViewById(R.id.stateProgressBar_2);
-//        stateProgressBar.setStateDescriptionData(descriptionData);
-
         GeometrySections sectionGeo = GeometrySections.detachFrom(getIntent());
         bindText(sectionGeo);
-        pm = new ProgressManager(this);
-        currentLessonName = sectionGeo.name();
+
 
         ImageButton previous = findViewById(R.id.previous);
         current = findViewById(R.id.current);
         ImageButton next = findViewById(R.id.next);
 
-        theoryDefinition = findViewById(R.id.sectionDefinition);
-        theoryProperties = findViewById(R.id.sectionProperties);
-        theoryWorkedExamples = findViewById(R.id.sectionWorkedExamples);
-        quizPrime = findViewById(R.id.sectionQuiz);
+        theoryDefinition = findViewById(R.id.sectionDefinition); theoryProperties = findViewById(R.id.sectionProperties);
+        theoryWorkedExamples = findViewById(R.id.sectionWorkedExamples); quizPrime = findViewById(R.id.sectionQuiz);
 
-        taskDoneOne = findViewById(R.id.definitionPercentage);
-        taskDoneTwo = findViewById(R.id.propertiesPercentage);
-        taskDoneThree = findViewById(R.id.examplesPercentage);
         ImageButton back = findViewById(R.id.back);
 
-        checkDefinition = findViewById(R.id.checkDefinition);
-        checkProperties = findViewById(R.id.checkProperties);
-        checkExamples = findViewById(R.id.checkExamples);
+        theoryDefinition.setVisibility(View.GONE); theoryProperties.setVisibility(View.GONE);
+        theoryWorkedExamples.setVisibility(View.GONE); quizPrime.setVisibility(View.GONE);
 
-        theoryDefinition.setVisibility(View.GONE);
-        theoryProperties.setVisibility(View.GONE);
-        theoryWorkedExamples.setVisibility(View.GONE);
-        quizPrime.setVisibility(View.GONE);
+        definitionImgOne = findViewById(R.id.imageDefOne); definitionImgTwo = findViewById(R.id.imageDefTwo);
+        propertiesImgOne = findViewById(R.id.imagePropertiesOne); propertiesImgTwo = findViewById(R.id.imagePropertiesTwo);
 
-        taskDoneOne.setVisibility(View.GONE);
-        taskDoneTwo.setVisibility(View.GONE);
-        taskDoneThree.setVisibility(View.GONE);
-
-        checkDefinition.setVisibility(View.GONE);
-        checkProperties.setVisibility(View.GONE);
-        checkExamples.setVisibility(View.GONE);
-
-        checkDefinition.setChecked(pm.isTaskDone(currentLessonName, "definition"));
-        checkProperties.setChecked(pm.isTaskDone(currentLessonName, "properties"));
-        checkExamples.setChecked(pm.isTaskDone(currentLessonName, "examples"));
+        definitionImgOne.setVisibility(View.GONE); definitionImgTwo.setVisibility(View.GONE);
+        propertiesImgOne.setVisibility(View.GONE); propertiesImgTwo.setVisibility(View.GONE);
 
         answerone_1 = findViewById(R.id.buttonAnswerOne); answertwo_1 = findViewById(R.id.buttonAnswerTwo);
         answerthree_1 = findViewById(R.id.buttonAnswerThree);
@@ -114,31 +84,27 @@ public class GeometrySection extends AppCompatActivity {
         answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
         answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
-        question1 = findViewById(R.id.firstQuestion); question2 = findViewById(R.id.secondQuestion); question3 = findViewById(R.id.thirdQuestion);
-        question4 = findViewById(R.id.fourthQuestion); question5 = findViewById(R.id.fifthQuestion);
+        question1 = findViewById(R.id.requirementOneImg); question2 = findViewById(R.id.requirementTwoImg); question3 = findViewById(R.id.requirementThreeImg);
+        question4 = findViewById(R.id.requirementFourImg); question5 = findViewById(R.id.requirementFiveImg);
 
         question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
         question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
+
+        progressBarOne = findViewById(R.id.progressBarGeometryTheory); progressBarTwo = findViewById(R.id.progressBarGeometryQuiz);
+        progressBarOne.setVisibility(View.VISIBLE); progressBarTwo.setVisibility(View.GONE);
 
         bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                switch(stateProgressBar.getCurrentStateNumber()){
-//                    case 1:
-//                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.TWO);
-//                        break;
-//                    case 2:
-//                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.THREE);
-//                        break;
-//                    case 3:
-//                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.FOUR);
-//                        break;
-//                    case 4:
-//                        stateProgressBar.setAllStatesCompleted(true);
-//                        break;
-//                }
+                if(progressValueOne < 100 && sectionIndex != 3){
+                    progressValueOne += 25;
+                    progressBarOne.setProgress(progressValueOne);
+                } else if (progressValueOne < 100 & sectionIndex >= 3) {
+                    progressValueOne += 50;
+                    progressBarOne.setProgress(progressValueOne);
+                }
 
                 next.startAnimation(bounceAnimation);
                 sectionIndex = sectionIndex + 1;
@@ -150,10 +116,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
-
-                    checkDefinition.setVisibility(View.VISIBLE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.GONE);
 
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
@@ -173,10 +135,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
 
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.VISIBLE);
-                    checkExamples.setVisibility(View.GONE);
-
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
                     answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
@@ -195,10 +153,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryWorkedExamples.setVisibility(View.VISIBLE);
                     quizPrime.setVisibility(View.GONE);
 
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.VISIBLE);
-
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
                     answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
@@ -216,10 +170,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.VISIBLE);
-
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.GONE);
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
                     question4.setVisibility(View.VISIBLE); question5.setVisibility(View.VISIBLE);
@@ -240,10 +190,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.VISIBLE);
 
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.GONE);
-
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
                     question4.setVisibility(View.VISIBLE); question5.setVisibility(View.VISIBLE);
                     answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE);
@@ -261,6 +207,14 @@ public class GeometrySection extends AppCompatActivity {
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(sectionIndex == 4 && progressValueOne > 0){
+                    progressValueOne -= 50;
+                    progressBarOne.setProgress(progressValueOne);
+                }
+                else{
+                    progressValueOne -= 25;
+                    progressBarOne.setProgress(progressValueOne);
+                }
 
                 previous.startAnimation(bounceAnimationTwo);
                 sectionIndex = sectionIndex - 1;
@@ -271,10 +225,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
-
-                    checkDefinition.setVisibility(View.VISIBLE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.GONE);
 
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
@@ -294,10 +244,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
 
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.VISIBLE);
-                    checkExamples.setVisibility(View.GONE);
-
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
                     answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
@@ -315,10 +261,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryProperties.setVisibility(View.GONE);
                     theoryWorkedExamples.setVisibility(View.VISIBLE);
                     quizPrime.setVisibility(View.GONE);
-
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.VISIBLE);
 
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
@@ -338,10 +280,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.VISIBLE);
 
-                    checkDefinition.setVisibility(View.GONE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.GONE);
-
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
                     question4.setVisibility(View.VISIBLE); question5.setVisibility(View.VISIBLE);
                     answerone_1.setVisibility(View.VISIBLE); answertwo_1.setVisibility(View.VISIBLE); answerthree_1.setVisibility(View.VISIBLE);
@@ -360,10 +298,6 @@ public class GeometrySection extends AppCompatActivity {
                     theoryWorkedExamples.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
 
-                    checkDefinition.setVisibility(View.VISIBLE);
-                    checkProperties.setVisibility(View.GONE);
-                    checkExamples.setVisibility(View.GONE);
-
                     answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
                     answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
                     answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
@@ -372,63 +306,6 @@ public class GeometrySection extends AppCompatActivity {
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
-                }
-            }
-        });
-
-        checkDefinition.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                scorePercentage += 10;
-                taskDoneOne.setVisibility(View.VISIBLE);
-                taskDoneTwo.setVisibility(View.GONE);
-                taskDoneThree.setVisibility(View.GONE);
-
-                pm.setTaskDone(currentLessonName, "definition", checkDefinition.isChecked());
-                if(checkDefinition.isChecked()){
-                    taskDoneOne.setVisibility(VISIBLE);
-                    scorePercentage -= 10;
-                }
-                else{
-                    taskDoneOne.setVisibility(View.GONE);
-                }
-            }
-        });
-
-        checkProperties.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                scorePercentage += 10;
-                taskDoneOne.setVisibility(View.GONE);
-                taskDoneTwo.setVisibility(View.VISIBLE);
-                taskDoneThree.setVisibility(View.GONE);
-
-                pm.setTaskDone(currentLessonName, "properties", checkProperties.isChecked());
-                if(checkProperties.isChecked()){
-                    taskDoneTwo.setVisibility(VISIBLE);
-                    scorePercentage -= 10;
-                }
-                else{
-                    taskDoneTwo.setVisibility(View.GONE);
-                }
-            }
-        });
-
-        checkExamples.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                scorePercentage += 20;
-                taskDoneOne.setVisibility(View.GONE);
-                taskDoneTwo.setVisibility(View.GONE);
-                taskDoneThree.setVisibility(View.VISIBLE);
-
-                pm.setTaskDone(currentLessonName, "examples", checkExamples.isChecked());
-                if(checkExamples.isChecked()){
-                    taskDoneThree.setVisibility(VISIBLE);
-                    scorePercentage -= 20;
-                }
-                else{
-                    taskDoneThree.setVisibility(View.GONE);
                 }
             }
         });

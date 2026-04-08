@@ -30,6 +30,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+//    viewBinding{enable = true}
 }
 
 dependencies {
@@ -39,10 +41,13 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+//    implementation(libs.anton46.stepsview)
 //    implementation("com.github.kofigyan:StateProgressBar:69b4192777"){
 //        exclude(group = "com.android.support", module = "support-v4")
 //    }
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

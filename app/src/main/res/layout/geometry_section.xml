@@ -67,6 +67,15 @@
 
         </LinearLayout>
 
+        <ProgressBar
+            android:id="@+id/progressBarGeometryTheory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,20 +90,6 @@
         android:layout_gravity="center_horizontal"
         android:padding="24dp"
         android:background="@drawable/lavender_border">
-
-<!--        <com.kofigyan.stateprogressbar.StateProgressBar-->
-<!--            android:id="@+id/stateProgressBar_2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:spb_animateToCurrentProgressState="true"-->
-<!--            app:spb_checkStateCompleted="true"-->
-<!--            app:spb_currentStateDescriptionColor="#0F9D58"-->
-<!--            app:spb_currentStateNumber="one"-->
-<!--            app:spb_maxStateNumber="four"-->
-<!--            app:spb_stateBackgroundColor="#BDBDBD"-->
-<!--            app:spb_stateDescriptionColor="#808080"-->
-<!--            app:spb_stateNumberBackgroundColor="#808080"-->
-<!--            app:spb_stateNumberForegroundColor="#eeeeee"/>-->
 
         <TextView
             android:id="@+id/sectionDefinition"
@@ -168,52 +163,6 @@
             android:singleLine="false"
             android:textColor="@color/black"/>
 
-        <CheckBox
-            android:id="@+id/checkDefinition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Definition Task done"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/definitionPercentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Done with definition!"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-        <CheckBox
-            android:id="@+id/checkProperties"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Properties Task done"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/propertiesPercentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Done with properties!"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-        <CheckBox
-            android:id="@+id/checkExamples"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Examples Task done"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/examplesPercentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Done with examples!"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
-
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -232,13 +181,20 @@
                 android:padding="24dp"
                 android:background="@drawable/lavender_border">
 
-                <TextView
-                    android:id="@+id/firstQuestion"
-                    android:layout_width="wrap_content"
+                <ProgressBar
+                    android:id="@+id/progressBarGeometryQuiz"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:singleLine="false"
-                    android:textColor="@color/black"/>
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="0"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar"/>
+
+                <ImageView
+                    android:id="@+id/requirementOneImg"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -285,13 +241,11 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/secondQuestion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:singleLine="false"
-                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/requirementTwoImg"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -338,13 +292,11 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/thirdQuestion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:singleLine="false"
-                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/requirementThreeImg"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -391,13 +343,11 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/fourthQuestion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:singleLine="false"
-                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/requirementFourImg"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -444,13 +394,11 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/fifthQuestion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:singleLine="false"
-                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/requirementFiveImg"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"

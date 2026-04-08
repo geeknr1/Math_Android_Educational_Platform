@@ -138,7 +138,7 @@ public class RouletteMain extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                             String stringAnswer = answer.getText().toString().trim();
-                            if(stringAnswer.equals(calculusAnswers[degreeAnsCalc - 1])){
+                            if(stringAnswer.equals(calculusAnswers[degreeAnsCalc])){
                                 answer.setTextColor(Color.GREEN);
                                 Toast.makeText(RouletteMain.this, "Wrong answer", Toast.LENGTH_SHORT).show();
                             }

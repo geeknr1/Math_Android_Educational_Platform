@@ -24,6 +24,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/saveButton"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/rounded_button"
+                android:text="BACK"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:backgroundTint="#ff0000"/>
+            <TextView
+                android:id="@+id/restartButton"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:text="RESTART"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:backgroundTint="#ff0000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
             <Button
                 android:id="@+id/current"
                 android:layout_width="150dp"
@@ -51,6 +82,16 @@
 
         </LinearLayout>
 
+        <ProgressBar
+            android:id="@+id/progressBarMathComplete"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="0"
+            android:max="111"
+            android:progressDrawable="@drawable/progressbar"/>
+
 
 
         <androidx.cardview.widget.CardView
@@ -68,6 +109,41 @@
                 android:paddingBottom="16dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/startGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start the Game"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/startEmoji"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/yellowsmile"/>
+
+                <TextView
+                    android:id="@+id/congratulations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Ended Succsessfully"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/emoji"/>
+
                 <TextView
                     android:id="@+id/selectedProblem"
                     android:layout_width="wrap_content"
