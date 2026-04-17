@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/countryside">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/restartgame"
+            android:backgroundTint="@color/blue"
+            android:onClick="restartGame"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shutdowngame"
+            android:backgroundTint="@color/red"
+            android:onClick="quitGame"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNewHighest"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/rewardgame"
+            android:visibility="gone"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Your Points: "
+                    android:textSize="25sp"
+                    android:layout_marginEnd="35dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/kenney_blocks"
+                    />
+                <TextView
+                    android:id="@+id/tvPoints"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="50"
+                    android:textSize="50sp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:fontFamily="@font/kenney_blocks"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Highest: "
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kenney_blocks"
+                    />
+                <TextView
+                    android:id="@+id/tvHighest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:fontFamily="@font/kenney_blocks"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="80dp"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

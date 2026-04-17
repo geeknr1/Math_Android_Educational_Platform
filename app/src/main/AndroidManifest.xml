@@ -48,6 +48,10 @@
         <activity
             android:name=".MathComplete.CompleteMain"
             android:exported="true"/>
+        <activity android:name=".MathGeometry.GeometryMain"
+            android:exported="true"/>
+        <activity android:name=".MathGeometry.GameOver"
+            android:exported="true"/>
         <activity android:name=".MainActivity"
             android:exported="true"/>
 <!--        <activity-->

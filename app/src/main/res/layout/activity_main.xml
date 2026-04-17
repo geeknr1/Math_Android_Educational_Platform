@@ -9,7 +9,7 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:background="@drawable/digits">
+    android:background="@drawable/digitsmath">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -25,15 +25,13 @@
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
             android:background="@drawable/lavender_border">
-    <TextView
+
+            <ImageView
         android:id="@+id/welcomeMessage"
         android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="Welcome To Our ELearning Online Educational Platform" />
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mathstuffimg" />
 
     <ImageButton
         android:id="@+id/Tutorial"

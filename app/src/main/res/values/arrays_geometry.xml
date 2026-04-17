@@ -2,13 +2,13 @@
 <resources>
 
     <string-array name="Fundamental_Concepts_of_Geometry_and_Geometric_Figures">
-        <item>Fundamental_Concepts_of_Geometry_and_Geometric_Figures</item>
+        <item>@string/fundamental_concepts_of_geometry_and_geometric_figures</item>
         <item>Fundamental_Concepts_of_Geometry</item>
         <item>Geometric_Figures</item>
     </string-array>
 
     <string-array name="Straight_Lines">
-        <item>Straight_Lines</item>
+        <item>@string/straight_lines</item>
         <item>Triangles</item>
         <item>Basic_Geometric_Constructions</item>
         <item>Parallel_Lines</item>
@@ -25,7 +25,7 @@
     </string-array>
 
     <string-array name="Similarity_of_Polygons">
-        <item>Similarity_of_Polygons</item>
+        <item>@string/similarity_of_polygons</item>
         <item>Proportional_Line_Segments</item>
         <item>Similar_Triangles</item>
         <item>Pythagorean_Theorem</item>
@@ -35,14 +35,14 @@
     </string-array>
 
     <string-array name="Transformation_of_Figures">
-        <item>Transformation_of_Figures</item>
+        <item>@string/transformation_of_figures</item>
         <item>Examples_of_Transformations_of_Figures</item>
         <item>Motion___Congruence_of_Figures</item>
         <item>Transformation_of_Similitude</item>
     </string-array>
 
     <string-array name="Vectors_in_the_Plane_and_Trigonometric_Functions_of_the_Angle">
-        <item>Vectors_in_the_Plane_and_Trigonometric_Functions_of_the_Angle</item>
+        <item>@string/vectors_in_a_plane_and_trigonometric_functions_of_the_angle</item>
         <item>Addition_and_Subtraction_of_Vectors</item>
         <item>Multiplication_of_a_Vector_by_a_Number</item>
         <item>Coordinates_of_a_Vector_in_the_Plane</item>
@@ -54,21 +54,21 @@
     </string-array>
 
     <string-array name="Areas_of_Polygons">
-        <item>Areas_of_Polygons</item>
+        <item>@string/areas_of_polygons</item>
         <item>Notion_of_the_Area_of_a_Polygon</item>
         <item>Areas_of_a_Parallelogram__a_Triangle_and_a_Trapezoid</item>
         <item>Area_of_a_Polygon___Ratio_of_the_Areas_of_Similar_Polygons</item>
     </string-array>
 
     <string-array name="Regular_Polygons___Length_of_Circumference___Area_of_a_Circle">
-        <item>Regular_Polygons___Length_of_Circumference___Area_of_a_Circle</item>
+        <item>@string/regular_polygons___length_of_circumference___area_of_a_circle</item>
         <item>Regular_Polygons</item>
         <item>Length_of_Circumferencе</item>
         <item>Area_of_a_Circle</item>
     </string-array>
 
     <string-array name="Fundamentals_of_Solid_Geometry">
-        <item>Fundamentals_of_Solid_Geometry</item>
+        <item>@string/fundamentals_of_solid_geometry</item>
         <item>Axioms_of_Solid_Geometry</item>
         <item>Straight_Lines_and_Planes_in_Space</item>
         <item>Polyhedrons___Right_Prism__Rectangular_Parallelepiped__Pyramid_and_Regular_Pyramid</item>

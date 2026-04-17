@@ -64,6 +64,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:text="Whole Numbers And Fractions"
+            android:scrollbarStyle="insideInset"
             />
 
         <Spinner
@@ -74,7 +75,8 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="Approximate Calculations"/>
+            android:text="Approximate Calculations"
+            android:scrollbarStyle="insideInset"/>
 
         <Spinner
             android:background="#ADD8E6"
@@ -84,7 +86,8 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="Powers and Roots. Real Numbers"/>
+            android:text="Powers and Roots. Real Numbers"
+            android:scrollbarStyle="insideInset"/>
 
         <Spinner
             android:background="#ADD8E6"
@@ -94,7 +97,8 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="Expressions"/>
+            android:text="Expressions"
+            android:scrollbarStyle="insideInset"/>
 
         <Spinner
             android:background="#ADD8E6"
@@ -104,7 +108,8 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="Equations and Inequalities"/>
+            android:text="Equations and Inequalities"
+            android:scrollbarStyle="insideInset"/>
 
         <Spinner
             android:background="#ADD8E6"
@@ -114,7 +119,8 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="Functions and Graphs"/>
+            android:text="Functions and Graphs"
+            android:scrollbarStyle="insideInset"/>
 
         <Spinner
             android:background="#ADD8E6"
@@ -124,7 +130,8 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="Arithmetic and Geometric Progressions. Logarithms"/>
+            android:text="Arithmetic and Geometric Progressions. Logarithms"
+            android:scrollbarStyle="insideInset"/>
 
         <ImageButton
             android:id="@+id/backToTutorial"

@@ -1,4 +1,19 @@
 <resources>
     <string name="whole_numbers_and_fractions">Whole Numbers And Fractions</string>
-    <string name="arithmetic_operations_on_whole_numbers">Arithmetic Operations on Whole Numbers</string>
+
+    <string name="approximate_calculations">Approximate Calculations</string>
+    <string name="powers_and_roots___real_numbers">Powers and Roots. Real Numbers</string>
+    <string name="equations_and_inequalities">Equations and Inequalities</string>
+    <string name="functions_and_graphs">Functions and Graphs</string>
+    <string name="arithmetic_and_geometric_progressions___logarithms">Arithmetic and Geometric Progressions. Logarithms</string>
+
+    <string name="fundamental_concepts_of_geometry_and_geometric_figures">Fundamental concepts of Geometry and Geometric Figures</string>
+    <string name="straight_lines">Straight Lines</string>
+    <string name="transformation_of_figures">Transformation of Figures</string>
+    <string name="similarity_of_polygons">Similarity of Polygons</string>
+    <string name="vectors_in_a_plane_and_trigonometric_functions_of_the_angle">Vectors in a Plane and Trigonometric Functions of the Angle</string>
+    <string name="areas_of_polygons">Areas of Polygons</string>
+    <string name="regular_polygons___length_of_circumference___area_of_a_circle">Regular Polygons. Length of Circumference. Area of a circle</string>
+    <string name="fundamentals_of_solid_geometry">Fundamentals of Solid Geometry</string>
+
 </resources>

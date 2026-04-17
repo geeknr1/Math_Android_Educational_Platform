@@ -38,10 +38,7 @@ public class AlgebraSection extends AppCompatActivity {
     private String currentLessonName;
     private static final String [] parts = {"Def", "Props", "Examples", "Quiz"};
     private int index;
-    private String correctAnswerOne, correctAnswerTwo, correctAnswerThree, correctAnswerFour, correctAnswerFive;
-    private String answeroneQuestionOne, answertwoQuestionOne, answerthreeQuestionOne, answeroneQuestionTwo, answertwoQuestionTwo, answerthreeQuestionTwo,
-            answeroneQuestionThree, answertwoQuestionThree, answerthreeQuestionThree, answeroneQuestionFour, answertwoQuestionFour, answerthreeQuestionFour,
-            answeroneQuestionFive, answertwoQuestionFive, answerthreeQuestionFive;
+    private TextView correctAnswerOne, correctAnswerTwo, correctAnswerThree, correctAnswerFour, correctAnswerFive;
     private Animation bounceAnimationThree, bounceAnimation, bounceAnimationTwo;
 
     protected void onCreate(Bundle savedInstanceState){
@@ -85,11 +82,18 @@ public class AlgebraSection extends AppCompatActivity {
         answerone_5 = findViewById(R.id.buttonAnswerOne_5); answertwo_5 = findViewById(R.id.buttonAnswerTwo_5);
         answerthree_5 = findViewById(R.id.buttonAnswerThree_5);
 
-        answerone_1.setText(answeroneQuestionOne); answertwo_1.setText(answertwoQuestionOne); answerthree_1.setText(answerthreeQuestionOne);
-        answerone_2.setText(answeroneQuestionTwo); answertwo_2.setText(answertwoQuestionTwo); answerthree_2.setText(answerthreeQuestionTwo);
-        answerone_3.setText(answeroneQuestionThree); answertwo_3.setText(answertwoQuestionThree); answerthree_3.setText(answerthreeQuestionThree);
-        answerone_4.setText(answeroneQuestionFour); answertwo_4.setText(answertwoQuestionFour); answerthree_4.setText(answerthreeQuestionFour);
-        answerone_5.setText(answeroneQuestionFive); answertwo_5.setText(answertwoQuestionFive); answerthree_5.setText(answerthreeQuestionFive);
+        correctAnswerOne = findViewById(R.id.correctOne); correctAnswerTwo = findViewById(R.id.correctTwo);
+        correctAnswerThree = findViewById(R.id.correctThree); correctAnswerFour = findViewById(R.id.correctFour);
+        correctAnswerFive = findViewById(R.id.correctFive);
+
+        answerone_1.setText(sectionAlg.answerOne_1); answertwo_1.setText(sectionAlg.answerTwo_1); answerthree_1.setText(sectionAlg.answerThree_1);
+        answerone_2.setText(sectionAlg.answerOne_2); answertwo_2.setText(sectionAlg.answerTwo_2); answerthree_2.setText(sectionAlg.answerThree_2);
+        answerone_3.setText(sectionAlg.answerOne_3); answertwo_3.setText(sectionAlg.answerTwo_3); answerthree_3.setText(sectionAlg.answerThree_3);
+        answerone_4.setText(sectionAlg.answerOne_4); answertwo_4.setText(sectionAlg.answerTwo_4); answerthree_4.setText(sectionAlg.answerThree_4);
+        answerone_5.setText(sectionAlg.answerOne_5); answertwo_5.setText(sectionAlg.answerTwo_5); answerthree_5.setText(sectionAlg.answerThree_5);
+        correctAnswerOne.setText(sectionAlg.correctAnswerOne); correctAnswerTwo.setText(sectionAlg.correctAnswerTwo);
+        correctAnswerThree.setText(sectionAlg.correctAnswerThree); correctAnswerFour.setText(sectionAlg.correctAnswerFour);
+        correctAnswerFive.setText(sectionAlg.correctAnswerFive);
 
         answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
         answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
@@ -97,9 +101,14 @@ public class AlgebraSection extends AppCompatActivity {
         answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
         answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
+        correctAnswerOne.setVisibility(View.GONE); correctAnswerTwo.setVisibility(View.GONE); correctAnswerThree.setVisibility(View.GONE);
+        correctAnswerFour.setVisibility(View.GONE); correctAnswerFive.setVisibility(View.GONE);
+
         question1 = findViewById(R.id.requirementOneImg); question2 = findViewById(R.id.requirementTwoImg); question3 = findViewById(R.id.requirementThreeImg);
         question4 = findViewById(R.id.requirementFourImg); question5 = findViewById(R.id.requirementFiveImg);
 
+        question1.setImageResource(sectionAlg.requirementOne); question2.setImageResource(sectionAlg.requirementTwo); question3.setImageResource(sectionAlg.requirementThree);
+        question4.setImageResource(sectionAlg.requirementFour); question5.setImageResource(sectionAlg.requirementFive);
         question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
         question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
 
@@ -108,6 +117,156 @@ public class AlgebraSection extends AppCompatActivity {
 
         bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce);
         bounceAnimationTwo = AnimationUtils.loadAnimation(this, R.anim.bounce);
+
+        answerone_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerOne.getText().toString().equals(answerone_1.getText().toString()))
+                    answerone_1.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_1.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerOne.getText().toString().equals(answertwo_1.getText().toString()))
+                    answertwo_1.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_1.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerOne.getText().toString().equals(answerthree_1.getText().toString()))
+                    answerthree_1.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_1.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerTwo.getText().toString().equals(answerone_2.getText().toString()))
+                    answerone_2.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_2.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerTwo.getText().toString().equals(answertwo_2.getText().toString()))
+                    answertwo_2.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_2.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerTwo.getText().toString().equals(answerthree_2.getText().toString()))
+                    answerthree_2.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_2.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerThree.getText().toString().equals(answerone_3.getText().toString()))
+                    answerone_3.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_3.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerThree.getText().toString().equals(answertwo_3.getText().toString()))
+                    answertwo_3.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_3.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerThree.getText().toString().equals(answerthree_3.getText().toString()))
+                    answerthree_3.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_3.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFour.getText().toString().equals(answerone_4.getText().toString()))
+                    answerone_4.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_4.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFour.getText().toString().equals(answertwo_4.getText().toString()))
+                    answertwo_4.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_4.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFour.getText().toString().equals(answerthree_4.getText().toString()))
+                    answerthree_4.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_4.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFive.getText().toString().equals(answerone_5.getText().toString()))
+                    answerone_5.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_5.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFive.getText().toString().equals(answertwo_5.getText().toString()))
+                    answertwo_5.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_5.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFive.getText().toString().equals(answerthree_5.getText().toString()))
+                    answerthree_5.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_5.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -325,6 +484,21 @@ public class AlgebraSection extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                answerone_1.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_1.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_1.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_2.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_2.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_2.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_3.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_3.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_3.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_4.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_4.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_4.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_5.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_5.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_5.setBackgroundColor(getResources().getColor(R.color.black));
                 progressValueOne = progressValueTwo = 0;
                 progressBarOne.setProgress(progressValueOne); progressBarTwo.setProgress(progressValueTwo);
                 back.startAnimation(bounceAnimationThree);
@@ -332,7 +506,7 @@ public class AlgebraSection extends AppCompatActivity {
             }
         });
 
-
+        System.out.println(String.valueOf(answerone_1));
     }
     public void setText(int viewID, int res){
         TextView text = findViewById(viewID);

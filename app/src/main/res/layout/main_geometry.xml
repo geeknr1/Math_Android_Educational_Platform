@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MathGeometry.GeometryMain"
+    android:orientation="vertical"
+    android:background="#e7dfc2"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/savethekid"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/student"
+        android:layout_marginBottom="40dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:fontFamily="@font/kenney_blocks"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#bb8044"
+        android:onClick="startGame"/>
+
+</LinearLayout>

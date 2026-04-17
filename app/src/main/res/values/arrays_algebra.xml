@@ -3,7 +3,7 @@
 
     <string-array name="Whole_Numbers_And_Fractions">
         <item>@string/whole_numbers_and_fractions</item>
-        <item>@string/arithmetic_operations_on_whole_numbers</item>
+        <item>Arithmetic_Operations_on_Whole_Numbers</item>
         <item>Prime_and_Composite_Natural_Numbers </item>
         <item>Common_Divisors_and_Multiples___
               Least_Common_Multiple</item>
@@ -15,7 +15,7 @@
     </string-array>
 
     <string-array name="Approximate_Calculations">
-        <item>Approximate_Calculations</item>
+        <item>@string/approximate_calculations</item>
         <item>Exact_and_Composite_Values_of_Quantities___
               Method_of_Bounds</item>
         <item>Absolute_and_Relative_Errors</item>
@@ -25,7 +25,7 @@
     </string-array>
 
     <string-array name="Powers_and_Roots___Real_Numbers">
-        <item>Powers_and_Roots___Real_Numbers</item>
+        <item>@string/powers_and_roots___real_numbers</item>
         <item>Raising_Rational_Numbers_to_a_Power_with_a_Natural_Exponent___Taking_the_Root</item>
         <item>Concept_of_an_Irrational_Number</item>
         <item>Real_Numbers___Arithmetical_Roots___Rectangular_Coordinates_in_the_Planes</item>
@@ -50,7 +50,7 @@
     </string-array>
 
     <string-array name="Equations_and_Inequalities">
-        <item>Equations_and_Inequalities</item>
+        <item>@string/equations_and_inequalities</item>
         <item>Equations_in_One_Variable___Root_of_an_Equation</item>
         <item>Linear_Equations</item>
         <item>Quadratic_Equations___Viètes_Theorem</item>
@@ -68,7 +68,7 @@
     </string-array>
 
     <string-array name="Functions_and_Graphs">
-        <item>Functions_and_Graphs</item>
+        <item>@string/functions_and_graphs</item>
         <item>Concept_of_a_Function___Methods_of_Representing_Functions</item>
         <item>Properties_of_Functions</item>
         <item>Inverse_of_a_Function</item>
@@ -78,7 +78,7 @@
     </string-array>
 
     <string-array name="Arithmetic_and_Geometric_Progressions___Logarithms">
-        <item>Arithmetic_and_Geometric_Progressions___Logarithms</item>
+        <item>@string/arithmetic_and_geometric_progressions___logarithms</item>
         <item>Number_Sequences</item>
         <item>Arithmetic_Progression</item>
         <item>Geometric_Progression</item>

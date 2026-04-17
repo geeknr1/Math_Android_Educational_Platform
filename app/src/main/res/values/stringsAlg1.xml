@@ -11,11 +11,26 @@
 
     <string name="SectionOneTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionOneQuiz">!!! Solve the quiz !!!</string>
-    <string name="SectionOneAnswerOne">1</string>
-    <string name="SectionOneAnswerTwo">2</string>
-    <string name="SectionOneAnswerThree">3</string>
-    <string name="SectionOneAnswerFour">4</string>
-    <string name="SectionOneAnswerFive">5</string>
+    <string name="SecOneQuizAnswer1_1">one</string>
+    <string name="SecOneQuizAnswer2_1">two</string>
+    <string name="SecOneQuizAnswer3_1">three</string>
+    <string name="SecOneQuizAnswer1_2">one</string>
+    <string name="SecOneQuizAnswer2_2">two</string>
+    <string name="SecOneQuizAnswer3_2">three</string>
+    <string name="SecOneQuizAnswer1_3">one</string>
+    <string name="SecOneQuizAnswer2_3">two</string>
+    <string name="SecOneQuizAnswer3_3">three</string>
+    <string name="SecOneQuizAnswer1_4">one</string>
+    <string name="SecOneQuizAnswer2_4">two</string>
+    <string name="SecOneQuizAnswer3_4">three</string>
+    <string name="SecOneQuizAnswer1_5">one</string>
+    <string name="SecOneQuizAnswer2_5">two</string>
+    <string name="SecOneQuizAnswer3_5">three</string>
+    <string name="SectionOneAnswerOne">one</string>
+    <string name="SectionOneAnswerTwo">two</string>
+    <string name="SectionOneAnswerThree">three</string>
+    <string name="SectionOneAnswerFour">one</string>
+    <string name="SectionOneAnswerFive">two</string>
 
 
     <string name="SectionTwoTheoryDef">Definitions:\n
@@ -32,6 +47,21 @@ Divisibility rules:\n
 
     <string name="SectionTwoTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionTwoQuiz">!!! Solve the quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1">one</string>
+    <string name="SecTwoQuizAnswer2_1">two</string>
+    <string name="SecTwoQuizAnswer3_1">three</string>
+    <string name="SecTwoQuizAnswer1_2">one</string>
+    <string name="SecTwoQuizAnswer2_2">two</string>
+    <string name="SecTwoQuizAnswer3_2">three</string>
+    <string name="SecTwoQuizAnswer1_3">one</string>
+    <string name="SecTwoQuizAnswer2_3">two</string>
+    <string name="SecTwoQuizAnswer3_3">answerthree</string>
+    <string name="SecTwoQuizAnswer1_4">answerone</string>
+    <string name="SecTwoQuizAnswer2_4">answertwo</string>
+    <string name="SecTwoQuizAnswer3_4">answerthree</string>
+    <string name="SecTwoQuizAnswer1_5">answerone</string>
+    <string name="SecTwoQuizAnswer2_5">answertwo</string>
+    <string name="SecTwoQuizAnswer3_5">answerthree</string>
     <string name="SectionTwoAnswerOne">1</string>
     <string name="SectionTwoAnswerTwo">2</string>
     <string name="SectionTwoAnswerThree">3</string>
@@ -51,6 +81,21 @@ Divisibility rules:\n
 
     <string name="SectionThreeTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionThreeQuiz">!!! Solve the quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1">answerone</string>
+    <string name="SecThreeQuizAnswer2_1">answertwo</string>
+    <string name="SecThreeQuizAnswer3_1">answerthree</string>
+    <string name="SecThreeQuizAnswer1_2">answerone</string>
+    <string name="SecThreeQuizAnswer2_2">answertwo</string>
+    <string name="SecThreeQuizAnswer3_2">answerthree</string>
+    <string name="SecThreeQuizAnswer1_3">answerone</string>
+    <string name="SecThreeQuizAnswer2_3">answertwo</string>
+    <string name="SecThreeQuizAnswer3_3">answerthree</string>
+    <string name="SecThreeQuizAnswer1_4">answerone</string>
+    <string name="SecThreeQuizAnswer2_4">answertwo</string>
+    <string name="SecThreeQuizAnswer3_4">answerthree</string>
+    <string name="SecThreeQuizAnswer1_5">answerone</string>
+    <string name="SecThreeQuizAnswer2_5">answertwo</string>
+    <string name="SecThreeQuizAnswer3_5">answerthree</string>
     <string name="SectionThreeAnswerOne">1</string>
     <string name="SectionThreeAnswerTwo">2</string>
     <string name="SectionThreeAnswerThree">3</string>
@@ -68,6 +113,21 @@ Divisibility rules:\n
 
     <string name="SectionFourTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionFourQuiz">!!! Solve the quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1">answerone</string>
+    <string name="SecFourQuizAnswer2_1">answertwo</string>
+    <string name="SecFourQuizAnswer3_1">answerthree</string>
+    <string name="SecFourQuizAnswer1_2">answerone</string>
+    <string name="SecFourQuizAnswer2_2">answertwo</string>
+    <string name="SecFourQuizAnswer3_2">answerthree</string>
+    <string name="SecFourQuizAnswer1_3">answerone</string>
+    <string name="SecFourQuizAnswer2_3">answertwo</string>
+    <string name="SecFourQuizAnswer3_3">answerthree</string>
+    <string name="SecFourQuizAnswer1_4">answerone</string>
+    <string name="SecFourQuizAnswer2_4">answertwo</string>
+    <string name="SecFourQuizAnswer3_4">answerthree</string>
+    <string name="SecFourQuizAnswer1_5">answerone</string>
+    <string name="SecFourQuizAnswer2_5">answertwo</string>
+    <string name="SecFourQuizAnswer3_5">answerthree</string>
     <string name="SectionFourAnswerOne">1</string>
     <string name="SectionFourAnswerTwo">2</string>
     <string name="SectionFourAnswerThree">3</string>
@@ -103,6 +163,21 @@ Divisibility rules:\n
 
     <string name="SectionSixTheoryWorkedExamples">!!! Worked Examples !!!</string>
     <string name="SectionSixQuiz">!!! Solve the quiz !!!</string>
+    <string name="SecSixQuizAnswer1_1">answerone</string>
+    <string name="SecSixQuizAnswer2_1">answertwo</string>
+    <string name="SecSixQuizAnswer3_1">answerthree</string>
+    <string name="SecSixQuizAnswer1_2">answerone</string>
+    <string name="SecSixQuizAnswer2_2">answertwo</string>
+    <string name="SecSixQuizAnswer3_2">answerthree</string>
+    <string name="SecSixQuizAnswer1_3">answerone</string>
+    <string name="SecSixQuizAnswer2_3">answertwo</string>
+    <string name="SecSixQuizAnswer3_3">answerthree</string>
+    <string name="SecSixQuizAnswer1_4">answerone</string>
+    <string name="SecSixQuizAnswer2_4">answertwo</string>
+    <string name="SecSixQuizAnswer3_4">answerthree</string>
+    <string name="SecSixQuizAnswer1_5">answerone</string>
+    <string name="SecSixQuizAnswer2_5">answertwo</string>
+    <string name="SecSixQuizAnswer3_5">answerthree</string>
     <string name="SectionSixAnswerOne">1</string>
     <string name="SectionSixAnswerTwo">2</string>
     <string name="SectionSixAnswerThree">3</string>

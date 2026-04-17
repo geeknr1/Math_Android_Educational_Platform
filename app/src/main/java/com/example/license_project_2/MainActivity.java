@@ -11,6 +11,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView welcome = findViewById(R.id.welcomeMessage);
+        ImageView welcome = findViewById(R.id.welcomeMessage);
         ImageButton tutorial = findViewById(R.id.Tutorial);
         ImageButton games = findViewById(R.id.Games);
         ImageButton quit = findViewById(R.id.Quit);

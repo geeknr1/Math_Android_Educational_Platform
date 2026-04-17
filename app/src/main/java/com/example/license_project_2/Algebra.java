@@ -83,10 +83,10 @@ public class Algebra extends AppCompatActivity {
     public void spinnerSetup(int spinnerID, int arrayID){
         Spinner spinner = findViewById(spinnerID);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, arrayID, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, arrayID, R.layout.selected_item);
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        adapter.setDropDownViewResource(R.layout.multiple_line_spinner);
+        adapter.setDropDownViewResource(R.layout.dropdown_item);
+        //adapter.setDropDownViewResource(R.layout.multiple_line_spinner);
         spinner.setAdapter(adapter);
 
         spinner.setOnItemSelectedListener(listener);
