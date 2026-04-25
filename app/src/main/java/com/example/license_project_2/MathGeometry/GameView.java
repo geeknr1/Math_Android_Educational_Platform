@@ -18,7 +18,6 @@ import android.view.View;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.example.license_project_2.R;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -44,7 +43,7 @@ public class GameView extends View {
         this.context = context;
         background = BitmapFactory.decodeResource(getResources(), R.drawable.countryside);
         ground = BitmapFactory.decodeResource(getResources(), R.drawable.ground);
-        kid = BitmapFactory.decodeResource(getResources(), R.drawable.student);
+        kid = BitmapFactory.decodeResource(getResources(), R.drawable.studentthree);
         Display display = ((Activity) getContext()).getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
@@ -66,10 +65,10 @@ public class GameView extends View {
         healthPaint.setColor(Color.GREEN);
         random = new Random();
         kidX = dWidth / 2 - kid.getWidth() / 2;
-        kidY = dHeight - ground.getHeight() - kid.getHeight();
+        kidY = dHeight - ground.getHeight() - kid.getHeight() + 900;
         figures = new ArrayList<>();
         explosions = new ArrayList<>();
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < 5; i++){
             Figure figure = new Figure(context);
             figures.add(figure);
         }
@@ -83,12 +82,12 @@ public class GameView extends View {
         canvas.drawBitmap(kid, kidX, kidY, null);
         for(int i = 0; i < figures.size(); i++){
             canvas.drawBitmap(figures.get(i).getFigure(figures.get(i).figureFrame), figures.get(i).figureX, figures.get(i).figureY, null);
-            figures.get(i).figureFrame++;
-            if(figures.get(i).figureFrame > 5){
-                figures.get(i).figureFrame = 0;
-            }
+//            figures.get(i).figureFrame++;
+//            if(figures.get(i).figureFrame > 5){
+//                figures.get(i).figureFrame = 0;
+//            }
             figures.get(i).figureY += figures.get(i).figureVelocity;
-            if(figures.get(i).figureY + figures.get(i).getFigureHeight() >= dHeight - ground.getHeight()){
+            if(figures.get(i).figureY + figures.get(i).getFigureHeight() >= dHeight - ground.getHeight() + 900){
                 points += 10;
                 Explosion explosion = new Explosion(context);
                 explosion.explosionX = figures.get(i).figureX;

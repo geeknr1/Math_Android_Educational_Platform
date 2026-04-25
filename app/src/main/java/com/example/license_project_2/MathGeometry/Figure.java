@@ -15,14 +15,15 @@ public class Figure {
     Random random;
 
     public Figure(Context context){
-        figure[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.circlegame);
-        figure[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.squaregame);
-        figure[2] = BitmapFactory.decodeResource(context.getResources(), R.drawable.rectanglegame);
-        figure[3] = BitmapFactory.decodeResource(context.getResources(), R.drawable.trianglegame);
-        figure[4] = BitmapFactory.decodeResource(context.getResources(), R.drawable.trianglegametwo);
-        figure[5] = BitmapFactory.decodeResource(context.getResources(), R.drawable.obtusetriangle);
+        figure[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.circlegametwo);
+        figure[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.squaregametwo);
+        figure[2] = BitmapFactory.decodeResource(context.getResources(), R.drawable.rectanglegametwo);
+        figure[3] = BitmapFactory.decodeResource(context.getResources(), R.drawable.trianglegametwo);
+        figure[4] = BitmapFactory.decodeResource(context.getResources(), R.drawable.trianglegametwo_2);
+        figure[5] = BitmapFactory.decodeResource(context.getResources(), R.drawable.obtusetriangletwo);
 
         random = new Random();
+        resetPosition();
     }
 
     public Bitmap getFigure(int figureFrame){
@@ -38,6 +39,7 @@ public class Figure {
     }
 
     public void resetPosition(){
+        figureFrame = random.nextInt(figure.length);
         figureX = random.nextInt(GameView.dWidth - getFigureWidth());
         figureY = -200 + random.nextInt(600)* -1;
         figureVelocity = 35 + random.nextInt(16);

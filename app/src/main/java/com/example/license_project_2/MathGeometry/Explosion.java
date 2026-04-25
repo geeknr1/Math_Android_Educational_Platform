@@ -12,10 +12,10 @@ public class Explosion {
     int explosionX, explosionY;
 
     public Explosion(Context context){
-        explosion[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosionone);
-        explosion[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosiontwo);
-        explosion[2] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosionthree);
-        explosion[3] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosionfour);
+        explosion[0] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosionone_2);
+        explosion[1] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosiontwo_2);
+        explosion[2] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosionthree_2);
+        explosion[3] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosionfour_2);
     }
 
     public Bitmap getExplosion(int explosionFrame){
