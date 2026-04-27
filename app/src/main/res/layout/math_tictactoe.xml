@@ -9,16 +9,18 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:id="@+id/firstNumber"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -28,9 +30,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -40,9 +43,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -52,9 +56,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -71,9 +76,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -83,9 +89,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -95,9 +102,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -107,9 +115,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -126,9 +135,10 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:fontFamily="@font/kenney_blocks"
+            android:fontFamily="@font/gold_bachelor"
             android:textSize="20sp"
             android:background="@drawable/circular_button"
             android:layout_marginTop="10dp"
@@ -146,10 +156,10 @@
         android:orientation="vertical"
         android:background="@drawable/round_back_reddish"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="50dp"
-        >
+        android:layout_marginEnd="50dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -162,7 +172,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="10dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/red"
@@ -171,8 +181,8 @@
                 android:background="@drawable/roundedorange" />
             <ImageView
                 android:id="@+id/signOne"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/plus"
                 android:background="@color/black"
                 android:layout_marginStart="10dp"
@@ -195,8 +205,8 @@
                 android:background="@drawable/roundedorange" />
             <ImageView
                 android:id="@+id/signTwo"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/plus"
                 android:background="@color/black"
                 android:layout_gravity="center" />
@@ -218,7 +228,7 @@
 
 
         <LinearLayout
-            android:layout_width="289dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -228,7 +238,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="10dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/red"
@@ -238,8 +248,8 @@
 
             <ImageView
                 android:id="@+id/signThree"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/plus"
                 android:background="@color/black"
                 android:layout_marginStart="10dp"
@@ -263,8 +273,8 @@
                 android:background="@drawable/roundedorange" />
             <ImageView
                 android:id="@+id/signFour"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/plus"
                 android:background="@color/black"
                 android:layout_gravity="center" />
@@ -294,7 +304,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="10dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/red"
@@ -304,8 +314,8 @@
 
             <ImageView
                 android:id="@+id/signFive"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/plus"
                 android:background="@color/black"
                 android:layout_marginStart="10dp"
@@ -330,8 +340,8 @@
 
             <ImageView
                 android:id="@+id/signSix"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/plus"
                 android:background="@color/black"
                 android:layout_gravity="center" />
@@ -370,7 +380,7 @@
             android:id="@+id/resultOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
+            android:layout_marginEnd="50dp"
             android:textSize="20sp"
             android:textStyle="bold"
             android:fontFamily="@font/kenney_blocks"
@@ -385,7 +395,7 @@
             android:textStyle="bold"
             android:fontFamily="@font/kenney_blocks"
             android:singleLine="false"
-            android:layout_marginEnd="100dp"
+            android:layout_marginEnd="50dp"
             android:textColor="@color/black"/>
 
             <TextView
@@ -413,9 +423,22 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/resetvaluestwo"
         android:backgroundTint="@color/red" />
+
+        <TextView
+            android:id="@+id/checking"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="25dp"
+            android:text="Check"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/square_rounded_button"
+            android:fontFamily="@font/gold_bachelor"/>
 
         <ImageButton
             android:id="@+id/quitGame"
