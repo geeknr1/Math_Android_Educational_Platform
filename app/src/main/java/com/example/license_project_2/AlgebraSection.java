@@ -5,6 +5,7 @@ import static android.view.View.VISIBLE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -34,7 +35,6 @@ public class AlgebraSection extends AppCompatActivity {
     private TextView theoryDefinition, theoryProperties, theoryWorkedExamples, quizPrime;
     private ProgressBar progressBarOne, progressBarTwo;
     private int progressValueOne = 0, progressValueTwo = 0;
-    private ProgressManager pm;
     private String currentLessonName;
     private static final String [] parts = {"Def", "Props", "Examples", "Quiz"};
     private int index;
@@ -43,11 +43,11 @@ public class AlgebraSection extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.algebra_section);
 
         AlgebraSections sectionAlg = AlgebraSections.detachFrom(getIntent());
         bindText(sectionAlg);
-        pm = new ProgressManager(this);
         currentLessonName = sectionAlg.name();
 
 

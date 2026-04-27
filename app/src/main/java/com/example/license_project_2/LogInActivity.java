@@ -3,6 +3,7 @@ package com.example.license_project_2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,6 +33,7 @@ public class LogInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_log_in);
 
         loginUsername = findViewById(R.id.textUsernameID);
@@ -93,7 +95,6 @@ public class LogInActivity extends AppCompatActivity {
                 if(snapshot.exists()){
                     loginUsername.setError(null);
                     DataSnapshot userSnapshot = snapshot.getChildren().iterator().next();
-//                    String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
                     String passwordFromDB = userSnapshot.child("password").getValue(String.class);
 
                     if(Objects.equals(passwordFromDB, userPassword)){
