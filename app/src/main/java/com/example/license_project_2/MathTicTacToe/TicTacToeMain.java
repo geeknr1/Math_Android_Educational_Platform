@@ -1,11 +1,8 @@
 package com.example.license_project_2.MathTicTacToe;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -27,7 +24,6 @@ import java.util.Random;
 import java.util.Set;
 import java.text.DecimalFormat;
 
-import com.example.license_project_2.Games;
 import com.example.license_project_2.R;
 
 public class TicTacToeMain extends AppCompatActivity {
@@ -54,6 +50,7 @@ public class TicTacToeMain extends AppCompatActivity {
     private DecimalFormat decimalFormat = new DecimalFormat("#.##");
     private static final Random random = new Random();
     private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationCheck;
+    private int points = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -106,15 +103,14 @@ public class TicTacToeMain extends AppCompatActivity {
         selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
         selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
         selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
-        setResultValuesForPlusPlus();
 
         checkAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkAnswer.startAnimation(bounceAnimationCheck);
-                checkResultValuesForPlusPlus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                checkResultValuesForPlusPlus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                checkResultValuesForPlusPlus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                checkResultValuesForPlusPlus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                checkResultValuesForPlusPlus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                checkResultValuesForPlusPlus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
             }
         });
 
@@ -147,21 +143,21 @@ public class TicTacToeMain extends AppCompatActivity {
 
                 columnAnsOne.setTextColor(Color.parseColor("#000000")); columnAnsTwo.setTextColor(Color.parseColor("#000000"));
                 columnAnsThree.setTextColor(Color.parseColor("#000000"));
+                setInitialSlotDesign();
 
                 if(clickIndex % 16 == 1){
                     valuesFound(); plusPlus(); setInitialSlotDesign();
                     selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
                     selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
                     selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
-                    setResultValuesForPlusPlus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForPlusPlus(numberGridOne, numberGridTwo, numberGridThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForPlusPlus(numberGridFour, numberGridFive, numberGridSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForPlusPlus(numberGridSeven, numberGridEight, numberGridNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForPlusPlus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForPlusPlus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForPlusPlus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -170,15 +166,14 @@ public class TicTacToeMain extends AppCompatActivity {
                     selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
                     selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
                     selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
-                    setResultValuesForMinusMinus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForMinusMinus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForMinusMinus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForMinusMinus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForMinusMinus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForMinusMinus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForMinusMinus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -187,15 +182,14 @@ public class TicTacToeMain extends AppCompatActivity {
                     selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
                     selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
                     selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
-                    setResultValuesForPlusMinus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForPlusMinus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForPlusMinus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForPlusMinus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForPlusMinus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForPlusMinus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForPlusMinus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -210,9 +204,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForMinusPlus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForMinusPlus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForMinusPlus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForMinusPlus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForMinusPlus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForMinusPlus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -227,9 +221,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForProductProduct(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForProductProduct(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForProductProduct(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForProductProduct(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForProductProduct(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForProductProduct(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -244,9 +238,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForDivisionDivision(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForDivisionDivision(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForDivisionDivision(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForDivisionDivision(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForDivisionDivision(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForDivisionDivision(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -261,9 +255,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForProductDivision(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForProductDivision(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForProductDivision(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForProductDivision(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForProductDivision(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForProductDivision(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -278,9 +272,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForDivisionProduct(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForDivisionProduct(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForDivisionProduct(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForDivisionProduct(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForDivisionProduct(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForDivisionProduct(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -295,9 +289,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForPlusProduct(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForPlusProduct(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForPlusProduct(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForPlusProduct(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForPlusProduct(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForPlusProduct(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -312,9 +306,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForProductPlus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForProductPlus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForProductPlus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForProductPlus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForProductPlus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForProductPlus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -329,9 +323,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForMinusProduct(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForMinusProduct(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForMinusProduct(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForMinusProduct(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForMinusProduct(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForMinusProduct(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -346,9 +340,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForProductMinus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForProductMinus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForProductMinus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForProductMinus(gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForProductMinus(gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForProductMinus(gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -363,9 +357,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForDivisionPlus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForDivisionPlus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForDivisionPlus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForDivisionPlus(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForDivisionPlus(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForDivisionPlus(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -380,9 +374,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForPlusDivision(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForPlusDivision(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForPlusDivision(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForPlusDivision(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForPlusDivision(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForPlusDivision(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -397,9 +391,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForDivisionMinus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForDivisionMinus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForDivisionMinus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForDivisionMinus(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForDivisionMinus(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForDivisionMinus(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -414,9 +408,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForMinusDivision(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
-                            checkResultValuesForMinusDivision(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
-                            checkResultValuesForMinusDivision(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
+                            checkResultValuesForMinusDivision(gridOne, gridTwo, gridThree, columnAnsOne, divResultOne);
+                            checkResultValuesForMinusDivision(gridFour, gridFive, gridSix, columnAnsTwo, divResultTwo);
+                            checkResultValuesForMinusDivision(gridSeven, gridEight, gridNine, columnAnsThree, divResultThree);
                         }
                     });
                 }
@@ -430,7 +424,9 @@ public class TicTacToeMain extends AppCompatActivity {
                 quitGame.startAnimation(bounceAnimationTwo);
                 gridClickIndex = 0;
                 clickIndex = 0;
-                startActivity(new Intent(TicTacToeMain.this, Games.class));
+                Intent intent = new Intent(TicTacToeMain.this, GameOverTwo.class);
+                intent.putExtra("points", points);
+                startActivity(intent);
             }
         });
 
@@ -482,82 +478,98 @@ public class TicTacToeMain extends AppCompatActivity {
         signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.plus);
         signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.plus);
         signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.plus);
+        setResultValuesForPlusPlus();
     }
 
     public void minusMinus(){
         signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.minus);
         signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.minus);
         signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.minus);
+        setResultValuesForMinusMinus();
     }
     public void plusMinus(){
         signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.minus);
         signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.minus);
         signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.minus);
+        setResultValuesForPlusMinus();
     }
     public void minusPlus(){
         signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.plus);
         signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.plus);
         signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.plus);
+        setResultValuesForMinusPlus();
     }
     public void productProduct(){
         signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.product);
         signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.product);
         signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.product);
+        setResultValuesForProductProduct();
     }
     public void divisionDivision(){
         signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.division);
         signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.division);
         signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.division);
+        setResultValuesForDivisionDivision();
     }
     public void productDivision(){
         signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.division);
         signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.division);
         signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.division);
+        setResultValuesForProductDivision();
     }
     public void divisionProduct(){
         signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.product);
         signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.product);
         signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.product);
+        setResultValuesForDivisionProduct();
     }
     public void plusProduct(){
         signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.product);
         signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.product);
         signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.product);
+        setResultValuesForPlusProduct();
     }
     public void productPlus(){
         signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.plus);
         signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.plus);
         signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.plus);
+        setResultValuesForProductPlus();
     }
     public void minusProduct(){
         signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.product);
         signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.product);
         signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.product);
+        setResultValuesForMinusProduct();
     }
     public void productMinus(){
         signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.minus);
         signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.minus);
         signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.minus);
+        setResultValuesForProductMinus();
     }
     public void plusDivision(){
         signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.division);
         signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.division);
         signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.division);
+        setResultValuesForPlusDivision();
     }
     public void divisionPlus(){
         signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.plus);
         signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.plus);
         signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.plus);
+        setResultValuesForDivisionPlus();
     }
     public void minusDivision(){
         signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.division);
         signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.division);
         signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.division);
+        setResultValuesForMinusDivision();
     }
     public void divisionMinus(){
         signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.minus);
         signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.minus);
         signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.minus);
+        setResultValuesForDivisionMinus();
     }
 
     public void checkButtonPressedTwice(TextView selectedSlot, TextView grid){
@@ -568,6 +580,7 @@ public class TicTacToeMain extends AppCompatActivity {
                 grid.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.roundedorange, null));
                 grid.setText("0");
                 gridClickIndex = gridClickIndex - 1;
+                selectedSlot.setEnabled(true);
             }
         }
     }
@@ -578,11 +591,14 @@ public class TicTacToeMain extends AppCompatActivity {
         gridX.setText(String.valueOf(selectNumber));
         selectedSlot.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button_2, null));
         selectedSlot.setTextColor(Color.parseColor("#000000"));
+        selectedSlot.setEnabled(false);
     }
     public void selectNumber(TextView selectedSlot, int selectNumber){
         selectedSlot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(!(selectedSlot.isEnabled()))
+                    return;
                 gridClickIndex++;
                 if(gridClickIndex == 1)
                     gridSelected(gridOne, selectNumber, selectedSlot);
@@ -606,41 +622,8 @@ public class TicTacToeMain extends AppCompatActivity {
         });
     }
 
-    public void checkEqualityTwo(int[] select){
-        ArrayList<Integer>numbers = new ArrayList<>(Arrays.asList(numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix, numberSeven, numberEight, numberNine));
-        Set<Integer> set = new LinkedHashSet<>(numbers);
-        numbers.clear();
-        numbers.addAll(set);
-        int counterNumbers = numbers.size(), newNumber;
-        while(counterNumbers < 9){
-            newNumber = select[random.nextInt(select.length)];
-            if(!(numbers.contains(newNumber))) {
-                numbers.add(newNumber);
-                counterNumbers++;
-            }
-        }
-        numberOne = numbers.get(0); numberTwo = numbers.get(1); numberThree = numbers.get(2);
-        numberFour = numbers.get(3); numberFive = numbers.get(4); numberSix = numbers.get(5);
-        numberSeven = numbers.get(6); numberEight = numbers.get(7); numberNine = numbers.get(8);
-    }
-
-    public void setFactors(){
-        int[] selectedNumbers = {numberGridOne, numberGridTwo, numberGridThree, numberGridFour,
-                numberGridFive, numberGridSix, numberGridSeven, numberGridEight, numberGridNine};
-        numberOne = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberTwo = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberThree = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberFour = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberFive = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberSix = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberSeven = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberEight = selectedNumbers[random.nextInt(selectedNumbers.length)];
-        numberNine = selectedNumbers[random.nextInt(selectedNumbers.length)];
-
-        checkEqualityTwo(selectedNumbers);
-    }
-
     public void correct(TextView gridx, TextView gridy, TextView gridz, TextView columnAnsx){
+        points += 10;
         gridx.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.square_rounded_button_two, null));
         gridy.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.square_rounded_button_two, null));
         gridz.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.square_rounded_button_two, null));
@@ -657,18 +640,79 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsx.setTextColor(Color.parseColor("#ff0000"));
     }
 
-    public void convertGridValuesToIntegers(){
-        valueGridOne = String.valueOf(gridOne); valueGridTwo = String.valueOf(gridTwo);
-        valueGridThree = String.valueOf(gridThree); valueGridFour = String.valueOf(gridFour);
-        valueGridFive = String.valueOf(gridFive); valueGridSix = String.valueOf(gridSix);
-        valueGridSeven = String.valueOf(gridSeven); valueGridEight = String.valueOf(gridEight);
-        valueGridNine = String.valueOf(gridNine);
+    public void checkEqualityTwo(int[] select){
+        ArrayList<Integer>numbers = new ArrayList<>(Arrays.asList(numberOne, numberTwo, numberThree, numberFour, numberFive, numberSix, numberSeven, numberEight, numberNine));
+        Set<Integer> set = new LinkedHashSet<>(numbers);
+        numbers.clear();
+        numbers.addAll(set);
+        if (numbers.size() <= 1) {
+            int fill = select.length > 0 ? select[0] : 0;
+            numberOne = numberTwo = numberThree = numberFour = numberFive =
+                    numberSix = numberSeven = numberEight = numberNine = fill;
+            return;
+        }
+        int counterNumbers = numbers.size(), newNumber;
+        int guard = 0;
+        while(counterNumbers < 9 && guard++ < 2000){
+            newNumber = select[random.nextInt(select.length)];
+            if(!(numbers.contains(newNumber))) {
+                numbers.add(newNumber);
+                counterNumbers++;
+            }
+        }
+        while (numbers.size() < 9 && select.length > 0) {
+            int pad = select[numbers.size() % select.length];
+            if (!numbers.contains(pad)) numbers.add(pad);
+            else numbers.add(select[0]);
+        }
+        numberOne = numbers.get(0); numberTwo = numbers.get(1); numberThree = numbers.get(2);
+        numberFour = numbers.get(3); numberFive = numbers.get(4); numberSix = numbers.get(5);
+        numberSeven = numbers.get(6); numberEight = numbers.get(7); numberNine = numbers.get(8);
+    }
 
-        numberGridOne = Integer.parseInt(valueGridOne); numberGridTwo = Integer.parseInt(valueGridTwo);
-        numberGridThree = Integer.parseInt(valueGridThree); numberGridFour = Integer.parseInt(valueGridFour);
-        numberGridFive = Integer.parseInt(valueGridFive);
-        numberGridSix = Integer.parseInt(valueGridSix); numberGridSeven = Integer.parseInt(valueGridSeven);
-        numberGridEight = Integer.parseInt(valueGridEight); numberGridNine = Integer.parseInt(valueGridNine);
+    public void setFactors(){
+        int[] selectedNumbers = {selectOne, selectTwo, selectThree, selectFour,
+                selectFive, selectSix, selectSeven, selectEight, selectNine};
+        numberOne = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberTwo = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberThree = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberFour = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberFive = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberSix = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberSeven = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberEight = selectedNumbers[random.nextInt(selectedNumbers.length)];
+        numberNine = selectedNumbers[random.nextInt(selectedNumbers.length)];
+
+        checkEqualityTwo(selectedNumbers);
+    }
+
+    private int safeParseInt(String text){
+        try{
+            return Integer.parseInt(text);
+        }catch (NumberFormatException e){
+            return 0;
+        }
+    }
+    public void convertGridValuesToIntegers(){
+        valueGridOne = gridOne.getText().toString().trim();
+        valueGridTwo = gridTwo.getText().toString().trim();
+        valueGridThree = gridThree.getText().toString().trim();
+        valueGridFour = gridFour.getText().toString().trim();
+        valueGridFive = gridFive.getText().toString().trim();
+        valueGridSix = gridSix.getText().toString().trim();
+        valueGridSeven = gridSeven.getText().toString().trim();
+        valueGridEight = gridEight.getText().toString().trim();
+        valueGridNine = gridNine.getText().toString().trim();
+
+        numberGridOne = safeParseInt(valueGridOne);
+        numberGridTwo = safeParseInt(valueGridTwo);
+        numberGridThree = safeParseInt(valueGridThree);
+        numberGridFour = safeParseInt(valueGridFour);
+        numberGridFive = safeParseInt(valueGridFive);
+        numberGridSix = safeParseInt(valueGridSix);
+        numberGridSeven = safeParseInt(valueGridSeven);
+        numberGridEight = safeParseInt(valueGridEight);
+        numberGridNine = safeParseInt(valueGridNine);
     }
 
     public void setResultValuesForPlusPlus(){
@@ -680,10 +724,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForPlusPlus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne + factorTwo + factorThree == resultX)
+    public void checkResultValuesForPlusPlus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowSum = safeParseInt(gridX.getText().toString()) + safeParseInt(gridY.getText().toString()) + safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowSum == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne + factorTwo + factorThree != resultX) {
+        else if (gridClickIndex == 9 && rowSum != resultX) {
             wrong(gridX, gridY, gridZ, columnAnsX);
         }
     }
@@ -696,10 +741,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForMinusMinus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne - factorTwo - factorThree == resultX)
+    public void checkResultValuesForMinusMinus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowDiff = safeParseInt(gridX.getText().toString()) - safeParseInt(gridY.getText().toString()) - safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowDiff == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne - factorTwo - factorThree != resultX)
+        else if (gridClickIndex == 9 && rowDiff != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -711,10 +757,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForPlusMinus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne + factorTwo - factorThree == resultX)
+    public void checkResultValuesForPlusMinus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowOperationOne = safeParseInt(gridX.getText().toString()) + safeParseInt(gridY.getText().toString()) - safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowOperationOne == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne + factorTwo - factorThree != resultX)
+        else if (gridClickIndex == 9 && rowOperationOne != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -726,10 +773,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForMinusPlus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne - factorTwo + factorThree == resultX)
+    public void checkResultValuesForMinusPlus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowOperationTwo = safeParseInt(gridX.getText().toString()) - safeParseInt(gridY.getText().toString()) + safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowOperationTwo == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne - factorTwo + factorThree != resultX)
+        else if (gridClickIndex == 9 && rowOperationTwo != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -741,10 +789,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForProductProduct(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne * factorTwo * factorThree == resultX)
+    public void checkResultValuesForProductProduct(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowProduct = safeParseInt(gridX.getText().toString()) * safeParseInt(gridY.getText().toString()) * safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowProduct == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne * factorTwo * factorThree != resultX)
+        else if (gridClickIndex == 9 && rowProduct != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -758,10 +807,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForDivisionDivision(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) / ((double)factorThree) == resultX)
+    public void checkResultValuesForDivisionDivision(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double rowDivision = ((double)safeParseInt(gridX.getText().toString())) / ((double)safeParseInt(gridY.getText().toString())) / ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && rowDivision == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) / ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && rowDivision != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -775,10 +825,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForProductDivision(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) * ((double)factorTwo) / ((double)factorThree) == resultX)
+    public void checkResultValuesForProductDivision(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double rowOperationFour = ((double)safeParseInt(gridX.getText().toString())) * ((double)safeParseInt(gridY.getText().toString())) / ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && rowOperationFour == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) * ((double)factorTwo) / ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && rowOperationFour != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -792,10 +843,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForDivisionProduct(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) * ((double)factorThree) == resultX)
+    public void checkResultValuesForDivisionProduct(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double rowOperationFive = ((double)safeParseInt(gridX.getText().toString())) / ((double)safeParseInt(gridY.getText().toString())) * ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && rowOperationFive == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) * ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && rowOperationFive != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -807,10 +859,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForPlusProduct(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne + factorTwo * factorThree == resultX)
+    public void checkResultValuesForPlusProduct(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowOperationSix = safeParseInt(gridX.getText().toString()) + safeParseInt(gridY.getText().toString()) * safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowOperationSix == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne + factorTwo * factorThree != resultX)
+        else if (gridClickIndex == 9 && rowOperationSix != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -822,10 +875,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForProductPlus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne * factorTwo + factorThree == resultX)
+    public void checkResultValuesForProductPlus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowOperationSeven = safeParseInt(gridX.getText().toString()) * safeParseInt(gridY.getText().toString()) + safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowOperationSeven == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne * factorTwo + factorThree != resultX)
+        else if (gridClickIndex == 9 && rowOperationSeven != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -837,10 +891,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForMinusProduct(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne - factorTwo * factorThree == resultX)
+    public void checkResultValuesForMinusProduct(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowOperationNine = safeParseInt(gridX.getText().toString()) - safeParseInt(gridY.getText().toString()) * safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowOperationNine == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne - factorTwo * factorThree != resultX)
+        else if (gridClickIndex == 9 && rowOperationNine != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -852,10 +907,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
-    public void checkResultValuesForProductMinus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
-        if(gridClickIndex == 9 && factorOne * factorTwo - factorThree == resultX)
+    public void checkResultValuesForProductMinus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, int resultX){
+        int rowOperationEight = safeParseInt(gridX.getText().toString()) * safeParseInt(gridY.getText().toString()) - safeParseInt(gridZ.getText().toString());
+        if(gridClickIndex == 9 && rowOperationEight == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && factorOne * factorTwo - factorThree != resultX)
+        else if (gridClickIndex == 9 && rowOperationEight != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -869,10 +925,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForPlusDivision(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) + ((double)factorTwo) / ((double)factorThree) == resultX)
+    public void checkResultValuesForPlusDivision(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double divOp = ((double)safeParseInt(gridX.getText().toString())) + ((double)safeParseInt(gridY.getText().toString())) / ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && divOp == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) + ((double)factorTwo) / ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && divOp != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -886,10 +943,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForDivisionPlus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) + ((double)factorThree) == resultX)
+    public void checkResultValuesForDivisionPlus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double divOp = ((double)safeParseInt(gridX.getText().toString())) / ((double)safeParseInt(gridY.getText().toString())) + ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && divOp == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) + ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && divOp != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -903,10 +961,11 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForMinusDivision(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) - ((double)factorTwo) / ((double)factorThree) == resultX)
+    public void checkResultValuesForMinusDivision(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double divOp = ((double)safeParseInt(gridX.getText().toString())) - ((double)safeParseInt(gridY.getText().toString())) / ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && divOp == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) - ((double)factorTwo) / ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && divOp != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
@@ -920,30 +979,40 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsThree.setText(String.valueOf(decimalFormat.format(divResultThree)));
     }
 
-    public void checkResultValuesForDivisionMinus(int factorOne, int factorTwo, int factorThree, TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
-        if(gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) - ((double)factorThree) == resultX)
+    public void checkResultValuesForDivisionMinus(TextView gridX, TextView gridY, TextView gridZ, TextView columnAnsX, double resultX){
+        double divOp = ((double)safeParseInt(gridX.getText().toString())) / ((double)safeParseInt(gridY.getText().toString())) - ((double)safeParseInt(gridZ.getText().toString()));
+        if(gridClickIndex == 9 && divOp == resultX)
             correct(gridX, gridY, gridZ, columnAnsX);
-        else if (gridClickIndex == 9 && ((double)factorOne) / ((double)factorTwo) - ((double)factorThree) != resultX)
+        else if (gridClickIndex == 9 && divOp != resultX)
             wrong(gridX, gridY, gridZ, columnAnsX);
     }
 
     public void setInitialSlotDesign(){
+        selectedOne.setEnabled(true);
         selectedOne.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedOne.setTextColor(Color.parseColor("#ffffff"));
+        selectedTwo.setEnabled(true);
         selectedTwo.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedTwo.setTextColor(Color.parseColor("#ffffff"));
+        selectedThree.setEnabled(true);
         selectedThree.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedThree.setTextColor(Color.parseColor("#ffffff"));
+        selectedFour.setEnabled(true);
         selectedFour.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedFour.setTextColor(Color.parseColor("#ffffff"));
+        selectedFive.setEnabled(true);
         selectedFive.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedFive.setTextColor(Color.parseColor("#ffffff"));
+        selectedSix.setEnabled(true);
         selectedSix.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedSix.setTextColor(Color.parseColor("#ffffff"));
+        selectedSeven.setEnabled(true);
         selectedSeven.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedSeven.setTextColor(Color.parseColor("#ffffff"));
+        selectedEight.setEnabled(true);
         selectedEight.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedEight.setTextColor(Color.parseColor("#ffffff"));
+        selectedNine.setEnabled(true);
         selectedNine.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedNine.setTextColor(Color.parseColor("#ffffff"));
     }
