@@ -159,9 +159,9 @@ public class TicTacToeMain extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             checkAnswer.startAnimation(bounceAnimationCheck);
-                            checkResultValuesForPlusPlus(selectOne, selectTwo, selectThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
-                            checkResultValuesForPlusPlus(selectFour, selectFive, selectSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
-                            checkResultValuesForPlusPlus(selectSeven, selectEight, selectNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
+                            checkResultValuesForPlusPlus(numberGridOne, numberGridTwo, numberGridThree, gridOne, gridTwo, gridThree, columnAnsOne, resultOne);
+                            checkResultValuesForPlusPlus(numberGridFour, numberGridFive, numberGridSix, gridFour, gridFive, gridSix, columnAnsTwo, resultTwo);
+                            checkResultValuesForPlusPlus(numberGridSeven, numberGridEight, numberGridNine, gridSeven, gridEight, gridNine, columnAnsThree, resultThree);
                         }
                     });
                 }
@@ -625,7 +625,8 @@ public class TicTacToeMain extends AppCompatActivity {
     }
 
     public void setFactors(){
-        int[] selectedNumbers = {selectOne, selectTwo, selectThree, selectFour, selectFive, selectSix, selectSeven, selectEight, selectNine};
+        int[] selectedNumbers = {numberGridOne, numberGridTwo, numberGridThree, numberGridFour,
+                numberGridFive, numberGridSix, numberGridSeven, numberGridEight, numberGridNine};
         numberOne = selectedNumbers[random.nextInt(selectedNumbers.length)];
         numberTwo = selectedNumbers[random.nextInt(selectedNumbers.length)];
         numberThree = selectedNumbers[random.nextInt(selectedNumbers.length)];
@@ -656,7 +657,22 @@ public class TicTacToeMain extends AppCompatActivity {
         columnAnsx.setTextColor(Color.parseColor("#ff0000"));
     }
 
+    public void convertGridValuesToIntegers(){
+        valueGridOne = String.valueOf(gridOne); valueGridTwo = String.valueOf(gridTwo);
+        valueGridThree = String.valueOf(gridThree); valueGridFour = String.valueOf(gridFour);
+        valueGridFive = String.valueOf(gridFive); valueGridSix = String.valueOf(gridSix);
+        valueGridSeven = String.valueOf(gridSeven); valueGridEight = String.valueOf(gridEight);
+        valueGridNine = String.valueOf(gridNine);
+
+        numberGridOne = Integer.parseInt(valueGridOne); numberGridTwo = Integer.parseInt(valueGridTwo);
+        numberGridThree = Integer.parseInt(valueGridThree); numberGridFour = Integer.parseInt(valueGridFour);
+        numberGridFive = Integer.parseInt(valueGridFive);
+        numberGridSix = Integer.parseInt(valueGridSix); numberGridSeven = Integer.parseInt(valueGridSeven);
+        numberGridEight = Integer.parseInt(valueGridEight); numberGridNine = Integer.parseInt(valueGridNine);
+    }
+
     public void setResultValuesForPlusPlus(){
+        convertGridValuesToIntegers();
         setFactors();
         resultOne = numberOne + numberTwo + numberThree; resultTwo = numberFour + numberFive + numberSix;
         resultThree = numberSeven + numberEight + numberNine;

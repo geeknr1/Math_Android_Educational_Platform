@@ -7,7 +7,7 @@ import android.graphics.BitmapFactory;
 import com.example.license_project_2.R;
 
 public class Explosion {
-    Bitmap explosion[] = new Bitmap[4];
+    Bitmap[] explosion = new Bitmap[4];
     int explosionFrame = 0;
     int explosionX, explosionY;
 

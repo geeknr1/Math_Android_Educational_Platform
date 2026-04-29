@@ -9,7 +9,7 @@ import com.example.license_project_2.R;
 import java.util.Random;
 
 public class Figure {
-    Bitmap figure[] = new Bitmap[6];
+    Bitmap[] figure = new Bitmap[6];
     int figureFrame = 0;
     int figureX, figureY, figureVelocity;
     Random random;
