@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.license_project_2.MathComplete.CompleteMain;
 import com.example.license_project_2.MathGeometry.GeometryMain;
 import com.example.license_project_2.MathRoulette.RouletteMain;
+import com.example.license_project_2.MathShoot.ShootMain;
 import com.example.license_project_2.MathTicTacToe.TicTacToeMain;
 
 public class Games extends AppCompatActivity {
@@ -53,6 +54,7 @@ public class Games extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 gameTwo.startAnimation(bounceAnimationTwo);
+                startActivity(new Intent(Games.this, ShootMain.class));
             }
         });
 

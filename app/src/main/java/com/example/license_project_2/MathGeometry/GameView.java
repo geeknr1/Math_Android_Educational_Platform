@@ -82,10 +82,6 @@ public class GameView extends View {
         canvas.drawBitmap(kid, kidX, kidY, null);
         for(int i = 0; i < figures.size(); i++){
             canvas.drawBitmap(figures.get(i).getFigure(figures.get(i).figureFrame), figures.get(i).figureX, figures.get(i).figureY, null);
-//            figures.get(i).figureFrame++;
-//            if(figures.get(i).figureFrame > 5){
-//                figures.get(i).figureFrame = 0;
-//            }
             figures.get(i).figureY += figures.get(i).figureVelocity;
             if(figures.get(i).figureY + figures.get(i).getFigureHeight() >= dHeight - ground.getHeight() + 900){
                 points += 10;
