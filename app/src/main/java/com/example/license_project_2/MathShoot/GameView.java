@@ -20,7 +20,7 @@ public class GameView extends SurfaceView implements Runnable {
     private Paint paint;
     private Flight flight;
     private ArrayList<Bullet>bullets;
-    private Bird[] birds;
+    private Number[] numbers;
     private Random random;
     public GameView(Context context, int screenX, int screenY) {
         super(context);
@@ -35,10 +35,10 @@ public class GameView extends SurfaceView implements Runnable {
         bullets = new ArrayList<>();
         backgroundTwo.x = screenX;
 
-        birds = new Bird[4];
-        for(int i = 0; i < 4; i++){
-            Bird bird = new Bird(getResources());
-            birds[i] = bird;
+        numbers = new Number[9];
+        for(int i = 0; i < 9; i++){
+            Number number = new Number(getResources());
+            numbers[i] = number;
         }
         random = new Random();
     }
@@ -82,9 +82,9 @@ public class GameView extends SurfaceView implements Runnable {
                 trashBullets.add(bullet);
             bullet.x += 50 * screenRatioX;
 
-            for(Bird bird: birds){
-                if(Rect.intersects(bird.getCollisionShape(), bullet.getCollisionShape())){
-                    bird.x = -500;
+            for(Number number : numbers){
+                if(Rect.intersects(number.getCollisionShape(), bullet.getCollisionShape())){
+                    number.x = -500;
                     bullet.x = screenX + 500;
                 }
             }
@@ -93,26 +93,22 @@ public class GameView extends SurfaceView implements Runnable {
         for(Bullet bullet: trashBullets)
             bullets.remove(bullet);
 
-        for(Bird bird: birds){
-            bird.x -= bird.speed;
-            if(bird.x + bird.width < 0){
+        for(Number number : numbers){
+            number.x -= number.speed;
+            if(number.x + number.width < 0){
                 int bound = (int)(30 * screenRatioX);
-                bird.speed = random.nextInt(bound);
+                number.speed = random.nextInt(bound);
 
-                if(bird.speed < 5)
-                    bird.speed = random.nextInt(bound);
+                if(number.speed < 5)
+                    number.speed = random.nextInt(bound);
 
-                if(bird.speed < 10 * screenRatioX)
-                    bird.speed = (int)(10 * screenRatioX);
+                if(number.speed < 10 * screenRatioX)
+                    number.speed = (int)(10 * screenRatioX);
 
-                bird.x = screenX;
-                bird.y = random.nextInt(screenY - bird.height);
+                number.x = screenX;
+                number.y = random.nextInt(screenY - number.height);
             }
 
-//            if(Rect.intersects(bird.getCollisionShape(), flight.getCollisionShape())){
-//                isGameOver = true;
-//                return;
-//            }
         }
     }
 
@@ -129,8 +125,8 @@ public class GameView extends SurfaceView implements Runnable {
                 return;
             }
 
-            for(Bird bird: birds){
-                canvas.drawBitmap(bird.getBird(), bird.x, bird.y, paint);
+            for(Number number: numbers){
+                canvas.drawBitmap(number.getNumber(), number.x, number.y, paint);
             }
 
             canvas.drawBitmap(flight.getFlight(), flight.x, flight.y, paint);

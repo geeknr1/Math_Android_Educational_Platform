@@ -22,6 +22,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GeometrySection extends AppCompatActivity {
 
     private int sectionIndex = 0;
+    private int[] counterOne = {0};
+    private int[]counterTwo = {0};
+    private int[]counterThree = {0};
+    private int[]counterFour = {0};
+    private int[]counterFive = {0};
     private Button current;
 
     private Button answerone_1, answertwo_1, answerthree_1, answerone_2,
@@ -123,150 +128,105 @@ public class GeometrySection extends AppCompatActivity {
         answerone_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerOne.getText().toString().equals(answerone_1.getText().toString()))
-                    answerone_1.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerone_1.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterOne, answerone_1, correctAnswerOne);
             }
         });
 
         answertwo_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerOne.getText().toString().equals(answertwo_1.getText().toString()))
-                    answertwo_1.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answertwo_1.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterOne, answertwo_1, correctAnswerOne);
             }
         });
 
         answerthree_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerOne.getText().toString().equals(answerthree_1.getText().toString()))
-                    answerthree_1.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerthree_1.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterOne, answerthree_1, correctAnswerOne);
             }
         });
 
         answerone_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerTwo.getText().toString().equals(answerone_2.getText().toString()))
-                    answerone_2.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerone_2.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterTwo, answerone_2, correctAnswerTwo);
             }
         });
 
         answertwo_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerTwo.getText().toString().equals(answertwo_2.getText().toString()))
-                    answertwo_2.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answertwo_2.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterTwo, answertwo_2, correctAnswerTwo);
             }
         });
 
         answerthree_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerTwo.getText().toString().equals(answerthree_2.getText().toString()))
-                    answerthree_2.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerthree_2.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterTwo, answerthree_2, correctAnswerTwo);
             }
         });
 
         answerone_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerThree.getText().toString().equals(answerone_3.getText().toString()))
-                    answerone_3.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerone_3.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterThree, answerone_3, correctAnswerThree);
             }
         });
 
         answertwo_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerThree.getText().toString().equals(answertwo_3.getText().toString()))
-                    answertwo_3.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answertwo_3.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterThree, answertwo_3, correctAnswerThree);
             }
         });
 
         answerthree_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerThree.getText().toString().equals(answerthree_3.getText().toString()))
-                    answerthree_3.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerthree_3.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterThree, answerthree_3, correctAnswerThree);
             }
         });
 
         answerone_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerFour.getText().toString().equals(answerone_4.getText().toString()))
-                    answerone_4.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerone_4.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterFour, answerone_4, correctAnswerFour);
             }
         });
 
         answertwo_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerFour.getText().toString().equals(answertwo_4.getText().toString()))
-                    answertwo_4.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answertwo_4.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterFour, answertwo_4, correctAnswerFour);
             }
         });
 
         answerthree_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerFour.getText().toString().equals(answerthree_4.getText().toString()))
-                    answerthree_4.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerthree_4.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterFour, answerthree_4, correctAnswerFour);
             }
         });
 
         answerone_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerFive.getText().toString().equals(answerone_5.getText().toString()))
-                    answerone_5.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerone_5.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterFive, answerone_5, correctAnswerFive);
             }
         });
 
         answertwo_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerFive.getText().toString().equals(answertwo_5.getText().toString()))
-                    answertwo_5.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answertwo_5.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterFive, answertwo_5, correctAnswerFive);
             }
         });
 
         answerthree_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(correctAnswerFive.getText().toString().equals(answerthree_5.getText().toString()))
-                    answerthree_5.setBackgroundColor(getResources().getColor(R.color.blue));
-                else
-                    answerthree_5.setBackgroundColor(getResources().getColor(R.color.red));
+                checkAnswerButton(counterFive, answerthree_5, correctAnswerFive);
             }
         });
 
@@ -490,6 +450,11 @@ public class GeometrySection extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                counterOne = new int[]{0};
+                counterTwo = new int[]{0};
+                counterThree = new int[]{0};
+                counterFour = new int[]{0};
+                counterFive = new int[]{0};
                 answerone_1.setBackgroundColor(getResources().getColor(R.color.black));
                 answertwo_1.setBackgroundColor(getResources().getColor(R.color.black));
                 answerthree_1.setBackgroundColor(getResources().getColor(R.color.black));
@@ -521,5 +486,17 @@ public class GeometrySection extends AppCompatActivity {
         setText(R.id.sectionProperties, geoSection.theoryProperties);
         setText(R.id.sectionWorkedExamples, geoSection.theoryWorkedExamples);
         setText(R.id.sectionQuiz, geoSection.quiz);
+    }
+
+    public void checkAnswerButton(int[] counterX, Button buttonX, TextView correctAnswerX){
+        counterX[0]++;
+        if(counterX[0] == 1){
+            if(correctAnswerX.getText().toString().equals(buttonX.getText().toString()))
+                buttonX.setBackgroundColor(getResources().getColor(R.color.blue));
+            else
+                buttonX.setBackgroundColor(getResources().getColor(R.color.red));
+        }
+        else
+            buttonX.setBackgroundColor(getResources().getColor(R.color.black));
     }
 }
