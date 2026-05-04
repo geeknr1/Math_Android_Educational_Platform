@@ -85,16 +85,9 @@ public class Geometry extends AppCompatActivity {
             };
     public void spinnerSetup(int spinnerID, int arrayID){
         Spinner spinner = findViewById(spinnerID);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, arrayID, android.R.layout.simple_spinner_item);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        adapter.setDropDownViewResource(R.layout.multiple_line_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, arrayID, R.layout.selected_item);
+        adapter.setDropDownViewResource(R.layout.dropdown_item);
         spinner.setAdapter(adapter);
-
         spinner.setOnItemSelectedListener(listener);
-
-
-
     }
 }

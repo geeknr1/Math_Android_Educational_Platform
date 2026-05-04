@@ -149,7 +149,8 @@
                 <ImageView
                     android:id="@+id/requirementOneImg"
                     android:layout_width="250dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
         <LinearLayout
@@ -200,7 +201,8 @@
                 <ImageView
                     android:id="@+id/requirementTwoImg"
                     android:layout_width="250dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
         <LinearLayout
@@ -250,7 +252,8 @@
                 <ImageView
                     android:id="@+id/requirementThreeImg"
                     android:layout_width="250dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
         <LinearLayout
@@ -301,7 +304,8 @@
                 <ImageView
                     android:id="@+id/requirementFourImg"
                     android:layout_width="250dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
         <LinearLayout
@@ -352,7 +356,8 @@
                 <ImageView
                     android:id="@+id/requirementFiveImg"
                     android:layout_width="250dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
         <LinearLayout

@@ -194,6 +194,7 @@
                     android:id="@+id/requirementOneImg"
                     android:layout_width="250dp"
                     android:layout_height="150dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
                 <LinearLayout
@@ -245,6 +246,7 @@
                     android:id="@+id/requirementTwoImg"
                     android:layout_width="250dp"
                     android:layout_height="150dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
                 <LinearLayout
@@ -296,6 +298,7 @@
                     android:id="@+id/requirementThreeImg"
                     android:layout_width="250dp"
                     android:layout_height="150dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
                 <LinearLayout
@@ -347,6 +350,7 @@
                     android:id="@+id/requirementFourImg"
                     android:layout_width="250dp"
                     android:layout_height="150dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
                 <LinearLayout
@@ -398,6 +402,7 @@
                     android:id="@+id/requirementFiveImg"
                     android:layout_width="250dp"
                     android:layout_height="150dp"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center"/>
 
                 <LinearLayout
@@ -441,6 +446,42 @@
                         android:backgroundTint="@color/black"
                         android:textSize="24sp"
                         android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/correctOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
                         android:textColor="@color/white"/>
 
                 </LinearLayout>

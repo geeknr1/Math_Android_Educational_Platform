@@ -30,6 +30,7 @@ public class GeometrySection extends AppCompatActivity {
             answerone_5, answertwo_5, answerthree_5;
     private ImageView question1, question2, question3, question4, question5;
     private TextView theoryDefinition, theoryProperties, theoryWorkedExamples, quizPrime;
+    private TextView correctAnswerOne, correctAnswerTwo, correctAnswerThree, correctAnswerFour, correctAnswerFive;
     private ProgressBar progressBarOne, progressBarTwo;
     private int progressValueOne = 0, progressValueTwo = 0;
     private Animation bounceAnimation, bounceAnimationTwo, bounceAnimationThree;
@@ -80,14 +81,36 @@ public class GeometrySection extends AppCompatActivity {
         answerone_5 = findViewById(R.id.buttonAnswerOne_5); answertwo_5 = findViewById(R.id.buttonAnswerTwo_5);
         answerthree_5 = findViewById(R.id.buttonAnswerThree_5);
 
+        answerone_1.setText(sectionGeo.answerOne_1); answertwo_1.setText(sectionGeo.answerTwo_1); answerthree_1.setText(sectionGeo.answerThree_1);
+        answerone_2.setText(sectionGeo.answerOne_2); answertwo_2.setText(sectionGeo.answerTwo_2); answerthree_2.setText(sectionGeo.answerThree_2);
+        answerone_3.setText(sectionGeo.answerOne_3); answertwo_3.setText(sectionGeo.answerTwo_3); answerthree_3.setText(sectionGeo.answerThree_3);
+        answerone_4.setText(sectionGeo.answerOne_4); answertwo_4.setText(sectionGeo.answerTwo_4); answerthree_4.setText(sectionGeo.answerThree_4);
+        answerone_5.setText(sectionGeo.answerOne_5); answertwo_5.setText(sectionGeo.answerTwo_5); answerthree_5.setText(sectionGeo.answerThree_5);
+
         answerone_1.setVisibility(View.GONE); answertwo_1.setVisibility(View.GONE); answerthree_1.setVisibility(View.GONE);
         answerone_2.setVisibility(View.GONE); answertwo_2.setVisibility(View.GONE); answerthree_2.setVisibility(View.GONE);
         answerone_3.setVisibility(View.GONE); answertwo_3.setVisibility(View.GONE); answerthree_3.setVisibility(View.GONE);
         answerone_4.setVisibility(View.GONE); answertwo_4.setVisibility(View.GONE); answerthree_4.setVisibility(View.GONE);
         answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
 
+        correctAnswerOne = findViewById(R.id.correctOne); correctAnswerTwo = findViewById(R.id.correctTwo);
+        correctAnswerThree = findViewById(R.id.correctThree); correctAnswerFour = findViewById(R.id.correctFour);
+        correctAnswerFive = findViewById(R.id.correctFive);
+        correctAnswerOne.setText(sectionGeo.correctAnswerOne); correctAnswerTwo.setText(sectionGeo.correctAnswerTwo);
+        correctAnswerThree.setText(sectionGeo.correctAnswerThree); correctAnswerFour.setText(sectionGeo.correctAnswerFour);
+        correctAnswerFive.setText(sectionGeo.correctAnswerFive);
+
+        correctAnswerOne.setVisibility(View.GONE); correctAnswerTwo.setVisibility(View.GONE); correctAnswerThree.setVisibility(View.GONE);
+        correctAnswerFour.setVisibility(View.GONE); correctAnswerFive.setVisibility(View.GONE);
+        
+        
+
         question1 = findViewById(R.id.requirementOneImg); question2 = findViewById(R.id.requirementTwoImg); question3 = findViewById(R.id.requirementThreeImg);
         question4 = findViewById(R.id.requirementFourImg); question5 = findViewById(R.id.requirementFiveImg);
+        
+        question1.setImageResource(sectionGeo.requirementOne); question2.setImageResource(sectionGeo.requirementTwo);
+        question3.setImageResource(sectionGeo.requirementThree); question4.setImageResource(sectionGeo.requirementFour);
+        question5.setImageResource(sectionGeo.requirementFive);
 
         question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
         question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -96,6 +119,156 @@ public class GeometrySection extends AppCompatActivity {
         progressBarOne.setVisibility(View.VISIBLE); progressBarTwo.setVisibility(View.GONE);
 
         bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce);
+
+        answerone_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerOne.getText().toString().equals(answerone_1.getText().toString()))
+                    answerone_1.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_1.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerOne.getText().toString().equals(answertwo_1.getText().toString()))
+                    answertwo_1.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_1.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerOne.getText().toString().equals(answerthree_1.getText().toString()))
+                    answerthree_1.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_1.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerTwo.getText().toString().equals(answerone_2.getText().toString()))
+                    answerone_2.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_2.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerTwo.getText().toString().equals(answertwo_2.getText().toString()))
+                    answertwo_2.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_2.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerTwo.getText().toString().equals(answerthree_2.getText().toString()))
+                    answerthree_2.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_2.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerThree.getText().toString().equals(answerone_3.getText().toString()))
+                    answerone_3.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_3.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerThree.getText().toString().equals(answertwo_3.getText().toString()))
+                    answertwo_3.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_3.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerThree.getText().toString().equals(answerthree_3.getText().toString()))
+                    answerthree_3.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_3.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFour.getText().toString().equals(answerone_4.getText().toString()))
+                    answerone_4.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_4.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFour.getText().toString().equals(answertwo_4.getText().toString()))
+                    answertwo_4.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_4.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFour.getText().toString().equals(answerthree_4.getText().toString()))
+                    answerthree_4.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_4.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerone_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFive.getText().toString().equals(answerone_5.getText().toString()))
+                    answerone_5.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerone_5.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answertwo_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFive.getText().toString().equals(answertwo_5.getText().toString()))
+                    answertwo_5.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answertwo_5.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
+
+        answerthree_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(correctAnswerFive.getText().toString().equals(answerthree_5.getText().toString()))
+                    answerthree_5.setBackgroundColor(getResources().getColor(R.color.blue));
+                else
+                    answerthree_5.setBackgroundColor(getResources().getColor(R.color.red));
+            }
+        });
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -317,6 +490,21 @@ public class GeometrySection extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                answerone_1.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_1.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_1.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_2.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_2.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_2.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_3.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_3.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_3.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_4.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_4.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_4.setBackgroundColor(getResources().getColor(R.color.black));
+                answerone_5.setBackgroundColor(getResources().getColor(R.color.black));
+                answertwo_5.setBackgroundColor(getResources().getColor(R.color.black));
+                answerthree_5.setBackgroundColor(getResources().getColor(R.color.black));
                 back.startAnimation(bounceAnimationThree);
                 startActivity(new Intent(GeometrySection.this, Geometry.class));
             }
