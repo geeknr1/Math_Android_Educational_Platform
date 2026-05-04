@@ -42,41 +42,41 @@ public class Number {
         y = -height;
     }
 
-    public Bitmap getNumber(){
-        if(numberCounter == 1){
-            numberCounter++;
-            return a;
-        }
-        if(numberCounter == 2){
-            numberCounter++;
-            return b;
-        }
-        if(numberCounter == 3){
-            numberCounter++;
-            return c;
-        }
-        if(numberCounter == 4){
-            numberCounter++;
-            return d;
-        }
-        if(numberCounter == 5){
-            numberCounter++;
-            return e;
-        }
-        if(numberCounter == 6){
-            numberCounter++;
-            return f;
-        }
-        if(numberCounter == 7){
-            numberCounter++;
-            return g;
-        }
-        if(numberCounter == 8){
-            numberCounter++;
-            return h;
-        }
-        return null;
-    }
+//    public Bitmap getNumber(){
+//        if(numberCounter == 1){
+//            numberCounter++;
+//            return a;
+//        }
+//        if(numberCounter == 2){
+//            numberCounter++;
+//            return b;
+//        }
+//        if(numberCounter == 3){
+//            numberCounter++;
+//            return c;
+//        }
+//        if(numberCounter == 4){
+//            numberCounter++;
+//            return d;
+//        }
+//        if(numberCounter == 5){
+//            numberCounter++;
+//            return e;
+//        }
+//        if(numberCounter == 6){
+//            numberCounter++;
+//            return f;
+//        }
+//        if(numberCounter == 7){
+//            numberCounter++;
+//            return g;
+//        }
+//        if(numberCounter == 8){
+//            numberCounter++;
+//            return h;
+//        }
+//        return null;
+//    }
 
     public Rect getCollisionShape(){
         return new Rect(x, y, x + width, y + height);
