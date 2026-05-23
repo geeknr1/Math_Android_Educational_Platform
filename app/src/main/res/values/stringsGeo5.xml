@@ -2,45 +2,186 @@
 <resources>
     <string name="app_name_12">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--         SECTION ONE: SYMMETRY & TRANSFORMATIONS                 -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_12">• A transformation moves every point to form a new figure.
 \n • Central symmetry reflects points across a center.
 \n • Axial symmetry reflects across a line; homothety scales from a center.</string>
+
+    <!-- Q: Does axial symmetry reflect a figure across a line? Answer: True -->
+    <string name="SectionOneTheoryDefQuestion_12">Does axial symmetry reflect a figure across a line?</string>
+    <string name="SectionOneTheoryDefAnswerOne_12">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_12">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryDefAnswerThree_12"></string>
+    <string name="SectionOneTheoryDefCorrectAnswer_12">True</string>
 
     <string name="SectionOneTheoryProperties_12">• Circles and parallelograms have centers of symmetry.
 \n • Shapes like triangles and squares have specific symmetry axes.
 \n • Homothetic figures share the same shape and center.</string>
 
-    <string name="SectionOneTheoryWorkedExamples_12">• Find point M on line p minimizing AM+MB.
-\n • Reflect B across p to get B′ and join A to B′.
-\n • Intersection with p gives the required M.</string>
+    <!-- Q: How many axes of symmetry does a square have? Answer: 4 -->
+    <string name="SectionOneTheoryPropsQuestion_12">How many axes of symmetry does a square have?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_12">2</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_12">4</string>
+    <string name="SectionOneTheoryPropsAnswerThree_12">1</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_12">4</string>
+
+    <string name="SectionOneTheoryWorkedExamples_12">• To find point M on line p minimising AM+MB: reflect B across p to get B′. The straight line AB′ crosses p at M — this gives the shortest total path by the triangle inequality.
+\n • Any other point N on p satisfies AN+NB = AN+NB′ &gt; AB′ = AM+MB′ = AM+MB, confirming M is the minimum.
+\n • This reflection technique is the standard construction for the shortest-path-via-a-line problem and is a direct application of axial symmetry.</string>
+
+    <!-- Q: To minimise AM+MB with M on line p, which point is reflected across p? Answer: B -->
+    <string name="SectionOneTheoryWorkedExQuestion_12">To find the point M on line p that minimises AM+MB, which point is reflected across p?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_12">M</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_12">A</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_12">B</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_12">B</string>
 
     <string name="SectionOneQuiz_12">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_12">one</string>
+    <string name="SecOneQuizAnswer2_1_12">two</string>
+    <string name="SecOneQuizAnswer3_1_12">three</string>
+    <string name="SecOneQuizAnswer1_2_12">one</string>
+    <string name="SecOneQuizAnswer2_2_12">two</string>
+    <string name="SecOneQuizAnswer3_2_12">three</string>
+    <string name="SecOneQuizAnswer1_3_12">one</string>
+    <string name="SecOneQuizAnswer2_3_12">two</string>
+    <string name="SecOneQuizAnswer3_3_12">three</string>
+    <string name="SecOneQuizAnswer1_4_12">one</string>
+    <string name="SecOneQuizAnswer2_4_12">two</string>
+    <string name="SecOneQuizAnswer3_4_12">three</string>
+    <string name="SecOneQuizAnswer1_5_12">one</string>
+    <string name="SecOneQuizAnswer2_5_12">two</string>
+    <string name="SecOneQuizAnswer3_5_12">three</string>
+    <string name="SectionOneAnswerOne_12">one</string>
+    <string name="SectionOneAnswerTwo_12">two</string>
+    <string name="SectionOneAnswerThree_12">three</string>
+    <string name="SectionOneAnswerFour_12">one</string>
+    <string name="SectionOneAnswerFive_12">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                   SECTION TWO: MOTIONS (ISOMETRIES)             -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_12">• A motion keeps distances unchanged (isometry).
 \n • Translation shifts points equally in one direction.
 \n • Rotation turns a figure around a fixed point.</string>
 
+    <!-- Q: Does a motion (isometry) preserve distances? Answer: True -->
+    <string name="SectionTwoTheoryDefQuestion_12">Does a motion (isometry) preserve distances between points?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_12">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_12">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryDefAnswerThree_12"></string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_12">True</string>
+
     <string name="SectionTwoTheoryProperties_12">• Motions preserve shapes, lengths, and angles.
 \n • Combining motions yields another motion.
 \n • Every figure is congruent to itself and others by motion.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_12">• Symmetries are motions since they preserve distance.
-\n • Each translation between points is unique.
-\n • Proves key isometric properties.</string>
+    <!-- Q: Does combining two motions always yield another motion? Answer: True -->
+    <string name="SectionTwoTheoryPropsQuestion_12">Does combining two motions always result in another motion?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_12">True</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_12">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryPropsAnswerThree_12"></string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_12">True</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_12">• Proof that axial symmetry is a motion: for any two points P and Q and their reflections P′ and Q′ across line l, the reflecting triangles are congruent by SAS, so P′Q′ = PQ — distance is preserved.
+\n • Uniqueness of translation: given points A and B, there is exactly one translation mapping A to B, defined by the vector AB⃗. Any other translation would send A to a different point.
+\n • Combining a translation and a rotation produces a new isometry (a glide rotation), confirming that the set of all motions is closed under composition.</string>
+
+    <!-- Q: Is axial symmetry a motion (isometry)? Answer: True -->
+    <string name="SectionTwoTheoryWorkedExQuestion_12">Is axial symmetry (reflection across a line) classified as a motion (isometry)?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_12">True</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_12">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryWorkedExAnswerThree_12"></string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_12">True</string>
 
     <string name="SectionTwoQuiz_12">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_12">one</string>
+    <string name="SecTwoQuizAnswer2_1_12">two</string>
+    <string name="SecTwoQuizAnswer3_1_12">three</string>
+    <string name="SecTwoQuizAnswer1_2_12">one</string>
+    <string name="SecTwoQuizAnswer2_2_12">two</string>
+    <string name="SecTwoQuizAnswer3_2_12">three</string>
+    <string name="SecTwoQuizAnswer1_3_12">one</string>
+    <string name="SecTwoQuizAnswer2_3_12">two</string>
+    <string name="SecTwoQuizAnswer3_3_12">three</string>
+    <string name="SecTwoQuizAnswer1_4_12">one</string>
+    <string name="SecTwoQuizAnswer2_4_12">two</string>
+    <string name="SecTwoQuizAnswer3_4_12">three</string>
+    <string name="SecTwoQuizAnswer1_5_12">one</string>
+    <string name="SecTwoQuizAnswer2_5_12">two</string>
+    <string name="SecTwoQuizAnswer3_5_12">three</string>
+    <string name="SectionTwoAnswerOne_12">one</string>
+    <string name="SectionTwoAnswerTwo_12">two</string>
+    <string name="SectionTwoAnswerThree_12">three</string>
+    <string name="SectionTwoAnswerFour_12">one</string>
+    <string name="SectionTwoAnswerFive_12">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                   SECTION THREE: SIMILITUDE                     -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_12">• A similitude scales distances by a constant ratio k.
 \n • Figures are similar if one maps to the other by such a transformation.
 \n • Homothety is a special case of similitude.</string>
 
+    <!-- Q: Is homothety a special case of similitude? Answer: True -->
+    <string name="SectionThreeTheoryDefQuestion_12">Is homothety a special case of similitude?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_12">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_12">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryDefAnswerThree_12"></string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_12">True</string>
+
     <string name="SectionThreeTheoryProperties_12">• Similitude keeps lines straight and angles equal.
 \n • Preserves order of points along a line.
 \n • Homothety is always a type of similitude.</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_12">• Homothety with ratio k multiplies all distances by k.
-\n • Proven using similar triangles MON and M′ON′.
-\n • Confirms it’s a transformation of similitude.</string>
+    <!-- Q: Does a similitude preserve angles? Answer: True -->
+    <string name="SectionThreeTheoryPropsQuestion_12">Does a similitude transformation preserve angles?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_12">True</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_12">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryPropsAnswerThree_12"></string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_12">True</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_12">• Homothety with center O and ratio k = 3 maps every point M to M′ where OM′ = 3×OM. The image triangle M′O′N′ is similar to MON with ratio 3, proven by comparing sides: M′N′/MN = OM′/OM = 3.
+\n • Since M′N′ = k×MN for every pair of image points, all distances are scaled by k — confirming homothety is a similitude.
+\n • A similitude with k = 1 is a motion (isometry); any k ≠ 1 produces a strictly similar but non-congruent image, illustrating the relationship between motions and similitudes.</string>
+
+    <!-- Q: A homothety with ratio k=3 multiplies all distances by what factor? Answer: 3 -->
+    <string name="SectionThreeTheoryWorkedExQuestion_12">A homothety with ratio k = 3 multiplies all distances by what factor?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_12">9</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_12">1/3</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_12">3</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_12">3</string>
 
     <string name="SectionThreeQuiz_12">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_12">one</string>
+    <string name="SecThreeQuizAnswer2_1_12">two</string>
+    <string name="SecThreeQuizAnswer3_1_12">three</string>
+    <string name="SecThreeQuizAnswer1_2_12">one</string>
+    <string name="SecThreeQuizAnswer2_2_12">two</string>
+    <string name="SecThreeQuizAnswer3_2_12">three</string>
+    <string name="SecThreeQuizAnswer1_3_12">one</string>
+    <string name="SecThreeQuizAnswer2_3_12">two</string>
+    <string name="SecThreeQuizAnswer3_3_12">three</string>
+    <string name="SecThreeQuizAnswer1_4_12">one</string>
+    <string name="SecThreeQuizAnswer2_4_12">two</string>
+    <string name="SecThreeQuizAnswer3_4_12">three</string>
+    <string name="SecThreeQuizAnswer1_5_12">one</string>
+    <string name="SecThreeQuizAnswer2_5_12">two</string>
+    <string name="SecThreeQuizAnswer3_5_12">three</string>
+    <string name="SectionThreeAnswerOne_12">one</string>
+    <string name="SectionThreeAnswerTwo_12">two</string>
+    <string name="SectionThreeAnswerThree_12">three</string>
+    <string name="SectionThreeAnswerFour_12">one</string>
+    <string name="SectionThreeAnswerFive_12">two</string>
 </resources>

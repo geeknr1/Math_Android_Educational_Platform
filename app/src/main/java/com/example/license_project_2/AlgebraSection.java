@@ -3,6 +3,7 @@ package com.example.license_project_2;
 import static android.view.View.VISIBLE;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -20,6 +21,8 @@ import android.widget.TextView;
 //import com.example.license_project_2.Question;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
 
 //import com.kofigyan.stateprogressbar.StateProgressBar;
 
@@ -27,7 +30,7 @@ public class AlgebraSection extends AppCompatActivity {
 
     private int sectionIndex = 0;
     private int[] counterOne = {0}, counterTwo = {0} , counterThree = {0} ,
-                counterFour = {0}, counterFive = {0};
+                counterFour = {0}, counterFive = {0}, counterSix = {0}, counterSeven = {0}, counterEight = {0};
     private Button current;
     private Button answerone_1, answertwo_1, answerthree_1, answerone_2,
                    answertwo_2, answerthree_2, answerone_3, answertwo_3,
@@ -40,8 +43,11 @@ public class AlgebraSection extends AppCompatActivity {
     private String currentLessonName;
     private static final String [] parts = {"Def", "Props", "Examples", "Quiz"};
     private int index;
-    private TextView correctAnswerOne, correctAnswerTwo, correctAnswerThree, correctAnswerFour, correctAnswerFive;
+    private TextView correctAnswerOne, correctAnswerTwo, correctAnswerThree, correctAnswerFour, correctAnswerFive,
+                     correctAnswerDefinition, correctAnswerProperties, correctAnswerExample;
     private Animation bounceAnimationThree, bounceAnimation, bounceAnimationTwo;
+    private TextView defQuestion, propsQuestion, exampleQuestion;
+    private Button defAnswerOne, defAnswerTwo, defAnswerThree, propsAnswerOne, propsAnswerTwo, propsAnswerThree, exampleAnswerOne, exampleAnswerTwo, exampleAnswerThree;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -54,8 +60,45 @@ public class AlgebraSection extends AppCompatActivity {
 
 
         theoryDefinition = findViewById(R.id.sectionDefinition);
+        defQuestion = findViewById(R.id.sectionDefQuestion);
+        defAnswerOne = findViewById(R.id.buttonAnswerDefOne);
+        defAnswerTwo = findViewById(R.id.buttonAnswerDefTwo);
+        defAnswerThree = findViewById(R.id.buttonAnswerDefThree);
+        correctAnswerDefinition = findViewById(R.id.correctDefinition);
+        defQuestion.setText(sectionAlg.theoryDefQuestion);
+        defAnswerOne.setText(sectionAlg.theoryDefAnswerOne);
+        defAnswerTwo.setText(sectionAlg.theoryDefAnswerTwo);
+        defAnswerThree.setText(sectionAlg.theoryDefAnswerThree);
+        correctAnswerDefinition.setText(sectionAlg.theoryDefCorrect);
+        correctAnswerDefinition.setVisibility(View.GONE);
+
+
         theoryProperties = findViewById(R.id.sectionProperties);
+        propsQuestion = findViewById(R.id.sectionPropsQuestion);
+        propsAnswerOne = findViewById(R.id.buttonAnswerPropsOne);
+        propsAnswerTwo = findViewById(R.id.buttonAnswerPropsTwo);
+        propsAnswerThree = findViewById(R.id.buttonAnswerPropsThree);
+        correctAnswerProperties = findViewById(R.id.correctProperties);
+        propsQuestion.setText(sectionAlg.theoryPropsQuestion);
+        propsAnswerOne.setText(sectionAlg.theoryPropsAnswerOne);
+        propsAnswerTwo.setText(sectionAlg.theoryPropsAnswerTwo);
+        propsAnswerThree.setText(sectionAlg.theoryPropsAnswerThree);
+        correctAnswerProperties.setText(sectionAlg.theoryPropsCorrect);
+        correctAnswerProperties.setVisibility(View.GONE);
+
         theoryWorkedExamples = findViewById(R.id.sectionWorkedExamples);
+        exampleQuestion = findViewById(R.id.sectionExampleQuestion);
+        exampleAnswerOne = findViewById(R.id.buttonAnswerExampleOne);
+        exampleAnswerTwo = findViewById(R.id.buttonAnswerExampleTwo);
+        exampleAnswerThree = findViewById(R.id.buttonAnswerExampleThree);
+        correctAnswerExample = findViewById(R.id.correctExample);
+        exampleQuestion.setText(sectionAlg.theoryExampleQuestion);
+        exampleAnswerOne.setText(sectionAlg.theoryExampleAnswerOne);
+        exampleAnswerTwo.setText(sectionAlg.theoryExampleAnswerTwo);
+        exampleAnswerThree.setText(sectionAlg.theoryExampleAnswerThree);
+        correctAnswerExample.setText(sectionAlg.theoryExampleCorrect);
+        correctAnswerExample.setVisibility(View.GONE);
+
         quizPrime = findViewById(R.id.sectionQuiz);
 
 
@@ -65,8 +108,23 @@ public class AlgebraSection extends AppCompatActivity {
         ImageButton next = findViewById(R.id.next);
 
         theoryDefinition.setVisibility(View.GONE);
+        defQuestion.setVisibility(View.GONE);
+        defAnswerOne.setVisibility(View.GONE);
+        defAnswerTwo.setVisibility(View.GONE);
+        defAnswerThree.setVisibility(View.GONE);
+
         theoryProperties.setVisibility(View.GONE);
+        propsQuestion.setVisibility(View.GONE);
+        propsAnswerOne.setVisibility(View.GONE);
+        propsAnswerTwo.setVisibility(View.GONE);
+        propsAnswerThree.setVisibility(View.GONE);
+
         theoryWorkedExamples.setVisibility(View.GONE);
+        exampleQuestion.setVisibility(View.GONE);
+        exampleAnswerOne.setVisibility(View.GONE);
+        exampleAnswerTwo.setVisibility(View.GONE);
+        exampleAnswerThree.setVisibility(View.GONE);
+
         quizPrime.setVisibility(View.GONE);
 
         answerone_1 = findViewById(R.id.buttonAnswerOne); answertwo_1 = findViewById(R.id.buttonAnswerTwo);
@@ -225,26 +283,100 @@ public class AlgebraSection extends AppCompatActivity {
             }
         });
 
+        defAnswerOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterSix, defAnswerOne, correctAnswerDefinition);
+            }
+        });
+
+        defAnswerTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterSix, defAnswerTwo, correctAnswerDefinition);
+            }
+        });
+
+        defAnswerThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterSix, defAnswerThree, correctAnswerDefinition);
+            }
+        });
+
+        propsAnswerOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterSeven, propsAnswerOne, correctAnswerProperties);
+            }
+        });
+
+        propsAnswerTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterSeven, propsAnswerTwo, correctAnswerProperties);
+            }
+        });
+
+        propsAnswerThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterSeven, propsAnswerThree, correctAnswerProperties);
+            }
+        });
+
+        exampleAnswerOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterEight, exampleAnswerOne, correctAnswerExample);
+            }
+        });
+
+        exampleAnswerTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterEight, exampleAnswerTwo, correctAnswerExample);
+            }
+        });
+
+        exampleAnswerThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkAnswerButton(counterEight, exampleAnswerThree, correctAnswerExample);
+            }
+        });
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(progressValueOne < 100 && sectionIndex != 3){
-                        progressValueOne += 25;
-                        progressBarOne.setProgress(progressValueOne);
-                } else if (progressValueOne < 100 & sectionIndex >= 3) {
-                        progressValueOne += 50;
-                        progressBarOne.setProgress(progressValueOne);
-                }
 
                 next.startAnimation(bounceAnimation);
                 sectionIndex = sectionIndex + 1;
                 if(sectionIndex == 1){
+                    counterSix[0] = 0;
                     index = sectionIndex;
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.VISIBLE);
+                    defQuestion.setVisibility(View.VISIBLE);
+                    defAnswerOne.setVisibility(View.VISIBLE);
+                    defAnswerTwo.setVisibility(View.VISIBLE);
+                    defAnswerThree.setVisibility(View.VISIBLE);
+                    defAnswerOne.setBackgroundColor(getResources().getColor(R.color.black));
+                    defAnswerTwo.setBackgroundColor(getResources().getColor(R.color.black));
+                    defAnswerThree.setBackgroundColor(getResources().getColor(R.color.black));
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
+
                     quizPrime.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
@@ -256,13 +388,33 @@ public class AlgebraSection extends AppCompatActivity {
                     answerone_5.setVisibility(View.GONE); answertwo_5.setVisibility(View.GONE); answerthree_5.setVisibility(View.GONE);
                 }
                 if(sectionIndex == 2){
+                    counterSeven[0] = 0;
                     index = sectionIndex;
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.VISIBLE);
+                    propsQuestion.setVisibility(View.VISIBLE);
+                    propsAnswerOne.setVisibility(View.VISIBLE);
+                    propsAnswerTwo.setVisibility(View.VISIBLE);
+                    propsAnswerThree.setVisibility(View.VISIBLE);
+                    propsAnswerOne.setBackgroundColor(getResources().getColor(R.color.black));
+                    propsAnswerTwo.setBackgroundColor(getResources().getColor(R.color.black));
+                    propsAnswerThree.setBackgroundColor(getResources().getColor(R.color.black));
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
+
                     quizPrime.setVisibility(View.GONE);
+
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
                     question4.setVisibility(View.GONE); question5.setVisibility(View.GONE);
@@ -274,12 +426,30 @@ public class AlgebraSection extends AppCompatActivity {
 
                 }
                 if(sectionIndex == 3){
+                    counterEight[0] = 0;
                     index = sectionIndex;
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.VISIBLE);
+                    exampleQuestion.setVisibility(View.VISIBLE);
+                    exampleAnswerOne.setVisibility(View.VISIBLE);
+                    exampleAnswerTwo.setVisibility(View.VISIBLE);
+                    exampleAnswerThree.setVisibility(View.VISIBLE);
+                    exampleAnswerOne.setBackgroundColor(getResources().getColor(R.color.black));
+                    exampleAnswerTwo.setBackgroundColor(getResources().getColor(R.color.black));
+                    exampleAnswerThree.setBackgroundColor(getResources().getColor(R.color.black));
                     quizPrime.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
@@ -296,8 +466,23 @@ public class AlgebraSection extends AppCompatActivity {
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
+
                     quizPrime.setVisibility(View.VISIBLE);
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
@@ -315,8 +500,22 @@ public class AlgebraSection extends AppCompatActivity {
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.VISIBLE);
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
@@ -333,14 +532,14 @@ public class AlgebraSection extends AppCompatActivity {
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(sectionIndex == 4 && progressValueOne > 0){
-                    progressValueOne -= 50;
-                    progressBarOne.setProgress(progressValueOne);
-                }
-                else{
-                    progressValueOne -= 25;
-                    progressBarOne.setProgress(progressValueOne);
-                }
+//                if(sectionIndex == 4 && progressValueOne > 0){
+//                    progressValueOne -= 50;
+//                    progressBarOne.setProgress(progressValueOne);
+//                }
+//                else{
+//                    progressValueOne -= 25;
+//                    progressBarOne.setProgress(progressValueOne);
+//                }
                 previous.startAnimation(bounceAnimationTwo);
                 sectionIndex = sectionIndex - 1;
                 if(sectionIndex == 1){
@@ -348,8 +547,22 @@ public class AlgebraSection extends AppCompatActivity {
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.VISIBLE);
+                    defQuestion.setVisibility(View.VISIBLE);
+                    defAnswerOne.setVisibility(View.VISIBLE);
+                    defAnswerTwo.setVisibility(View.VISIBLE);
+                    defAnswerThree.setVisibility(View.VISIBLE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
@@ -366,8 +579,22 @@ public class AlgebraSection extends AppCompatActivity {
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.VISIBLE);
+                    propsQuestion.setVisibility(View.VISIBLE);
+                    propsAnswerOne.setVisibility(View.VISIBLE);
+                    propsAnswerTwo.setVisibility(View.VISIBLE);
+                    propsAnswerThree.setVisibility(View.VISIBLE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
@@ -384,8 +611,22 @@ public class AlgebraSection extends AppCompatActivity {
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.VISIBLE);
+                    exampleQuestion.setVisibility(View.VISIBLE);
+                    exampleAnswerOne.setVisibility(View.VISIBLE);
+                    exampleAnswerTwo.setVisibility(View.VISIBLE);
+                    exampleAnswerThree.setVisibility(View.VISIBLE);
                     quizPrime.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
@@ -402,8 +643,22 @@ public class AlgebraSection extends AppCompatActivity {
                     current.setText(parts[index - 1]);
 
                     theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.VISIBLE);
 
                     question1.setVisibility(View.VISIBLE); question2.setVisibility(View.VISIBLE); question3.setVisibility(View.VISIBLE);
@@ -419,9 +674,23 @@ public class AlgebraSection extends AppCompatActivity {
                     index = sectionIndex;
                     current.setText(parts[index - 1]);
 
-                    theoryDefinition.setVisibility(View.VISIBLE);
+                    theoryDefinition.setVisibility(View.GONE);
+                    defQuestion.setVisibility(View.GONE);
+                    defAnswerOne.setVisibility(View.GONE);
+                    defAnswerTwo.setVisibility(View.GONE);
+                    defAnswerThree.setVisibility(View.GONE);
+
                     theoryProperties.setVisibility(View.GONE);
+                    propsQuestion.setVisibility(View.GONE);
+                    propsAnswerOne.setVisibility(View.GONE);
+                    propsAnswerTwo.setVisibility(View.GONE);
+                    propsAnswerThree.setVisibility(View.GONE);
+
                     theoryWorkedExamples.setVisibility(View.GONE);
+                    exampleQuestion.setVisibility(View.GONE);
+                    exampleAnswerOne.setVisibility(View.GONE);
+                    exampleAnswerTwo.setVisibility(View.GONE);
+                    exampleAnswerThree.setVisibility(View.GONE);
                     quizPrime.setVisibility(View.GONE);
 
                     question1.setVisibility(View.GONE); question2.setVisibility(View.GONE); question3.setVisibility(View.GONE);
@@ -483,13 +752,35 @@ public class AlgebraSection extends AppCompatActivity {
 
     public void checkAnswerButton(int[] counterX, Button buttonX, TextView correctAnswerX){
         counterX[0]++;
-        if(counterX[0] == 1){
-            if(correctAnswerX.getText().toString().equals(buttonX.getText().toString()))
+        if(counterX[0] == 1 && correctAnswerX.getText().toString().equals(buttonX.getText().toString())){
+            counterX[0]++;
                 buttonX.setBackgroundColor(getResources().getColor(R.color.blue));
-            else
+                if(progressValueOne < 100 && sectionIndex != 3){
+                    progressValueOne += 25;
+                    progressBarOne.setProgress(progressValueOne);
+                } else if (progressValueOne < 100 & sectionIndex >= 3) {
+                    progressValueOne += 50;
+                    progressBarOne.setProgress(progressValueOne);
+                }
+            }
+        else if(counterX[0] == 1 && !(correctAnswerX.getText().toString().equals(buttonX.getText().toString()))){
+                counterX[0]++;
                 buttonX.setBackgroundColor(getResources().getColor(R.color.red));
-        }
-        else
+                sectionIndex -= 1;
+            }
+        else if(counterX[0] > 1) {
             buttonX.setBackgroundColor(getResources().getColor(R.color.black));
+//            if (buttonX.getBackground() instanceof ColorDrawable) {
+//                ColorDrawable colorDrawable = (ColorDrawable) buttonX.getBackground();
+//                int colorCode = colorDrawable.getColor();
+//                int colorBlue = ContextCompat.getColor(buttonX.getContext(), R.color.blue);
+//                if (colorCode == colorBlue) {
+//                    buttonX.setBackgroundColor(getResources().getColor(R.color.blue));
+//                }
+//            }
+        }
+
+
     }
+
 }

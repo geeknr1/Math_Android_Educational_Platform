@@ -3,14 +3,52 @@
     <string name="app_name_2">License_Project_2</string>
 
     <string name="SectionOneTheoryDef_2">Exact vs Approximate Values: Some quantities can be measured precisely, but most are approximate. Measurements can be lower (deficit) or higher (excess) than the true value.</string>
+    <string name="SectionOneTheoryDefQuestion_2">Is every real-world measurement exact? (True / False)</string>
+    <string name="SectionOneTheoryDefAnswerOne_2">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_2">False</string>
+    <string name="SectionOneTheoryDefAnswerThree_2">Neither</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_2">False</string>
 
     <string name="SectionOneTheoryProperties_2">Properties:\n
 ◦ Method of Bounds: Unknown values are estimated within lower and upper limits (e.g., 19 &lt; m &lt; 21).\n
 ◦ Estimating Dependents: Bounds of one variable give bounds for another (if 3 &lt; x &lt; 5, then 1/5 &lt; 1/x &lt; 1/3).\n
 ◦ Bounds are usually expressed as decimals with small adjustments to maintain accuracy.</string>
+    <string name="SectionOneTheoryPropsQuestion_2">If 2 &lt; x &lt; 4, which is the correct bound for 1/x?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_2">1/2 &lt; 1/x &lt; 1/4</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_2">1/4 &lt; 1/x &lt; 1/2</string>
+    <string name="SectionOneTheoryPropsAnswerThree_2">2 &lt; 1/x &lt; 4</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_2">1/4 &lt; 1/x &lt; 1/2</string>
 
-    <string name="SectionOneTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionOneTheoryWorkedExamples_2">A rod is measured as 25 cm, with a bound of absolute error h = 0.5 cm.\n
+Step 1: Write the bounds: 25 − 0.5 &lt; L &lt; 25 + 0.5.\n
+Step 2: Result: 24.5 cm &lt; L &lt; 25.5 cm.</string>
+    <string name="SectionOneTheoryWorkedExQuestion_2">A measurement gives 25 cm with h = 0.5 cm. What is the lower bound?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_2">24</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_2">24.5</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_2">25.5</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_2">24.5</string>
+
     <string name="SectionOneQuiz_2">!!! Solve the quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_2">one</string>
+    <string name="SecOneQuizAnswer2_1_2">two</string>
+    <string name="SecOneQuizAnswer3_1_2">three</string>
+    <string name="SecOneQuizAnswer1_2_2">one</string>
+    <string name="SecOneQuizAnswer2_2_2">two</string>
+    <string name="SecOneQuizAnswer3_2_2">three</string>
+    <string name="SecOneQuizAnswer1_3_2">one</string>
+    <string name="SecOneQuizAnswer2_3_2">two</string>
+    <string name="SecOneQuizAnswer3_3_2">three</string>
+    <string name="SecOneQuizAnswer1_4_2">one</string>
+    <string name="SecOneQuizAnswer2_4_2">two</string>
+    <string name="SecOneQuizAnswer3_4_2">three</string>
+    <string name="SecOneQuizAnswer1_5_2">one</string>
+    <string name="SecOneQuizAnswer2_5_2">two</string>
+    <string name="SecOneQuizAnswer3_5_2">three</string>
+    <string name="SectionOneAnswerOne_2">one</string>
+    <string name="SectionOneAnswerTwo_2">two</string>
+    <string name="SectionOneAnswerThree_2">three</string>
+    <string name="SectionOneAnswerFour_2">one</string>
+    <string name="SectionOneAnswerFive_2">two</string>
 
 
     <string name="SectionTwoTheoryDef_2">Definitions:\n
@@ -19,10 +57,69 @@
 ◦ Bound of Absolute Error: |x - a| ≤ h → x = a ± h.\n
 ◦ Relative Error: δ = Δ / |a|, often given as a percentage.\n
 ◦ Bound of Relative Error: ε = h / |a| → x = a(1 ± ε).</string>
+    <string name="SectionTwoTheoryDefQuestion_2">An exact value is 7.3 and its approximation is 7. What is the absolute error Δ?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_2">0.3</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_2">0.7</string>
+    <string name="SectionTwoTheoryDefAnswerThree_2">1</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_2">0.3</string>
 
-    <string name="SectionTwoTheoryProperties_2">Properties: !!! Empty !!!</string>
-    <string name="SectionTwoTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryProperties_2">Properties:\n
+◦ The absolute error is always non-negative: Δ ≥ 0.\n
+◦ The relative error is dimensionless and independent of units.\n
+◦ A smaller relative error means a more accurate approximation.\n
+◦ When h is known, the exact value lies in the interval [a − h, a + h].\n
+◦ The relative error grows large when the approximate value |a| is close to zero.</string>
+    <string name="SectionTwoTheoryPropsQuestion_2">An approximation is a = 50 with h = 1. What is the bound of relative error ε?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_2">0.05</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_2">0.02</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_2">0.5</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_2">0.02</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_2">A value is approximated as a = 3.14 with h = 0.005.\n
+Step 1: Absolute error bound: |x − 3.14| ≤ 0.005.\n
+Step 2: Relative error bound: ε = 0.005 / 3.14 ≈ 0.0016 ≈ 0.16%.\n
+Step 3: So x = 3.14(1 ± 0.0016).</string>
+    <string name="SectionTwoTheoryWorkedExQuestion_2">With a = 3.14 and h = 0.005, what is the bound of relative error ε (rounded to 4 decimal places)?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_2">0.0050</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_2">0.0314</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_2">0.0016</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_2">0.0016</string>
+
+    <!-- ==================== SECTION 2 QUIZ ==================== -->
+    <!-- Exercises: Absolute & Relative Errors. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
+
     <string name="SectionTwoTheoryQuiz_2">!!! Solve the quiz !!!</string>
+
+    <!-- Ex1 Medium: |12.8 − 12.5| = 0.3. Correct = ONE = 0.3 -->
+    <string name="SecTwoQuizAnswer1_1_2">0.3</string>
+    <string name="SecTwoQuizAnswer2_1_2">0.13</string>
+    <string name="SecTwoQuizAnswer3_1_2">0.5</string>
+
+    <!-- Ex2 Medium-Hard: δ = 0.5/50 = 0.01 = 1%. Correct = TWO = 1% -->
+    <string name="SecTwoQuizAnswer1_2_2">0.5%</string>
+    <string name="SecTwoQuizAnswer2_2_2">1%</string>
+    <string name="SecTwoQuizAnswer3_2_2">2%</string>
+
+    <!-- Ex3 Hard: h = 0.02 × 200 = 4. Correct = THREE = 4 -->
+    <string name="SecTwoQuizAnswer1_3_2">2</string>
+    <string name="SecTwoQuizAnswer2_3_2">40</string>
+    <string name="SecTwoQuizAnswer3_3_2">4</string>
+
+    <!-- Ex4 Very Hard: ε_A = ε_a + ε_b = 0.02 + 0.02 = 4%. Correct = ONE = 4% -->
+    <string name="SecTwoQuizAnswer1_4_2">4%</string>
+    <string name="SecTwoQuizAnswer2_4_2">2%</string>
+    <string name="SecTwoQuizAnswer3_4_2">6%</string>
+
+    <!-- Ex5 Legendary: ε_y = 2·ε_x + ε_z = 0.02 + 0.01 = 3%. Correct = TWO = 3% -->
+    <string name="SecTwoQuizAnswer1_5_2">2%</string>
+    <string name="SecTwoQuizAnswer2_5_2">3%</string>
+    <string name="SecTwoQuizAnswer3_5_2">4%</string>
+
+    <string name="SectionTwoAnswerOne_2">0.3</string>
+    <string name="SectionTwoAnswerTwo_2">1%</string>
+    <string name="SectionTwoAnswerThree_2">4</string>
+    <string name="SectionTwoAnswerFour_2">4%</string>
+    <string name="SectionTwoAnswerFive_2">3%</string>
 
 
     <string name="SectionThreeTheoryDef_2">Definitions:\n
@@ -30,6 +127,11 @@
 • For decimals, count from first non-zero digit.\n
 • For whole numbers, zeros at the end may or may not be significant.\n
 • Correct Digits: digits that stay within half a unit of their place value.</string>
+    <string name="SectionThreeTheoryDefQuestion_2">How many significant digits does 0.00470 have?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_2">2</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_2">3</string>
+    <string name="SectionThreeTheoryDefAnswerThree_2">5</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_2">3</string>
 
     <string name="SectionThreeTheoryProperties_2">Properties:\n
 • Rounding Rules:\n
@@ -37,9 +139,57 @@
 2. If &gt; 5, increase last kept digit by 1.\n
 3. If exactly 5 followed by zeros, round to even.\n
 • Scientific Notation: numbers written as a·10ⁿ with 1 ≤ a &lt; 10 to show correct digits clearly.</string>
+    <string name="SectionThreeTheoryPropsQuestion_2">Round 3.7851 to 2 decimal places. What is the result?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_2">3.78</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_2">3.79</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_2">3.80</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_2">3.79</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionThreeTheoryWorkedExamples_2">Write 0.000 582 in scientific notation with 3 significant digits.\n
+Step 1: Move decimal: 5.82 × 10⁻⁴.\n
+Step 2: Count digits: 5, 8, 2 — all 3 are significant.\n
+Step 3: Result: 5.82 × 10⁻⁴.</string>
+    <string name="SectionThreeTheoryWorkedExQuestion_2">What is 0.000582 written in scientific notation (3 significant digits)?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_2">5.8 × 10⁻⁴</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_2">5.82 × 10⁻³</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_2">5.82 × 10⁻⁴</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_2">5.82 × 10⁻⁴</string>
+
+    <!-- ==================== SECTION 3 QUIZ ==================== -->
+    <!-- Exercises: Significant Digits & Scientific Notation. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
+
     <string name="SectionThreeQuiz_2">!!! Solve the quiz !!!</string>
+
+    <!-- Ex1 Medium: 0.00456 in scientific notation. Correct = ONE = 4.56 × 10⁻³ -->
+    <string name="SecThreeQuizAnswer1_1_2">0.00456</string>
+    <string name="SecThreeQuizAnswer2_1_2">0.0456</string>
+    <string name="SecThreeQuizAnswer3_1_2">0.00456</string>
+
+    <!-- Ex2 Medium-Hard: 3.72 × 10⁵ in decimal form. Correct = TWO = 372 000 -->
+    <string name="SecThreeQuizAnswer1_2_2">37200</string>
+    <string name="SecThreeQuizAnswer2_2_2">372000</string>
+    <string name="SecThreeQuizAnswer3_2_2">3720000</string>
+
+    <!-- Ex3 Hard: Round 0.008715 to 3 sig figs in standard form. Correct = THREE = 8.72 × 10⁻³ -->
+    <string name="SecThreeQuizAnswer1_3_2">0.00871</string>
+    <string name="SecThreeQuizAnswer2_3_2">0.0087</string>
+    <string name="SecThreeQuizAnswer3_3_2">0.00872</string>
+
+    <!-- Ex4 Very Hard: 8.632 × 10² to 4 sig figs, max absolute error. Correct = ONE = 0.05 -->
+    <string name="SecThreeQuizAnswer1_4_2">0.05</string>
+    <string name="SecThreeQuizAnswer2_4_2">0.5</string>
+    <string name="SecThreeQuizAnswer3_4_2">0.005</string>
+
+    <!-- Ex5 Legendary: 4.995×10⁴ ≤ x < 5.005×10⁴, x = a×10⁴, find a. Correct = TWO = 5.00 -->
+    <string name="SecThreeQuizAnswer1_5_2">4.99</string>
+    <string name="SecThreeQuizAnswer2_5_2">5.00</string>
+    <string name="SecThreeQuizAnswer3_5_2">5.01</string>
+
+    <string name="SectionThreeAnswerOne_2">0.00456</string>
+    <string name="SectionThreeAnswerTwo_2">372000</string>
+    <string name="SectionThreeAnswerThree_2">0.00872</string>
+    <string name="SectionThreeAnswerFour_2">0.05</string>
+    <string name="SectionThreeAnswerFive_2">5.00</string>
 
 
     <string name="SectionFourTheoryDef_2">Definitions:\n
@@ -47,6 +197,11 @@
 • Bound of Relative Error:\n
 ε_(a+b) = (h_a + h_b)/(a + b), ε_(a-b) = (h_a + h_b)/|a - b|.\n
 • Subtraction of similar numbers increases relative error.</string>
+    <string name="SectionFourTheoryDefQuestion_2">If h_a = 0.1 and h_b = 0.2, what is the bound of absolute error of a + b?</string>
+    <string name="SectionFourTheoryDefAnswerOne_2">0.1</string>
+    <string name="SectionFourTheoryDefAnswerTwo_2">0.2</string>
+    <string name="SectionFourTheoryDefAnswerThree_2">0.3</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_2">0.3</string>
 
     <string name="SectionFourTheoryProperties_2">Properties:\n
 Practical Rule for Add/Subtract:\n
@@ -54,15 +209,56 @@ Practical Rule for Add/Subtract:\n
 2. Round others to one more decimal.\n
 3. Compute result.\n
 4. Round result to same accuracy as the least precise term.</string>
+    <string name="SectionFourTheoryPropsQuestion_2">Which operation between nearly equal numbers causes the relative error to increase sharply?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_2">Addition</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_2">Subtraction</string>
+    <string name="SectionFourTheoryPropsAnswerThree_2">Multiplication</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_2">Subtraction</string>
 
-    <string name="SectionFourTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionFourTheoryWorkedExamples_2">Add 12.3 (h = 0.05) and 4.56 (h = 0.005).\n
+Step 1: Least accurate term: 12.3 (1 decimal place).\n
+Step 2: Round 4.56 to one extra decimal: 4.56 → keep as 4.56.\n
+Step 3: Sum = 12.3 + 4.56 = 16.86.\n
+Step 4: Round result to 1 decimal: 16.9.\n
+Step 5: Bound of absolute error: h = 0.05 + 0.005 = 0.055.</string>
+    <string name="SectionFourTheoryWorkedExQuestion_2">What is the bound of absolute error when adding values with h_a = 0.05 and h_b = 0.005?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_2">0.005</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_2">0.05</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_2">0.055</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_2">0.055</string>
+
     <string name="SectionFourQuiz_2">!!! Solve the quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_2">one</string>
+    <string name="SecFourQuizAnswer2_1_2">two</string>
+    <string name="SecFourQuizAnswer3_1_2">three</string>
+    <string name="SecFourQuizAnswer1_2_2">one</string>
+    <string name="SecFourQuizAnswer2_2_2">two</string>
+    <string name="SecFourQuizAnswer3_2_2">three</string>
+    <string name="SecFourQuizAnswer1_3_2">one</string>
+    <string name="SecFourQuizAnswer2_3_2">two</string>
+    <string name="SecFourQuizAnswer3_3_2">three</string>
+    <string name="SecFourQuizAnswer1_4_2">one</string>
+    <string name="SecFourQuizAnswer2_4_2">two</string>
+    <string name="SecFourQuizAnswer3_4_2">three</string>
+    <string name="SecFourQuizAnswer1_5_2">one</string>
+    <string name="SecFourQuizAnswer2_5_2">two</string>
+    <string name="SecFourQuizAnswer3_5_2">three</string>
+    <string name="SectionFourAnswerOne_2">one</string>
+    <string name="SectionFourAnswerTwo_2">two</string>
+    <string name="SectionFourAnswerThree_2">three</string>
+    <string name="SectionFourAnswerFour_2">one</string>
+    <string name="SectionFourAnswerFive_2">two</string>
 
 
     <string name="SectionFiveTheoryDef_2">Definitions:\n
 • Bound of Absolute Error (Product): h_ab ≈ ah_b + bh_a.\n
 • Bound of Relative Error (Product/Quotient): ε_ab ≈ ε_a + ε_b, ε_(a/b) = ε_a + ε_b.\n
 • Relative error is often found first, then absolute error.</string>
+    <string name="SectionFiveTheoryDefQuestion_2">If ε_a = 0.01 and ε_b = 0.02, what is the bound of relative error of a · b?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_2">0.01</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_2">0.02</string>
+    <string name="SectionFiveTheoryDefAnswerThree_2">0.03</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_2">0.03</string>
 
     <string name="SectionFiveTheoryProperties_2">Properties:\n
 Practical Rule for Multiply/Divide:\n
@@ -70,7 +266,43 @@ Practical Rule for Multiply/Divide:\n
 2. Round others to one more significant digit.\n
 3. Compute normally.\n
 4. Round result to match least accurate factor.</string>
+    <string name="SectionFiveTheoryPropsQuestion_2">Is the bound of relative error of a/b equal to ε_a + ε_b? (True / False)</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_2">True</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_2">False</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_2">Neither</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_2">True</string>
 
-    <string name="SectionFiveTheoryWorkedExamples_2">!!! Worked Examples !!!</string>
+    <string name="SectionFiveTheoryWorkedExamples_2">Multiply a = 3.2 (h_a = 0.05) by b = 5.0 (h_b = 0.05).\n
+Step 1: Product: 3.2 × 5.0 = 16.0.\n
+Step 2: ε_a = 0.05/3.2 ≈ 0.0156; ε_b = 0.05/5.0 = 0.01.\n
+Step 3: ε_ab ≈ 0.0156 + 0.01 = 0.0256.\n
+Step 4: h_ab = ε_ab × |ab| = 0.0256 × 16.0 ≈ 0.41.</string>
+    <string name="SectionFiveTheoryWorkedExQuestion_2">With a = 3.2, b = 5.0, and ε_ab ≈ 0.0256, what is the bound of absolute error of the product (rounded to 2 decimal places)?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_2">0.26</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_2">0.41</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_2">0.80</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_2">0.41</string>
+
     <string name="SectionFiveQuiz_2">!!! Solve the quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_2">one</string>
+    <string name="SecFiveQuizAnswer2_1_2">two</string>
+    <string name="SecFiveQuizAnswer3_1_2">three</string>
+    <string name="SecFiveQuizAnswer1_2_2">one</string>
+    <string name="SecFiveQuizAnswer2_2_2">two</string>
+    <string name="SecFiveQuizAnswer3_2_2">three</string>
+    <string name="SecFiveQuizAnswer1_3_2">one</string>
+    <string name="SecFiveQuizAnswer2_3_2">two</string>
+    <string name="SecFiveQuizAnswer3_3_2">three</string>
+    <string name="SecFiveQuizAnswer1_4_2">one</string>
+    <string name="SecFiveQuizAnswer2_4_2">two</string>
+    <string name="SecFiveQuizAnswer3_4_2">three</string>
+    <string name="SecFiveQuizAnswer1_5_2">one</string>
+    <string name="SecFiveQuizAnswer2_5_2">two</string>
+    <string name="SecFiveQuizAnswer3_5_2">three</string>
+    <string name="SectionFiveAnswerOne_2">one</string>
+    <string name="SectionFiveAnswerTwo_2">two</string>
+    <string name="SectionFiveAnswerThree_2">three</string>
+    <string name="SectionFiveAnswerFour_2">one</string>
+    <string name="SectionFiveAnswerFive_2">two</string>
+
 </resources>

@@ -2,18 +2,71 @@
 <resources>
     <string name="app_name_16">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--          SECTION ONE: LINES, PLANES & PERPENDICULARITY          -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_16">• Parallel Lines: Two straight lines in space that lie in one plane and have no common points.
 • Skew Lines: Two straight lines in space that do not lie in one plane.
 • Angle Between Skew Lines: The angle between intersecting lines that are respectively parallel to the given skew lines.
 • Perpendicular Line to a Plane: A straight line cutting a plane that is perpendicular to any straight line lying in that plane.
 • Distance Between Parallel Planes: The length of the segment cut off by the planes on any common perpendicular.</string>
+
+    <!-- Q: Do skew lines lie in the same plane? Answer: False -->
+    <string name="SectionOneTheoryDefQuestion_16">Do skew lines lie in the same plane?</string>
+    <string name="SectionOneTheoryDefAnswerOne_16">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_16">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryDefAnswerThree_16"></string>
+    <string name="SectionOneTheoryDefCorrectAnswer_16">False</string>
+
     <string name="SectionOneTheoryProperties_16">• Perpendicularity Test (Theorem 1): If a straight line cutting a plane is perpendicular to two intersecting lines in that plane, it is perpendicular to the entire plane.
-• Parallelism of Planes (Theorem 3): If two intersecting lines of one plane are respectively parallel to two intersecting lines of another plane, the planes are parallel.
-• Plane Separation: Parallel planes are equidistant; any perpendicular segment between them is congruent (e.g., ∣A1A2∣=∣B1B2∣).
+• Parallelism of Planes (Theorem 2): If two intersecting lines of one plane are respectively parallel to two intersecting lines of another plane, the planes are parallel.
+• Plane Separation: Parallel planes are equidistant; any perpendicular segment between them is congruent (e.g., |A1A2|=|B1B2|).
 • Angle of Line/Plane: The angle between a line and its projection onto the plane.</string>
-    <string name="SectionOneTheoryWorkedExamples_16">• Problem 1 (Angle Between Skew Lines): Find the angle between diagonals of adjacent faces of a cube. By drawing a line parallel to one diagonal to intersect the other, an equilateral triangle is formed, proving the angle is 60∘.
-• Problem 2 (Mutual Perpendiculars): Construction of three mutually perpendicular lines a,b, and c. By establishing line OA perpendicular to plane α (containing a,b) and line OD perpendicular to OB, the three axes are proven perpendicular via Theorem 1.</string>
+
+    <!-- Q: How many intersecting lines in a plane are needed to prove a line perpendicular to that plane? Answer: 2 -->
+    <string name="SectionOneTheoryPropsQuestion_16">How many intersecting lines in a plane must a line be perpendicular to in order to be perpendicular to the entire plane?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_16">1</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_16">2</string>
+    <string name="SectionOneTheoryPropsAnswerThree_16">3</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_16">2</string>
+
+    <string name="SectionOneTheoryWorkedExamples_16">• Problem 1 (Angle Between Skew Lines): Find the angle between diagonals of adjacent faces of a cube. By drawing a line parallel to one diagonal to intersect the other, an equilateral triangle is formed, proving the angle is 60°.
+\n • Problem 2 (Mutual Perpendiculars): Construction of three mutually perpendicular lines a, b, and c. By establishing line OA perpendicular to plane α (containing a, b) and line OD perpendicular to OB, the three axes are proven perpendicular via Theorem 1.</string>
+
+    <!-- Q: What is the angle between diagonals of adjacent faces of a cube? Answer: 60 -->
+    <string name="SectionOneTheoryWorkedExQuestion_16">What is the angle (in degrees) between the diagonals of two adjacent faces of a cube?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_16">45</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_16">90</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_16">60</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_16">60</string>
+
     <string name="SectionOneQuiz_16">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_16">one</string>
+    <string name="SecOneQuizAnswer2_1_16">two</string>
+    <string name="SecOneQuizAnswer3_1_16">three</string>
+    <string name="SecOneQuizAnswer1_2_16">one</string>
+    <string name="SecOneQuizAnswer2_2_16">two</string>
+    <string name="SecOneQuizAnswer3_2_16">three</string>
+    <string name="SecOneQuizAnswer1_3_16">one</string>
+    <string name="SecOneQuizAnswer2_3_16">two</string>
+    <string name="SecOneQuizAnswer3_3_16">three</string>
+    <string name="SecOneQuizAnswer1_4_16">one</string>
+    <string name="SecOneQuizAnswer2_4_16">two</string>
+    <string name="SecOneQuizAnswer3_4_16">three</string>
+    <string name="SecOneQuizAnswer1_5_16">one</string>
+    <string name="SecOneQuizAnswer2_5_16">two</string>
+    <string name="SecOneQuizAnswer3_5_16">three</string>
+    <string name="SectionOneAnswerOne_16">one</string>
+    <string name="SectionOneAnswerTwo_16">two</string>
+    <string name="SectionOneAnswerThree_16">three</string>
+    <string name="SectionOneAnswerFour_16">one</string>
+    <string name="SectionOneAnswerFive_16">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--           SECTION TWO: PRISMS, PYRAMIDS & POLYHEDRA             -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_16">• Polyhedron: A solid bounded by plane polygons called faces; intersections of faces are edges, and intersections of edges are vertices.
 • Right Prism: A polyhedron whose bases are parallel congruent polygons and whose lateral edges are perpendicular to the bases.
@@ -21,22 +74,140 @@
 • Cube: A rectangular parallelepiped where all twelve edges are equal.
 • Pyramid: A polyhedron consisting of a polygon (base) and a vertex not in the base plane, joined by triangular lateral faces.
 • Regular Pyramid: A pyramid with a regular polygon base whose vertex projects onto the centre of the base.</string>
-    <string name="SectionTwoTheoryProperties_16">• Prism Area: Lateral area S_lat=Ph (perimeter × altitude); Total area S=S_lat+2S_base.
-• Parallelepiped Diagonal: The square of any diagonal is equal to the sum of the squares of its three dimensions (d^2=a^2+b^2+c^2).
-• Volume: For a parallelepiped V=abc; for any right prism V=Sh.
-• Pyramid Area/Volume: Lateral area of a regular pyramid is S_lat=(P*h_lat)/2 (where h_lat is slant height); Volume of any pyramid is V=(S_base*h)/3.</string>
-    <string name="SectionTwoTheoryWorkedExamples_16">!!! Worked Examples !!!</string>
+
+    <!-- Q: How many equal edges does a cube have? Answer: 12 -->
+    <string name="SectionTwoTheoryDefQuestion_16">How many edges does a cube have?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_16">12</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_16">8</string>
+    <string name="SectionTwoTheoryDefAnswerThree_16">6</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_16">12</string>
+
+    <string name="SectionTwoTheoryProperties_16">• Prism Area: Lateral area S_lat=P×h (perimeter × altitude); Total area S=S_lat+2×S_base.
+• Parallelepiped Diagonal: The square of any diagonal equals the sum of squares of its three dimensions (d²=a²+b²+c²).
+• Volume: For a rectangular parallelepiped V=a×b×c; for any right prism V=S_base×h.
+• Pyramid Area/Volume: Lateral area of a regular pyramid S_lat=(P×h_lat)/2 (where h_lat is slant height); Volume of any pyramid V=(S_base×h)/3.</string>
+
+    <!-- Q: A rectangular parallelepiped has dimensions 3, 4, 5. What is the length of its diagonal? Answer: √50 -->
+    <string name="SectionTwoTheoryPropsQuestion_16">A rectangular parallelepiped has dimensions 3, 4, and 5. What is the square of its diagonal (d²)?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_16">25</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_16">50</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_16">60</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_16">50</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_16">• Right prism with square base of side 4 and height 6: lateral area = 4 × 4 × 6 = 96; base area = 16; total area = 96 + 2 × 16 = 128.
+\n • Volume of the same prism: V = 4² × 6 = 96.
+\n • Regular square pyramid with base side 6, slant height 5: lateral area = (4 × 6 × 5) / 2 = 60; base area = 36; total area = 96. Volume with height 4: V = (36 × 4) / 3 = 48.</string>
+
+    <!-- Q: Volume of a pyramid with base area 36 and height 4? Answer: 48 -->
+    <string name="SectionTwoTheoryWorkedExQuestion_16">What is the volume of a pyramid with base area 36 and height 4?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_16">144</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_16">72</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_16">48</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_16">48</string>
+
     <string name="SectionTwoQuiz_16">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_16">one</string>
+    <string name="SecTwoQuizAnswer2_1_16">two</string>
+    <string name="SecTwoQuizAnswer3_1_16">three</string>
+    <string name="SecTwoQuizAnswer1_2_16">one</string>
+    <string name="SecTwoQuizAnswer2_2_16">two</string>
+    <string name="SecTwoQuizAnswer3_2_16">three</string>
+    <string name="SecTwoQuizAnswer1_3_16">one</string>
+    <string name="SecTwoQuizAnswer2_3_16">two</string>
+    <string name="SecTwoQuizAnswer3_3_16">three</string>
+    <string name="SecTwoQuizAnswer1_4_16">one</string>
+    <string name="SecTwoQuizAnswer2_4_16">two</string>
+    <string name="SecTwoQuizAnswer3_4_16">three</string>
+    <string name="SecTwoQuizAnswer1_5_16">one</string>
+    <string name="SecTwoQuizAnswer2_5_16">two</string>
+    <string name="SecTwoQuizAnswer3_5_16">three</string>
+    <string name="SectionTwoAnswerOne_16">one</string>
+    <string name="SectionTwoAnswerTwo_16">two</string>
+    <string name="SectionTwoAnswerThree_16">three</string>
+    <string name="SectionTwoAnswerFour_16">one</string>
+    <string name="SectionTwoAnswerFive_16">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--           SECTION THREE: CYLINDER, CONE & SPHERE                -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_16">• Cylinder: A solid generated by line segments (elements) perpendicular to two parallel planes and bounded by congruent circles.
 \n • Cone: A solid generated by joining all points of a circle to a vertex S; the line from the vertex to the base center is the axis.
 \n • Sphere: All points in space at a distance not exceeding R from a center O; its boundary is the sphere.</string>
-    <string name="SectionThreeTheoryProperties_16">!!! EMPTY !!!</string>
-    <string name="SectionThreeTheoryWorkedExamples_16">!!! Worked Examples !!!</string>
-    <string name="SectionThreeQuiz_16">!!! Solve the Quiz !!!</string>
 
-    <string name="SectionFourTheoryDef_16">!!! EMPTY !!!</string>
-    <string name="SectionFourTheoryProperties_16">!!! EMPTY !!!</string>
-    <string name="SectionFourTheoryWorkedExamples_16">!!! Worked Examples !!!</string>
+    <!-- Q: Is the axis of a cone the line from the vertex to the centre of the base? Answer: True -->
+    <string name="SectionThreeTheoryDefQuestion_16">Is the axis of a cone the line segment from the vertex to the centre of the base?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_16">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_16">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryDefAnswerThree_16"></string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_16">True</string>
+
+    <!-- Was !!! EMPTY !!! — written from context -->
+    <string name="SectionThreeTheoryProperties_16">• Cylinder: Lateral area S_lat=2πRh; Total area S=2πRh+2πR²; Volume V=πR²h.
+\n • Cone: Lateral area S_lat=πRl (where l=slant height=√(R²+h²)); Total area S=πRl+πR²; Volume V=(πR²h)/3.
+\n • Sphere: Surface area S=4πR²; Volume V=(4/3)πR³.
+\n • A plane intersects a sphere in a circle; the largest such circle (through centre O) is a great circle.</string>
+
+    <!-- Q: Volume of a cone with base radius R=3 and height h=4? Answer: 12π -->
+    <string name="SectionThreeTheoryPropsQuestion_16">What is the volume of a cone with base radius R = 3 and height h = 4 (leave answer in terms of π)?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_16">36π</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_16">12π</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_16">48π</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_16">12π</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_16">• Cylinder with R = 3 and h = 5: lateral area = 2π × 3 × 5 = 30π; total area = 30π + 2π × 9 = 48π; volume = π × 9 × 5 = 45π.
+\n • Cone with R = 3, h = 4: slant height l = √(9 + 16) = 5; lateral area = π × 3 × 5 = 15π; total area = 15π + 9π = 24π; volume = (π × 9 × 4) / 3 = 12π.
+\n • Sphere with R = 6: surface area = 4π × 36 = 144π; volume = (4/3) × π × 216 = 288π.</string>
+
+    <!-- Q: Surface area of a sphere with R=6? Answer: 144π -->
+    <string name="SectionThreeTheoryWorkedExQuestion_16">What is the surface area of a sphere with radius R = 6 (leave answer in terms of π)?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_16">36π</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_16">288π</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_16">144π</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_16">144π</string>
+
+    <string name="SectionThreeQuiz_16">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_16">one</string>
+    <string name="SecThreeQuizAnswer2_1_16">two</string>
+    <string name="SecThreeQuizAnswer3_1_16">three</string>
+    <string name="SecThreeQuizAnswer1_2_16">one</string>
+    <string name="SecThreeQuizAnswer2_2_16">two</string>
+    <string name="SecThreeQuizAnswer3_2_16">three</string>
+    <string name="SecThreeQuizAnswer1_3_16">one</string>
+    <string name="SecThreeQuizAnswer2_3_16">two</string>
+    <string name="SecThreeQuizAnswer3_3_16">three</string>
+    <string name="SecThreeQuizAnswer1_4_16">one</string>
+    <string name="SecThreeQuizAnswer2_4_16">two</string>
+    <string name="SecThreeQuizAnswer3_4_16">three</string>
+    <string name="SecThreeQuizAnswer1_5_16">one</string>
+    <string name="SecThreeQuizAnswer2_5_16">two</string>
+    <string name="SecThreeQuizAnswer3_5_16">three</string>
+    <string name="SectionThreeAnswerOne_16">one</string>
+    <string name="SectionThreeAnswerTwo_16">two</string>
+    <string name="SectionThreeAnswerThree_16">three</string>
+    <string name="SectionThreeAnswerFour_16">one</string>
+    <string name="SectionThreeAnswerFive_16">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--           SECTION FOUR: COORDINATES & VECTORS IN SPACE          -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- Was !!! EMPTY !!! — written from context -->
+    <string name="SectionFourTheoryDef_16">• Coordinate System in Space: Three mutually perpendicular axes (x, y, z) meeting at the origin O; every point is described by an ordered triple (x, y, z).
+\n • Vector in Space: A directed segment defined by magnitude and direction; denoted AB or a⃗ with components (x, y, z).
+\n • Distance Between Two Points: |A1A2| = √((x2−x1)²+(y2−y1)²+(z2−z1)²).</string>
+
+    <!-- Was !!! EMPTY !!! — written from context -->
+    <string name="SectionFourTheoryProperties_16">• Vector addition: a⃗ + b⃗ = (a1+b1, a2+b2, a3+b3).
+\n • Scalar multiplication: k×a⃗ = (k×a1, k×a2, k×a3).
+\n • Dot product: a⃗·b⃗ = a1b1+a2b2+a3b3; if a⃗·b⃗ = 0, the vectors are perpendicular.
+\n • Magnitude: |a⃗| = √(a1²+a2²+a3²).
+\n • Midpoint of segment A(x1,y1,z1) and B(x2,y2,z2): M = ((x1+x2)/2, (y1+y2)/2, (z1+z2)/2).</string>
+
+    <string name="SectionFourTheoryWorkedExamples_16">• Distance between A(1, 2, 3) and B(4, 6, 3): |AB| = √((4−1)²+(6−2)²+(3−3)²) = √(9+16+0) = √25 = 5.
+\n • Dot product of a⃗=(1, 2, 3) and b⃗=(4, −2, 0): a⃗·b⃗ = 1×4+2×(−2)+3×0 = 4−4+0 = 0, so the vectors are perpendicular.
+\n • Midpoint of A(2, 4, 6) and B(8, 0, 2): M = ((2+8)/2, (4+0)/2, (6+2)/2) = (5, 2, 4).</string>
+
     <string name="SectionFourQuiz_16">!!! Solve the Quiz !!!</string>
 </resources>

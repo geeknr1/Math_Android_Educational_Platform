@@ -2,59 +2,272 @@
 <resources>
     <string name="app_name_9">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                        SECTION ONE: TRIANGLES                   -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_9">• A triangle has three sides and angles.
 \n • Includes vertices, sides, and special lines.
 \n • Triangles differ by sides, angles, and congruence.</string>
+
+    <string name="SectionOneTheoryDefQuestion_9">How many sides does a triangle have?</string>
+    <string name="SectionOneTheoryDefAnswerOne_9">2</string>
+    <string name="SectionOneTheoryDefAnswerTwo_9">3</string>
+    <string name="SectionOneTheoryDefAnswerThree_9">4</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_9">3</string>
 
     <string name="SectionOneTheoryProperties_9">• Every triangle has bisectors, medians, and altitudes.
 \n • Larger sides face larger angles.
 \n • The exterior angle is greater than any interior one.</string>
 
-    <string name="SectionOneTheoryWorkedExamples_9">• Base angles in isosceles triangles are equal.
-\n • The median to the base is also a bisector and altitude.
-\n • Only one perpendicular can be drawn from a point to a line.</string>
+    <string name="SectionOneTheoryPropsQuestion_9">Is the exterior angle of a triangle greater than any non-adjacent interior angle?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_9">True</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_9">False</string>
+    <string name="SectionOneTheoryPropsAnswerThree_9"></string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_9">True</string>
+
+    <string name="SectionOneTheoryWorkedExamples_9">• In triangle ABC, AB = AC (isosceles). Since base angles are equal, angle B = angle C.
+\n • The median from A to BC is also the angle bisector and altitude, because the triangle is isosceles.
+\n • From point P outside line l, exactly one perpendicular can be drawn to l — its length is the shortest distance from P to l.</string>
+
+    <string name="SectionOneTheoryWorkedExQuestion_9">In an isosceles triangle, how many base angles are equal to each other?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_9">1</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_9">2</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_9">3</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_9">2</string>
+
+    <!-- ==================== SECTION 1 QUIZ ==================== -->
+    <!-- Exercises: Triangles. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
 
     <string name="SectionOneQuiz_9">!!! Solve the Quiz !!!</string>
+
+    <!-- Ex1 Medium: Angles 45° and 65°, find third. Correct = ONE = 70° -->
+    <string name="SecOneQuizAnswer1_1_9">70</string>
+    <string name="SecOneQuizAnswer2_1_9">80</string>
+    <string name="SecOneQuizAnswer3_1_9">90</string>
+
+    <!-- Ex2 Medium-Hard: Sides 5, 12, 13 (right triangle), area=? Correct = TWO = 30 -->
+    <string name="SecOneQuizAnswer1_2_9">25</string>
+    <string name="SecOneQuizAnswer2_2_9">30</string>
+    <string name="SecOneQuizAnswer3_2_9">36</string>
+
+    <!-- Ex3 Hard: Base=10cm, height=6cm, area=? Correct = THREE = 30 cm² -->
+    <string name="SecOneQuizAnswer1_3_9">60</string>
+    <string name="SecOneQuizAnswer2_3_9">25</string>
+    <string name="SecOneQuizAnswer3_3_9">30</string>
+
+    <!-- Ex4 Very Hard: AB=AC=13, BC=10, height from A to BC=? Correct = ONE = 12 -->
+    <string name="SecOneQuizAnswer1_4_9">12</string>
+    <string name="SecOneQuizAnswer2_4_9">10</string>
+    <string name="SecOneQuizAnswer3_4_9">8</string>
+
+    <!-- Ex5 Legendary: A(0,0), B(6,0), C(2,4), angle A ≈ 63.43°. Correct = TWO = ≈ 63.43° -->
+    <string name="SecOneQuizAnswer1_5_9">45</string>
+    <string name="SecOneQuizAnswer2_5_9">63.43</string>
+    <string name="SecOneQuizAnswer3_5_9">56.31</string>
+
+    <string name="SectionOneAnswerOne_9">70</string>
+    <string name="SectionOneAnswerTwo_9">30</string>
+    <string name="SectionOneAnswerThree_9">30</string>
+    <string name="SectionOneAnswerFour_9">12</string>
+    <string name="SectionOneAnswerFive_9">63.43</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION TWO: GEOMETRIC CONSTRUCTIONS           -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_9">• Geometric construction uses only a ruler and compass.
 \n • The ruler draws lines, the compass marks circles and segments.
 \n • Problems are solved through precise constructions.</string>
 
-    <string name="SectionTwoTheoryProperties_9">• The ruler draws lines but doesn’t measure lengths.
+    <string name="SectionTwoTheoryDefQuestion_9">How many tools are used in classical geometric construction?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_9">1</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_9">2</string>
+    <string name="SectionTwoTheoryDefAnswerThree_9">3</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_9">2</string>
+
+    <string name="SectionTwoTheoryProperties_9">• The ruler draws lines but doesn\'t measure lengths.
 \n • The compass transfers distances between points.
 \n • Both tools define classic constructions.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_9">• Triangle construction: Draw base and intersect circles.
-\n • Angle bisector: Use equal-radius arcs from the vertex.
-\n • Find intersection to draw bisecting ray.</string>
+    <string name="SectionTwoTheoryPropsQuestion_9">Does the ruler measure lengths in classical geometric construction?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_9">True</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_9">False</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_9"></string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_9">False</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_9">• To construct a triangle with sides a, b, c: draw segment AB = a, then draw a circle of radius b centred at A and a circle of radius c centred at B. Their intersection gives point C, completing the triangle.
+\n • To bisect angle BAC: place the compass at A and mark equal arcs on AB and AC, getting points D and E. Then draw arcs of equal radius from D and E; their intersection F gives the bisecting ray AF.
+\n • The bisecting ray AF divides angle BAC into two equal angles, confirmed by the congruence of triangles ADF and AEF.</string>
+
+    <string name="SectionTwoTheoryWorkedExQuestion_9">How many equal-radius arcs from the vertex are drawn to begin bisecting an angle?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_9">1</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_9">2</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_9">3</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_9">2</string>
+
+    <!-- ==================== SECTION 2 QUIZ ==================== -->
+    <!-- Exercises: Geometric Constructions. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
 
     <string name="SectionTwoQuiz_9">!!! Solve the Quiz !!!</string>
+
+    <!-- Ex1 Medium: Construct segment equal to AB from C. Endpoint = D where CD = AB. Correct = ONE = Point D such that CD = AB -->
+    <string name="SecTwoQuizAnswer1_1_9">D, where CD = AB</string>
+    <string name="SecTwoQuizAnswer2_1_9"> B</string>
+    <string name="SecTwoQuizAnswer3_1_9">Mid AB</string>
+
+    <!-- Ex2 Medium-Hard: Perpendicular bisector meets AB at its midpoint. Correct = TWO = Midpoint M of AB -->
+    <string name="SecTwoQuizAnswer1_2_9">A</string>
+    <string name="SecTwoQuizAnswer2_2_9">Mid M of AB</string>
+    <string name="SecTwoQuizAnswer3_2_9">B</string>
+
+    <!-- Ex3 Hard: Bisect angle ∠ABC. Each resulting angle = ∠ABC/2. Correct = THREE = Half of ∠ABC -->
+    <string name="SecTwoQuizAnswer1_3_9">∠ABC</string>
+    <string name="SecTwoQuizAnswer2_3_9">2 · ∠ABC</string>
+    <string name="SecTwoQuizAnswer3_3_9">Half of ∠ABC</string>
+
+    <!-- Ex4 Very Hard: Perpendicular from P to line l. Foot = intersection point F on l. Correct = ONE = Point F on l closest to P -->
+    <string name="SecTwoQuizAnswer1_4_9">Point F on l closest to P</string>
+    <string name="SecTwoQuizAnswer2_4_9">Point P itself</string>
+    <string name="SecTwoQuizAnswer3_4_9">Midpoint of Pl</string>
+
+    <!-- Ex5 Legendary: Equilateral triangle on AB. Third vertex at height (√3/2)·AB above midpoint. Correct = TWO = (√3/2)·AB above midpoint of AB -->
+    <string name="SecTwoQuizAnswer1_5_9">At distance AB below AB</string>
+    <string name="SecTwoQuizAnswer2_5_9">(√3/2)·AB above midpoint of AB</string>
+    <string name="SecTwoQuizAnswer3_5_9">At the midpoint of AB</string>
+
+    <string name="SectionTwoAnswerOne_9">Point D such that CD = AB</string>
+    <string name="SectionTwoAnswerTwo_9">Midpoint M of AB</string>
+    <string name="SectionTwoAnswerThree_9">Half of ∠ABC</string>
+    <string name="SectionTwoAnswerFour_9">Point F on l closest to P</string>
+    <string name="SectionTwoAnswerFive_9">(√3/2)·AB above midpoint of AB</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION THREE: PARALLEL LINES                  -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_9">• Parallel lines never meet.
 \n • A transversal cuts two lines at different points.
 \n • Creates alternate and corresponding angles.</string>
 
+    <string name="SectionThreeTheoryDefQuestion_9">Do parallel lines ever intersect?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_9">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_9">False</string>
+    <string name="SectionThreeTheoryDefAnswerThree_9"></string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_9">False</string>
+
     <string name="SectionThreeTheoryProperties_9">• Through a point, one parallel can be drawn to a line.
 \n • Lines parallel to the same line are also parallel.
 \n • In a triangle, angles sum to 180°; polygon sums follow 180°×(n−2).</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_9">• Proved parallel lines by equal alternate angles.
-\n • Triangle angle sum shown using a parallel line.
-\n • Exterior angle helps confirm equality.</string>
+    <string name="SectionThreeTheoryPropsQuestion_9">What is the sum of the interior angles of a triangle (in degrees)?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_9">90</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_9">180</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_9">360</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_9">180</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_9">• Given two lines cut by a transversal, if the alternate interior angles are equal (e.g. both 55°), then the two lines are parallel by the alternate angles criterion.
+\n • To prove the triangle angle sum: draw a line through vertex C parallel to side AB. The alternate angles show that the three angles at C together form a straight angle of 180°, proving angle A + angle B + angle C = 180°.
+\n • The exterior angle at C equals the sum of the two non-adjacent interior angles A and B, confirming the exterior angle theorem.</string>
+
+    <string name="SectionThreeTheoryWorkedExQuestion_9">How many lines parallel to a given line can be drawn through a point not on that line?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_9">1</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_9">2</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_9">3</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_9">1</string>
+
+    <!-- ==================== SECTION 3 QUIZ ==================== -->
+    <!-- Exercises: Parallel Lines. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
 
     <string name="SectionThreeQuiz_9">!!! Solve the Quiz !!!</string>
+
+    <!-- Ex1 Medium: Corresponding angles equal, one = 68°. Other = ? Correct = ONE = 68° -->
+    <string name="SecThreeQuizAnswer1_1_9">68</string>
+    <string name="SecThreeQuizAnswer2_1_9">112</string>
+    <string name="SecThreeQuizAnswer3_1_9">90</string>
+
+    <!-- Ex2 Medium-Hard: Co-interior angles sum to 180°, one = 110°. Other = ? Correct = TWO = 70° -->
+    <string name="SecThreeQuizAnswer1_2_9">110</string>
+    <string name="SecThreeQuizAnswer2_2_9">70</string>
+    <string name="SecThreeQuizAnswer3_2_9">90</string>
+
+    <!-- Ex3 Hard: Alternate interior angles: 4x−10 = 6x−30. x = ? Correct = THREE = 10 -->
+    <string name="SecThreeQuizAnswer1_3_9">5</string>
+    <string name="SecThreeQuizAnswer2_3_9">15</string>
+    <string name="SecThreeQuizAnswer3_3_9">10</string>
+
+    <!-- Ex4 Very Hard: Thales theorem, segments 3 and 6, first segment 4. Second = ? Correct = ONE = 8 cm -->
+    <string name="SecThreeQuizAnswer1_4_9">8</string>
+    <string name="SecThreeQuizAnswer2_4_9">6</string>
+    <string name="SecThreeQuizAnswer3_4_9">12</string>
+
+    <!-- Ex5 Legendary: 2x+15 = 5x−45. x = ? Correct = TWO = 20 -->
+    <string name="SecThreeQuizAnswer1_5_9">15</string>
+    <string name="SecThreeQuizAnswer2_5_9">20</string>
+    <string name="SecThreeQuizAnswer3_5_9">25</string>
+
+    <string name="SectionThreeAnswerOne_9">68</string>
+    <string name="SectionThreeAnswerTwo_9">70</string>
+    <string name="SectionThreeAnswerThree_9">10</string>
+    <string name="SectionThreeAnswerFour_9">8</string>
+    <string name="SectionThreeAnswerFive_9">20</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION FOUR: QUADRILATERALS                   -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionFourTheoryDef_9">• Parallelogram has opposite sides parallel.
 \n • Rectangle, rhombus, and square are special cases.
 \n • Trapezoid has one pair of parallel sides.</string>
 
+    <string name="SectionFourTheoryDefQuestion_9">How many pairs of parallel sides does a parallelogram have?</string>
+    <string name="SectionFourTheoryDefAnswerOne_9">1</string>
+    <string name="SectionFourTheoryDefAnswerTwo_9">2</string>
+    <string name="SectionFourTheoryDefAnswerThree_9">3</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_9">2</string>
+
     <string name="SectionFourTheoryProperties_9">• Parallelogram sides and angles are equal.
 \n • Rhombus diagonals are perpendicular and bisect angles.
 \n • Triangle and trapezoid midlines are parallel and half-lengths.</string>
 
-    <string name="SectionFourTheoryWorkedExamples_9">• Parallelogram sides proved equal via congruent triangles.
-\n • Thales theorem used to divide a segment equally.
-\n • Diagonal helps demonstrate equal relationships.</string>
+    <string name="SectionFourTheoryPropsQuestion_9">Are the diagonals of a rhombus perpendicular to each other?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_9">True</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_9">False</string>
+    <string name="SectionFourTheoryPropsAnswerThree_9"></string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_9">True</string>
+
+    <string name="SectionFourTheoryWorkedExamples_9">• In parallelogram ABCD, draw diagonal AC. Triangles ABC and CDA are congruent by ASA (alternate angles and shared diagonal), so AB = CD and BC = DA, proving opposite sides are equal.
+\n • To divide segment AB into 3 equal parts using Thales theorem: draw a ray from A at any angle, mark 3 equal steps (using a compass) to get points P1, P2, P3. Connect P3 to B, then draw parallels through P1 and P2 to divide AB in ratio 1:1:1.
+\n • The diagonal of a parallelogram divides it into 2 congruent triangles, which confirms that opposite sides and opposite angles are equal.</string>
+
+    <string name="SectionFourTheoryWorkedExQuestion_9">Into how many congruent triangles does one diagonal divide a parallelogram?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_9">1</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_9">2</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_9">4</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_9">2</string>
+
+    <!-- ==================== SECTION 4 QUIZ ==================== -->
+    <!-- No images provided for Section 4 — answers left as placeholders -->
 
     <string name="SectionFourQuiz_9">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_9">one</string>
+    <string name="SecFourQuizAnswer2_1_9">two</string>
+    <string name="SecFourQuizAnswer3_1_9">three</string>
+    <string name="SecFourQuizAnswer1_2_9">one</string>
+    <string name="SecFourQuizAnswer2_2_9">two</string>
+    <string name="SecFourQuizAnswer3_2_9">three</string>
+    <string name="SecFourQuizAnswer1_3_9">one</string>
+    <string name="SecFourQuizAnswer2_3_9">two</string>
+    <string name="SecFourQuizAnswer3_3_9">three</string>
+    <string name="SecFourQuizAnswer1_4_9">one</string>
+    <string name="SecFourQuizAnswer2_4_9">two</string>
+    <string name="SecFourQuizAnswer3_4_9">three</string>
+    <string name="SecFourQuizAnswer1_5_9">one</string>
+    <string name="SecFourQuizAnswer2_5_9">two</string>
+    <string name="SecFourQuizAnswer3_5_9">three</string>
+    <string name="SectionFourAnswerOne_9">one</string>
+    <string name="SectionFourAnswerTwo_9">two</string>
+    <string name="SectionFourAnswerThree_9">three</string>
+    <string name="SectionFourAnswerFour_9">one</string>
+    <string name="SectionFourAnswerFive_9">two</string>
 </resources>

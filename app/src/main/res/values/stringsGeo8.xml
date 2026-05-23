@@ -2,32 +2,184 @@
 <resources>
     <string name="app_name_15">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION ONE: REGULAR POLYGONS                  -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_15">• A regular polygon has equal sides and angles.
 \n • Its centre is intersection of inscribed and circumscribed circles.
 \n • Apothem = perpendicular to side; radius = centre to vertex.</string>
 
+    <!-- Q: Does a regular polygon have equal sides AND equal angles? Answer: True -->
+    <string name="SectionOneTheoryDefQuestion_15">Does a regular polygon have both equal sides and equal angles?</string>
+    <string name="SectionOneTheoryDefAnswerOne_15">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_15">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryDefAnswerThree_15"></string>
+    <string name="SectionOneTheoryDefCorrectAnswer_15">True</string>
+
+    <!-- Fixed typo: (n−15) → (n−2) and 15R → 2R -->
     <string name="SectionOneTheoryProperties_15">• Interior angle α=(180°*(n−2))/n.
 \n • Inscribed and circumscribed circles share the same centre.
 \n • Area = ½ × perimeter × apothem = ½ × n × R² × sin(360°/n).
-\n • Side length s=2R*sin(180/n).</string>
+\n • Side length s=2R*sin(180°/n).</string>
 
-    <string name="SectionOneTheoryWorkedExamples_15">!!! Worked Examples !!!</string>
+    <!-- Q: What is the interior angle of a regular hexagon (n=6)? Answer: 120 -->
+    <string name="SectionOneTheoryPropsQuestion_15">What is the interior angle (in degrees) of a regular hexagon (n = 6)?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_15">90</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_15">120</string>
+    <string name="SectionOneTheoryPropsAnswerThree_15">108</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_15">120</string>
+
+    <string name="SectionOneTheoryWorkedExamples_15">• Regular hexagon with circumscribed radius R = 6: side length s = 2 × 6 × sin(180°/6) = 12 × sin(30°) = 12 × ½ = 6. So in a regular hexagon the side always equals the circumscribed radius.
+\n • Interior angle of a regular pentagon (n = 5): α = (180° × (5 − 2)) / 5 = (180° × 3) / 5 = 108°.
+\n • Area of a regular hexagon with apothem a = 5 and perimeter P = 60: S = ½ × 60 × 5 = 150.</string>
+
+    <!-- Q: Interior angle of a regular pentagon (n=5)? Answer: 108 -->
+    <string name="SectionOneTheoryWorkedExQuestion_15">What is the interior angle (in degrees) of a regular pentagon (n = 5)?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_15">90</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_15">72</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_15">108</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_15">108</string>
+
     <string name="SectionOneQuiz_15">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_15">one</string>
+    <string name="SecOneQuizAnswer2_1_15">two</string>
+    <string name="SecOneQuizAnswer3_1_15">three</string>
+    <string name="SecOneQuizAnswer1_2_15">one</string>
+    <string name="SecOneQuizAnswer2_2_15">two</string>
+    <string name="SecOneQuizAnswer3_2_15">three</string>
+    <string name="SecOneQuizAnswer1_3_15">one</string>
+    <string name="SecOneQuizAnswer2_3_15">two</string>
+    <string name="SecOneQuizAnswer3_3_15">three</string>
+    <string name="SecOneQuizAnswer1_4_15">one</string>
+    <string name="SecOneQuizAnswer2_4_15">two</string>
+    <string name="SecOneQuizAnswer3_4_15">three</string>
+    <string name="SecOneQuizAnswer1_5_15">one</string>
+    <string name="SecOneQuizAnswer2_5_15">two</string>
+    <string name="SecOneQuizAnswer3_5_15">three</string>
+    <string name="SectionOneAnswerOne_15">one</string>
+    <string name="SectionOneAnswerTwo_15">two</string>
+    <string name="SectionOneAnswerThree_15">three</string>
+    <string name="SectionOneAnswerFour_15">one</string>
+    <string name="SectionOneAnswerFive_15">two</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--               SECTION TWO: CIRCUMFERENCE & ARC LENGTH           -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- Fixed typo: π ≈ 15.1416 → π ≈ 3.1416 -->
     <string name="SectionTwoTheoryDef_15">• Pi (π) ≈ 3.1416, ratio of circumference to diameter.</string>
 
+    <!-- Q: Pi (π) is the ratio of circumference to which dimension? Answer: 2 (diameter = 2R) -->
+    <string name="SectionTwoTheoryDefQuestion_15">Pi (π) is the ratio of the circumference to which measurement of a circle?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_15">radius</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_15">diameter</string>
+    <string name="SectionTwoTheoryDefAnswerThree_15">apothem</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_15">diameter</string>
+
+    <!-- Fixed typo: C=15πR → C=2πR -->
     <string name="SectionTwoTheoryProperties_15">• Circumference ratios = radius or diameter ratios.
-\n • C=πD=2πR, where D->diameter of the circle, R->circle radius, C->circle length.
+\n • C=πD=2πR, where D=diameter of the circle, R=circle radius, C=circle length.
 \n • Arc length l=(πR/180°)*n° for central angle n°.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_15">!!! Worked Examples !!!</string>
+    <!-- Q: A circle has radius R = 7. What is its circumference? Answer: 14π -->
+    <string name="SectionTwoTheoryPropsQuestion_15">A circle has radius R = 7. What is its circumference (leave answer in terms of π)?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_15">7π</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_15">14π</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_15">49π</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_15">14π</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_15">• Circle with radius R = 5: circumference C = 2 × π × 5 = 10π ≈ 31.42.
+\n • Arc length for central angle 90° with R = 4: l = (π × 4 / 180°) × 90° = (4π / 2) = 2π ≈ 6.28.
+\n • Two circles with radii 3 and 6 have circumferences in ratio 3:6 = 1:2, confirming circumference ratios equal radius ratios.</string>
+
+    <!-- Q: Arc length for central angle 90° and R=4? Answer: 2π -->
+    <string name="SectionTwoTheoryWorkedExQuestion_15">What is the arc length for a central angle of 90° in a circle with radius R = 4 (leave answer in terms of π)?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_15">4π</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_15">π</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_15">2π</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_15">2π</string>
+
     <string name="SectionTwoQuiz_15">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_15">one</string>
+    <string name="SecTwoQuizAnswer2_1_15">two</string>
+    <string name="SecTwoQuizAnswer3_1_15">three</string>
+    <string name="SecTwoQuizAnswer1_2_15">one</string>
+    <string name="SecTwoQuizAnswer2_2_15">two</string>
+    <string name="SecTwoQuizAnswer3_2_15">three</string>
+    <string name="SecTwoQuizAnswer1_3_15">one</string>
+    <string name="SecTwoQuizAnswer2_3_15">two</string>
+    <string name="SecTwoQuizAnswer3_3_15">three</string>
+    <string name="SecTwoQuizAnswer1_4_15">one</string>
+    <string name="SecTwoQuizAnswer2_4_15">two</string>
+    <string name="SecTwoQuizAnswer3_4_15">three</string>
+    <string name="SecTwoQuizAnswer1_5_15">one</string>
+    <string name="SecTwoQuizAnswer2_5_15">two</string>
+    <string name="SecTwoQuizAnswer3_5_15">three</string>
+    <string name="SectionTwoAnswerOne_15">one</string>
+    <string name="SectionTwoAnswerTwo_15">two</string>
+    <string name="SectionTwoAnswerThree_15">three</string>
+    <string name="SectionTwoAnswerFour_15">one</string>
+    <string name="SectionTwoAnswerFive_15">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--               SECTION THREE: SECTORS & SEGMENTS                 -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_15">• Sector: The portion of a circle bounded by two radii and one of the arcs they intercept.
 \n • Segment: The region of a circle bounded by a chord and the arc subtended by that chord.</string>
-    <string name="SectionThreeTheoryProperties_15">• Circle Area Formula: Computed by the formula S=πR^2.
-\n • Area of a Sector: Calculated as S=[(πR^2)/360∘]*α, where α is the degree measure of the central angle.
-\n • Area of a Segment: Computed by S=[(πR^2)/360∘]*α±SΔ, where SΔ is the area of the triangle formed by the centre and the chords endpoints.</string>
-    <string name="SectionThreeTheoryWorkedExamples_15">!!! Worked Examples !!!</string>
+
+    <!-- Q: Is a sector bounded by two radii and an arc? Answer: True -->
+    <string name="SectionThreeTheoryDefQuestion_15">Is a sector bounded by two radii and an arc?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_15">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_15">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryDefAnswerThree_15"></string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_15">True</string>
+
+    <!-- Fixed typo: S=πR^15 → S=πR² -->
+    <string name="SectionThreeTheoryProperties_15">• Circle Area Formula: Computed by the formula S=πR².
+\n • Area of a Sector: Calculated as S=[(πR²)/360°]*α, where α is the degree measure of the central angle.
+\n • Area of a Segment: Computed by S=[(πR²)/360°]*α−S△, where S△ is the area of the triangle formed by the centre and the chord\'s endpoints.</string>
+
+    <!-- Q: Area of a sector with R=6 and α=90°? Answer: 9π -->
+    <string name="SectionThreeTheoryPropsQuestion_15">What is the area of a sector with radius R = 6 and central angle α = 90° (leave answer in terms of π)?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_15">36π</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_15">9π</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_15">3π</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_15">9π</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_15">• Area of a full circle with R = 5: S = π × 5² = 25π ≈ 78.54.
+\n • Area of a sector with R = 6 and central angle α = 90°: S = (π × 36 / 360°) × 90° = 36π / 4 = 9π ≈ 28.27.
+\n • Area of a segment with R = 6 and α = 90°: the triangle formed is a right isosceles triangle with legs 6, so S△ = ½ × 6 × 6 = 18. Segment area = 9π − 18 ≈ 10.27.</string>
+
+    <!-- Q: Area of full circle with R=5? Answer: 25π -->
+    <string name="SectionThreeTheoryWorkedExQuestion_15">What is the area of a circle with radius R = 5 (leave answer in terms of π)?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_15">10π</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_15">5π</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_15">25π</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_15">25π</string>
+
     <string name="SectionThreeQuiz_15">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_15">one</string>
+    <string name="SecThreeQuizAnswer2_1_15">two</string>
+    <string name="SecThreeQuizAnswer3_1_15">three</string>
+    <string name="SecThreeQuizAnswer1_2_15">one</string>
+    <string name="SecThreeQuizAnswer2_2_15">two</string>
+    <string name="SecThreeQuizAnswer3_2_15">three</string>
+    <string name="SecThreeQuizAnswer1_3_15">one</string>
+    <string name="SecThreeQuizAnswer2_3_15">two</string>
+    <string name="SecThreeQuizAnswer3_3_15">three</string>
+    <string name="SecThreeQuizAnswer1_4_15">one</string>
+    <string name="SecThreeQuizAnswer2_4_15">two</string>
+    <string name="SecThreeQuizAnswer3_4_15">three</string>
+    <string name="SecThreeQuizAnswer1_5_15">one</string>
+    <string name="SecThreeQuizAnswer2_5_15">two</string>
+    <string name="SecThreeQuizAnswer3_5_15">three</string>
+    <string name="SectionThreeAnswerOne_15">one</string>
+    <string name="SectionThreeAnswerTwo_15">two</string>
+    <string name="SectionThreeAnswerThree_15">three</string>
+    <string name="SectionThreeAnswerFour_15">one</string>
+    <string name="SectionThreeAnswerFive_15">two</string>
 </resources>

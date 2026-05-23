@@ -2,71 +2,306 @@
 <resources>
     <string name="app_name_11">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--               SECTION ONE: PROPORTIONAL SEGMENTS                -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_11">• Proportional segments have equal ratios.
 \n • Ratios show how lengths compare.
-\n • Units don’t affect proportionality.</string>
+\n • Units don\'t affect proportionality.</string>
+
+    <!-- Q: Do units affect whether two segment pairs are proportional? Answer: False -->
+    <string name="SectionOneTheoryDefQuestion_11">Do the units of measurement affect whether two pairs of segments are proportional?</string>
+    <string name="SectionOneTheoryDefAnswerOne_11">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_11">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryDefAnswerThree_11"></string>
+    <string name="SectionOneTheoryDefCorrectAnswer_11">False</string>
 
     <string name="SectionOneTheoryProperties_11">• Ratios stay constant when units change.
 \n • Parallel lines create proportional segments.
 \n • Related segments on both sides are proportional.</string>
 
-    <string name="SectionOneTheoryWorkedExamples_11">• Construct a fourth segment with given ratios.
-\n • Use parallel lines and an arbitrary angle.
-\n • Demonstrates geometric proportionality.</string>
+    <!-- Q: Do parallel lines cutting two transversals create proportional segments? Answer: True -->
+    <string name="SectionOneTheoryPropsQuestion_11">Do parallel lines cutting two transversals always create proportional segments?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_11">True</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_11">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryPropsAnswerThree_11"></string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_11">True</string>
+
+    <string name="SectionOneTheoryWorkedExamples_11">• To construct a fourth proportional x given segments a, b, c (so that a:b = c:x): draw a ray from a point, mark off a and c on it, draw another ray and mark off b, connect the endpoints and draw a parallel — the intersection gives x = bc/a.
+\n • To divide a segment in ratio 3:5: draw a ray at any angle from one endpoint, mark 8 equal steps, connect the 8th step to the other endpoint, then draw a parallel through the 3rd step — it divides the original segment in ratio 3:5.
+\n • These constructions use only a ruler and compass, relying solely on Thales\' theorem for parallel lines and proportionality.</string>
+
+    <!-- Q: To find a fourth proportional to a, b, c where a:b = c:x, what does x equal? Answer: bc/a -->
+    <string name="SectionOneTheoryWorkedExQuestion_11">To find the fourth proportional x where a:b = c:x, what is x equal to?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_11">ab/c</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_11">ac/b</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_11">bc/a</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_11">bc/a</string>
 
     <string name="SectionOneQuiz_11">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_11">one</string>
+    <string name="SecOneQuizAnswer2_1_11">two</string>
+    <string name="SecOneQuizAnswer3_1_11">three</string>
+    <string name="SecOneQuizAnswer1_2_11">one</string>
+    <string name="SecOneQuizAnswer2_2_11">two</string>
+    <string name="SecOneQuizAnswer3_2_11">three</string>
+    <string name="SecOneQuizAnswer1_3_11">one</string>
+    <string name="SecOneQuizAnswer2_3_11">two</string>
+    <string name="SecOneQuizAnswer3_3_11">three</string>
+    <string name="SecOneQuizAnswer1_4_11">one</string>
+    <string name="SecOneQuizAnswer2_4_11">two</string>
+    <string name="SecOneQuizAnswer3_4_11">three</string>
+    <string name="SecOneQuizAnswer1_5_11">one</string>
+    <string name="SecOneQuizAnswer2_5_11">two</string>
+    <string name="SecOneQuizAnswer3_5_11">three</string>
+    <string name="SectionOneAnswerOne_11">one</string>
+    <string name="SectionOneAnswerTwo_11">two</string>
+    <string name="SectionOneAnswerThree_11">three</string>
+    <string name="SectionOneAnswerFour_11">one</string>
+    <string name="SectionOneAnswerFive_11">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--               SECTION TWO: SIMILAR TRIANGLES                    -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_11">• Similar triangles have equal angles and proportional sides.
 \n • Their sides share a constant ratio called the ratio of similitude.
 \n • Shapes keep the same form but scale differently.</string>
 
+    <!-- Q: Do similar triangles have equal angles? Answer: True -->
+    <string name="SectionTwoTheoryDefQuestion_11">Do similar triangles always have equal corresponding angles?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_11">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_11">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryDefAnswerThree_11"></string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_11">True</string>
+
     <string name="SectionTwoTheoryProperties_11">• Similarity is reflexive, symmetric, and transitive.
 \n • A line parallel to a triangle side forms a similar triangle.
 \n • Triangles are similar by angles, sides, or proportionality tests.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_11">• Find segment MN parallel to trapezoid bases: ∣MN∣=(2ab)/(a+b).
-\n • Use similarity to prove median ratios.
-\n • Applies to triangle and parallelogram relations.</string>
+    <!-- Q: Does a line parallel to one side of a triangle always form a similar triangle? Answer: True -->
+    <string name="SectionTwoTheoryPropsQuestion_11">Does a line parallel to one side of a triangle and intersecting the other two sides always form a similar triangle?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_11">True</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_11">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryPropsAnswerThree_11"></string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_11">True</string>
+
+    <!-- Fixed typo: 11ab → 2ab -->
+    <string name="SectionTwoTheoryWorkedExamples_11">• Find segment MN parallel to the two bases of a trapezoid with bases a and b: by similar triangles, |MN| = 2ab/(a+b) — this is the harmonic mean of a and b.
+\n • Proof that the centroid divides each median in ratio 2:1: draw two medians intersecting at G; the triangles on either side are similar by AA (parallel midlines), giving the ratio directly.
+\n • To prove two triangles similar by the SAS test: show two sides proportional and the included angle equal, then use the definition of similarity to conclude all sides are proportional.</string>
+
+    <!-- Q: Two similar triangles have sides in ratio 3:1. If the smaller has perimeter 12, what is the larger perimeter? Answer: 36 -->
+    <string name="SectionTwoTheoryWorkedExQuestion_11">Two similar triangles have ratio of similitude 3:1. If the smaller triangle has perimeter 12, what is the perimeter of the larger triangle?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_11">15</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_11">24</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_11">36</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_11">36</string>
 
     <string name="SectionTwoQuiz_11">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_11">one</string>
+    <string name="SecTwoQuizAnswer2_1_11">two</string>
+    <string name="SecTwoQuizAnswer3_1_11">three</string>
+    <string name="SecTwoQuizAnswer1_2_11">one</string>
+    <string name="SecTwoQuizAnswer2_2_11">two</string>
+    <string name="SecTwoQuizAnswer3_2_11">three</string>
+    <string name="SecTwoQuizAnswer1_3_11">one</string>
+    <string name="SecTwoQuizAnswer2_3_11">two</string>
+    <string name="SecTwoQuizAnswer3_3_11">three</string>
+    <string name="SecTwoQuizAnswer1_4_11">one</string>
+    <string name="SecTwoQuizAnswer2_4_11">two</string>
+    <string name="SecTwoQuizAnswer3_4_11">three</string>
+    <string name="SecTwoQuizAnswer1_5_11">one</string>
+    <string name="SecTwoQuizAnswer2_5_11">two</string>
+    <string name="SecTwoQuizAnswer3_5_11">three</string>
+    <string name="SectionTwoAnswerOne_11">one</string>
+    <string name="SectionTwoAnswerTwo_11">two</string>
+    <string name="SectionTwoAnswerThree_11">three</string>
+    <string name="SectionTwoAnswerFour_11">one</string>
+    <string name="SectionTwoAnswerFive_11">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--             SECTION THREE: MEAN PROPORTIONAL & PYTHAGORAS       -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_11">• The mean proportional x satisfies a:x=x:b.
 \n • It equals the square root of their product.
 \n • Used in geometry and right triangles.</string>
 
+    <!-- Q: If a:x = x:b, then x equals what? Answer: √(ab) -->
+    <string name="SectionThreeTheoryDefQuestion_11">If a:x = x:b, then x equals what?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_11">ab</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_11">√(ab)</string>
+    <string name="SectionThreeTheoryDefAnswerThree_11">(a+b)/2</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_11">√(ab)</string>
+
     <string name="SectionThreeTheoryProperties_11">• In right triangles, altitude is mean proportional between hypotenuse parts.
 \n • Each leg is mean proportional to its adjacent part.
 \n • Pythagoras: c²=a²+b², and its converse defines right triangles.</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_11">• Construct mean proportional using a semicircle.
-\n • Perpendicular gives x=sqrt(ab).
-\n • Apply proportionality to hypotenuse and altitude.</string>
+    <!-- Q: In a right triangle with legs 3 and 4, what is the hypotenuse? Answer: 5 -->
+    <string name="SectionThreeTheoryPropsQuestion_11">In a right triangle with legs 3 and 4, what is the hypotenuse?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_11">6</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_11">5</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_11">7</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_11">5</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_11">• To construct the mean proportional between segments a and b: place them end-to-end on a line to form a segment of length a+b. Draw a semicircle on this as diameter. The perpendicular from the junction point to the semicircle has length x = √(ab).
+\n • In a right triangle with hypotenuse c divided by the altitude h into parts p and q: h² = p×q, and each leg satisfies leg² = p×c or q×c respectively.
+\n • Pythagorean triple check: 5² = 3² + 4² → 25 = 9 + 16 ✓. Conversely, if c² = a² + b², the triangle is right-angled.</string>
+
+    <!-- Q: To construct √(ab) geometrically, the perpendicular is erected at the junction of which segment? Answer: a+b -->
+    <string name="SectionThreeTheoryWorkedExQuestion_11">To construct the mean proportional √(ab), a semicircle is drawn on a segment of what total length?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_11">a−b</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_11">a×b</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_11">a+b</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_11">a+b</string>
 
     <string name="SectionThreeQuiz_11">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_11">one</string>
+    <string name="SecThreeQuizAnswer2_1_11">two</string>
+    <string name="SecThreeQuizAnswer3_1_11">three</string>
+    <string name="SecThreeQuizAnswer1_2_11">one</string>
+    <string name="SecThreeQuizAnswer2_2_11">two</string>
+    <string name="SecThreeQuizAnswer3_2_11">three</string>
+    <string name="SecThreeQuizAnswer1_3_11">one</string>
+    <string name="SecThreeQuizAnswer2_3_11">two</string>
+    <string name="SecThreeQuizAnswer3_3_11">three</string>
+    <string name="SecThreeQuizAnswer1_4_11">one</string>
+    <string name="SecThreeQuizAnswer2_4_11">two</string>
+    <string name="SecThreeQuizAnswer3_4_11">three</string>
+    <string name="SecThreeQuizAnswer1_5_11">one</string>
+    <string name="SecThreeQuizAnswer2_5_11">two</string>
+    <string name="SecThreeQuizAnswer3_5_11">three</string>
+    <string name="SectionThreeAnswerOne_11">one</string>
+    <string name="SectionThreeAnswerTwo_11">two</string>
+    <string name="SectionThreeAnswerThree_11">three</string>
+    <string name="SectionThreeAnswerFour_11">one</string>
+    <string name="SectionThreeAnswerFive_11">two</string>
 
-    <string name="SectionFourTheoryDef_11">!!! EMPTY !!!</string>
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--           SECTION FOUR: ANGLE BISECTOR & POWER OF A POINT       -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- Was !!! EMPTY !!! — written from context (angle bisector / power of a point) -->
+    <string name="SectionFourTheoryDef_11">• Angle Bisector in a Triangle: The bisector of an interior angle divides the opposite side in the ratio of the two adjacent sides.
+\n • Power of a Point: For a point P and a circle, the power equals PA × PB for any chord through P; it is constant regardless of which chord is chosen.
+\n • Intersecting Chords: Two chords intersecting inside a circle satisfy PA × PB = PC × PD.</string>
+
+    <!-- Q: Does the angle bisector divide the opposite side proportionally to the adjacent sides? Answer: True -->
+    <string name="SectionFourTheoryDefQuestion_11">Does the angle bisector of a triangle divide the opposite side in the ratio of the two adjacent sides?</string>
+    <string name="SectionFourTheoryDefAnswerOne_11">True</string>
+    <string name="SectionFourTheoryDefAnswerTwo_11">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionFourTheoryDefAnswerThree_11"></string>
+    <string name="SectionFourTheoryDefCorrectAnswer_11">True</string>
 
     <string name="SectionFourTheoryProperties_11">• Angle bisector divides the opposite side proportionally.
 \n • Intersecting chords have equal segment products.
 \n • Tangent-secant rule: tangent² = external × total secant.</string>
 
-    <string name="SectionFourTheoryWorkedExamples_11">• In right triangles, altitude divides hypotenuse by square ratios.
-\n • Circle radius found with r=sqrt(ab+d²).
-\n • Combines similarity and power of a point.</string>
+    <!-- Q: Two chords intersect inside a circle with segments 3, 4 and 6, x. What is x? Answer: 2 -->
+    <string name="SectionFourTheoryPropsQuestion_11">Two chords intersect inside a circle. One chord has segments of length 3 and 4; the other has one segment of length 6. What is the other segment length?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_11">8</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_11">2</string>
+    <string name="SectionFourTheoryPropsAnswerThree_11">4</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_11">2</string>
+
+    <string name="SectionFourTheoryWorkedExamples_11">• Altitude from the right angle to the hypotenuse divides it into segments p and q. By similarity: leg a² = p×c and leg b² = q×c, where c = p+q is the hypotenuse.
+\n • To find the radius R of a circle given a chord of length 2a at distance d from the center: by the intersecting chords theorem applied to the diameter, a² = d×(2R−d), so R = (a²+d²)/(2d) = √(a²+d²)/2... more precisely R = (a²/d + d)/2.
+\n • Tangent-secant from external point P: tangent length t, external secant segment e, full secant length s → t² = e×s. Used to find unknown lengths when one value is missing.</string>
+
+    <!-- Q: Two chords intersect: segments 3×4 = 6×x. What is x? Answer: 2 -->
+    <string name="SectionFourTheoryWorkedExQuestion_11">Chords intersect inside a circle with products 3 × 4 = 6 × x. What is x?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_11">3</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_11">4</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_11">2</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_11">2</string>
 
     <string name="SectionFourQuiz_11">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_11">one</string>
+    <string name="SecFourQuizAnswer2_1_11">two</string>
+    <string name="SecFourQuizAnswer3_1_11">three</string>
+    <string name="SecFourQuizAnswer1_2_11">one</string>
+    <string name="SecFourQuizAnswer2_2_11">two</string>
+    <string name="SecFourQuizAnswer3_2_11">three</string>
+    <string name="SecFourQuizAnswer1_3_11">one</string>
+    <string name="SecFourQuizAnswer2_3_11">two</string>
+    <string name="SecFourQuizAnswer3_3_11">three</string>
+    <string name="SecFourQuizAnswer1_4_11">one</string>
+    <string name="SecFourQuizAnswer2_4_11">two</string>
+    <string name="SecFourQuizAnswer3_4_11">three</string>
+    <string name="SecFourQuizAnswer1_5_11">one</string>
+    <string name="SecFourQuizAnswer2_5_11">two</string>
+    <string name="SecFourQuizAnswer3_5_11">three</string>
+    <string name="SectionFourAnswerOne_11">one</string>
+    <string name="SectionFourAnswerTwo_11">two</string>
+    <string name="SectionFourAnswerThree_11">three</string>
+    <string name="SectionFourAnswerFour_11">one</string>
+    <string name="SectionFourAnswerFive_11">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--             SECTION FIVE: SIMILAR POLYGONS & HOMOTHETY          -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionFiveTheoryDef_11">• Similar polygons have equal angles and proportional sides.
 \n • Homothety scales shapes from a center with ratio k.
 \n • Figures remain similar under transformation.</string>
 
+    <!-- Q: Does homothety preserve the shape (angles) of a figure? Answer: True -->
+    <string name="SectionFiveTheoryDefQuestion_11">Does a homothety transformation preserve the angles of a figure?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_11">True</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_11">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionFiveTheoryDefAnswerThree_11"></string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_11">True</string>
+
     <string name="SectionFiveTheoryProperties_11">• Perimeter ratio equals the ratio of similitude.
 \n • Similar polygons decompose into similar triangles.
 \n • Corresponding vertices connect identical structures.</string>
 
-    <string name="SectionFiveTheoryWorkedExamples_11">• Construct an inscribed square using homothety.
-\n • Start with a square on one triangle side.
-\n • Scale it from the vertex to fit inside.</string>
+    <!-- Q: If two similar polygons have ratio of similitude k=4, what is the ratio of their perimeters? Answer: 4 -->
+    <string name="SectionFiveTheoryPropsQuestion_11">Two similar polygons have ratio of similitude k = 4. What is the ratio of their perimeters?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_11">16</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_11">4</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_11">2</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_11">4</string>
+
+    <string name="SectionFiveTheoryWorkedExamples_11">• To inscribe a square in a triangle: construct a square on the base of the triangle. Apply a homothety centered at the apex vertex with ratio k chosen so the top side of the square lands on the two non-base sides — the image square is inscribed.
+\n • Homothety with center O and ratio k = 2 maps every point P to P\' where OP\' = 2×OP. The image polygon is similar to the original with all sides doubled.
+\n • Two similar polygons with ratio k = 3 have perimeters in ratio 3:1; any corresponding diagonal or height also scales by factor 3.</string>
+
+    <!-- Q: Homothety with ratio k=2 doubles all side lengths. What is the ratio of similitude? Answer: 2 -->
+    <string name="SectionFiveTheoryWorkedExQuestion_11">A homothety with ratio k = 2 is applied to a polygon. What is the ratio of similitude between the image and the original?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_11">4</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_11">1/2</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_11">2</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_11">2</string>
 
     <string name="SectionFiveQuiz_11">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_11">one</string>
+    <string name="SecFiveQuizAnswer2_1_11">two</string>
+    <string name="SecFiveQuizAnswer3_1_11">three</string>
+    <string name="SecFiveQuizAnswer1_2_11">one</string>
+    <string name="SecFiveQuizAnswer2_2_11">two</string>
+    <string name="SecFiveQuizAnswer3_2_11">three</string>
+    <string name="SecFiveQuizAnswer1_3_11">one</string>
+    <string name="SecFiveQuizAnswer2_3_11">two</string>
+    <string name="SecFiveQuizAnswer3_3_11">three</string>
+    <string name="SecFiveQuizAnswer1_4_11">one</string>
+    <string name="SecFiveQuizAnswer2_4_11">two</string>
+    <string name="SecFiveQuizAnswer3_4_11">three</string>
+    <string name="SecFiveQuizAnswer1_5_11">one</string>
+    <string name="SecFiveQuizAnswer2_5_11">two</string>
+    <string name="SecFiveQuizAnswer3_5_11">three</string>
+    <string name="SectionFiveAnswerOne_11">one</string>
+    <string name="SectionFiveAnswerTwo_11">two</string>
+    <string name="SectionFiveAnswerThree_11">three</string>
+    <string name="SectionFiveAnswerFour_11">one</string>
+    <string name="SectionFiveAnswerFive_11">two</string>
 </resources>

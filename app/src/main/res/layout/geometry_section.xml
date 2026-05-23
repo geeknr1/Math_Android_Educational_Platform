@@ -190,6 +190,158 @@
                     android:max="100"
                     android:progressDrawable="@drawable/progressbar"/>
 
+                <TextView
+                    android:id="@+id/sectionDefQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonAnswerDefOne"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonAnswerDefTwo"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonAnswerDefThree"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sectionPropsQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonAnswerPropsOne"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonAnswerPropsTwo"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonAnswerPropsThree"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sectionExampleQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonAnswerExampleOne"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonAnswerExampleTwo"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonAnswerExampleThree"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
                 <ImageView
                     android:id="@+id/requirementOneImg"
                     android:layout_width="250dp"
@@ -478,6 +630,27 @@
                         android:textColor="@color/white"/>
                     <TextView
                         android:id="@+id/correctFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctDefinition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctProperties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/correctExample"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"

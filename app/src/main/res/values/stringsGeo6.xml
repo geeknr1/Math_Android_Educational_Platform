@@ -2,89 +2,428 @@
 <resources>
     <string name="app_name_13">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION ONE: VECTORS — BASICS                  -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_13">• A vector is a directed segment with start and end points.
 \n • Its length is the distance between those points.
 \n • Vectors can be equal, opposite, or null.</string>
+
+    <!-- Q: Does a null vector have length zero? Answer: True -->
+    <string name="SectionOneTheoryDefQuestion_13">Does a null vector have length equal to zero?</string>
+    <string name="SectionOneTheoryDefAnswerOne_13">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryDefAnswerThree_13"></string>
+    <string name="SectionOneTheoryDefCorrectAnswer_13">True</string>
 
     <string name="SectionOneTheoryProperties_13">• Vectors add by triangle or parallelogram rule.
 \n • Addition is associative and commutative.
 \n • Subtraction uses the opposite of a vector.</string>
 
-    <string name="SectionOneTheoryWorkedExamples_13">• Parallelogram shows commutativity of vector addition.
-\n • Vector subtraction equals the vector from end of b to end of a.
-\n • Demonstrates geometric vector rules.</string>
+    <!-- Q: Is vector addition commutative? Answer: True -->
+    <string name="SectionOneTheoryPropsQuestion_13">Is vector addition commutative (i.e. a⃗ + b⃗ = b⃗ + a⃗)?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_13">True</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryPropsAnswerThree_13"></string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_13">True</string>
+
+    <string name="SectionOneTheoryWorkedExamples_13">• Commutativity via parallelogram: place a⃗ and b⃗ from the same point O. The parallelogram they span has a diagonal equal to a⃗ + b⃗; since both routes (a⃗ then b⃗, or b⃗ then a⃗) reach the same corner, a⃗ + b⃗ = b⃗ + a⃗.
+\n • Vector subtraction a⃗ − b⃗: place both vectors from the same origin; the result is the vector from the tip of b⃗ to the tip of a⃗ — i.e. the vector you add to b⃗ to get a⃗.
+\n • The zero vector acts as an identity: a⃗ + 0⃗ = a⃗, and a⃗ + (−a⃗) = 0⃗, confirming the additive inverse property.</string>
+
+    <!-- Q: Vector subtraction a⃗ − b⃗ gives the vector from the tip of b⃗ to the tip of a⃗. Answer: True -->
+    <string name="SectionOneTheoryWorkedExQuestion_13">When both vectors share the same origin, does a⃗ − b⃗ point from the tip of b⃗ to the tip of a⃗?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_13">True</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryWorkedExAnswerThree_13"></string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_13">True</string>
 
     <string name="SectionOneQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_13">one</string>
+    <string name="SecOneQuizAnswer2_1_13">two</string>
+    <string name="SecOneQuizAnswer3_1_13">three</string>
+    <string name="SecOneQuizAnswer1_2_13">one</string>
+    <string name="SecOneQuizAnswer2_2_13">two</string>
+    <string name="SecOneQuizAnswer3_2_13">three</string>
+    <string name="SecOneQuizAnswer1_3_13">one</string>
+    <string name="SecOneQuizAnswer2_3_13">two</string>
+    <string name="SecOneQuizAnswer3_3_13">three</string>
+    <string name="SecOneQuizAnswer1_4_13">one</string>
+    <string name="SecOneQuizAnswer2_4_13">two</string>
+    <string name="SecOneQuizAnswer3_4_13">three</string>
+    <string name="SecOneQuizAnswer1_5_13">one</string>
+    <string name="SecOneQuizAnswer2_5_13">two</string>
+    <string name="SecOneQuizAnswer3_5_13">three</string>
+    <string name="SectionOneAnswerOne_13">one</string>
+    <string name="SectionOneAnswerTwo_13">two</string>
+    <string name="SectionOneAnswerThree_13">three</string>
+    <string name="SectionOneAnswerFour_13">one</string>
+    <string name="SectionOneAnswerFive_13">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--              SECTION TWO: SCALAR MULTIPLICATION OF VECTORS      -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_13">• Multiplying a vector by x changes its length.
 \n • Direction stays the same for x&gt;0 and reverses for x&lt;0.
 \n • Defines scaling of a vector.</string>
 
+    <!-- Q: Does multiplying a vector by a negative scalar reverse its direction? Answer: True -->
+    <string name="SectionTwoTheoryDefQuestion_13">Does multiplying a vector by a negative scalar reverse its direction?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_13">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryDefAnswerThree_13"></string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_13">True</string>
+
     <string name="SectionTwoTheoryProperties_13">• Vector multiplication follows associative and distributive laws.
 \n • Two vectors are collinear if one is a scalar multiple of the other.
 \n • Expresses alignment through scalar ratios.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_13">• Using vector algebra, medians meet at one point.
-\n • The centroid divides each median in a 2:1 ratio.
-\n • Proof uses addition and multiplication of vectors.</string>
+    <!-- Q: Are two vectors collinear if one is a scalar multiple of the other? Answer: True -->
+    <string name="SectionTwoTheoryPropsQuestion_13">Are two vectors collinear if and only if one is a scalar multiple of the other?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_13">True</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryPropsAnswerThree_13"></string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_13">True</string>
+
+    <!-- Fixed typo: centroid ratio 13:1 → 2:1 -->
+    <string name="SectionTwoTheoryWorkedExamples_13">• Let M and N be midpoints of sides AB and AC of triangle ABC. Using vectors: MN⃗ = MA⃗ + AN⃗ = −½AB⃗ + ½AC⃗ = ½(AC⃗ − AB⃗) = ½BC⃗, so MN ∥ BC and MN = ½BC — the midline theorem.
+\n • Centroid proof: label position vectors of vertices a⃗, b⃗, c⃗. The centroid G has position vector g⃗ = (a⃗ + b⃗ + c⃗)/3. Each median passes through G at 2/3 of its length from the vertex, confirming the centroid divides each median in ratio 2:1.
+\n • Scalar multiplication by k = −1 maps every vector to its opposite, which is exactly central symmetry about the origin — linking vector algebra to geometric transformations.</string>
+
+    <!-- Q: The centroid divides each median in ratio from vertex. Answer: 2:1 -->
+    <string name="SectionTwoTheoryWorkedExQuestion_13">In what ratio does the centroid divide each median (from vertex to midpoint)?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_13">1:2</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_13">1:1</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_13">2:1</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_13">2:1</string>
 
     <string name="SectionTwoQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_13">one</string>
+    <string name="SecTwoQuizAnswer2_1_13">two</string>
+    <string name="SecTwoQuizAnswer3_1_13">three</string>
+    <string name="SecTwoQuizAnswer1_2_13">one</string>
+    <string name="SecTwoQuizAnswer2_2_13">two</string>
+    <string name="SecTwoQuizAnswer3_2_13">three</string>
+    <string name="SecTwoQuizAnswer1_3_13">one</string>
+    <string name="SecTwoQuizAnswer2_3_13">two</string>
+    <string name="SecTwoQuizAnswer3_3_13">three</string>
+    <string name="SecTwoQuizAnswer1_4_13">one</string>
+    <string name="SecTwoQuizAnswer2_4_13">two</string>
+    <string name="SecTwoQuizAnswer3_4_13">three</string>
+    <string name="SecTwoQuizAnswer1_5_13">one</string>
+    <string name="SecTwoQuizAnswer2_5_13">two</string>
+    <string name="SecTwoQuizAnswer3_5_13">three</string>
+    <string name="SectionTwoAnswerOne_13">one</string>
+    <string name="SectionTwoAnswerTwo_13">two</string>
+    <string name="SectionTwoAnswerThree_13">three</string>
+    <string name="SectionTwoAnswerFour_13">one</string>
+    <string name="SectionTwoAnswerFive_13">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--              SECTION THREE: VECTOR COORDINATES                  -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_13">• A unit vector has length one.
-\n • Any vector can be written as r=xi+yj.
+\n • Any vector can be written as r⃗=xi⃗+yj⃗.
 \n • Components show direction along axes.</string>
 
-    <string name="SectionThreeTheoryProperties_13">• Vector length: ∣r∣=√(x²+y²).
+    <!-- Q: Does a unit vector have length equal to 1? Answer: True -->
+    <string name="SectionThreeTheoryDefQuestion_13">Does a unit vector have length equal to 1?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_13">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryDefAnswerThree_13"></string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_13">True</string>
+
+    <string name="SectionThreeTheoryProperties_13">• Vector length: |r⃗|=√(x²+y²).
 \n • Sums of vectors add by their coordinates.
 \n • Coordinate form simplifies operations.</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_13">• For A(x,y) and B(x′,y′), AB=(x′−x, y′−y).
-\n • Formula defines coordinates of a vector.
-\n • Used for position and displacement.</string>
+    <!-- Q: Vector r⃗ = (3, 4). What is its length? Answer: 5 -->
+    <string name="SectionThreeTheoryPropsQuestion_13">What is the length of vector r⃗ with coordinates (3, 4)?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_13">7</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_13">5</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_13">12</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_13">5</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_13">• For A(1, 2) and B(4, 6): AB⃗ = (4−1, 6−2) = (3, 4); length |AB⃗| = √(9+16) = √25 = 5.
+\n • Sum of vectors (2, 3) and (−1, 5): (2+(−1), 3+5) = (1, 8); length = √(1+64) = √65.
+\n • Scalar multiplication: 3×(2, −1) = (6, −3); length = √(36+9) = √45 = 3√5 — confirming the length scales by the same factor 3.</string>
+
+    <!-- Q: For A(1,2) and B(4,6), what is the length of AB⃗? Answer: 5 -->
+    <string name="SectionThreeTheoryWorkedExQuestion_13">For points A(1, 2) and B(4, 6), what is the length of vector AB⃗?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_13">6</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_13">7</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_13">5</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_13">5</string>
 
     <string name="SectionThreeQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_13">one</string>
+    <string name="SecThreeQuizAnswer2_1_13">two</string>
+    <string name="SecThreeQuizAnswer3_1_13">three</string>
+    <string name="SecThreeQuizAnswer1_2_13">one</string>
+    <string name="SecThreeQuizAnswer2_2_13">two</string>
+    <string name="SecThreeQuizAnswer3_2_13">three</string>
+    <string name="SecThreeQuizAnswer1_3_13">one</string>
+    <string name="SecThreeQuizAnswer2_3_13">two</string>
+    <string name="SecThreeQuizAnswer3_3_13">three</string>
+    <string name="SecThreeQuizAnswer1_4_13">one</string>
+    <string name="SecThreeQuizAnswer2_4_13">two</string>
+    <string name="SecThreeQuizAnswer3_4_13">three</string>
+    <string name="SecThreeQuizAnswer1_5_13">one</string>
+    <string name="SecThreeQuizAnswer2_5_13">two</string>
+    <string name="SecThreeQuizAnswer3_5_13">three</string>
+    <string name="SectionThreeAnswerOne_13">one</string>
+    <string name="SectionThreeAnswerTwo_13">two</string>
+    <string name="SectionThreeAnswerThree_13">three</string>
+    <string name="SectionThreeAnswerFour_13">one</string>
+    <string name="SectionThreeAnswerFive_13">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--              SECTION FOUR: DIRECTED ANGLES & ROTATION           -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionFourTheoryDef_13">• A directed angle measures rotation.
 \n • Positive means anticlockwise, negative clockwise.
 \n • Zero means no rotation.</string>
 
+    <!-- Q: Does a positive directed angle indicate anticlockwise rotation? Answer: True -->
+    <string name="SectionFourTheoryDefQuestion_13">Does a positive directed angle indicate anticlockwise rotation?</string>
+    <string name="SectionFourTheoryDefAnswerOne_13">True</string>
+    <string name="SectionFourTheoryDefAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionFourTheoryDefAnswerThree_13"></string>
+    <string name="SectionFourTheoryDefCorrectAnswer_13">True</string>
+
     <string name="SectionFourTheoryProperties_13">• A rotation is defined by its center and angle.
 \n • Rays coincide if β=α+360°×n.
 \n • Angles repeat every full turn.</string>
 
-    <string name="SectionFourTheoryWorkedExamples_13">!!! Worked Examples !!!</string>
+    <!-- Q: Two directed angles coincide if they differ by a multiple of how many degrees? Answer: 360 -->
+    <string name="SectionFourTheoryPropsQuestion_13">Two directed angles give the same ray if they differ by a multiple of how many degrees?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_13">90</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_13">180</string>
+    <string name="SectionFourTheoryPropsAnswerThree_13">360</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_13">360</string>
+
+    <string name="SectionFourTheoryWorkedExamples_13">• A rotation by +90° maps the point (1, 0) to (0, 1), and (0, 1) to (−1, 0) — confirmed by the unit-circle definition of directed angles.
+\n • A rotation by −270° produces the same result as +90°, since −270 + 360 = 90 — illustrating that angles differing by 360°×n are equivalent.
+\n • Composing two rotations about the same center by angles α and β gives a single rotation by α + β, which follows from the additive property of directed angles.</string>
+
+    <!-- Q: A rotation by −270° is equivalent to a rotation of how many degrees? Answer: 90 -->
+    <string name="SectionFourTheoryWorkedExQuestion_13">A rotation by −270° is equivalent to a positive rotation of how many degrees?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_13">180</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_13">270</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_13">90</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_13">90</string>
+
     <string name="SectionFourQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_13">one</string>
+    <string name="SecFourQuizAnswer2_1_13">two</string>
+    <string name="SecFourQuizAnswer3_1_13">three</string>
+    <string name="SecFourQuizAnswer1_2_13">one</string>
+    <string name="SecFourQuizAnswer2_2_13">two</string>
+    <string name="SecFourQuizAnswer3_2_13">three</string>
+    <string name="SecFourQuizAnswer1_3_13">one</string>
+    <string name="SecFourQuizAnswer2_3_13">two</string>
+    <string name="SecFourQuizAnswer3_3_13">three</string>
+    <string name="SecFourQuizAnswer1_4_13">one</string>
+    <string name="SecFourQuizAnswer2_4_13">two</string>
+    <string name="SecFourQuizAnswer3_4_13">three</string>
+    <string name="SecFourQuizAnswer1_5_13">one</string>
+    <string name="SecFourQuizAnswer2_5_13">two</string>
+    <string name="SecFourQuizAnswer3_5_13">three</string>
+    <string name="SectionFourAnswerOne_13">one</string>
+    <string name="SectionFourAnswerTwo_13">two</string>
+    <string name="SectionFourAnswerThree_13">three</string>
+    <string name="SectionFourAnswerFour_13">one</string>
+    <string name="SectionFourAnswerFive_13">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--              SECTION FIVE: TRIG FUNCTIONS — UNIT CIRCLE         -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionFiveTheoryDef_13">• Sine is the y-coordinate of a unit circle point.
 \n • Cosine is the x-coordinate.
 \n • Tangent equals sine divided by cosine.</string>
 
+    <!-- Q: Is sine the y-coordinate of a point on the unit circle? Answer: True -->
+    <string name="SectionFiveTheoryDefQuestion_13">Is sine defined as the y-coordinate of a point on the unit circle?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_13">True</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionFiveTheoryDefAnswerThree_13"></string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_13">True</string>
+
     <string name="SectionFiveTheoryProperties_13">• Sine is odd; cosine is even.
 \n • sin²α+cos²α=1.
 \n • 1+tan²α=1/(cos²α).</string>
 
-    <string name="SectionFiveTheoryWorkedExamples_13">!!! Worked Examples !!!</string>
+    <!-- Q: What does sin²α + cos²α equal? Answer: 1 -->
+    <string name="SectionFiveTheoryPropsQuestion_13">What is the value of sin²α + cos²α for any angle α?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_13">0</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_13">1</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_13">2</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_13">1</string>
+
+    <string name="SectionFiveTheoryWorkedExamples_13">• sin(30°) = ½, cos(30°) = √3/2: verify the identity — (½)² + (√3/2)² = ¼ + ¾ = 1 ✓.
+\n • Since sine is odd: sin(−60°) = −sin(60°) = −√3/2. Since cosine is even: cos(−60°) = cos(60°) = ½.
+\n • tan(45°) = sin(45°)/cos(45°) = (√2/2)/(√2/2) = 1; confirmed by the unit-circle point (√2/2, √2/2) at 45°.</string>
+
+    <!-- Q: What is sin(30°)? Answer: 1/2 -->
+    <string name="SectionFiveTheoryWorkedExQuestion_13">What is the value of sin(30°)?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_13">√3/2</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_13">√2/2</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_13">1/2</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_13">1/2</string>
+
     <string name="SectionFiveQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_13">one</string>
+    <string name="SecFiveQuizAnswer2_1_13">two</string>
+    <string name="SecFiveQuizAnswer3_1_13">three</string>
+    <string name="SecFiveQuizAnswer1_2_13">one</string>
+    <string name="SecFiveQuizAnswer2_2_13">two</string>
+    <string name="SecFiveQuizAnswer3_2_13">three</string>
+    <string name="SecFiveQuizAnswer1_3_13">one</string>
+    <string name="SecFiveQuizAnswer2_3_13">two</string>
+    <string name="SecFiveQuizAnswer3_3_13">three</string>
+    <string name="SecFiveQuizAnswer1_4_13">one</string>
+    <string name="SecFiveQuizAnswer2_4_13">two</string>
+    <string name="SecFiveQuizAnswer3_4_13">three</string>
+    <string name="SecFiveQuizAnswer1_5_13">one</string>
+    <string name="SecFiveQuizAnswer2_5_13">two</string>
+    <string name="SecFiveQuizAnswer3_5_13">three</string>
+    <string name="SectionFiveAnswerOne_13">one</string>
+    <string name="SectionFiveAnswerTwo_13">two</string>
+    <string name="SectionFiveAnswerThree_13">three</string>
+    <string name="SectionFiveAnswerFour_13">one</string>
+    <string name="SectionFiveAnswerFive_13">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--         SECTION SIX: TRIG FUNCTIONS — RIGHT TRIANGLE            -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionSixTheoryDef_13">• sinα = opposite/hypotenuse.
 \n • cosα = adjacent/hypotenuse.
 \n • tanα = opposite/adjacent.</string>
 
+    <!-- Q: Does sinα = opposite/hypotenuse in a right triangle? Answer: True -->
+    <string name="SectionSixTheoryDefQuestion_13">In a right triangle, does sinα equal opposite divided by hypotenuse?</string>
+    <string name="SectionSixTheoryDefAnswerOne_13">True</string>
+    <string name="SectionSixTheoryDefAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionSixTheoryDefAnswerThree_13"></string>
+    <string name="SectionSixTheoryDefCorrectAnswer_13">True</string>
+
     <string name="SectionSixTheoryProperties_13">• sin(90°−α)=cosα, cos(90°−α)=sinα.
 \n • sin(180°−α)=sinα, cos(180°−α)=−cosα.
 \n • Shows complementary and supplementary relations.</string>
 
-    <string name="SectionSixTheoryWorkedExamples_13">!!! Worked Examples !!!</string>
-    <string name="SectionSixQuiz_13">!!! Solve the Quiz !!!</string>
+    <!-- Q: What does sin(90°−α) equal? Answer: cosα -->
+    <string name="SectionSixTheoryPropsQuestion_13">What does sin(90° − α) equal?</string>
+    <string name="SectionSixTheoryPropsAnswerOne_13">−cosα</string>
+    <string name="SectionSixTheoryPropsAnswerTwo_13">cosα</string>
+    <string name="SectionSixTheoryPropsAnswerThree_13">sinα</string>
+    <string name="SectionSixTheoryPropsCorrectAnswer_13">cosα</string>
 
+    <string name="SectionSixTheoryWorkedExamples_13">• In a right triangle with hypotenuse 10 and one angle α = 30°: opposite = 10 × sin(30°) = 10 × ½ = 5; adjacent = 10 × cos(30°) = 10 × (√3/2) = 5√3.
+\n • Complementary relation check: sin(60°) = cos(30°) = √3/2 ✓; cos(60°) = sin(30°) = ½ ✓ — the two acute angles of a right triangle always sum to 90°.
+\n • Supplementary relation: sin(150°) = sin(180°−30°) = sin(30°) = ½; cos(150°) = −cos(30°) = −√3/2 — used to extend trig ratios beyond 90°.</string>
+
+    <!-- Q: In a right triangle with hypotenuse 10 and α=30°, what is the opposite side? Answer: 5 -->
+    <string name="SectionSixTheoryWorkedExQuestion_13">In a right triangle with hypotenuse 10 and angle α = 30°, what is the length of the opposite side?</string>
+    <string name="SectionSixTheoryWorkedExAnswerOne_13">5√3</string>
+    <string name="SectionSixTheoryWorkedExAnswerTwo_13">10</string>
+    <string name="SectionSixTheoryWorkedExAnswerThree_13">5</string>
+    <string name="SectionSixTheoryWorkedExCorrectAnswer_13">5</string>
+
+    <string name="SectionSixQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecSixQuizAnswer1_1_13">one</string>
+    <string name="SecSixQuizAnswer2_1_13">two</string>
+    <string name="SecSixQuizAnswer3_1_13">three</string>
+    <string name="SecSixQuizAnswer1_2_13">one</string>
+    <string name="SecSixQuizAnswer2_2_13">two</string>
+    <string name="SecSixQuizAnswer3_2_13">three</string>
+    <string name="SecSixQuizAnswer1_3_13">one</string>
+    <string name="SecSixQuizAnswer2_3_13">two</string>
+    <string name="SecSixQuizAnswer3_3_13">three</string>
+    <string name="SecSixQuizAnswer1_4_13">one</string>
+    <string name="SecSixQuizAnswer2_4_13">two</string>
+    <string name="SecSixQuizAnswer3_4_13">three</string>
+    <string name="SecSixQuizAnswer1_5_13">one</string>
+    <string name="SecSixQuizAnswer2_5_13">two</string>
+    <string name="SecSixQuizAnswer3_5_13">three</string>
+    <string name="SectionSixAnswerOne_13">one</string>
+    <string name="SectionSixAnswerTwo_13">two</string>
+    <string name="SectionSixAnswerThree_13">three</string>
+    <string name="SectionSixAnswerFour_13">one</string>
+    <string name="SectionSixAnswerFive_13">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--           SECTION SEVEN: LAW OF SINES & LAW OF COSINES          -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- Fixed typos: 13R → 2R and 13bc → 2bc -->
     <string name="SectionSevenTheoryDef_13">• Theorem of Sines: a/sinα=b/sinβ=c/sinγ=2R.
 \n • Theorem of Cosines: a²=b²+c²−2bc·cosα.
 \n • Relates sides and angles of a triangle.</string>
+
+    <!-- Q: In the Law of Sines, a/sinα equals 2R. What is R? Answer: circumscribed circle radius -->
+    <string name="SectionSevenTheoryDefQuestion_13">In the Law of Sines, a/sinα = 2R. What does R represent?</string>
+    <string name="SectionSevenTheoryDefAnswerOne_13">inscribed circle radius</string>
+    <string name="SectionSevenTheoryDefAnswerTwo_13">circumscribed circle radius</string>
+    <string name="SectionSevenTheoryDefAnswerThree_13">altitude of the triangle</string>
+    <string name="SectionSevenTheoryDefCorrectAnswer_13">circumscribed circle radius</string>
 
     <string name="SectionSevenTheoryProperties_13">• In a parallelogram, diagonal squares sum equals side squares.
 \n • The greater side lies opposite the greater angle.
 \n • Expresses side-angle relationships.</string>
 
-    <string name="SectionSevenTheoryWorkedExamples_13">!!! Worked Examples !!!</string>
+    <!-- Q: Does the greater side of a triangle always lie opposite the greater angle? Answer: True -->
+    <string name="SectionSevenTheoryPropsQuestion_13">In a triangle, does the greater side always lie opposite the greater angle?</string>
+    <string name="SectionSevenTheoryPropsAnswerOne_13">True</string>
+    <string name="SectionSevenTheoryPropsAnswerTwo_13">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionSevenTheoryPropsAnswerThree_13"></string>
+    <string name="SectionSevenTheoryPropsCorrectAnswer_13">True</string>
+
+    <string name="SectionSevenTheoryWorkedExamples_13">• Law of Sines example: triangle with a = 8, α = 30°, β = 45°. Then b/sin45° = 8/sin30° = 16, so b = 16 × sin(45°) = 16 × (√2/2) = 8√2.
+\n • Law of Cosines example: triangle with b = 5, c = 7, α = 60°. Then a² = 25 + 49 − 2×5×7×cos(60°) = 74 − 70×½ = 74 − 35 = 39, so a = √39.
+\n • Parallelogram diagonal rule: if sides are a and b and one angle is α, then the diagonals d1 and d2 satisfy d1² + d2² = 2(a² + b²) — derived by applying the Law of Cosines to both triangles formed by the diagonal.</string>
+
+    <!-- Q: Triangle b=5, c=7, α=60°. What is a²? Answer: 39 -->
+    <string name="SectionSevenTheoryWorkedExQuestion_13">In a triangle with b = 5, c = 7, and α = 60°, what is a² (using the Law of Cosines)?</string>
+    <string name="SectionSevenTheoryWorkedExAnswerOne_13">74</string>
+    <string name="SectionSevenTheoryWorkedExAnswerTwo_13">39</string>
+    <string name="SectionSevenTheoryWorkedExAnswerThree_13">35</string>
+    <string name="SectionSevenTheoryWorkedExCorrectAnswer_13">39</string>
+
     <string name="SectionSevenQuiz_13">!!! Solve the Quiz !!!</string>
+    <string name="SecSevenQuizAnswer1_1_13">one</string>
+    <string name="SecSevenQuizAnswer2_1_13">two</string>
+    <string name="SecSevenQuizAnswer3_1_13">three</string>
+    <string name="SecSevenQuizAnswer1_2_13">one</string>
+    <string name="SecSevenQuizAnswer2_2_13">two</string>
+    <string name="SecSevenQuizAnswer3_2_13">three</string>
+    <string name="SecSevenQuizAnswer1_3_13">one</string>
+    <string name="SecSevenQuizAnswer2_3_13">two</string>
+    <string name="SecSevenQuizAnswer3_3_13">three</string>
+    <string name="SecSevenQuizAnswer1_4_13">one</string>
+    <string name="SecSevenQuizAnswer2_4_13">two</string>
+    <string name="SecSevenQuizAnswer3_4_13">three</string>
+    <string name="SecSevenQuizAnswer1_5_13">one</string>
+    <string name="SecSevenQuizAnswer2_5_13">two</string>
+    <string name="SecSevenQuizAnswer3_5_13">three</string>
+    <string name="SectionSevenAnswerOne_13">one</string>
+    <string name="SectionSevenAnswerTwo_13">two</string>
+    <string name="SectionSevenAnswerThree_13">three</string>
+    <string name="SectionSevenAnswerFour_13">one</string>
+    <string name="SectionSevenAnswerFive_13">two</string>
 </resources>

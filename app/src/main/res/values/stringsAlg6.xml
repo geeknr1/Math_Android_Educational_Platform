@@ -2,34 +2,280 @@
 <resources>
     <string name="app_name_6">License_Project_2</string>
 
+    <!-- ===================== SECTION ONE: Function – Definition ===================== -->
     <string name="SectionOneTheoryDef_6">Function: assigns each x in domain to one y. x–independent, y–dependent. Forms: analytic, tabular, graphical. Notation: y=f(x).</string>
+    <string name="SectionOneTheoryDefQuestion_6">If f(x) = 2x + 1, what is f(3)?</string>
+    <string name="SectionOneTheoryDefAnswerOne_6">5</string>
+    <string name="SectionOneTheoryDefAnswerTwo_6">7</string>
+    <string name="SectionOneTheoryDefAnswerThree_6">9</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_6">7</string>
+
     <string name="SectionOneTheoryProperties_6">Analytic: formula; Tabular: values; Graphical: plot points. Domain → x, Range → y. Used for calc, observation, visualization.</string>
-    <string name="SectionOneTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
+    <string name="SectionOneTheoryPropsQuestion_6">What is the range value of f(x) = x² when x = 4?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_6">8</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_6">16</string>
+    <string name="SectionOneTheoryPropsAnswerThree_6">12</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_6">16</string>
+
+    <string name="SectionOneTheoryWorkedExamples_6">Example 1: f(x) = 3x − 2. Find f(4). Substitute: f(4) = 3·4 − 2 = 10. ✓
+Example 2: f(x) = x². Domain: all real numbers. Range: y ≥ 0. ✓
+Example 3: g(x) = 1/x. Domain: all x ≠ 0. Find g(5) = 1/5. ✓</string>
+    <string name="SectionOneTheoryWorkedExQuestion_6">If f(x) = x² − 1, what is f(0)?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_6">-1</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_6">0</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_6">1</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_6">-1</string>
+
     <string name="SectionOneQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_6">one</string>
+    <string name="SecOneQuizAnswer2_1_6">two</string>
+    <string name="SecOneQuizAnswer3_1_6">three</string>
+    <string name="SecOneQuizAnswer1_2_6">one</string>
+    <string name="SecOneQuizAnswer2_2_6">two</string>
+    <string name="SecOneQuizAnswer3_2_6">three</string>
+    <string name="SecOneQuizAnswer1_3_6">one</string>
+    <string name="SecOneQuizAnswer2_3_6">two</string>
+    <string name="SecOneQuizAnswer3_3_6">three</string>
+    <string name="SecOneQuizAnswer1_4_6">one</string>
+    <string name="SecOneQuizAnswer2_4_6">two</string>
+    <string name="SecOneQuizAnswer3_4_6">three</string>
+    <string name="SecOneQuizAnswer1_5_6">one</string>
+    <string name="SecOneQuizAnswer2_5_6">two</string>
+    <string name="SecOneQuizAnswer3_5_6">three</string>
+    <string name="SectionOneAnswerOne_6">one</string>
+    <string name="SectionOneAnswerTwo_6">two</string>
+    <string name="SectionOneAnswerThree_6">three</string>
+    <string name="SectionOneAnswerFour_6">one</string>
+    <string name="SectionOneAnswerFive_6">two</string>
 
+    <!-- ===================== SECTION TWO: Properties of Functions ===================== -->
     <string name="SectionTwoTheoryDef_6">Even: f(-x)=f(x). Odd: f(-x)=-f(x). Monotone: increasing or decreasing. Constant sign: f(x)&gt;0 or &lt;0. Roots: f(x)=0.</string>
+    <string name="SectionTwoTheoryDefQuestion_6">Is f(x) = x² an even function?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_6">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_6">False</string>
+    <string name="SectionTwoTheoryDefAnswerThree_6">Neither</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_6">True</string>
+
     <string name="SectionTwoTheoryProperties_6">Even → y-axis symmetry; Odd → origin symmetry. Increasing rises, decreasing falls. Roots at x-axis intersections.</string>
-    <string name="SectionTwoTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryPropsQuestion_6">Does an odd function have origin symmetry?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_6">True</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_6">False</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_6">Neither</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_6">True</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_6">Example 1: f(x) = x³. Check oddness: f(−x) = (−x)³ = −x³ = −f(x). Odd function. ✓
+Example 2: f(x) = x² + 1. Check evenness: f(−x) = (−x)² + 1 = x² + 1 = f(x). Even function. ✓
+Example 3: f(x) = x + 1. f(−x) = −x + 1. Neither f(x) nor −f(x). Neither even nor odd. ✓</string>
+    <string name="SectionTwoTheoryWorkedExQuestion_6">Is f(x) = x³ an odd function?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_6">True</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_6">False</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_6">Neither</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_6">True</string>
+
     <string name="SectionTwoQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_6">one</string>
+    <string name="SecTwoQuizAnswer2_1_6">two</string>
+    <string name="SecTwoQuizAnswer3_1_6">three</string>
+    <string name="SecTwoQuizAnswer1_2_6">one</string>
+    <string name="SecTwoQuizAnswer2_2_6">two</string>
+    <string name="SecTwoQuizAnswer3_2_6">three</string>
+    <string name="SecTwoQuizAnswer1_3_6">one</string>
+    <string name="SecTwoQuizAnswer2_3_6">two</string>
+    <string name="SecTwoQuizAnswer3_3_6">three</string>
+    <string name="SecTwoQuizAnswer1_4_6">one</string>
+    <string name="SecTwoQuizAnswer2_4_6">two</string>
+    <string name="SecTwoQuizAnswer3_4_6">three</string>
+    <string name="SecTwoQuizAnswer1_5_6">one</string>
+    <string name="SecTwoQuizAnswer2_5_6">two</string>
+    <string name="SecTwoQuizAnswer3_5_6">three</string>
+    <string name="SectionTwoAnswerOne_6">one</string>
+    <string name="SectionTwoAnswerTwo_6">two</string>
+    <string name="SectionTwoAnswerThree_6">three</string>
+    <string name="SectionTwoAnswerFour_6">one</string>
+    <string name="SectionTwoAnswerFive_6">two</string>
 
+    <!-- ===================== SECTION THREE: Inverse Function ===================== -->
     <string name="SectionThreeTheoryDef_6">Inverse: exists if each y has unique x. f(x)↔g(x). Monotone functions have inverses. Find inverse by solving for x in terms of y.</string>
+    <string name="SectionThreeTheoryDefQuestion_6">Does the function f(x) = 2x + 4 have an inverse?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_6">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_6">False</string>
+    <string name="SectionThreeTheoryDefAnswerThree_6">Neither</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_6">True</string>
+
     <string name="SectionThreeTheoryProperties_6">Graphs symmetric about y=x. M(x₀,y₀) ↔ N(y₀,x₀). Increasing↔increasing, decreasing↔decreasing. Used for checking inverses.</string>
-    <string name="SectionThreeTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
+    <string name="SectionThreeTheoryPropsQuestion_6">Are the graphs of a function and its inverse symmetric about the line y = x?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_6">True</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_6">False</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_6">Neither</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_6">True</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_6">Example 1: Find the inverse of f(x) = 2x + 4. Solve for x: y = 2x + 4 → x = (y − 4)/2. So f⁻¹(x) = (x − 4)/2. ✓
+Example 2: Find the inverse of f(x) = x³. Solve: y = x³ → x = ∛y. So f⁻¹(x) = ∛x. ✓
+Example 3: Verify: f(x) = 3x, f⁻¹(x) = x/3. Check: f(f⁻¹(x)) = 3·(x/3) = x. ✓</string>
+    <string name="SectionThreeTheoryWorkedExQuestion_6">What is the inverse of f(x) = x/2? Enter the coefficient of x in f⁻¹(x).</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_6">1/2</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_6">2</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_6">3</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_6">2</string>
+
     <string name="SectionThreeQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_6">one</string>
+    <string name="SecThreeQuizAnswer2_1_6">two</string>
+    <string name="SecThreeQuizAnswer3_1_6">three</string>
+    <string name="SecThreeQuizAnswer1_2_6">one</string>
+    <string name="SecThreeQuizAnswer2_2_6">two</string>
+    <string name="SecThreeQuizAnswer3_2_6">three</string>
+    <string name="SecThreeQuizAnswer1_3_6">one</string>
+    <string name="SecThreeQuizAnswer2_3_6">two</string>
+    <string name="SecThreeQuizAnswer3_3_6">three</string>
+    <string name="SecThreeQuizAnswer1_4_6">one</string>
+    <string name="SecThreeQuizAnswer2_4_6">two</string>
+    <string name="SecThreeQuizAnswer3_4_6">three</string>
+    <string name="SecThreeQuizAnswer1_5_6">one</string>
+    <string name="SecThreeQuizAnswer2_5_6">two</string>
+    <string name="SecThreeQuizAnswer3_5_6">three</string>
+    <string name="SectionThreeAnswerOne_6">one</string>
+    <string name="SectionThreeAnswerTwo_6">two</string>
+    <string name="SectionThreeAnswerThree_6">three</string>
+    <string name="SectionThreeAnswerFour_6">one</string>
+    <string name="SectionThreeAnswerFive_6">two</string>
 
+    <!-- ===================== SECTION FOUR: Basic Function Types and Their Graphs ===================== -->
     <string name="SectionFourTheoryDef_6">Basic: Linear y=kx+b, Inverse y=k/x, Quadratic y=ax²+bx+c, Power y=xⁿ, Logarithmic y=logₐx. Shapes: line, hyperbola, parabola.</string>
+    <string name="SectionFourTheoryDefQuestion_6">What is the shape of the graph of y = k/x (k ≠ 0)?</string>
+    <string name="SectionFourTheoryDefAnswerOne_6">line</string>
+    <string name="SectionFourTheoryDefAnswerTwo_6">parabola</string>
+    <string name="SectionFourTheoryDefAnswerThree_6">hyperbola</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_6">hyperbola</string>
+
     <string name="SectionFourTheoryProperties_6">|f(x)| reflects negative part over x-axis. Linear/quadratic shape from coefficients. Hyperbola position → sign of k. Parabola opens up (a&gt;0) or down (a&lt;0).</string>
-    <string name="SectionFourTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
+    <string name="SectionFourTheoryPropsQuestion_6">If a &gt; 0 in y = ax² + bx + c, does the parabola open upward?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_6">True</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_6">False</string>
+    <string name="SectionFourTheoryPropsAnswerThree_6">Neither</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_6">True</string>
+
+    <string name="SectionFourTheoryWorkedExamples_6">Example 1: y = 2x + 3. Linear function. Slope = 2, y-intercept = 3. Graph is a straight line rising left to right. ✓
+Example 2: y = x². Quadratic. Vertex at (0,0). Opens upward (a=1&gt;0). ✓
+Example 3: y = 1/x. Hyperbola in quadrants 1 and 3 (k=1&gt;0). Defined for all x ≠ 0. ✓</string>
+    <string name="SectionFourTheoryWorkedExQuestion_6">For y = −x², does the parabola open upward or downward? Enter 1 for upward, -1 for downward.</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_6">1</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_6">-1</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_6">0</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_6">-1</string>
+
     <string name="SectionFourQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_6">one</string>
+    <string name="SecFourQuizAnswer2_1_6">two</string>
+    <string name="SecFourQuizAnswer3_1_6">three</string>
+    <string name="SecFourQuizAnswer1_2_6">one</string>
+    <string name="SecFourQuizAnswer2_2_6">two</string>
+    <string name="SecFourQuizAnswer3_2_6">three</string>
+    <string name="SecFourQuizAnswer1_3_6">one</string>
+    <string name="SecFourQuizAnswer2_3_6">two</string>
+    <string name="SecFourQuizAnswer3_3_6">three</string>
+    <string name="SecFourQuizAnswer1_4_6">one</string>
+    <string name="SecFourQuizAnswer2_4_6">two</string>
+    <string name="SecFourQuizAnswer3_4_6">three</string>
+    <string name="SecFourQuizAnswer1_5_6">one</string>
+    <string name="SecFourQuizAnswer2_5_6">two</string>
+    <string name="SecFourQuizAnswer3_5_6">three</string>
+    <string name="SectionFourAnswerOne_6">one</string>
+    <string name="SectionFourAnswerTwo_6">two</string>
+    <string name="SectionFourAnswerThree_6">three</string>
+    <string name="SectionFourAnswerFour_6">one</string>
+    <string name="SectionFourAnswerFive_6">two</string>
 
+    <!-- ===================== SECTION FIVE: Equations and Graphs ===================== -->
     <string name="SectionFiveTheoryDef_6">Solve f(x)=0 → find x-intercepts. g(x)=h(x) → intersection points. Circle: x²+y²=r². Systems: intersections of graphs; lines → one, none, or ∞ solutions.</string>
-    <string name="SectionFiveTheoryProperties_6">!!! Empty !!!</string>
-    <string name="SectionFiveTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
-    <string name="SectionFiveQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SectionFiveTheoryDefQuestion_6">How many x-intercepts does f(x) = x² − 4 have?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_6">0</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_6">1</string>
+    <string name="SectionFiveTheoryDefAnswerThree_6">2</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_6">2</string>
 
+    <string name="SectionFiveTheoryProperties_6">The x-intercepts of f(x) are the roots of f(x) = 0. Two graphs intersect where their y-values are equal. A circle x²+y²=r² has center (0,0) and radius r. Systems of equations correspond to intersections of their graphs.</string>
+    <string name="SectionFiveTheoryPropsQuestion_6">Does the circle x² + y² = 25 have radius 5?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_6">True</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_6">False</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_6">Neither</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_6">True</string>
+
+    <string name="SectionFiveTheoryWorkedExamples_6">Example 1: Solve f(x) = x² − 9 = 0. Roots: x = ±3. These are x-intercepts of the parabola. ✓
+Example 2: Find intersections of y = x and y = x². Set equal: x = x² → x²−x=0 → x(x−1)=0 → x=0 or x=1. Points: (0,0) and (1,1). ✓
+Example 3: Circle x²+y²=16 has radius 4. Point (4,0) is on the circle: 16+0=16. ✓</string>
+    <string name="SectionFiveTheoryWorkedExQuestion_6">What is the radius of the circle x² + y² = 49?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_6">5</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_6">7</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_6">9</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_6">7</string>
+
+    <string name="SectionFiveQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_6">one</string>
+    <string name="SecFiveQuizAnswer2_1_6">two</string>
+    <string name="SecFiveQuizAnswer3_1_6">three</string>
+    <string name="SecFiveQuizAnswer1_2_6">one</string>
+    <string name="SecFiveQuizAnswer2_2_6">two</string>
+    <string name="SecFiveQuizAnswer3_2_6">three</string>
+    <string name="SecFiveQuizAnswer1_3_6">one</string>
+    <string name="SecFiveQuizAnswer2_3_6">two</string>
+    <string name="SecFiveQuizAnswer3_3_6">three</string>
+    <string name="SecFiveQuizAnswer1_4_6">one</string>
+    <string name="SecFiveQuizAnswer2_4_6">two</string>
+    <string name="SecFiveQuizAnswer3_4_6">three</string>
+    <string name="SecFiveQuizAnswer1_5_6">one</string>
+    <string name="SecFiveQuizAnswer2_5_6">two</string>
+    <string name="SecFiveQuizAnswer3_5_6">three</string>
+    <string name="SectionFiveAnswerOne_6">one</string>
+    <string name="SectionFiveAnswerTwo_6">two</string>
+    <string name="SectionFiveAnswerThree_6">three</string>
+    <string name="SectionFiveAnswerFour_6">one</string>
+    <string name="SectionFiveAnswerFive_6">two</string>
+
+    <!-- ===================== SECTION SIX: Inequalities and Graphs ===================== -->
     <string name="SectionSixTheoryDef_6">Solve f(x)&gt;0 → x where graph above axis. Systems: intersection of solution sets. In 2 vars → half-planes; system → overlap region.</string>
-    <string name="SectionSixTheoryProperties_6">!!! Empty !!!</string>
-    <string name="SectionSixTheoryWorkedExamples_6">!!! Worked Examples !!!</string>
+    <string name="SectionSixTheoryDefQuestion_6">Is x = 3 in the solution set of f(x) = x − 2 &gt; 0?</string>
+    <string name="SectionSixTheoryDefAnswerOne_6">True</string>
+    <string name="SectionSixTheoryDefAnswerTwo_6">False</string>
+    <string name="SectionSixTheoryDefAnswerThree_6">Neither</string>
+    <string name="SectionSixTheoryDefCorrectAnswer_6">True</string>
+
+    <string name="SectionSixTheoryProperties_6">To solve f(x) &gt; 0 graphically, find the intervals where the graph lies above the x-axis. For inequalities in two variables (e.g. y &gt; kx + b), the solution is a half-plane. The boundary line is included for ≥ or ≤, and excluded for &gt; or &lt;.</string>
+    <string name="SectionSixTheoryPropsQuestion_6">For the inequality y &gt; 2x + 1, is the boundary line y = 2x + 1 included in the solution?</string>
+    <string name="SectionSixTheoryPropsAnswerOne_6">True</string>
+    <string name="SectionSixTheoryPropsAnswerTwo_6">False</string>
+    <string name="SectionSixTheoryPropsAnswerThree_6">Neither</string>
+    <string name="SectionSixTheoryPropsCorrectAnswer_6">False</string>
+
+    <string name="SectionSixTheoryWorkedExamples_6">Example 1: Solve x² − 4 &gt; 0 graphically. Roots at x = ±2. Parabola is above x-axis for x &lt; −2 or x &gt; 2. Solution: (−∞,−2) ∪ (2,+∞). ✓
+Example 2: Solve x − 3 &gt; 0. Graph y = x − 3 is above x-axis when x &gt; 3. Solution: (3, +∞). ✓
+Example 3: Solve system x &gt; 1 and y &lt; 3. Solution is the overlap region: all points (x,y) with x &gt; 1 and y &lt; 3. ✓</string>
+    <string name="SectionSixTheoryWorkedExQuestion_6">For f(x) = x − 5, for which x-value does f(x) = 0 (boundary of f(x) &gt; 0)?</string>
+    <string name="SectionSixTheoryWorkedExAnswerOne_6">3</string>
+    <string name="SectionSixTheoryWorkedExAnswerTwo_6">5</string>
+    <string name="SectionSixTheoryWorkedExAnswerThree_6">7</string>
+    <string name="SectionSixTheoryWorkedExCorrectAnswer_6">5</string>
+
     <string name="SectionSixQuiz_6">!!! Solve the Quiz !!!</string>
+    <string name="SecSixQuizAnswer1_1_6">one</string>
+    <string name="SecSixQuizAnswer2_1_6">two</string>
+    <string name="SecSixQuizAnswer3_1_6">three</string>
+    <string name="SecSixQuizAnswer1_2_6">one</string>
+    <string name="SecSixQuizAnswer2_2_6">two</string>
+    <string name="SecSixQuizAnswer3_2_6">three</string>
+    <string name="SecSixQuizAnswer1_3_6">one</string>
+    <string name="SecSixQuizAnswer2_3_6">two</string>
+    <string name="SecSixQuizAnswer3_3_6">three</string>
+    <string name="SecSixQuizAnswer1_4_6">one</string>
+    <string name="SecSixQuizAnswer2_4_6">two</string>
+    <string name="SecSixQuizAnswer3_4_6">three</string>
+    <string name="SecSixQuizAnswer1_5_6">one</string>
+    <string name="SecSixQuizAnswer2_5_6">two</string>
+    <string name="SecSixQuizAnswer3_5_6">three</string>
+    <string name="SectionSixAnswerOne_6">one</string>
+    <string name="SectionSixAnswerTwo_6">two</string>
+    <string name="SectionSixAnswerThree_6">three</string>
+    <string name="SectionSixAnswerFour_6">one</string>
+    <string name="SectionSixAnswerFive_6">two</string>
 
 </resources>

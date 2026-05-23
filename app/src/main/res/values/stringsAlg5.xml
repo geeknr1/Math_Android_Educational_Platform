@@ -2,74 +2,648 @@
 <resources>
     <string name="app_name_5">License_Project_2</string>
 
+    <!-- ===================== SECTION ONE: Equations – Definition ===================== -->
     <string name="SectionOneTheoryDef_5">Equation: A=B for some variable values. Unknowns x,y,z; parameters a,b,c.</string>
+    <string name="SectionOneTheoryDefQuestion_5">Is x=3 a root of the equation 2x − 6 = 0?</string>
+    <string name="SectionOneTheoryDefAnswerOne_5">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionOneTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_5">True</string>
+
     <string name="SectionOneTheoryProperties_5">Root makes equality true. Equivalent equations share roots. Transform carefully to avoid false roots.</string>
-    <string name="SectionOneTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionOneTheoryPropsQuestion_5">Which value of x satisfies 3x − 9 = 0?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_5">2</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_5">3</string>
+    <string name="SectionOneTheoryPropsAnswerThree_5">4</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_5">3</string>
+
+    <string name="SectionOneTheoryWorkedExamples_5">Example 1: Solve x + 5 = 12. Subtract 5 from both sides: x = 7. ✓ Check: 7 + 5 = 12.
+Example 2: Solve 2x = 10. Divide both sides by 2: x = 5. ✓ Check: 2·5 = 10.
+Example 3: Solve x/3 = 4. Multiply both sides by 3: x = 12. ✓ Check: 12/3 = 4.</string>
+    <string name="SectionOneTheoryWorkedExQuestion_5">What is the root of the equation x + 7 = 15?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_5">6</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_5">7</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_5">8</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_5">8</string>
+
     <string name="SectionOneQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_5">one</string>
+    <string name="SecOneQuizAnswer2_1_5">two</string>
+    <string name="SecOneQuizAnswer3_1_5">three</string>
+    <string name="SecOneQuizAnswer1_2_5">one</string>
+    <string name="SecOneQuizAnswer2_2_5">two</string>
+    <string name="SecOneQuizAnswer3_2_5">three</string>
+    <string name="SecOneQuizAnswer1_3_5">one</string>
+    <string name="SecOneQuizAnswer2_3_5">two</string>
+    <string name="SecOneQuizAnswer3_3_5">three</string>
+    <string name="SecOneQuizAnswer1_4_5">one</string>
+    <string name="SecOneQuizAnswer2_4_5">two</string>
+    <string name="SecOneQuizAnswer3_4_5">three</string>
+    <string name="SecOneQuizAnswer1_5_5">one</string>
+    <string name="SecOneQuizAnswer2_5_5">two</string>
+    <string name="SecOneQuizAnswer3_5_5">three</string>
+    <string name="SectionOneAnswerOne_5">one</string>
+    <string name="SectionOneAnswerTwo_5">two</string>
+    <string name="SectionOneAnswerThree_5">three</string>
+    <string name="SectionOneAnswerFour_5">one</string>
+    <string name="SectionOneAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION TWO: Linear Equations ===================== -->
     <string name="SectionTwoTheoryDef_5">Linear eq: ax=b (a≠0). First-degree equation in one unknown.</string>
+    <string name="SectionTwoTheoryDefQuestion_5">Is ax = b a linear equation when a = 0?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_5">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionTwoTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_5">False</string>
+
     <string name="SectionTwoTheoryProperties_5">If a≠0 → x=b/a. If a=0 → none or ∞ roots. ax=x+1 → one root if a≠1.</string>
-    <string name="SectionTwoTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryPropsQuestion_5">What is the solution of 4x = 20?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_5">4</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_5">5</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_5">6</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_5">5</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_5">Example 1: Solve 3x = 12. Divide by 3: x = 4. \n
+Example 2: Solve 5x − 10 = 0. Add 10: 5x = 10, divide by 5: x = 2. \n
+Example 3: Solve 0·x = 5. No solution exists (a = 0, b ≠ 0). </string>
+    <string name="SectionTwoTheoryWorkedExQuestion_5">What is the solution of 7x − 14 = 0?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_5">1</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_5">2</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_5">3</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_5">2</string>
+
     <string name="SectionTwoQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_5">one</string>
+    <string name="SecTwoQuizAnswer2_1_5">two</string>
+    <string name="SecTwoQuizAnswer3_1_5">three</string>
+    <string name="SecTwoQuizAnswer1_2_5">one</string>
+    <string name="SecTwoQuizAnswer2_2_5">two</string>
+    <string name="SecTwoQuizAnswer3_2_5">three</string>
+    <string name="SecTwoQuizAnswer1_3_5">one</string>
+    <string name="SecTwoQuizAnswer2_3_5">two</string>
+    <string name="SecTwoQuizAnswer3_3_5">three</string>
+    <string name="SecTwoQuizAnswer1_4_5">one</string>
+    <string name="SecTwoQuizAnswer2_4_5">two</string>
+    <string name="SecTwoQuizAnswer3_4_5">three</string>
+    <string name="SecTwoQuizAnswer1_5_5">one</string>
+    <string name="SecTwoQuizAnswer2_5_5">two</string>
+    <string name="SecTwoQuizAnswer3_5_5">three</string>
+    <string name="SectionTwoAnswerOne_5">one</string>
+    <string name="SectionTwoAnswerTwo_5">two</string>
+    <string name="SectionTwoAnswerThree_5">three</string>
+    <string name="SectionTwoAnswerFour_5">one</string>
+    <string name="SectionTwoAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION THREE: Quadratic Equations ===================== -->
     <string name="SectionThreeTheoryDef_5">Quadratic: ax²+bx+c=0, a≠0. D=b²−4ac decides roots. Formula: x=(-b±√D)/2a. Viète: x₁+x₂=-b/a, x₁x₂=c/a.</string>
+    <string name="SectionThreeTheoryDefQuestion_5">How many roots does ax²+bx+c=0 have when D = 0?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_5">0</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_5">1</string>
+    <string name="SectionThreeTheoryDefAnswerThree_5">2</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_5">1</string>
+
     <string name="SectionThreeTheoryProperties_5">Viète links roots and coefficients. D>0→2 roots, D=0→1, D&lt;0→none.</string>
-    <string name="SectionThreeTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionThreeTheoryPropsQuestion_5">For x²− 5x + 6 = 0, what is the product of the roots (x₁·x₂)?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_5">5</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_5">6</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_5">-6</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_5">6</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_5">Example 1: Solve x² − 5x + 6 = 0. D = 25 − 24 = 1. x = (5 ± 1)/2 → x₁ = 3, x₂ = 2. \n
+Example 2: Solve x² − 4x + 4 = 0. D = 16 − 16 = 0. x = 4/2 = 2 (one root). \n
+Example 3: Solve x² + x + 1 = 0. D = 1 − 4 = −3 &lt; 0. No real roots. </string>
+    <string name="SectionThreeTheoryWorkedExQuestion_5">What is the discriminant D of x² − 4x + 3 = 0?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_5">4</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_5">8</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_5">12</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_5">4</string>
+
     <string name="SectionThreeQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_5">one</string>
+    <string name="SecThreeQuizAnswer2_1_5">two</string>
+    <string name="SecThreeQuizAnswer3_1_5">three</string>
+    <string name="SecThreeQuizAnswer1_2_5">one</string>
+    <string name="SecThreeQuizAnswer2_2_5">two</string>
+    <string name="SecThreeQuizAnswer3_2_5">three</string>
+    <string name="SecThreeQuizAnswer1_3_5">one</string>
+    <string name="SecThreeQuizAnswer2_3_5">two</string>
+    <string name="SecThreeQuizAnswer3_3_5">three</string>
+    <string name="SecThreeQuizAnswer1_4_5">one</string>
+    <string name="SecThreeQuizAnswer2_4_5">two</string>
+    <string name="SecThreeQuizAnswer3_4_5">three</string>
+    <string name="SecThreeQuizAnswer1_5_5">one</string>
+    <string name="SecThreeQuizAnswer2_5_5">two</string>
+    <string name="SecThreeQuizAnswer3_5_5">three</string>
+    <string name="SectionThreeAnswerOne_5">one</string>
+    <string name="SectionThreeAnswerTwo_5">two</string>
+    <string name="SectionThreeAnswerThree_5">three</string>
+    <string name="SectionThreeAnswerFour_5">one</string>
+    <string name="SectionThreeAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION FOUR: Factoring a Quadratic Trinomial ===================== -->
     <string name="SectionFourTheoryDef_5">Quadratic trinomial ax²+bx+c=0 → roots x₁,x₂.</string>
-    <string name="SectionFourTheoryProperties_5">Factor form: a(x−x₁)(x−x₂), from Viète’s theorem.</string>
-    <string name="SectionFourTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFourTheoryDefQuestion_5">Is it true that ax²+bx+c = a(x−x₁)(x−x₂) when x₁ and x₂ are the roots?</string>
+    <string name="SectionFourTheoryDefAnswerOne_5">True</string>
+    <string name="SectionFourTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionFourTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_5">True</string>
+
+    <string name="SectionFourTheoryProperties_5">Factor form: a(x−x₁)(x−x₂), from Viète\'s theorem.</string>
+    <string name="SectionFourTheoryPropsQuestion_5">Factor x² − 7x + 12. What are the roots x₁ and x₂ (enter the larger root)?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_5">3</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_5">4</string>
+    <string name="SectionFourTheoryPropsAnswerThree_5">5</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_5">4</string>
+
+    <string name="SectionFourTheoryWorkedExamples_5">Example 1: Factor x² − 5x + 6. Roots: x₁=2, x₂=3 → (x−2)(x−3). \n
+Example 2: Factor 2x² − 8x + 6. Roots: x₁=1, x₂=3 → 2(x−1)(x−3). \n
+Example 3: Factor x² − 4. Roots: x₁=2, x₂=−2 → (x−2)(x+2).</string>
+    <string name="SectionFourTheoryWorkedExQuestion_5">What is the factored form of x² − 9? Enter the positive root.</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_5">2</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_5">3</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_5">4</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_5">3</string>
+
     <string name="SectionFourQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_5">one</string>
+    <string name="SecFourQuizAnswer2_1_5">two</string>
+    <string name="SecFourQuizAnswer3_1_5">three</string>
+    <string name="SecFourQuizAnswer1_2_5">one</string>
+    <string name="SecFourQuizAnswer2_2_5">two</string>
+    <string name="SecFourQuizAnswer3_2_5">three</string>
+    <string name="SecFourQuizAnswer1_3_5">one</string>
+    <string name="SecFourQuizAnswer2_3_5">two</string>
+    <string name="SecFourQuizAnswer3_3_5">three</string>
+    <string name="SecFourQuizAnswer1_4_5">one</string>
+    <string name="SecFourQuizAnswer2_4_5">two</string>
+    <string name="SecFourQuizAnswer3_4_5">three</string>
+    <string name="SecFourQuizAnswer1_5_5">one</string>
+    <string name="SecFourQuizAnswer2_5_5">two</string>
+    <string name="SecFourQuizAnswer3_5_5">three</string>
+    <string name="SectionFourAnswerOne_5">one</string>
+    <string name="SectionFourAnswerTwo_5">two</string>
+    <string name="SectionFourAnswerThree_5">three</string>
+    <string name="SectionFourAnswerFour_5">one</string>
+    <string name="SectionFourAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION FIVE: Higher-Degree Equations ===================== -->
     <string name="SectionFiveTheoryDef_5">Higher-degree eq: a₀xⁿ+...+aₙ=0. Use factoring or substitution. Biquadratic: ax⁴+bx²+c=0 → y=x².</string>
+    <string name="SectionFiveTheoryDefQuestion_5">In the biquadratic equation ax⁴+bx²+c=0, what substitution is used?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_5">y = x</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_5">y = x²</string>
+    <string name="SectionFiveTheoryDefAnswerThree_5">y = x³</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_5">y = x²</string>
+
     <string name="SectionFiveTheoryProperties_5">Factoring lowers degree. Substitution simplifies radicals. Check for extraneous roots.</string>
-    <string name="SectionFiveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFiveTheoryPropsQuestion_5">Is it necessary to check for extraneous roots after using substitution?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionFiveTheoryWorkedExamples_5">Example 1: Solve x⁴ − 5x² + 4 = 0. Let y = x². Then y² − 5y + 4 = 0 → y₁=1, y₂=4. So x² = 1 → x = ±1; x² = 4 → x = ±2. Four roots total. \n
+Example 2: Solve x³ − 8 = 0. Factor: (x−2)(x²+2x+4) = 0. Real root: x = 2. \n
+Example 3: Solve x⁴ − 16 = 0. Factor: (x²−4)(x²+4) = 0 → x = ±2. </string>
+    <string name="SectionFiveTheoryWorkedExQuestion_5">How many real roots does x⁴ − 5x² + 4 = 0 have?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_5">2</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_5">3</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_5">4</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_5">4</string>
+
     <string name="SectionFiveQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_5">one</string>
+    <string name="SecFiveQuizAnswer2_1_5">two</string>
+    <string name="SecFiveQuizAnswer3_1_5">three</string>
+    <string name="SecFiveQuizAnswer1_2_5">one</string>
+    <string name="SecFiveQuizAnswer2_2_5">two</string>
+    <string name="SecFiveQuizAnswer3_2_5">three</string>
+    <string name="SecFiveQuizAnswer1_3_5">one</string>
+    <string name="SecFiveQuizAnswer2_3_5">two</string>
+    <string name="SecFiveQuizAnswer3_3_5">three</string>
+    <string name="SecFiveQuizAnswer1_4_5">one</string>
+    <string name="SecFiveQuizAnswer2_4_5">two</string>
+    <string name="SecFiveQuizAnswer3_4_5">three</string>
+    <string name="SecFiveQuizAnswer1_5_5">one</string>
+    <string name="SecFiveQuizAnswer2_5_5">two</string>
+    <string name="SecFiveQuizAnswer3_5_5">three</string>
+    <string name="SectionFiveAnswerOne_5">one</string>
+    <string name="SectionFiveAnswerTwo_5">two</string>
+    <string name="SectionFiveAnswerThree_5">three</string>
+    <string name="SectionFiveAnswerFour_5">one</string>
+    <string name="SectionFiveAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION SIX: Equations with Several Unknowns ===================== -->
     <string name="SectionSixTheoryDef_5">Equations with several unknowns (e.g., x+2y=3). Solutions are ordered pairs/triples.</string>
+    <string name="SectionSixTheoryDefQuestion_5">Is (1, 1) a solution of x + 2y = 3?</string>
+    <string name="SectionSixTheoryDefAnswerOne_5">True</string>
+    <string name="SectionSixTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionSixTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionSixTheoryDefCorrectAnswer_5">True</string>
+
     <string name="SectionSixTheoryProperties_5">Systems solved simultaneously; may have one, none, or ∞ solutions.</string>
-    <string name="SectionSixTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionSixTheoryPropsQuestion_5">How many solutions can a system of two equations in two unknowns have at most if the lines are parallel?</string>
+    <string name="SectionSixTheoryPropsAnswerOne_5">0</string>
+    <string name="SectionSixTheoryPropsAnswerTwo_5">1</string>
+    <string name="SectionSixTheoryPropsAnswerThree_5">∞</string>
+    <string name="SectionSixTheoryPropsCorrectAnswer_5">0</string>
+
+    <string name="SectionSixTheoryWorkedExamples_5">Example 1: Is (2, 1) a solution of x + 2y = 4? Check: 2 + 2·1 = 4. \n.
+Example 2: Is (0, 3) a solution of x + 2y = 3? Check: 0 + 6 = 6 ≠ 3. \n.
+Example 3: How many solutions does x + y = 5 have? Infinitely many ordered pairs (e.g. (1,4), (2,3), …). \n</string>
+    <string name="SectionSixTheoryWorkedExQuestion_5">Is (3, 0) a solution of x + 2y = 3?</string>
+    <string name="SectionSixTheoryWorkedExAnswerOne_5">True</string>
+    <string name="SectionSixTheoryWorkedExAnswerTwo_5">False</string>
+    <string name="SectionSixTheoryWorkedExAnswerThree_5">Neither</string>
+    <string name="SectionSixTheoryWorkedExCorrectAnswer_5">True</string>
+
     <string name="SectionSixQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecSixQuizAnswer1_1_5">one</string>
+    <string name="SecSixQuizAnswer2_1_5">two</string>
+    <string name="SecSixQuizAnswer3_1_5">three</string>
+    <string name="SecSixQuizAnswer1_2_5">one</string>
+    <string name="SecSixQuizAnswer2_2_5">two</string>
+    <string name="SecSixQuizAnswer3_2_5">three</string>
+    <string name="SecSixQuizAnswer1_3_5">one</string>
+    <string name="SecSixQuizAnswer2_3_5">two</string>
+    <string name="SecSixQuizAnswer3_3_5">three</string>
+    <string name="SecSixQuizAnswer1_4_5">one</string>
+    <string name="SecSixQuizAnswer2_4_5">two</string>
+    <string name="SecSixQuizAnswer3_4_5">three</string>
+    <string name="SecSixQuizAnswer1_5_5">one</string>
+    <string name="SecSixQuizAnswer2_5_5">two</string>
+    <string name="SecSixQuizAnswer3_5_5">three</string>
+    <string name="SectionSixAnswerOne_5">one</string>
+    <string name="SectionSixAnswerTwo_5">two</string>
+    <string name="SectionSixAnswerThree_5">three</string>
+    <string name="SectionSixAnswerFour_5">one</string>
+    <string name="SectionSixAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION SEVEN: Systems of Linear Equations ===================== -->
     <string name="SectionSevenTheoryDef_5">System: a₁x+b₁y=c₁; a₂x+b₂y=c₂. Solve by substitution or addition.</string>
+    <string name="SectionSevenTheoryDefQuestion_5">What is the x-value in the solution of the system: x+y=5 and x−y=1?</string>
+    <string name="SectionSevenTheoryDefAnswerOne_5">2</string>
+    <string name="SectionSevenTheoryDefAnswerTwo_5">3</string>
+    <string name="SectionSevenTheoryDefAnswerThree_5">4</string>
+    <string name="SectionSevenTheoryDefCorrectAnswer_5">3</string>
+
     <string name="SectionSevenTheoryProperties_5">Cases: unique, none, or ∞. Lines intersect, parallel, or coincide.</string>
-    <string name="SectionSevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionSevenTheoryPropsQuestion_5">Do two parallel lines correspond to a system with no solution?</string>
+    <string name="SectionSevenTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionSevenTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionSevenTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionSevenTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionSevenTheoryWorkedExamples_5">Example 1: Solve x+y=5 and x−y=1. Add: 2x=6, x=3. Then y=2. Solution: (3,2). \n
+Example 2: Solve 2x+y=7 and x−y=2. Add: 3x=9, x=3. Then y=1. Solution: (3,1). \n
+Example 3: Solve x+y=3 and x+y=5. No solution — parallel lines. \n</string>
+    <string name="SectionSevenTheoryWorkedExQuestion_5">What is the y-value in the solution of x+y=5 and x−y=1?</string>
+    <string name="SectionSevenTheoryWorkedExAnswerOne_5">1</string>
+    <string name="SectionSevenTheoryWorkedExAnswerTwo_5">2</string>
+    <string name="SectionSevenTheoryWorkedExAnswerThree_5">3</string>
+    <string name="SectionSevenTheoryWorkedExCorrectAnswer_5">2</string>
+
     <string name="SectionSevenQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecSevenQuizAnswer1_1_5">one</string>
+    <string name="SecSevenQuizAnswer2_1_5">two</string>
+    <string name="SecSevenQuizAnswer3_1_5">three</string>
+    <string name="SecSevenQuizAnswer1_2_5">one</string>
+    <string name="SecSevenQuizAnswer2_2_5">two</string>
+    <string name="SecSevenQuizAnswer3_2_5">three</string>
+    <string name="SecSevenQuizAnswer1_3_5">one</string>
+    <string name="SecSevenQuizAnswer2_3_5">two</string>
+    <string name="SecSevenQuizAnswer3_3_5">three</string>
+    <string name="SecSevenQuizAnswer1_4_5">one</string>
+    <string name="SecSevenQuizAnswer2_4_5">two</string>
+    <string name="SecSevenQuizAnswer3_4_5">three</string>
+    <string name="SecSevenQuizAnswer1_5_5">one</string>
+    <string name="SecSevenQuizAnswer2_5_5">two</string>
+    <string name="SecSevenQuizAnswer3_5_5">three</string>
+    <string name="SectionSevenAnswerOne_5">one</string>
+    <string name="SectionSevenAnswerTwo_5">two</string>
+    <string name="SectionSevenAnswerThree_5">three</string>
+    <string name="SectionSevenAnswerFour_5">one</string>
+    <string name="SectionSevenAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION EIGHT: Equations with Parameters ===================== -->
     <string name="SectionEightTheoryDef_5">Maintain equivalence. Analyze parameter effects and domains. Substitution helps simplify.</string>
+    <string name="SectionEightTheoryDefQuestion_5">In ax = b, if a = 0 and b ≠ 0, how many solutions does the equation have?</string>
+    <string name="SectionEightTheoryDefAnswerOne_5">0</string>
+    <string name="SectionEightTheoryDefAnswerTwo_5">1</string>
+    <string name="SectionEightTheoryDefAnswerThree_5">∞</string>
+    <string name="SectionEightTheoryDefCorrectAnswer_5">0</string>
+
     <string name="SectionEightTheoryProperties_5">Handle linear, quadratic, irrational, and system equations with parameters carefully.</string>
-    <string name="SectionEightTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionEightTheoryPropsQuestion_5">For the equation ax² + bx + c = 0 to have two distinct real roots, must D be greater than 0?</string>
+    <string name="SectionEightTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionEightTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionEightTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionEightTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionEightTheoryWorkedExamples_5">Example 1: Solve ax = 3. If a≠0: x = 3/a. If a=0: no solution. \n
+Example 2: Solve (a−1)x = 2. If a≠1: x = 2/(a−1). If a=1: no solution. \n
+Example 3: Solve ax² = 4. If a&gt;0: x = ±2/√a. If a=0: no solution. If a&lt;0: no real solution. \n</string>
+    <string name="SectionEightTheoryWorkedExQuestion_5">For (a−2)x = 0, how many solutions exist when a = 2?</string>
+    <string name="SectionEightTheoryWorkedExAnswerOne_5">0</string>
+    <string name="SectionEightTheoryWorkedExAnswerTwo_5">1</string>
+    <string name="SectionEightTheoryWorkedExAnswerThree_5">∞</string>
+    <string name="SectionEightTheoryWorkedExCorrectAnswer_5">∞</string>
+
     <string name="SectionEightQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecEightQuizAnswer1_1_5">one</string>
+    <string name="SecEightQuizAnswer2_1_5">two</string>
+    <string name="SecEightQuizAnswer3_1_5">three</string>
+    <string name="SecEightQuizAnswer1_2_5">one</string>
+    <string name="SecEightQuizAnswer2_2_5">two</string>
+    <string name="SecEightQuizAnswer3_2_5">three</string>
+    <string name="SecEightQuizAnswer1_3_5">one</string>
+    <string name="SecEightQuizAnswer2_3_5">two</string>
+    <string name="SecEightQuizAnswer3_3_5">three</string>
+    <string name="SecEightQuizAnswer1_4_5">one</string>
+    <string name="SecEightQuizAnswer2_4_5">two</string>
+    <string name="SecEightQuizAnswer3_4_5">three</string>
+    <string name="SecEightQuizAnswer1_5_5">one</string>
+    <string name="SecEightQuizAnswer2_5_5">two</string>
+    <string name="SecEightQuizAnswer3_5_5">three</string>
+    <string name="SectionEightAnswerOne_5">one</string>
+    <string name="SectionEightAnswerTwo_5">two</string>
+    <string name="SectionEightAnswerThree_5">three</string>
+    <string name="SectionEightAnswerFour_5">one</string>
+    <string name="SectionEightAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION NINE: Word Problems ===================== -->
     <string name="SectionNineTheoryDef_5">Word Problems: define unknowns, express conditions, form equations, choose solving method.</string>
-    <string name="SectionNineTheoryProperties_5">Examples: number, motion, work, flow, or team problems; form and solve systems.</string>
-    <string name="SectionNineTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionNineTheoryDefQuestion_5">A number increased by 8 equals 20. What is the number?</string>
+    <string name="SectionNineTheoryDefAnswerOne_5">10</string>
+    <string name="SectionNineTheoryDefAnswerTwo_5">12</string>
+    <string name="SectionNineTheoryDefAnswerThree_5">14</string>
+    <string name="SectionNineTheoryDefCorrectAnswer_5">12</string>
+
+    <string name="SectionNineTheoryProperties_5">To solve a word problem: (1) define the unknown, (2) write an equation from the conditions, (3) solve, (4) verify the answer in the original context.</string>
+    <string name="SectionNineTheoryPropsQuestion_5">The sum of two consecutive integers is 31. What is the smaller integer?</string>
+    <string name="SectionNineTheoryPropsAnswerOne_5">14</string>
+    <string name="SectionNineTheoryPropsAnswerTwo_5">15</string>
+    <string name="SectionNineTheoryPropsAnswerThree_5">16</string>
+    <string name="SectionNineTheoryPropsCorrectAnswer_5">15</string>
+
+    <string name="SectionNineTheoryWorkedExamples_5">Example 1: A number multiplied by 3 gives 18. Let x be the number. 3x=18 → x=6. \n
+Example 2: Two numbers sum to 20, one is twice the other. Let x and 2x. x+2x=20 → x=20/3. ✗ (no integer solution — check problem). \n
+Example 3: A train travels 120 km in 2 hours. Speed = 120/2 = 60 km/h. </string>
+    <string name="SectionNineTheoryWorkedExQuestion_5">A number multiplied by 4 gives 36. What is the number?</string>
+    <string name="SectionNineTheoryWorkedExAnswerOne_5">7</string>
+    <string name="SectionNineTheoryWorkedExAnswerTwo_5">8</string>
+    <string name="SectionNineTheoryWorkedExAnswerThree_5">9</string>
+    <string name="SectionNineTheoryWorkedExCorrectAnswer_5">9</string>
+
     <string name="SectionNineQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecNineQuizAnswer1_1_5">one</string>
+    <string name="SecNineQuizAnswer2_1_5">two</string>
+    <string name="SecNineQuizAnswer3_1_5">three</string>
+    <string name="SecNineQuizAnswer1_2_5">one</string>
+    <string name="SecNineQuizAnswer2_2_5">two</string>
+    <string name="SecNineQuizAnswer3_2_5">three</string>
+    <string name="SecNineQuizAnswer1_3_5">one</string>
+    <string name="SecNineQuizAnswer2_3_5">two</string>
+    <string name="SecNineQuizAnswer3_3_5">three</string>
+    <string name="SecNineQuizAnswer1_4_5">one</string>
+    <string name="SecNineQuizAnswer2_4_5">two</string>
+    <string name="SecNineQuizAnswer3_4_5">three</string>
+    <string name="SecNineQuizAnswer1_5_5">one</string>
+    <string name="SecNineQuizAnswer2_5_5">two</string>
+    <string name="SecNineQuizAnswer3_5_5">three</string>
+    <string name="SectionNineAnswerOne_5">one</string>
+    <string name="SectionNineAnswerTwo_5">two</string>
+    <string name="SectionNineAnswerThree_5">three</string>
+    <string name="SectionNineAnswerFour_5">one</string>
+    <string name="SectionNineAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION TEN: Inequalities – Definition ===================== -->
     <string name="SectionTenTheoryDef_5">Inequalities: &gt;, &lt;, ≥, ≤. Domain = valid variable values. Solution makes statement true.</string>
+    <string name="SectionTenTheoryDefQuestion_5">Is x = 4 a solution of the inequality 2x − 5 &gt; 0?</string>
+    <string name="SectionTenTheoryDefAnswerOne_5">True</string>
+    <string name="SectionTenTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionTenTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionTenTheoryDefCorrectAnswer_5">True</string>
+
     <string name="SectionTenTheoryProperties_5">Use transitivity, addition, multiplication rules. Equivalent inequalities share solutions.</string>
-    <string name="SectionTenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTenTheoryPropsQuestion_5">When multiplying both sides of an inequality by a negative number, does the inequality sign reverse?</string>
+    <string name="SectionTenTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionTenTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionTenTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionTenTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionTenTheoryWorkedExamples_5">Example 1: Solve 2x − 4 &gt; 0. Add 4: 2x &gt; 4. Divide by 2: x &gt; 2. Solution: (2, +∞). \n
+Example 2: Solve −3x ≤ 9. Divide by −3 (flip sign): x ≥ −3. Solution: [−3, +∞). \n
+Example 3: Solve x + 1 &lt; 5. Subtract 1: x &lt; 4. Solution: (−∞, 4). </string>
+    <string name="SectionTenTheoryWorkedExQuestion_5">What is the solution boundary of 3x &gt; 12 (i.e., what value does x exceed)?</string>
+    <string name="SectionTenTheoryWorkedExAnswerOne_5">3</string>
+    <string name="SectionTenTheoryWorkedExAnswerTwo_5">4</string>
+    <string name="SectionTenTheoryWorkedExAnswerThree_5">5</string>
+    <string name="SectionTenTheoryWorkedExCorrectAnswer_5">4</string>
+
     <string name="SectionTenQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecTenQuizAnswer1_1_5">one</string>
+    <string name="SecTenQuizAnswer2_1_5">two</string>
+    <string name="SecTenQuizAnswer3_1_5">three</string>
+    <string name="SecTenQuizAnswer1_2_5">one</string>
+    <string name="SecTenQuizAnswer2_2_5">two</string>
+    <string name="SecTenQuizAnswer3_2_5">three</string>
+    <string name="SecTenQuizAnswer1_3_5">one</string>
+    <string name="SecTenQuizAnswer2_3_5">two</string>
+    <string name="SecTenQuizAnswer3_3_5">three</string>
+    <string name="SecTenQuizAnswer1_4_5">one</string>
+    <string name="SecTenQuizAnswer2_4_5">two</string>
+    <string name="SecTenQuizAnswer3_4_5">three</string>
+    <string name="SecTenQuizAnswer1_5_5">one</string>
+    <string name="SecTenQuizAnswer2_5_5">two</string>
+    <string name="SecTenQuizAnswer3_5_5">three</string>
+    <string name="SectionTenAnswerOne_5">one</string>
+    <string name="SectionTenAnswerTwo_5">two</string>
+    <string name="SectionTenAnswerThree_5">three</string>
+    <string name="SectionTenAnswerFour_5">one</string>
+    <string name="SectionTenAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION ELEVEN: Proving Inequalities ===================== -->
     <string name="SectionElevenTheoryDef_5">Prove inequalities via direct/equivalent transformations. Use AM-GM, triangle, modulus properties.</string>
+    <string name="SectionElevenTheoryDefQuestion_5">Is (a − b)² ≥ 0 always true for any real a, b?</string>
+    <string name="SectionElevenTheoryDefAnswerOne_5">True</string>
+    <string name="SectionElevenTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionElevenTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionElevenTheoryDefCorrectAnswer_5">True</string>
+
     <string name="SectionElevenTheoryProperties_5">Reduce to known forms like (a−b)²≥0. Apply mean and modulus inequalities.</string>
-    <string name="SectionElevenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionElevenTheoryPropsQuestion_5">By the AM-GM inequality, is (a + b)/2 ≥ √(ab) true for non-negative a and b?</string>
+    <string name="SectionElevenTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionElevenTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionElevenTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionElevenTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionElevenTheoryWorkedExamples_5">Example 1: Prove a² + b² ≥ 2ab. Rearrange: a² − 2ab + b² ≥ 0 → (a−b)² ≥ 0. Always true. \n
+Example 2: Prove |a + b| ≤ |a| + |b| (triangle inequality). Follows from properties of absolute value. \n
+Example 3: For a,b &gt; 0, prove (a+b)/2 ≥ √(ab). Equivalent to (√a − √b)² ≥ 0. Always true. </string>
+    <string name="SectionElevenTheoryWorkedExQuestion_5">What is the minimum value of (a − b)² for any real a, b?</string>
+    <string name="SectionElevenTheoryWorkedExAnswerOne_5">-1</string>
+    <string name="SectionElevenTheoryWorkedExAnswerTwo_5">0</string>
+    <string name="SectionElevenTheoryWorkedExAnswerThree_5">1</string>
+    <string name="SectionElevenTheoryWorkedExCorrectAnswer_5">0</string>
+
     <string name="SectionElevenQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecElevenQuizAnswer1_1_5">one</string>
+    <string name="SecElevenQuizAnswer2_1_5">two</string>
+    <string name="SecElevenQuizAnswer3_1_5">three</string>
+    <string name="SecElevenQuizAnswer1_2_5">one</string>
+    <string name="SecElevenQuizAnswer2_2_5">two</string>
+    <string name="SecElevenQuizAnswer3_2_5">three</string>
+    <string name="SecElevenQuizAnswer1_3_5">one</string>
+    <string name="SecElevenQuizAnswer2_3_5">two</string>
+    <string name="SecElevenQuizAnswer3_3_5">three</string>
+    <string name="SecElevenQuizAnswer1_4_5">one</string>
+    <string name="SecElevenQuizAnswer2_4_5">two</string>
+    <string name="SecElevenQuizAnswer3_4_5">three</string>
+    <string name="SecElevenQuizAnswer1_5_5">one</string>
+    <string name="SecElevenQuizAnswer2_5_5">two</string>
+    <string name="SecElevenQuizAnswer3_5_5">three</string>
+    <string name="SectionElevenAnswerOne_5">one</string>
+    <string name="SectionElevenAnswerTwo_5">two</string>
+    <string name="SectionElevenAnswerThree_5">three</string>
+    <string name="SectionElevenAnswerFour_5">one</string>
+    <string name="SectionElevenAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION TWELVE: Linear and Quadratic Inequalities ===================== -->
     <string name="SectionTwelveTheoryDef_5">Linear: ax+b&gt;0 → ray. Quadratic: ax²+bx+c&gt;0 → depends on D and sign of a.</string>
-    <string name="SectionTwelveTheoryProperties_5">!!! Empty !!!</string>
-    <string name="SectionTwelveTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionTwelveTheoryDefQuestion_5">For ax²+bx+c &gt; 0 with a &gt; 0 and D &lt; 0, is the solution all real numbers?</string>
+    <string name="SectionTwelveTheoryDefAnswerOne_5">True</string>
+    <string name="SectionTwelveTheoryDefAnswerTwo_5">False</string>
+    <string name="SectionTwelveTheoryDefAnswerThree_5">Neither</string>
+    <string name="SectionTwelveTheoryDefCorrectAnswer_5">True</string>
+
+    <string name="SectionTwelveTheoryProperties_5">For ax²+bx+c &gt; 0 with a &gt; 0: if D &gt; 0 the solution is (−∞, x₁) ∪ (x₂, +∞); if D = 0 it is all x ≠ x₁; if D &lt; 0 it is all real numbers. For a &lt; 0 the cases reverse.</string>
+    <string name="SectionTwelveTheoryPropsQuestion_5">For x² − 4 &gt; 0, is x = 3 a solution?</string>
+    <string name="SectionTwelveTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionTwelveTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionTwelveTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionTwelveTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionTwelveTheoryWorkedExamples_5">Example 1: Solve 2x − 4 &gt; 0. Divide by 2: x &gt; 2. Solution: (2, +∞). \n
+Example 2: Solve x² − 5x + 6 &gt; 0. Roots: x=2, x=3 (D=1&gt;0, a&gt;0). Solution: (−∞,2) ∪ (3,+∞). \n
+Example 3: Solve x² + 2x + 1 &gt; 0. One root x=−1 (D=0, a&gt;0). Solution: all x ≠ −1. </string>
+    <string name="SectionTwelveTheoryWorkedExQuestion_5">What is the boundary value in the solution of 2x − 8 &gt; 0 (what is x greater than)?</string>
+    <string name="SectionTwelveTheoryWorkedExAnswerOne_5">2</string>
+    <string name="SectionTwelveTheoryWorkedExAnswerTwo_5">4</string>
+    <string name="SectionTwelveTheoryWorkedExAnswerThree_5">8</string>
+    <string name="SectionTwelveTheoryWorkedExCorrectAnswer_5">4</string>
+
     <string name="SectionTwelveQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecTwelveQuizAnswer1_1_5">one</string>
+    <string name="SecTwelveQuizAnswer2_1_5">two</string>
+    <string name="SecTwelveQuizAnswer3_1_5">three</string>
+    <string name="SecTwelveQuizAnswer1_2_5">one</string>
+    <string name="SecTwelveQuizAnswer2_2_5">two</string>
+    <string name="SecTwelveQuizAnswer3_2_5">three</string>
+    <string name="SecTwelveQuizAnswer1_3_5">one</string>
+    <string name="SecTwelveQuizAnswer2_3_5">two</string>
+    <string name="SecTwelveQuizAnswer3_3_5">three</string>
+    <string name="SecTwelveQuizAnswer1_4_5">one</string>
+    <string name="SecTwelveQuizAnswer2_4_5">two</string>
+    <string name="SecTwelveQuizAnswer3_4_5">three</string>
+    <string name="SecTwelveQuizAnswer1_5_5">one</string>
+    <string name="SecTwelveQuizAnswer2_5_5">two</string>
+    <string name="SecTwelveQuizAnswer3_5_5">three</string>
+    <string name="SectionTwelveAnswerOne_5">one</string>
+    <string name="SectionTwelveAnswerTwo_5">two</string>
+    <string name="SectionTwelveAnswerThree_5">three</string>
+    <string name="SectionTwelveAnswerFour_5">one</string>
+    <string name="SectionTwelveAnswerFive_5">two</string>
 
+    <!-- ===================== SECTION THIRTEEN: Systems of Inequalities and Modulus ===================== -->
     <string name="SectionThirteenTheoryDef_5">Systems of inequalities → intersection of solution sets. |x|≤a ⇔ -a≤x≤a; |x|≥a ⇔ x≥a or x≤-a.</string>
-    <string name="SectionThirteenTheoryProperties_5">!!! Empty !!!</string>
-    <string name="SectionThirteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
-    <string name="SectionThirteenQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SectionThirteenTheoryDefQuestion_5">How many integer solutions does |x| ≤ 2 have?</string>
+    <string name="SectionThirteenTheoryDefAnswerOne_5">3</string>
+    <string name="SectionThirteenTheoryDefAnswerTwo_5">4</string>
+    <string name="SectionThirteenTheoryDefAnswerThree_5">5</string>
+    <string name="SectionThirteenTheoryDefCorrectAnswer_5">5</string>
 
+    <string name="SectionThirteenTheoryProperties_5">The solution of a system of inequalities is the intersection of all individual solution sets. If this intersection is empty, the system has no solution.</string>
+    <string name="SectionThirteenTheoryPropsQuestion_5">Does |x| ≥ 3 have a solution for x = −4?</string>
+    <string name="SectionThirteenTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionThirteenTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionThirteenTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionThirteenTheoryPropsCorrectAnswer_5">True</string>
+
+    <string name="SectionThirteenTheoryWorkedExamples_5">Example 1: Solve |x| ≤ 3. Equivalent: −3 ≤ x ≤ 3. Solution: [−3, 3]. \n
+Example 2: Solve |x − 1| &lt; 2. Equivalent: −2 &lt; x−1 &lt; 2 → −1 &lt; x &lt; 3. Solution: (−1, 3). \n
+Example 3: Solve the system x &gt; 1 and x &lt; 4. Intersection: 1 &lt; x &lt; 4. Solution: (1, 4). </string>
+    <string name="SectionThirteenTheoryWorkedExQuestion_5">What is the largest integer solution of |x| ≤ 3?</string>
+    <string name="SectionThirteenTheoryWorkedExAnswerOne_5">2</string>
+    <string name="SectionThirteenTheoryWorkedExAnswerTwo_5">3</string>
+    <string name="SectionThirteenTheoryWorkedExAnswerThree_5">4</string>
+    <string name="SectionThirteenTheoryWorkedExCorrectAnswer_5">3</string>
+
+    <string name="SectionThirteenQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecThirteenQuizAnswer1_1_5">one</string>
+    <string name="SecThirteenQuizAnswer2_1_5">two</string>
+    <string name="SecThirteenQuizAnswer3_1_5">three</string>
+    <string name="SecThirteenQuizAnswer1_2_5">one</string>
+    <string name="SecThirteenQuizAnswer2_2_5">two</string>
+    <string name="SecThirteenQuizAnswer3_2_5">three</string>
+    <string name="SecThirteenQuizAnswer1_3_5">one</string>
+    <string name="SecThirteenQuizAnswer2_3_5">two</string>
+    <string name="SecThirteenQuizAnswer3_3_5">three</string>
+    <string name="SecThirteenQuizAnswer1_4_5">one</string>
+    <string name="SecThirteenQuizAnswer2_4_5">two</string>
+    <string name="SecThirteenQuizAnswer3_4_5">three</string>
+    <string name="SecThirteenQuizAnswer1_5_5">one</string>
+    <string name="SecThirteenQuizAnswer2_5_5">two</string>
+    <string name="SecThirteenQuizAnswer3_5_5">three</string>
+    <string name="SectionThirteenAnswerOne_5">one</string>
+    <string name="SectionThirteenAnswerTwo_5">two</string>
+    <string name="SectionThirteenAnswerThree_5">three</string>
+    <string name="SectionThirteenAnswerFour_5">one</string>
+    <string name="SectionThirteenAnswerFive_5">two</string>
+
+    <!-- ===================== SECTION FOURTEEN: Method of Intervals ===================== -->
     <string name="SectionFourteenTheoryDef_5">Method of Intervals: find roots of P,Q; mark on axis; check signs; select valid intervals.</string>
-    <string name="SectionFourteenTheoryProperties_5">!!! Empty !!!</string>
-    <string name="SectionFourteenTheoryWorkedExamples_5">!!! Worked Examples !!!</string>
+    <string name="SectionFourteenTheoryDefQuestion_5">Using the method of intervals for (x−1)(x−3) &gt; 0, which value satisfies the inequality?</string>
+    <string name="SectionFourteenTheoryDefAnswerOne_5">2</string>
+    <string name="SectionFourteenTheoryDefAnswerTwo_5">4</string>
+    <string name="SectionFourteenTheoryDefAnswerThree_5">0</string>
+    <string name="SectionFourteenTheoryDefCorrectAnswer_5">4</string>
+
+    <string name="SectionFourteenTheoryProperties_5">In the method of intervals: the sign of the expression alternates between consecutive roots for simple (odd-multiplicity) roots, and stays the same for even-multiplicity roots. Always verify endpoints separately for ≥ or ≤ inequalities.</string>
+    <string name="SectionFourteenTheoryPropsQuestion_5">For (x−2)²(x−5) &gt; 0, does the sign change at x = 2?</string>
+    <string name="SectionFourteenTheoryPropsAnswerOne_5">True</string>
+    <string name="SectionFourteenTheoryPropsAnswerTwo_5">False</string>
+    <string name="SectionFourteenTheoryPropsAnswerThree_5">Neither</string>
+    <string name="SectionFourteenTheoryPropsCorrectAnswer_5">False</string>
+
+    <string name="SectionFourteenTheoryWorkedExamples_5">Example 1: Solve (x−1)(x−3) &gt; 0. Roots: 1 and 3. Sign chart: (+)(−)(+). Solution: (−∞,1) ∪ (3,+∞). \n
+Example 2: Solve (x−2)(x+1) &lt; 0. Roots: −1 and 2. Sign chart: (+)(−)(+). Solution: (−1, 2). \n
+Example 3: Solve (x−1)²(x−4) &gt; 0. Root x=1 (even mult.), root x=4. Sign same at x=1. Solution: (4, +∞). </string>
+    <string name="SectionFourteenTheoryWorkedExQuestion_5">How many roots does (x−1)(x−3) have on the number line for the method of intervals?</string>
+    <string name="SectionFourteenTheoryWorkedExAnswerOne_5">1</string>
+    <string name="SectionFourteenTheoryWorkedExAnswerTwo_5">2</string>
+    <string name="SectionFourteenTheoryWorkedExAnswerThree_5">3</string>
+    <string name="SectionFourteenTheoryWorkedExCorrectAnswer_5">2</string>
+
     <string name="SectionFourteenQuiz_5">!!! Solve the Quiz !!!</string>
+    <string name="SecFourteenQuizAnswer1_1_5">one</string>
+    <string name="SecFourteenQuizAnswer2_1_5">two</string>
+    <string name="SecFourteenQuizAnswer3_1_5">three</string>
+    <string name="SecFourteenQuizAnswer1_2_5">one</string>
+    <string name="SecFourteenQuizAnswer2_2_5">two</string>
+    <string name="SecFourteenQuizAnswer3_2_5">three</string>
+    <string name="SecFourteenQuizAnswer1_3_5">one</string>
+    <string name="SecFourteenQuizAnswer2_3_5">two</string>
+    <string name="SecFourteenQuizAnswer3_3_5">three</string>
+    <string name="SecFourteenQuizAnswer1_4_5">one</string>
+    <string name="SecFourteenQuizAnswer2_4_5">two</string>
+    <string name="SecFourteenQuizAnswer3_4_5">three</string>
+    <string name="SecFourteenQuizAnswer1_5_5">one</string>
+    <string name="SecFourteenQuizAnswer2_5_5">two</string>
+    <string name="SecFourteenQuizAnswer3_5_5">three</string>
+    <string name="SectionFourteenAnswerOne_5">one</string>
+    <string name="SectionFourteenAnswerTwo_5">two</string>
+    <string name="SectionFourteenAnswerThree_5">three</string>
+    <string name="SectionFourteenAnswerFour_5">one</string>
+    <string name="SectionFourteenAnswerFive_5">two</string>
 
 </resources>

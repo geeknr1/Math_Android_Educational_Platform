@@ -2,71 +2,304 @@
 <resources>
     <string name="app_name_10">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION ONE: TANGENTS & CIRCLES                -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_10">• A tangent touches a circle at one point.
 \n • Circles may touch or intersect.
 \n • Concentric circles share the same center.</string>
 
-    <string name="SectionOneTheoryProperties_10">• If R&gt;d, line cuts circle; if R=d, it’s tangent.
+    <!-- Q: How many points does a tangent touch a circle at? Answer: 1 -->
+    <string name="SectionOneTheoryDefQuestion_10">At how many points does a tangent touch a circle?</string>
+    <string name="SectionOneTheoryDefAnswerOne_10">1</string>
+    <string name="SectionOneTheoryDefAnswerTwo_10">2</string>
+    <string name="SectionOneTheoryDefAnswerThree_10">3</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_10">1</string>
+
+    <string name="SectionOneTheoryProperties_10">• If R&gt;d, line cuts circle; if R=d, it\'s tangent.
 \n • A tangent is perpendicular to the radius.
 \n • Tangent segments from one point are equal.</string>
 
-    <string name="SectionOneTheoryWorkedExamples_10">• Tangent parallel to a line found via perpendicular from center.
-\n • Common tangent between circles uses an auxiliary circle.
-\n • Both cases show geometric construction steps.</string>
+    <!-- Q: Is a tangent perpendicular to the radius at the point of tangency? Answer: True -->
+    <string name="SectionOneTheoryPropsQuestion_10">Is a tangent to a circle perpendicular to the radius at the point of tangency?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_10">True</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_10">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionOneTheoryPropsAnswerThree_10"></string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_10">True</string>
+
+    <string name="SectionOneTheoryWorkedExamples_10">• To find a tangent to circle O parallel to line l: drop a perpendicular from O to l, extend it to meet the circle — the two intersection points are the tangency points of the two parallel tangents.
+\n • To find a common external tangent to two circles: construct an auxiliary circle with radius equal to the difference of the two radii, find a tangent from the external center, then translate it to both original circles.
+\n • In both cases the key step is identifying the foot of the perpendicular from the center, which fixes the tangency point uniquely.</string>
+
+    <!-- Q: How many tangent segments drawn from an external point to a circle are equal? Answer: 2 -->
+    <string name="SectionOneTheoryWorkedExQuestion_10">How many equal tangent segments can be drawn from a single external point to a circle?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_10">1</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_10">2</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_10">3</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_10">2</string>
 
     <string name="SectionOneQuiz_10">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_10">one</string>
+    <string name="SecOneQuizAnswer2_1_10">two</string>
+    <string name="SecOneQuizAnswer3_1_10">three</string>
+    <string name="SecOneQuizAnswer1_2_10">one</string>
+    <string name="SecOneQuizAnswer2_2_10">two</string>
+    <string name="SecOneQuizAnswer3_2_10">three</string>
+    <string name="SecOneQuizAnswer1_3_10">one</string>
+    <string name="SecOneQuizAnswer2_3_10">two</string>
+    <string name="SecOneQuizAnswer3_3_10">three</string>
+    <string name="SecOneQuizAnswer1_4_10">one</string>
+    <string name="SecOneQuizAnswer2_4_10">two</string>
+    <string name="SecOneQuizAnswer3_4_10">three</string>
+    <string name="SecOneQuizAnswer1_5_10">one</string>
+    <string name="SecOneQuizAnswer2_5_10">two</string>
+    <string name="SecOneQuizAnswer3_5_10">three</string>
+    <string name="SectionOneAnswerOne_10">one</string>
+    <string name="SectionOneAnswerTwo_10">two</string>
+    <string name="SectionOneAnswerThree_10">three</string>
+    <string name="SectionOneAnswerFour_10">one</string>
+    <string name="SectionOneAnswerFive_10">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--               SECTION TWO: ARCS & INSCRIBED ANGLES             -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_10">• An arc is part of a circle.
 \n • A central angle has its vertex at the center.
 \n • An inscribed angle has its vertex on the circle.</string>
 
+    <!-- Q: Where is the vertex of an inscribed angle? Answer: on the circle -->
+    <string name="SectionTwoTheoryDefQuestion_10">Where is the vertex of an inscribed angle located?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_10">on the circle</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_10">at the center</string>
+    <string name="SectionTwoTheoryDefAnswerThree_10">outside the circle</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_10">on the circle</string>
+
     <string name="SectionTwoTheoryProperties_10">• Arc measure equals its central angle.
 \n • Inscribed angle equals half the central one.
 \n • Angles on the same arc are equal; semicircle gives 90°.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_10">• Theorem proof covers three diameter cases.
-\n • Shows inscribed angle equals half the central one.
-\n • Demonstrates all geometric configurations.</string>
+    <!-- Q: An inscribed angle equals what fraction of its intercepted central angle? Answer: 1/2 -->
+    <string name="SectionTwoTheoryPropsQuestion_10">An inscribed angle is equal to what fraction of its intercepted central angle?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_10">1/4</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_10">1/2</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_10">2</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_10">1/2</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_10">• Case 1 (diameter as one side): The central angle is twice the inscribed angle by the isosceles triangle formed with two radii — the base angles are equal, and the exterior angle equals their sum.
+\n • Case 2 (center inside the angle): Split the inscribed angle into two sub-angles each containing the diameter as one side; apply Case 1 to each and add the results.
+\n • Case 3 (center outside the angle): Subtract the smaller Case-1 result from the larger — the inscribed angle still equals half the central angle, confirming the theorem for all configurations.</string>
+
+    <!-- Q: An inscribed angle in a semicircle equals how many degrees? Answer: 90 -->
+    <string name="SectionTwoTheoryWorkedExQuestion_10">An inscribed angle that intercepts a semicircle equals how many degrees?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_10">45</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_10">180</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_10">90</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_10">90</string>
 
     <string name="SectionTwoQuiz_10">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_10">one</string>
+    <string name="SecTwoQuizAnswer2_1_10">two</string>
+    <string name="SecTwoQuizAnswer3_1_10">three</string>
+    <string name="SecTwoQuizAnswer1_2_10">one</string>
+    <string name="SecTwoQuizAnswer2_2_10">two</string>
+    <string name="SecTwoQuizAnswer3_2_10">three</string>
+    <string name="SecTwoQuizAnswer1_3_10">one</string>
+    <string name="SecTwoQuizAnswer2_3_10">two</string>
+    <string name="SecTwoQuizAnswer3_3_10">three</string>
+    <string name="SecTwoQuizAnswer1_4_10">one</string>
+    <string name="SecTwoQuizAnswer2_4_10">two</string>
+    <string name="SecTwoQuizAnswer3_4_10">three</string>
+    <string name="SecTwoQuizAnswer1_5_10">one</string>
+    <string name="SecTwoQuizAnswer2_5_10">two</string>
+    <string name="SecTwoQuizAnswer3_5_10">three</string>
+    <string name="SectionTwoAnswerOne_10">one</string>
+    <string name="SectionTwoAnswerTwo_10">two</string>
+    <string name="SectionTwoAnswerThree_10">three</string>
+    <string name="SectionTwoAnswerFour_10">one</string>
+    <string name="SectionTwoAnswerFive_10">two</string>
 
-    <string name="SectionThreeTheoryDef_10">!!! EMPTY !!!</string>
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                     SECTION THREE: CHORDS                       -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- Was !!! EMPTY !!! — written from context (chords) -->
+    <string name="SectionThreeTheoryDef_10">• A chord is a line segment with both endpoints on a circle.
+\n • The diameter is the longest chord, passing through the center.
+\n • Equal chords are chords of the same length within the same circle.</string>
+
+    <!-- Q: Is the diameter the longest chord in a circle? Answer: True -->
+    <string name="SectionThreeTheoryDefQuestion_10">Is the diameter the longest chord in a circle?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_10">True</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_10">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryDefAnswerThree_10"></string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_10">True</string>
 
     <string name="SectionThreeTheoryProperties_10">• The diameter is the longest chord.
 \n • Equal chords create equal arcs.
 \n • Diameter perpendicular to a chord bisects it.</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_10">• Perpendicular diameter proven using congruent triangles.
-\n • Parallel chord shown longer than non-parallel one.
-\n • Geometry demonstrates chord relationships.</string>
+    <!-- Q: Does a diameter perpendicular to a chord bisect that chord? Answer: True -->
+    <string name="SectionThreeTheoryPropsQuestion_10">Does a diameter perpendicular to a chord bisect that chord?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_10">True</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_10">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionThreeTheoryPropsAnswerThree_10"></string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_10">True</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_10">• Proof that a diameter perpendicular to a chord bisects it: draw radii to both chord endpoints, forming two right triangles. They are congruent by HL (equal hypotenuse = radius, shared leg = perpendicular), so the two halves of the chord are equal.
+\n • A chord parallel to another chord is longer when it is closer to the center — proved by comparing the distances from the center to each chord using the perpendicular bisector.
+\n • Equal chords in the same circle subtend equal arcs, shown by rotating the triangle formed by two radii and the chord onto the other chord.</string>
+
+    <!-- Q: How many equal parts does a perpendicular diameter divide a chord into? Answer: 2 -->
+    <string name="SectionThreeTheoryWorkedExQuestion_10">Into how many equal parts does a diameter perpendicular to a chord divide it?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_10">3</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_10">4</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_10">2</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_10">2</string>
 
     <string name="SectionThreeQuiz_10">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_10">one</string>
+    <string name="SecThreeQuizAnswer2_1_10">two</string>
+    <string name="SecThreeQuizAnswer3_1_10">three</string>
+    <string name="SecThreeQuizAnswer1_2_10">one</string>
+    <string name="SecThreeQuizAnswer2_2_10">two</string>
+    <string name="SecThreeQuizAnswer3_2_10">three</string>
+    <string name="SecThreeQuizAnswer1_3_10">one</string>
+    <string name="SecThreeQuizAnswer2_3_10">two</string>
+    <string name="SecThreeQuizAnswer3_3_10">three</string>
+    <string name="SecThreeQuizAnswer1_4_10">one</string>
+    <string name="SecThreeQuizAnswer2_4_10">two</string>
+    <string name="SecThreeQuizAnswer3_4_10">three</string>
+    <string name="SecThreeQuizAnswer1_5_10">one</string>
+    <string name="SecThreeQuizAnswer2_5_10">two</string>
+    <string name="SecThreeQuizAnswer3_5_10">three</string>
+    <string name="SectionThreeAnswerOne_10">one</string>
+    <string name="SectionThreeAnswerTwo_10">two</string>
+    <string name="SectionThreeAnswerThree_10">three</string>
+    <string name="SectionThreeAnswerFour_10">one</string>
+    <string name="SectionThreeAnswerFive_10">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--             SECTION FOUR: INSCRIBED & CIRCUMSCRIBED POLYGONS    -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionFourTheoryDef_10">• An inscribed polygon has all vertices on a circle.
 \n • A circumscribed polygon has all sides tangent to a circle.
 \n • Circles define these polygon relationships.</string>
 
+    <!-- Q: Does an inscribed polygon have all its vertices on the circle? Answer: True -->
+    <string name="SectionFourTheoryDefQuestion_10">Does an inscribed polygon have all its vertices on the circle?</string>
+    <string name="SectionFourTheoryDefAnswerOne_10">True</string>
+    <string name="SectionFourTheoryDefAnswerTwo_10">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionFourTheoryDefAnswerThree_10"></string>
+    <string name="SectionFourTheoryDefCorrectAnswer_10">True</string>
+
     <string name="SectionFourTheoryProperties_10">• Every triangle has one inscribed and one circumscribed circle.
 \n • For a quadrilateral, opposite angles sum 180° for a circumscribed circle.
 \n • Equal opposite side sums allow an inscribed circle.</string>
 
-    <string name="SectionFourTheoryWorkedExamples_10">• Opposite angles summing to 180° prove cyclic quadrilateral.
-\n • Equal tangent lengths prove circumscribed quadrilateral.
-\n • Demonstrates circle-polygon conditions.</string>
+    <!-- Q: In a cyclic quadrilateral, opposite angles sum to how many degrees? Answer: 180 -->
+    <string name="SectionFourTheoryPropsQuestion_10">In a cyclic quadrilateral, opposite angles sum to how many degrees?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_10">90</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_10">360</string>
+    <string name="SectionFourTheoryPropsAnswerThree_10">180</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_10">180</string>
+
+    <string name="SectionFourTheoryWorkedExamples_10">• Cyclic quadrilateral proof: opposite angles intercept arcs that together make a full circle (360°), so each pair of opposite inscribed angles intercepts supplementary arcs — their sum is 180°.
+\n • Circumscribed quadrilateral proof: tangent segments from each vertex to the two adjacent tangency points are equal. Labelling them a, b, c, d around the quadrilateral shows AB + CD = BC + DA, proving equal opposite side sums.
+\n • These two conditions — opposite angles summing to 180° and opposite side sums being equal — are the exact criteria for a quadrilateral to admit a circumscribed or inscribed circle respectively.</string>
+
+    <!-- Q: How many circles does every triangle have (inscribed and circumscribed combined)? Answer: 2 -->
+    <string name="SectionFourTheoryWorkedExQuestion_10">How many special circles (inscribed and circumscribed) does every triangle have in total?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_10">1</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_10">3</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_10">2</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_10">2</string>
 
     <string name="SectionFourQuiz_10">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_10">one</string>
+    <string name="SecFourQuizAnswer2_1_10">two</string>
+    <string name="SecFourQuizAnswer3_1_10">three</string>
+    <string name="SecFourQuizAnswer1_2_10">one</string>
+    <string name="SecFourQuizAnswer2_2_10">two</string>
+    <string name="SecFourQuizAnswer3_2_10">three</string>
+    <string name="SecFourQuizAnswer1_3_10">one</string>
+    <string name="SecFourQuizAnswer2_3_10">two</string>
+    <string name="SecFourQuizAnswer3_3_10">three</string>
+    <string name="SecFourQuizAnswer1_4_10">one</string>
+    <string name="SecFourQuizAnswer2_4_10">two</string>
+    <string name="SecFourQuizAnswer3_4_10">three</string>
+    <string name="SecFourQuizAnswer1_5_10">one</string>
+    <string name="SecFourQuizAnswer2_5_10">two</string>
+    <string name="SecFourQuizAnswer3_5_10">three</string>
+    <string name="SectionFourAnswerOne_10">one</string>
+    <string name="SectionFourAnswerTwo_10">two</string>
+    <string name="SectionFourAnswerThree_10">three</string>
+    <string name="SectionFourAnswerFour_10">one</string>
+    <string name="SectionFourAnswerFive_10">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--               SECTION FIVE: TRIANGLE CENTERS                    -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionFiveTheoryDef_10">• The centroid is where medians meet.
 \n • The orthocenter is where altitudes intersect.
 \n • Both are special triangle points.</string>
 
+    <!-- Q: Where do the three medians of a triangle meet? Answer: centroid -->
+    <string name="SectionFiveTheoryDefQuestion_10">What is the name of the point where all three medians of a triangle meet?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_10">centroid</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_10">orthocenter</string>
+    <string name="SectionFiveTheoryDefAnswerThree_10">circumcenter</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_10">centroid</string>
+
     <string name="SectionFiveTheoryProperties_10">• Medians meet at a point two-thirds from each vertex.
 \n • Altitudes always meet at one point.
 \n • Defines triangle centers and relations.</string>
 
-    <string name="SectionFiveTheoryWorkedExamples_10">• Construct triangle using median lengths.
-\n • Prove centroid divides median in a 2:1 ratio.
-\n • Uses parallelogram and midline reasoning.</string>
+    <!-- Q: The centroid divides each median in ratio from vertex to midpoint. Answer: 2/3 -->
+    <string name="SectionFiveTheoryPropsQuestion_10">The centroid divides each median in what ratio (from vertex to centroid vs full median length)?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_10">1/2</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_10">2/3</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_10">3/4</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_10">2/3</string>
+
+    <!-- Fixed typo: 10:1 ratio → 2:1 ratio -->
+    <string name="SectionFiveTheoryWorkedExamples_10">• To construct a triangle given its three median lengths m1, m2, m3: build a triangle with sides (2/3)m1, (2/3)m2, (2/3)m3 — this is the medial triangle scaled from the centroid. Scale back by 3/2 to recover the original.
+\n • Proof that the centroid divides each median in ratio 2:1: draw two medians and their intersection G. The triangles formed on either side of G share a vertex and have equal bases (midpoint construction), so by the midline theorem G is located 2/3 of the way from each vertex.
+\n • The orthocenter, centroid, and circumcenter are collinear on the Euler line, with the centroid dividing the segment between the other two in ratio 2:1.</string>
+
+    <!-- Q: The centroid divides each median in ratio 2:1 from vertex. What fraction from vertex is the centroid? Answer: 2/3 -->
+    <string name="SectionFiveTheoryWorkedExQuestion_10">In the ratio 2:1 in which the centroid divides a median, what fraction of the full median length is the centroid from the vertex?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_10">1/3</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_10">1/2</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_10">2/3</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_10">2/3</string>
 
     <string name="SectionFiveQuiz_10">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_10">one</string>
+    <string name="SecFiveQuizAnswer2_1_10">two</string>
+    <string name="SecFiveQuizAnswer3_1_10">three</string>
+    <string name="SecFiveQuizAnswer1_2_10">one</string>
+    <string name="SecFiveQuizAnswer2_2_10">two</string>
+    <string name="SecFiveQuizAnswer3_2_10">three</string>
+    <string name="SecFiveQuizAnswer1_3_10">one</string>
+    <string name="SecFiveQuizAnswer2_3_10">two</string>
+    <string name="SecFiveQuizAnswer3_3_10">three</string>
+    <string name="SecFiveQuizAnswer1_4_10">one</string>
+    <string name="SecFiveQuizAnswer2_4_10">two</string>
+    <string name="SecFiveQuizAnswer3_4_10">three</string>
+    <string name="SecFiveQuizAnswer1_5_10">one</string>
+    <string name="SecFiveQuizAnswer2_5_10">two</string>
+    <string name="SecFiveQuizAnswer3_5_10">three</string>
+    <string name="SectionFiveAnswerOne_10">one</string>
+    <string name="SectionFiveAnswerTwo_10">two</string>
+    <string name="SectionFiveAnswerThree_10">three</string>
+    <string name="SectionFiveAnswerFour_10">one</string>
+    <string name="SectionFiveAnswerFive_10">two</string>
 </resources>

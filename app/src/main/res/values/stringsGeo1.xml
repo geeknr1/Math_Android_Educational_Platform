@@ -2,28 +2,133 @@
 <resources>
     <string name="app_name_8">License_Project_2</string>
 
+    <!-- ===================== SECTION ONE: Geometry – Basic Concepts ===================== -->
     <string name="SectionOneTheoryDef_8">• Geometry studies shapes and space.
 \n • Points, lines, and planes are basic ideas.
 \n • Figures are made of points and follow axioms and theorems.</string>
+    <string name="SectionOneTheoryDefQuestion_8">How many lines pass through exactly two distinct points?</string>
+    <string name="SectionOneTheoryDefAnswerOne_8">0</string>
+    <string name="SectionOneTheoryDefAnswerTwo_8">1</string>
+    <string name="SectionOneTheoryDefAnswerThree_8">∞</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_8">1</string>
 
     <string name="SectionOneTheoryProperties_8">• Through two points passes one line.
 \n • Distance is always positive or zero.
 \n • Triangle sides obey the triangle inequality.</string>
+    <string name="SectionOneTheoryPropsQuestion_8">Is the distance between two distinct points always greater than 0?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_8">True</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_8">False</string>
+    <string name="SectionOneTheoryPropsAnswerThree_8">Neither</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_8">True</string>
 
     <string name="SectionOneTheoryWorkedExamples_8">• Proofs show how distances relate in triangles.
-\n • Example: ∣AC∣≥∣AB∣−∣BC∣ and ∣AC∣&lt;∣AB∣+∣BC∣ for non-collinear points.</string>
+\n • Example: ∣AC∣≥∣AB∣−∣BC∣ and ∣AC∣&lt;∣AB∣+∣BC∣ for non-collinear points.
+\n • Example: Given AB = 5 and BC = 3, verify AC &lt; 8 and AC &gt; 2. Both hold for any valid triangle.
+\n • Example: Three collinear points A, B, C with AB = 4 and BC = 6 give AC = 10. ✓</string>
+    <string name="SectionOneTheoryWorkedExQuestion_8">If AB = 6 and BC = 4, what is the maximum possible integer value of AC?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_8">8</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_8">9</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_8">10</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_8">9</string>
+
+    <!-- ==================== SECTION 1 QUIZ ==================== -->
+    <!-- Exercises: Collinear Points & Angles. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
 
     <string name="SectionOneQuiz_8">!!! Solve the Quiz !!!</string>
 
+    <!-- Ex1 Medium: A,B,C collinear, B between A and C, AB=7, BC=5. AC=? Correct = ONE = 12 -->
+    <string name="SecOneQuizAnswer1_1_8">12</string>
+    <string name="SecOneQuizAnswer2_1_8">2</string>
+    <string name="SecOneQuizAnswer3_1_8">35</string>
+
+    <!-- Ex2 Medium-Hard: M midpoint of AB, AM=6. AB=? Correct = TWO = 12 -->
+    <string name="SecOneQuizAnswer1_2_8">6</string>
+    <string name="SecOneQuizAnswer2_2_8">12</string>
+    <string name="SecOneQuizAnswer3_2_8">18</string>
+
+    <!-- Ex3 Hard: A,B,C,D in order. AB=4, BC=6, CD=10. AD=? Correct = THREE = 20 -->
+    <string name="SecOneQuizAnswer1_3_8">10</string>
+    <string name="SecOneQuizAnswer2_3_8">16</string>
+    <string name="SecOneQuizAnswer3_3_8">20</string>
+
+    <!-- Ex4 Very Hard: (3x−10)+(2x−50)=180. x=? Correct = ONE = 48 -->
+    <string name="SecOneQuizAnswer1_4_8">48</string>
+    <string name="SecOneQuizAnswer2_4_8">36</string>
+    <string name="SecOneQuizAnswer3_4_8">24</string>
+
+    <!-- Ex5 Legendary: AC=15, BD=12, BC=5. AD=? Correct = TWO = 22 -->
+    <string name="SecOneQuizAnswer1_5_8">20</string>
+    <string name="SecOneQuizAnswer2_5_8">22</string>
+    <string name="SecOneQuizAnswer3_5_8">27</string>
+
+    <string name="SectionOneAnswerOne_8">12</string>
+    <string name="SectionOneAnswerTwo_8">12</string>
+    <string name="SectionOneAnswerThree_8">20</string>
+    <string name="SectionOneAnswerFour_8">48</string>
+    <string name="SectionOneAnswerFive_8">22</string>
+
+    <!-- ===================== SECTION TWO: Geometric Figures ===================== -->
     <string name="SectionTwoTheoryDef_8">• A segment joins two endpoints.
 \n • A ray starts at one point and goes on endlessly.
 \n • Angles, polygons, and circles are key geometric figures.</string>
+    <string name="SectionTwoTheoryDefQuestion_8">What is the sum of angles in a triangle (in degrees)?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_8">90</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_8">180</string>
+    <string name="SectionTwoTheoryDefAnswerThree_8">360</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_8">180</string>
 
     <string name="SectionTwoTheoryProperties_8">• A line divides a plane into two parts.
 \n • Vertical angles are equal.
 \n • The sum of adjacent angles equals 180°.</string>
+    <string name="SectionTwoTheoryPropsQuestion_8">If one angle in a pair of vertical angles is 65°, what is the other (in degrees)?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_8">90</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_8">65</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_8">115</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_8">65</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_8">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryWorkedExamples_8">• Example 1: Two adjacent angles are supplementary. If one is 70°, the other = 180° − 70° = 110°. ✓
+\n • Example 2: Two vertical angles are formed at an intersection. If one is 45°, its vertical pair is also 45°. ✓
+\n • Example 3: A triangle has angles 50° and 70°. Third angle = 180° − 50° − 70° = 60°. ✓</string>
+    <string name="SectionTwoTheoryWorkedExQuestion_8">If two adjacent angles are supplementary and one is 120°, what is the other (in degrees)?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_8">30</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_8">60</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_8">90</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_8">60</string>
+
+    <!-- ==================== SECTION 2 QUIZ ==================== -->
+    <!-- Exercises: Perimeter, Area, Circumference. Correct buttons: ONE, TWO, THREE, ONE, TWO -->
 
     <string name="SectionTwoQuiz_8">!!! Solve the Quiz !!!</string>
+
+    <!-- Ex1 Medium: Rectangle length=8cm, width=5cm. Perimeter=? Correct = ONE = 26 cm -->
+    <string name="SecTwoQuizAnswer1_1_8">26 cm</string>
+    <string name="SecTwoQuizAnswer2_1_8">40 cm</string>
+    <string name="SecTwoQuizAnswer3_1_8">13 cm</string>
+
+    <!-- Ex2 Medium-Hard: Triangle base=12cm, height=7cm. Area=? Correct = TWO = 42 cm² -->
+    <string name="SecTwoQuizAnswer1_2_8">84 cm²</string>
+    <string name="SecTwoQuizAnswer2_2_8">42 cm²</string>
+    <string name="SecTwoQuizAnswer3_2_8">36 cm²</string>
+
+    <!-- Ex3 Hard: Square area=196 cm². Side=? Correct = THREE = 14 cm -->
+    <string name="SecTwoQuizAnswer1_3_8">12 cm</string>
+    <string name="SecTwoQuizAnswer2_3_8">16 cm</string>
+    <string name="SecTwoQuizAnswer3_3_8">14 cm</string>
+
+    <!-- Ex4 Very Hard: Circle circumference=20π cm. Radius=? Correct = ONE = 10 cm -->
+    <string name="SecTwoQuizAnswer1_4_8">10 cm</string>
+    <string name="SecTwoQuizAnswer2_4_8">20 cm</string>
+    <string name="SecTwoQuizAnswer3_4_8">5 cm</string>
+
+    <!-- Ex5 Legendary: Trapezoid bases=14cm and 22cm, area=180cm². Height=? Correct = TWO = 10 cm -->
+    <string name="SecTwoQuizAnswer1_5_8">9 cm</string>
+    <string name="SecTwoQuizAnswer2_5_8">10 cm</string>
+    <string name="SecTwoQuizAnswer3_5_8">12 cm</string>
+
+    <string name="SectionTwoAnswerOne_8">26 cm</string>
+    <string name="SectionTwoAnswerTwo_8">42 cm²</string>
+    <string name="SectionTwoAnswerThree_8">14 cm</string>
+    <string name="SectionTwoAnswerFour_8">10 cm</string>
+    <string name="SectionTwoAnswerFive_8">10 cm</string>
+
 </resources>

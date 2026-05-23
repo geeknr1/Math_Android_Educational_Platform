@@ -1,6 +1,7 @@
 package com.example.license_project_2.MathShoot;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
@@ -14,7 +15,7 @@ public class GameView extends SurfaceView implements Runnable {
     private Thread thread;
     private boolean isPlaying, isGameOver = false;
     private Background backgroundOne, backgroundTwo;
-    private int screenX, screenY;
+    private int screenX, screenY, points = 0;
     private float oldY = 0;
     public static float screenRatioX, screenRatioY;
     private Paint paint;
@@ -35,12 +36,29 @@ public class GameView extends SurfaceView implements Runnable {
         bullets = new ArrayList<>();
         backgroundTwo.x = screenX;
 
+        random = new Random();
         numbers = new Number[9];
         for(int i = 0; i < 9; i++){
-            Number number = new Number(getResources());
+            Number number = new Number(getResources(), i);
             numbers[i] = number;
+            placeNumberOnTrack(number, i);
         }
-        random = new Random();
+    }
+
+    private int gameHeight() {
+        int h = getHeight();
+        return h > 0 ? h : screenY;
+    }
+
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        // Nu schimbăm screenX/screenRatio: fundalul și avionul sunt deja scalate în constructor cu dimensiunile din Activity.
+        // Doar respawn ținte cu y între 0 .. înălțimea reală a view-ului (evită cifre desenate sub zona vizibilă).
+        if (numbers == null || w <= 0 || h <= 0) return;
+        for (int i = 0; i < numbers.length; i++) {
+            placeNumberOnTrack(numbers[i], i);
+        }
     }
 
     @Override
@@ -86,6 +104,7 @@ public class GameView extends SurfaceView implements Runnable {
                 if(Rect.intersects(number.getCollisionShape(), bullet.getCollisionShape())){
                     number.x = -500;
                     bullet.x = screenX + 500;
+                    points += 10;
                 }
             }
         }
@@ -96,25 +115,32 @@ public class GameView extends SurfaceView implements Runnable {
         for(Number number : numbers){
             number.x -= number.speed;
             if(number.x + number.width < 0){
-                int bound = (int)(30 * screenRatioX);
-                number.speed = random.nextInt(bound);
-
-                if(number.speed < 5)
-                    number.speed = random.nextInt(bound);
-
-                if(number.speed < 10 * screenRatioX)
-                    number.speed = (int)(10 * screenRatioX);
-
-                number.x = screenX;
-                number.y = random.nextInt(screenY - number.height);
+                placeNumberOnTrack(number, 0);
             }
 
         }
     }
 
+    private void placeNumberOnTrack(Number number, int laneIndex) {
+        int bound = (int)(30 * screenRatioX);
+        number.speed = random.nextInt(Math.max(1, bound));
+
+        if(number.speed < 5)
+            number.speed = random.nextInt(Math.max(1, bound));
+
+        if(number.speed < 10 * screenRatioX)
+            number.speed = (int)(10 * screenRatioX);
+
+        number.x = screenX + laneIndex * (screenX / 6);
+        int gh = gameHeight();
+        int maxY = Math.max(1, gh - number.height);
+        number.y = random.nextInt(maxY);
+    }
+
     private void draw(){
         if(getHolder().getSurface().isValid()){
             Canvas canvas = getHolder().lockCanvas();
+            if (canvas == null) return;
             canvas.drawBitmap(backgroundOne.background, backgroundOne.x, backgroundOne.y, paint);
             canvas.drawBitmap(backgroundTwo.background, backgroundTwo.x, backgroundTwo.y, paint);
 
@@ -127,7 +153,19 @@ public class GameView extends SurfaceView implements Runnable {
 
             for(Number number: numbers){
                 canvas.drawBitmap(number.getNumber(), number.x, number.y, paint);
+                if(Rect.intersects(flight.getCollisionShape(), number.getCollisionShape())){
+                    isGameOver = true;
+                    getHolder().unlockCanvasAndPost(canvas);
+
+                    post(() -> {
+                        Intent intent = new Intent(getContext(), GameOverShoot.class);
+                        intent.putExtra("points", points);
+                        getContext().startActivity(intent);
+                    });
+                    return;
+                }
             }
+
 
             canvas.drawBitmap(flight.getFlight(), flight.x, flight.y, paint);
 

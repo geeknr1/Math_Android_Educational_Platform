@@ -5,49 +5,212 @@
     <string name="SectionOneTheoryDef_4">• Numerical expressions use only numbers and operation signs.\n
 • Algebraic expressions use both numbers and letters joined by operations like +, −, ×, ÷, powers, or roots.\n
 • Examples: a + b, x³ − y²/z, √2xy + 3x²y − 1.</string>
+    <string name="SectionOneTheoryDefQuestion_4">Is x² + 3x − 1 an algebraic expression? (True / False)</string>
+    <string name="SectionOneTheoryDefAnswerOne_4">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_4">False</string>
+    <string name="SectionOneTheoryDefAnswerThree_4">Neither</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_4">True</string>
 
     <string name="SectionOneTheoryProperties_4">• Numerical expressions have sense only if all operations are possible (e.g., no division by zero).\n
 • Algebraic expressions have a domain of definition — values that make all operations valid.\n
 • The numerical value is found by replacing letters with numbers.\n
 • Identities are true for all values (a + b ≡ b + a), while equations are true only for some (e.g., 3x + 1 = x + 1 ⇒ x = 1).</string>
+    <string name="SectionOneTheoryPropsQuestion_4">What is the value of 2x² − x + 3 for x = 2?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_4">7</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_4">9</string>
+    <string name="SectionOneTheoryPropsAnswerThree_4">13</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_4">9</string>
 
-    <string name="SectionOneTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionOneTheoryWorkedExamples_4">Find the domain of the expression 1/(x − 3).\n
+Step 1: The expression is undefined when the denominator equals zero.\n
+Step 2: x − 3 = 0 → x = 3.\n
+Step 3: Domain: all real numbers except x = 3.</string>
+    <string name="SectionOneTheoryWorkedExQuestion_4">For which value of x is 1/(x − 3) undefined?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_4">0</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_4">1</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_4">3</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_4">3</string>
+
     <string name="SectionOneQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_4">one</string>
+    <string name="SecOneQuizAnswer2_1_4">two</string>
+    <string name="SecOneQuizAnswer3_1_4">three</string>
+    <string name="SecOneQuizAnswer1_2_4">one</string>
+    <string name="SecOneQuizAnswer2_2_4">two</string>
+    <string name="SecOneQuizAnswer3_2_4">three</string>
+    <string name="SecOneQuizAnswer1_3_4">one</string>
+    <string name="SecOneQuizAnswer2_3_4">two</string>
+    <string name="SecOneQuizAnswer3_3_4">three</string>
+    <string name="SecOneQuizAnswer1_4_4">one</string>
+    <string name="SecOneQuizAnswer2_4_4">two</string>
+    <string name="SecOneQuizAnswer3_4_4">three</string>
+    <string name="SecOneQuizAnswer1_5_4">one</string>
+    <string name="SecOneQuizAnswer2_5_4">two</string>
+    <string name="SecOneQuizAnswer3_5_4">three</string>
+    <string name="SectionOneAnswerOne_4">one</string>
+    <string name="SectionOneAnswerTwo_4">two</string>
+    <string name="SectionOneAnswerThree_4">three</string>
+    <string name="SectionOneAnswerFour_4">one</string>
+    <string name="SectionOneAnswerFive_4">two</string>
 
 
     <string name="SectionTwoTheoryDef_4">• A ratio compares two numbers: a (antecedent) and b (consequent).\n
-• Percent means “per hundred” and is written as %.\n
+• Percent means "per hundred" and is written as %.\n
 • Example: 80% = 80/100 = 0.8.</string>
+    <string name="SectionTwoTheoryDefQuestion_4">What is 35% expressed as a fraction in lowest terms?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_4">35/10</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_4">7/20</string>
+    <string name="SectionTwoTheoryDefAnswerThree_4">1/35</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_4">7/20</string>
 
-    <string name="SectionTwoTheoryProperties_4">• Ratios compare quantities of the same kind and don’t depend on units.\n
+    <string name="SectionTwoTheoryProperties_4">• Ratios compare quantities of the same kind and don\'t depend on units.\n
 • Some ratios (e.g., distance/time) define new quantities like speed.\n
 • Percent formula: r = (a/b) × 100.\n
 • Used in problems like discounts, yields, and population counts.</string>
+    <string name="SectionTwoTheoryPropsQuestion_4">A class has 12 girls out of 30 students. What percentage are girls?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_4">30%</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_4">40%</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_4">50%</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_4">40%</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryWorkedExamples_4">A product costs 200 and is discounted by 15%. What is the final price?\n
+Step 1: Calculate the discount: 15% of 200 = (15/100) × 200 = 30.\n
+Step 2: Subtract from original: 200 − 30 = 170.\n
+Step 3: Final price: 170.</string>
+    <string name="SectionTwoTheoryWorkedExQuestion_4">A product costs 200 and is discounted by 15%. What is the final price?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_4">185</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_4">160</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_4">170</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_4">170</string>
+
     <string name="SectionTwoQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_4">one</string>
+    <string name="SecTwoQuizAnswer2_1_4">two</string>
+    <string name="SecTwoQuizAnswer3_1_4">three</string>
+    <string name="SecTwoQuizAnswer1_2_4">one</string>
+    <string name="SecTwoQuizAnswer2_2_4">two</string>
+    <string name="SecTwoQuizAnswer3_2_4">three</string>
+    <string name="SecTwoQuizAnswer1_3_4">one</string>
+    <string name="SecTwoQuizAnswer2_3_4">two</string>
+    <string name="SecTwoQuizAnswer3_3_4">three</string>
+    <string name="SecTwoQuizAnswer1_4_4">one</string>
+    <string name="SecTwoQuizAnswer2_4_4">two</string>
+    <string name="SecTwoQuizAnswer3_4_4">three</string>
+    <string name="SecTwoQuizAnswer1_5_4">one</string>
+    <string name="SecTwoQuizAnswer2_5_4">two</string>
+    <string name="SecTwoQuizAnswer3_5_4">three</string>
+    <string name="SectionTwoAnswerOne_4">one</string>
+    <string name="SectionTwoAnswerTwo_4">two</string>
+    <string name="SectionTwoAnswerThree_4">three</string>
+    <string name="SectionTwoAnswerFour_4">one</string>
+    <string name="SectionTwoAnswerFive_4">two</string>
 
 
-    <string name="SectionThreeTheoryDef_4">• A proportion is an equality between two ratios: a/b = c/d or a:b = c:d, read “a is to b as c is to d.”</string>
+    <string name="SectionThreeTheoryDef_4">• A proportion is an equality between two ratios: a/b = c/d or a:b = c:d, read "a is to b as c is to d."</string>
+    <string name="SectionThreeTheoryDefQuestion_4">If 2/5 = x/20, what is x?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_4">4</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_4">8</string>
+    <string name="SectionThreeTheoryDefAnswerThree_4">10</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_4">8</string>
+
 
     <string name="SectionThreeTheoryProperties_4">• Main rule: product of extremes = product of means (ad = bc).\n
 • New proportions can be derived by combining or transforming terms.\n
 • For equal ratios, (a₁ + a₂ + ... + aₙ)/(b₁ + b₂ + ... + bₙ) = a₁/b₁.</string>
+    <string name="SectionThreeTheoryPropsQuestion_4">In the proportion 3/4 = 9/d, what is d?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_4">9</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_4">12</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_4">16</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_4">12</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_4">A car travels 180 km in 3 hours. How far does it travel in 5 hours at the same speed?\n
+Step 1: Set up proportion: 180/3 = x/5.\n
+Step 2: Cross multiply: 3x = 180 × 5 = 900.\n
+Step 3: x = 900/3 = 300.\n
+Step 4: Result: 300 km.</string>
+    <string name="SectionThreeTheoryWorkedExQuestion_4">A car travels 180 km in 3 hours. How many km does it travel in 5 hours?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_4">270</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_4">250</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_4">300</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_4">300</string>
+
+
     <string name="SectionThreeQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_4">one</string>
+    <string name="SecThreeQuizAnswer2_1_4">two</string>
+    <string name="SecThreeQuizAnswer3_1_4">three</string>
+    <string name="SecThreeQuizAnswer1_2_4">one</string>
+    <string name="SecThreeQuizAnswer2_2_4">two</string>
+    <string name="SecThreeQuizAnswer3_2_4">three</string>
+    <string name="SecThreeQuizAnswer1_3_4">one</string>
+    <string name="SecThreeQuizAnswer2_3_4">two</string>
+    <string name="SecThreeQuizAnswer3_3_4">three</string>
+    <string name="SecThreeQuizAnswer1_4_4">one</string>
+    <string name="SecThreeQuizAnswer2_4_4">two</string>
+    <string name="SecThreeQuizAnswer3_4_4">three</string>
+    <string name="SecThreeQuizAnswer1_5_4">one</string>
+    <string name="SecThreeQuizAnswer2_5_4">two</string>
+    <string name="SecThreeQuizAnswer3_5_4">three</string>
+    <string name="SectionThreeAnswerOne_4">one</string>
+    <string name="SectionThreeAnswerTwo_4">two</string>
+    <string name="SectionThreeAnswerThree_4">three</string>
+    <string name="SectionThreeAnswerFour_4">one</string>
+    <string name="SectionThreeAnswerFive_4">two</string>
 
 
     <string name="SectionFourTheoryDef_4">• A monomial is a product of numbers and letters (e.g., 3xy²).\n
 • A polynomial is a sum of monomials (e.g., x² + 3x + 2).</string>
+    <string name="SectionFourTheoryDefQuestion_4">What is the degree of the polynomial 4x³ − 2x + 7?</string>
+    <string name="SectionFourTheoryDefAnswerOne_4">1</string>
+    <string name="SectionFourTheoryDefAnswerTwo_4">2</string>
+    <string name="SectionFourTheoryDefAnswerThree_4">3</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_4">3</string>
+
 
     <string name="SectionFourTheoryProperties_4">• In standard form, coefficients come first, followed by variables with powers.\n
 • Polynomials can be monomials, binomials, or trinomials.\n
 • The degree is the highest power of any term.\n
 • Add/subtract by combining like terms; multiply each term with each other.</string>
+    <string name="SectionFourTheoryPropsQuestion_4">What is (2x + 3) + (x − 1)?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_4">3x + 2</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_4">2x + 2</string>
+    <string name="SectionFourTheoryPropsAnswerThree_4">3x − 2</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_4">3x + 2</string>
 
-    <string name="SectionFourTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+
+    <string name="SectionFourTheoryWorkedExamples_4">Multiply (x + 2)(x + 3).\n
+Step 1: Expand: x·x + x·3 + 2·x + 2·3.\n
+Step 2: Simplify: x² + 3x + 2x + 6.\n
+Step 3: Combine like terms: x² + 5x + 6.</string>
+    <string name="SectionFourTheoryWorkedExQuestion_4">What is the product of (x + 2)(x + 3)?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_4">x² + 5x + 5</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_4">x² + 6x + 6</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_4">x² + 5x + 6</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_4">x² + 5x + 6</string>
+
+
     <string name="SectionFourQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_4">one</string>
+    <string name="SecFourQuizAnswer2_1_4">two</string>
+    <string name="SecFourQuizAnswer3_1_4">three</string>
+    <string name="SecFourQuizAnswer1_2_4">one</string>
+    <string name="SecFourQuizAnswer2_2_4">two</string>
+    <string name="SecFourQuizAnswer3_2_4">three</string>
+    <string name="SecFourQuizAnswer1_3_4">one</string>
+    <string name="SecFourQuizAnswer2_3_4">two</string>
+    <string name="SecFourQuizAnswer3_3_4">three</string>
+    <string name="SecFourQuizAnswer1_4_4">one</string>
+    <string name="SecFourQuizAnswer2_4_4">two</string>
+    <string name="SecFourQuizAnswer3_4_4">three</string>
+    <string name="SecFourQuizAnswer1_5_4">one</string>
+    <string name="SecFourQuizAnswer2_5_4">two</string>
+    <string name="SecFourQuizAnswer3_5_4">three</string>
+    <string name="SectionFourAnswerOne_4">one</string>
+    <string name="SectionFourAnswerTwo_4">two</string>
+    <string name="SectionFourAnswerThree_4">three</string>
+    <string name="SectionFourAnswerFour_4">one</string>
+    <string name="SectionFourAnswerFive_4">two</string>
 
 
     <string name="SectionFiveTheoryDef_4">• Key identities:\n
@@ -56,38 +219,223 @@
 (a + b)(a − b) = a² − b²\n
 (a ± b)³ = a³ ± 3a²b + 3ab² ± b³.\n
 • Used also for approximations, e.g., (1 + a)² ≈ 1 + 2a for small a.</string>
+    <string name="SectionFiveTheoryDefQuestion_4">What is (x + 5)²?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_4">x² + 25</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_4">x² + 10x + 25</string>
+    <string name="SectionFiveTheoryDefAnswerThree_4">x² + 5x + 25</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_4">x² + 10x + 25</string>
 
-    <string name="SectionFiveTheoryProperties_4">!!! Empty !!!</string>
-    <string name="SectionFiveTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+
+    <string name="SectionFiveTheoryProperties_4">Further Notes on Algebraic Identities:\n
+• (a + b)² and (a − b)² always produce a perfect square trinomial.\n
+• The difference of squares (a + b)(a − b) = a² − b² has no middle term.\n
+• The cube identities expand to 4 terms each.\n
+• These identities work in reverse for factorization: recognize the pattern, then factor.\n
+• For small values of a, higher-order terms become negligible, allowing linear approximations.</string>
+    <string name="SectionFiveTheoryPropsQuestion_4">What is (a + b)(a − b)?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_4">a² + b²</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_4">a² − 2ab + b²</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_4">a² − b²</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_4">a² − b²</string>
+
+
+    <string name="SectionFiveTheoryWorkedExamples_4">Expand (2x − 3)².\n
+Step 1: Apply (a − b)² = a² − 2ab + b² with a = 2x, b = 3.\n
+Step 2: (2x)² − 2·(2x)·3 + 3².\n
+Step 3: 4x² − 12x + 9.</string>
+    <string name="SectionFiveTheoryWorkedExQuestion_4">What is (2x − 3)²?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_4">4x² + 12x + 9</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_4">4x² − 12x + 9</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_4">4x² − 6x + 9</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_4">4x² − 12x + 9</string>
+
+
     <string name="SectionFiveQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_4">one</string>
+    <string name="SecFiveQuizAnswer2_1_4">two</string>
+    <string name="SecFiveQuizAnswer3_1_4">three</string>
+    <string name="SecFiveQuizAnswer1_2_4">one</string>
+    <string name="SecFiveQuizAnswer2_2_4">two</string>
+    <string name="SecFiveQuizAnswer3_2_4">three</string>
+    <string name="SecFiveQuizAnswer1_3_4">one</string>
+    <string name="SecFiveQuizAnswer2_3_4">two</string>
+    <string name="SecFiveQuizAnswer3_3_4">three</string>
+    <string name="SecFiveQuizAnswer1_4_4">one</string>
+    <string name="SecFiveQuizAnswer2_4_4">two</string>
+    <string name="SecFiveQuizAnswer3_4_4">three</string>
+    <string name="SecFiveQuizAnswer1_5_4">one</string>
+    <string name="SecFiveQuizAnswer2_5_4">two</string>
+    <string name="SecFiveQuizAnswer3_5_4">three</string>
+    <string name="SectionFiveAnswerOne_4">one</string>
+    <string name="SectionFiveAnswerTwo_4">two</string>
+    <string name="SectionFiveAnswerThree_4">three</string>
+    <string name="SectionFiveAnswerFour_4">one</string>
+    <string name="SectionFiveAnswerFive_4">two</string>
 
 
     <string name="SectionSixTheoryDef_4">• A polynomial of degree n has the form P(x) = a₀xⁿ + a₁xⁿ⁻¹ + ... + aₙ.\n
 • Terms are written in descending order of powers.</string>
+    <string name="SectionSixTheoryDefQuestion_4">What is the leading coefficient of 5x⁴ − 3x² + 1?</string>
+    <string name="SectionSixTheoryDefAnswerOne_4">1</string>
+    <string name="SectionSixTheoryDefAnswerTwo_4">5</string>
+    <string name="SectionSixTheoryDefAnswerThree_4">-3</string>
+    <string name="SectionSixTheoryDefCorrectAnswer_4">5</string>
+
 
     <string name="SectionSixTheoryProperties_4">• Two polynomials are equal if all coefficients of matching powers are equal.\n
 • Operations: add, subtract, multiply using arithmetic rules.\n
 • Factorization rewrites a polynomial as a product (e.g., x² − a² = (x + a)(x − a)).\n
-• Irreducible polynomials can’t be factored (like primes).</string>
+• Irreducible polynomials can\'t be factored (like primes).</string>
+    <string name="SectionSixTheoryPropsQuestion_4">Which is the factored form of x² − 9?</string>
+    <string name="SectionSixTheoryPropsAnswerOne_4">(x − 3)²</string>
+    <string name="SectionSixTheoryPropsAnswerTwo_4">(x + 3)(x − 3)</string>
+    <string name="SectionSixTheoryPropsAnswerThree_4">(x + 9)(x − 1)</string>
+    <string name="SectionSixTheoryPropsCorrectAnswer_4">(x + 3)(x − 3)</string>
 
-    <string name="SectionSixTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+    <string name="SectionSixTheoryWorkedExamples_4">Factor x² + 5x + 6.\n
+Step 1: Find two numbers that multiply to 6 and add to 5: 2 and 3.\n
+Step 2: Write as (x + 2)(x + 3).\n
+Step 3: Verify: (x + 2)(x + 3) = x² + 5x + 6. ✓</string>
+    <string name="SectionSixTheoryWorkedExQuestion_4">What is the factored form of x² + 5x + 6?</string>
+    <string name="SectionSixTheoryWorkedExAnswerOne_4">(x + 1)(x + 6)</string>
+    <string name="SectionSixTheoryWorkedExAnswerTwo_4">(x + 2)(x + 4)</string>
+    <string name="SectionSixTheoryWorkedExAnswerThree_4">(x + 2)(x + 3)</string>
+    <string name="SectionSixTheoryWorkedExCorrectAnswer_4">(x + 2)(x + 3)</string>
+
+
     <string name="SectionSixQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecSixQuizAnswer1_1_4">one</string>
+    <string name="SecSixQuizAnswer2_1_4">two</string>
+    <string name="SecSixQuizAnswer3_1_4">three</string>
+    <string name="SecSixQuizAnswer1_2_4">one</string>
+    <string name="SecSixQuizAnswer2_2_4">two</string>
+    <string name="SecSixQuizAnswer3_2_4">three</string>
+    <string name="SecSixQuizAnswer1_3_4">one</string>
+    <string name="SecSixQuizAnswer2_3_4">two</string>
+    <string name="SecSixQuizAnswer3_3_4">three</string>
+    <string name="SecSixQuizAnswer1_4_4">one</string>
+    <string name="SecSixQuizAnswer2_4_4">two</string>
+    <string name="SecSixQuizAnswer3_4_4">three</string>
+    <string name="SecSixQuizAnswer1_5_4">one</string>
+    <string name="SecSixQuizAnswer2_5_4">two</string>
+    <string name="SecSixQuizAnswer3_5_4">three</string>
+    <string name="SectionSixAnswerOne_4">one</string>
+    <string name="SectionSixAnswerTwo_4">two</string>
+    <string name="SectionSixAnswerThree_4">three</string>
+    <string name="SectionSixAnswerFour_4">one</string>
+    <string name="SectionSixAnswerFive_4">two</string>
 
 
     <string name="SectionSevenTheoryDef_4">• Method of Undetermined Coefficients: assume a form, expand, and compare coefficients to find unknowns.\n
-• Some polynomials can’t be factorized; no general test exists.</string>
+• Some polynomials can\'t be factorized; no general test exists.</string>
+    <string name="SectionSevenTheoryDefQuestion_4">To factor x² + bx + c using undetermined coefficients, which condition must the two unknowns p and q satisfy?</string>
+    <string name="SectionSevenTheoryDefAnswerOne_4">p + q = c and p · q = b</string>
+    <string name="SectionSevenTheoryDefAnswerTwo_4">p · q = c and p + q = b</string>
+    <string name="SectionSevenTheoryDefAnswerThree_4">p − q = b and p · q = c</string>
+    <string name="SectionSevenTheoryDefCorrectAnswer_4">p · q = c and p + q = b</string>
 
-    <string name="SectionSevenTheoryProperties_4">!!! Empty !!!</string>
-    <string name="SectionSevenTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+
+    <string name="SectionSevenTheoryProperties_4">Key Facts about Polynomial Factorization:\n
+• A polynomial of degree 1 is always irreducible (it has no factors of lower degree).\n
+• A degree-2 polynomial is irreducible if its discriminant b² − 4ac &lt; 0.\n
+• Every polynomial of degree ≥ 1 over the reals can be written as a product of degree-1 and irreducible degree-2 factors.\n
+• The method of undetermined coefficients works by assuming a factored form and equating coefficients of each power.\n
+• There is no universal algorithm to decide if a polynomial of degree ≥ 5 is factorizable.</string>
+    <string name="SectionSevenTheoryPropsQuestion_4">Is x² + 1 factorable over the real numbers? (True / False)</string>
+    <string name="SectionSevenTheoryPropsAnswerOne_4">True</string>
+    <string name="SectionSevenTheoryPropsAnswerTwo_4">False</string>
+    <string name="SectionSevenTheoryPropsAnswerThree_4">Neither</string>
+    <string name="SectionSevenTheoryPropsCorrectAnswer_4">False</string>
+
+
+    <string name="SectionSevenTheoryWorkedExamples_4">Factor x² − 5x + 6 using undetermined coefficients.\n
+Step 1: Assume (x + p)(x + q) = x² + (p+q)x + pq.\n
+Step 2: Match coefficients: p + q = −5, p · q = 6.\n
+Step 3: Find p and q: −2 and −3 satisfy both conditions.\n
+Step 4: Result: (x − 2)(x − 3).</string>
+    <string name="SectionSevenTheoryWorkedExQuestion_4">What is the factored form of x² − 5x + 6?</string>
+    <string name="SectionSevenTheoryWorkedExAnswerOne_4">(x − 1)(x − 6)</string>
+    <string name="SectionSevenTheoryWorkedExAnswerTwo_4">(x + 2)(x + 3)</string>
+    <string name="SectionSevenTheoryWorkedExAnswerThree_4">(x − 2)(x − 3)</string>
+    <string name="SectionSevenTheoryWorkedExCorrectAnswer_4">(x − 2)(x − 3)</string>
+
     <string name="SectionSevenQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecSevenQuizAnswer1_1_4">one</string>
+    <string name="SecSevenQuizAnswer2_1_4">two</string>
+    <string name="SecSevenQuizAnswer3_1_4">three</string>
+    <string name="SecSevenQuizAnswer1_2_4">one</string>
+    <string name="SecSevenQuizAnswer2_2_4">two</string>
+    <string name="SecSevenQuizAnswer3_2_4">three</string>
+    <string name="SecSevenQuizAnswer1_3_4">one</string>
+    <string name="SecSevenQuizAnswer2_3_4">two</string>
+    <string name="SecSevenQuizAnswer3_3_4">three</string>
+    <string name="SecSevenQuizAnswer1_4_4">one</string>
+    <string name="SecSevenQuizAnswer2_4_4">two</string>
+    <string name="SecSevenQuizAnswer3_4_4">three</string>
+    <string name="SecSevenQuizAnswer1_5_4">one</string>
+    <string name="SecSevenQuizAnswer2_5_4">two</string>
+    <string name="SecSevenQuizAnswer3_5_4">three</string>
+    <string name="SectionSevenAnswerOne_4">one</string>
+    <string name="SectionSevenAnswerTwo_4">two</string>
+    <string name="SectionSevenAnswerThree_4">three</string>
+    <string name="SectionSevenAnswerFour_4">one</string>
+    <string name="SectionSevenAnswerFive_4">two</string>
 
 
     <string name="SectionEightTheoryDef_4">• Algebraic fraction: P(x)/Q(x), where Q(x) ≠ 0.\n
 • Operations (add, subtract, multiply, divide) follow the same rules as with numbers.\n
 • Fractions must have a common denominator before adding or subtracting.\n
 • Rationalization removes radicals using conjugate pairs (√X − √Y)(√X + √Y) = X − Y.</string>
+    <string name="SectionEightTheoryDefQuestion_4">For which value of x is the fraction (x + 1)/(x − 2) undefined?</string>
+    <string name="SectionEightTheoryDefAnswerOne_4">-1</string>
+    <string name="SectionEightTheoryDefAnswerTwo_4">0</string>
+    <string name="SectionEightTheoryDefAnswerThree_4">2</string>
+    <string name="SectionEightTheoryDefCorrectAnswer_4">2</string>
 
-    <string name="SectionEightTheoryProperties_4">!!! Empty !!!</string>
-    <string name="SectionEightTheoryWorkedExamples_4">!!! Worked Examples !!!</string>
+
+    <string name="SectionEightTheoryProperties_4">Key Properties of Algebraic Fractions:\n
+• A fraction is simplified when the numerator and denominator share no common factor other than 1.\n
+• To add fractions: find the LCM of denominators, convert, then add numerators.\n
+• To multiply: multiply numerators and denominators separately, then simplify.\n
+• To divide: multiply by the reciprocal of the divisor.\n
+• Rationalization of 1/(√a + √b): multiply top and bottom by (√a − √b) to eliminate the radical from the denominator.</string>
+    <string name="SectionEightTheoryPropsQuestion_4">What is the rationalized form of 1/(√3 + 1)?</string>
+    <string name="SectionEightTheoryPropsAnswerOne_4">(√3 + 1)/2</string>
+    <string name="SectionEightTheoryPropsAnswerTwo_4">(√3 − 1)/2</string>
+    <string name="SectionEightTheoryPropsAnswerThree_4">1/(√3 − 1)</string>
+    <string name="SectionEightTheoryPropsCorrectAnswer_4">(√3 − 1)/2</string>
+
+
+    <string name="SectionEightTheoryWorkedExamples_4">Simplify (x² − 4)/(x − 2).\n
+Step 1: Factor numerator: x² − 4 = (x + 2)(x − 2).\n
+Step 2: Cancel common factor (x − 2): (x + 2)(x − 2)/(x − 2).\n
+Step 3: Result: x + 2 (for x ≠ 2).</string>
+    <string name="SectionEightTheoryWorkedExQuestion_4">What is (x² − 4)/(x − 2) simplified (x ≠ 2)?</string>
+    <string name="SectionEightTheoryWorkedExAnswerOne_4">x − 2</string>
+    <string name="SectionEightTheoryWorkedExAnswerTwo_4">x + 4</string>
+    <string name="SectionEightTheoryWorkedExAnswerThree_4">x + 2</string>
+    <string name="SectionEightTheoryWorkedExCorrectAnswer_4">x + 2</string>
+
+
     <string name="SectionEightQuiz_4">!!! Solve the Quiz !!!</string>
+    <string name="SecEightQuizAnswer1_1_4">one</string>
+    <string name="SecEightQuizAnswer2_1_4">two</string>
+    <string name="SecEightQuizAnswer3_1_4">three</string>
+    <string name="SecEightQuizAnswer1_2_4">one</string>
+    <string name="SecEightQuizAnswer2_2_4">two</string>
+    <string name="SecEightQuizAnswer3_2_4">three</string>
+    <string name="SecEightQuizAnswer1_3_4">one</string>
+    <string name="SecEightQuizAnswer2_3_4">two</string>
+    <string name="SecEightQuizAnswer3_3_4">three</string>
+    <string name="SecEightQuizAnswer1_4_4">one</string>
+    <string name="SecEightQuizAnswer2_4_4">two</string>
+    <string name="SecEightQuizAnswer3_4_4">three</string>
+    <string name="SecEightQuizAnswer1_5_4">one</string>
+    <string name="SecEightQuizAnswer2_5_4">two</string>
+    <string name="SecEightQuizAnswer3_5_4">three</string>
+    <string name="SectionEightAnswerOne_4">one</string>
+    <string name="SectionEightAnswerTwo_4">two</string>
+    <string name="SectionEightAnswerThree_4">three</string>
+    <string name="SectionEightAnswerFour_4">one</string>
+    <string name="SectionEightAnswerFive_4">two</string>
 </resources>

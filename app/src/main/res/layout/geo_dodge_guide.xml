@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot"
+    android:background="@drawable/algebram">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/lavender_border">
+                <TextView
+                    android:id="@+id/twentyfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Geo Dodge"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/twentyfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Geometric shapes fall from the top of the screen."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/shapes"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/figuresone"
+                    />
+                <TextView
+                    android:id="@+id/twentysix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Dodge them — shapes explode on impact, 10 points being earned per explosion."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/dodge"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/figurestwo"
+                    />
+                <TextView
+                    android:id="@+id/twentyseven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="If you're hit 3 times by the shapes, then it's game over and your final score is going to be displayed on the screen."
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

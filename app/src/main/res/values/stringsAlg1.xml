@@ -2,35 +2,64 @@
     <string name="app_name_1">License_Project_2</string>
 
     <string name="SectionOneTheoryDef">Natural numbers are used for counting objects (1, 2, 3, ...). They have a smallest number (1) but no largest. Whole numbers extend them by including zero and negatives (..., -2, -1, 0, 1, 2, ...).</string>
+    <string name="SectionOneTheoryDefQuestion">What is the main difference between natural numbers and whole numbers?</string>
+    <string name="SectionOneTheoryDefAnswerOne">one</string>
+    <string name="SectionOneTheoryDefAnswerTwo">two</string>
+    <string name="SectionOneTheoryDefAnswerThree">three</string>
+    <string name="SectionOneTheoryDefCorrectAnswer">one</string>
 
     <string name="SectionOneTheoryProperties">For any whole numbers a, b, and c:\n
 ◦ Commutative: a + b = b + a, a·b = b·a.\n
 ◦ Associative: (a + b) + c = a + (b + c).\n
 ◦ Distributive: (a + b)·c = a·c + b·c.\n
 ◦ Zero and Unity: a + 0 = a, a·0 = 0, a·1 = a.</string>
+    <string name="SectionOneTheoryPropsQuestion">Which property is shown in the equation:\n 2 + 5 = 5 + 2 ?</string>
+    <string name="SectionOneTheoryPropsAnswerOne">one</string>
+    <string name="SectionOneTheoryPropsAnswerTwo">two</string>
+    <string name="SectionOneTheoryPropsAnswerThree">three</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer">two</string>
 
     <string name="SectionOneTheoryWorkedExamples">!!! Worked Examples !!!</string>
+    <string name="SectionOneTheoryWorkedExQuestion">Use the distributive property to simplify:\n (3 + 4) · 2</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne">one</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo">two</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree">three</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer">three</string>
+
+    <!-- ==================== SECTION 1 QUIZ ==================== -->
+    <!-- Exercises: Algebra — solve for x. Correct answers: ONE, TWO, THREE, ONE, TWO -->
     <string name="SectionOneQuiz">!!! Solve the quiz !!!</string>
-    <string name="SecOneQuizAnswer1_1">one</string>
-    <string name="SecOneQuizAnswer2_1">two</string>
-    <string name="SecOneQuizAnswer3_1">three</string>
-    <string name="SecOneQuizAnswer1_2">one</string>
-    <string name="SecOneQuizAnswer2_2">two</string>
-    <string name="SecOneQuizAnswer3_2">three</string>
-    <string name="SecOneQuizAnswer1_3">one</string>
-    <string name="SecOneQuizAnswer2_3">two</string>
-    <string name="SecOneQuizAnswer3_3">three</string>
-    <string name="SecOneQuizAnswer1_4">one</string>
-    <string name="SecOneQuizAnswer2_4">two</string>
-    <string name="SecOneQuizAnswer3_4">three</string>
-    <string name="SecOneQuizAnswer1_5">one</string>
-    <string name="SecOneQuizAnswer2_5">two</string>
-    <string name="SecOneQuizAnswer3_5">three</string>
-    <string name="SectionOneAnswerOne">one</string>
-    <string name="SectionOneAnswerTwo">two</string>
-    <string name="SectionOneAnswerThree">three</string>
-    <string name="SectionOneAnswerFour">one</string>
-    <string name="SectionOneAnswerFive">two</string>
+
+    <!-- Ex1 Medium: x + 348 = 1025. Correct = ONE = 677 -->
+    <string name="SecOneQuizAnswer1_1">677</string>
+    <string name="SecOneQuizAnswer2_1">573</string>
+    <string name="SecOneQuizAnswer3_1">700</string>
+
+    <!-- Ex2 Medium-Hard: 5x − 276 = 1124. Correct = TWO = 280 -->
+    <string name="SecOneQuizAnswer1_2">260</string>
+    <string name="SecOneQuizAnswer2_2">280</string>
+    <string name="SecOneQuizAnswer3_2">300</string>
+
+    <!-- Ex3 Hard: (3x + 45) ÷ 5 = 123. Correct = THREE = 190 -->
+    <string name="SecOneQuizAnswer1_3">180</string>
+    <string name="SecOneQuizAnswer2_3">185</string>
+    <string name="SecOneQuizAnswer3_3">190</string>
+
+    <!-- Ex4 Very Hard: 2(4x − 75) + 3(2x + 40) = 1010. Correct = ONE = 520/7 -->
+    <string name="SecOneQuizAnswer1_4">520/7</string>
+    <string name="SecOneQuizAnswer2_4">75</string>
+    <string name="SecOneQuizAnswer3_4">80</string>
+
+    <!-- Ex5 Legendary: (5x−120)/4 + (3x+60)/2 = 500. Correct = TWO = 2000/11 -->
+    <string name="SecOneQuizAnswer1_5">150</string>
+    <string name="SecOneQuizAnswer2_5">2000/11</string>
+    <string name="SecOneQuizAnswer3_5">200</string>
+
+    <string name="SectionOneAnswerOne">677</string>
+    <string name="SectionOneAnswerTwo">280</string>
+    <string name="SectionOneAnswerThree">190</string>
+    <string name="SectionOneAnswerFour">520/7</string>
+    <string name="SectionOneAnswerFive">2000/11</string>
 
 
     <string name="SectionTwoTheoryDef">Definitions:\n
@@ -38,35 +67,65 @@
 ◦ Prime: has only two divisors (1 and itself).\n
 ◦ Composite: has more than two divisors.\n
 ◦ Unity (1): neither prime nor composite.</string>
+    <string name="SectionTwoTheoryDefQuestion">What divisors does the prime number have?</string>
+    <string name="SectionTwoTheoryDefAnswerOne">one</string>
+    <string name="SectionTwoTheoryDefAnswerTwo">two</string>
+    <string name="SectionTwoTheoryDefAnswerThree">three</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer">one</string>
 
     <string name="SectionTwoTheoryProperties">Any number >1 can be written uniquely as a product of primes.\n
 Divisibility rules:\n
 ◦ By 2 or 5: check whether the last digit is even (divisibility by 2) ; whether the last digit is 5 or 0.\n
 ◦ By 3 or 9: sum of digits divisible by 3 or 9.\n
 ◦ By 6: divisible by both 2 and 3.</string>
+    <string name="SectionTwoTheoryPropsQuestion">Is 126 divisible by 6? (True / False)</string>
+    <string name="SectionTwoTheoryPropsAnswerOne">True</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo">False</string>
+    <string name="SectionTwoTheoryPropsAnswerThree">Neither</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer">True</string>
 
-    <string name="SectionTwoTheoryWorkedExamples">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryWorkedExamples">Write 60 as a product of prime numbers.</string>
+    <string name="SectionTwoTheoryWorkedExQuestion">What is the prime factorization of 60?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne">2² · 3 · 5</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo">2 · 5 · 6</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree">4 · 3 · 5</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer">2² · 3 · 5</string>
+
+    <!-- ==================== SECTION 2 QUIZ ==================== -->
+    <!-- Exercises: Prime Numbers. Correct answers: ONE, TWO, THREE, ONE, TWO -->
+
     <string name="SectionTwoQuiz">!!! Solve the quiz !!!</string>
-    <string name="SecTwoQuizAnswer1_1">one</string>
-    <string name="SecTwoQuizAnswer2_1">two</string>
-    <string name="SecTwoQuizAnswer3_1">three</string>
-    <string name="SecTwoQuizAnswer1_2">one</string>
-    <string name="SecTwoQuizAnswer2_2">two</string>
-    <string name="SecTwoQuizAnswer3_2">three</string>
-    <string name="SecTwoQuizAnswer1_3">one</string>
-    <string name="SecTwoQuizAnswer2_3">two</string>
-    <string name="SecTwoQuizAnswer3_3">answerthree</string>
-    <string name="SecTwoQuizAnswer1_4">answerone</string>
-    <string name="SecTwoQuizAnswer2_4">answertwo</string>
-    <string name="SecTwoQuizAnswer3_4">answerthree</string>
-    <string name="SecTwoQuizAnswer1_5">answerone</string>
-    <string name="SecTwoQuizAnswer2_5">answertwo</string>
-    <string name="SecTwoQuizAnswer3_5">answerthree</string>
-    <string name="SectionTwoAnswerOne">1</string>
-    <string name="SectionTwoAnswerTwo">2</string>
-    <string name="SectionTwoAnswerThree">3</string>
-    <string name="SectionTwoAnswerFour">4</string>
-    <string name="SectionTwoAnswerFive">5</string>
+
+    <!-- Ex1 Medium: Is 197 prime or composite? Correct = ONE = Prime -->
+    <string name="SecTwoQuizAnswer1_1">Prime</string>
+    <string name="SecTwoQuizAnswer2_1">Composite</string>
+    <string name="SecTwoQuizAnswer3_1">Neither</string>
+
+    <!-- Ex2 Medium-Hard: Smallest prime greater than 200? Correct = TWO = 211 -->
+    <string name="SecTwoQuizAnswer1_2">203</string>
+    <string name="SecTwoQuizAnswer2_2">211</string>
+    <string name="SecTwoQuizAnswer3_2">209</string>
+
+    <!-- Ex3 Hard: 3k − 16 is prime and natural number less than 10; find k. Correct = THREE = 6 and 7 -->
+    <string name="SecTwoQuizAnswer1_3">k = 4 and 5</string>
+    <string name="SecTwoQuizAnswer2_3">k = 5 and 8</string>
+    <string name="SecTwoQuizAnswer3_3">k = 6 and 7</string>
+
+    <!-- Ex4 Very Hard: n = 221, product of two distinct primes. Correct = ONE = 13 and 17 -->
+    <string name="SecTwoQuizAnswer1_4">13 and 17</string>
+    <string name="SecTwoQuizAnswer2_4">11 and 19</string>
+    <string name="SecTwoQuizAnswer3_4">7 and 23</string>
+
+    <!-- Ex5 Legendary: composite x < 50, sum of distinct prime divisors = 12. Correct = TWO = 30, 35 or 42 -->
+    <string name="SecTwoQuizAnswer1_5">x = 24 or 48</string>
+    <string name="SecTwoQuizAnswer2_5">x = 35 or 42</string>
+    <string name="SecTwoQuizAnswer3_5">x = 20 or 45</string>
+
+    <string name="SectionTwoAnswerOne">Prime</string>
+    <string name="SectionTwoAnswerTwo">211</string>
+    <string name="SectionTwoAnswerThree">6 and 7</string>
+    <string name="SectionTwoAnswerFour">13 and 17</string>
+    <string name="SectionTwoAnswerFive">35 or 42</string>
 
 
     <string name="SectionThreeTheoryDef">Definitions:\n
@@ -74,113 +133,223 @@ Divisibility rules:\n
 • G.C.D.: largest common divisor.\n
 • Relatively Prime: G.C.D. = 1.\n
 • L.C.M.: smallest common multiple.</string>
+    <string name="SectionThreeTheoryDefQuestion">What is the G.C.D. of 12 and 18?</string>
+    <string name="SectionThreeTheoryDefAnswerOne">3</string>
+    <string name="SectionThreeTheoryDefAnswerTwo">6</string>
+    <string name="SectionThreeTheoryDefAnswerThree">9</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer">6</string>
+
 
     <string name="SectionThreeTheoryProperties">Relatively prime numbers have these properties:\n
-1. If a number is divisible by two relatively prime numbers, it’s divisible by their product.\n
+1. If a number is divisible by two relatively prime numbers, it is divisible by their product.\n
 2. If ab is divisible by c and b, c are relatively prime, then a is divisible by c.</string>
+    <string name="SectionThreeTheoryPropsQuestion">Are 8 and 15 relatively prime? (True / False)</string>
+    <string name="SectionThreeTheoryPropsAnswerOne">True</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo">False</string>
+    <string name="SectionThreeTheoryPropsAnswerThree">Neither</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer">True</string>
 
-    <string name="SectionThreeTheoryWorkedExamples">!!! Worked Examples !!!</string>
+
+    <string name="SectionThreeTheoryWorkedExamples">Find the L.C.M. of 4 and 6.\n
+Step 1: 4 = 2², 6 = 2 · 3.\n
+Step 2: Take the highest power of each prime: 2² and 3.\n
+Step 3: L.C.M. = 2² · 3 = 12.</string>
+    <string name="SectionThreeTheoryWorkedExQuestion">What is the L.C.M. of 4 and 6?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne">8</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo">12</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree">24</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer">12</string>
+
+    <!-- ==================== SECTION 3 QUIZ ==================== -->
+    <!-- Correct answers: one, two, three, one, two -->
+
     <string name="SectionThreeQuiz">!!! Solve the quiz !!!</string>
-    <string name="SecThreeQuizAnswer1_1">answerone</string>
-    <string name="SecThreeQuizAnswer2_1">answertwo</string>
-    <string name="SecThreeQuizAnswer3_1">answerthree</string>
-    <string name="SecThreeQuizAnswer1_2">answerone</string>
-    <string name="SecThreeQuizAnswer2_2">answertwo</string>
-    <string name="SecThreeQuizAnswer3_2">answerthree</string>
-    <string name="SecThreeQuizAnswer1_3">answerone</string>
-    <string name="SecThreeQuizAnswer2_3">answertwo</string>
-    <string name="SecThreeQuizAnswer3_3">answerthree</string>
-    <string name="SecThreeQuizAnswer1_4">answerone</string>
-    <string name="SecThreeQuizAnswer2_4">answertwo</string>
-    <string name="SecThreeQuizAnswer3_4">answerthree</string>
-    <string name="SecThreeQuizAnswer1_5">answerone</string>
-    <string name="SecThreeQuizAnswer2_5">answertwo</string>
-    <string name="SecThreeQuizAnswer3_5">answerthree</string>
-    <string name="SectionThreeAnswerOne">1</string>
-    <string name="SectionThreeAnswerTwo">2</string>
-    <string name="SectionThreeAnswerThree">3</string>
-    <string name="SectionThreeAnswerFour">4</string>
-    <string name="SectionThreeAnswerFive">5</string>
+
+    <!-- Quiz Question 1: G.C.D. of 24 and 36? Correct = ONE = 12 -->
+    <string name="SecThreeQuizAnswer1_1">12</string>
+    <string name="SecThreeQuizAnswer2_1">6</string>
+    <string name="SecThreeQuizAnswer3_1">4</string>
+
+    <!-- Quiz Question 2: L.C.M. of 5 and 8? Correct = TWO = 40 -->
+    <string name="SecThreeQuizAnswer1_2">20</string>
+    <string name="SecThreeQuizAnswer2_2">40</string>
+    <string name="SecThreeQuizAnswer3_2">80</string>
+
+    <!-- Quiz Question 3: Are 9 and 16 relatively prime? Correct = THREE = Yes, G.C.D. = 1 -->
+    <string name="SecThreeQuizAnswer1_3">No,3</string>
+    <string name="SecThreeQuizAnswer2_3">No,9</string>
+    <string name="SecThreeQuizAnswer3_3">Yes,1</string>
+
+    <!-- Quiz Question 4: G.C.D. of 7 and 13? Correct = ONE = 1 (both prime, relatively prime) -->
+    <string name="SecThreeQuizAnswer1_4">1</string>
+    <string name="SecThreeQuizAnswer2_4">7</string>
+    <string name="SecThreeQuizAnswer3_4">13</string>
+
+    <!-- Quiz Question 5: L.C.M. of 6 and 9? Correct = TWO = 18 -->
+    <string name="SecThreeQuizAnswer1_5">12</string>
+    <string name="SecThreeQuizAnswer2_5">18</string>
+    <string name="SecThreeQuizAnswer3_5">54</string>
+
+    <string name="SectionThreeAnswerOne">12</string>
+    <string name="SectionThreeAnswerTwo">40</string>
+    <string name="SectionThreeAnswerThree">Yes,1</string>
+    <string name="SectionThreeAnswerFour">1</string>
+    <string name="SectionThreeAnswerFive">18</string>
 
 
     <string name="SectionFourTheoryDef">A fraction is the result of dividing two whole numbers a and b (b ≠ 0), written as a/b.</string>
+    <string name="SectionFourTheoryDefQuestion">What is the result of 3/4 + 1/4?</string>
+    <string name="SectionFourTheoryDefAnswerOne">1/2</string>
+    <string name="SectionFourTheoryDefAnswerTwo">1</string>
+    <string name="SectionFourTheoryDefAnswerThree">4/4</string>
+    <string name="SectionFourTheoryDefCorrectAnswer">1</string>
+
 
     <string name="SectionFourTheoryProperties">Properties:\n
 ◦ a/b = c/d if ad = bc.\n
-◦ Multiplying or dividing numerator and denominator by the same number doesn’t change its value.\n
+◦ Multiplying or dividing numerator and denominator by the same number doesn\'t change its value.\n
 ◦ Addition: a/b + c/d = (ad + bc)/bd.\n
 ◦ Division: (a/b) ÷ (c/d) = ad/bc.</string>
+    <string name="SectionFourTheoryPropsQuestion">What is (2/3) ÷ (4/9)?</string>
+    <string name="SectionFourTheoryPropsAnswerOne">8/27</string>
+    <string name="SectionFourTheoryPropsAnswerTwo">3/2</string>
+    <string name="SectionFourTheoryPropsAnswerThree">2/3</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer">3/2</string>
 
-    <string name="SectionFourTheoryWorkedExamples">!!! Worked Examples !!!</string>
+    <string name="SectionFourTheoryWorkedExamples">Simplify the fraction 18/24.\n
+Step 1: Find the G.C.D. of 18 and 24: G.C.D. = 6.\n
+Step 2: Divide both numerator and denominator by 6.\n
+Step 3: 18/24 = 3/4.</string>
+    <string name="SectionFourTheoryWorkedExQuestion">What is 18/24 simplified to its lowest terms?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne">2/3</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo">9/12</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree">3/4</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer">3/4</string>
+
     <string name="SectionFourQuiz">!!! Solve the quiz !!!</string>
-    <string name="SecFourQuizAnswer1_1">answerone</string>
-    <string name="SecFourQuizAnswer2_1">answertwo</string>
-    <string name="SecFourQuizAnswer3_1">answerthree</string>
-    <string name="SecFourQuizAnswer1_2">answerone</string>
-    <string name="SecFourQuizAnswer2_2">answertwo</string>
-    <string name="SecFourQuizAnswer3_2">answerthree</string>
-    <string name="SecFourQuizAnswer1_3">answerone</string>
-    <string name="SecFourQuizAnswer2_3">answertwo</string>
-    <string name="SecFourQuizAnswer3_3">answerthree</string>
-    <string name="SecFourQuizAnswer1_4">answerone</string>
-    <string name="SecFourQuizAnswer2_4">answertwo</string>
-    <string name="SecFourQuizAnswer3_4">answerthree</string>
-    <string name="SecFourQuizAnswer1_5">answerone</string>
-    <string name="SecFourQuizAnswer2_5">answertwo</string>
-    <string name="SecFourQuizAnswer3_5">answerthree</string>
-    <string name="SectionFourAnswerOne">1</string>
-    <string name="SectionFourAnswerTwo">2</string>
-    <string name="SectionFourAnswerThree">3</string>
-    <string name="SectionFourAnswerFour">4</string>
-    <string name="SectionFourAnswerFive">5</string>
+    <string name="SecFourQuizAnswer1_1">one</string>
+    <string name="SecFourQuizAnswer2_1">two</string>
+    <string name="SecFourQuizAnswer3_1">three</string>
+    <string name="SecFourQuizAnswer1_2">one</string>
+    <string name="SecFourQuizAnswer2_2">two</string>
+    <string name="SecFourQuizAnswer3_2">three</string>
+    <string name="SecFourQuizAnswer1_3">one</string>
+    <string name="SecFourQuizAnswer2_3">two</string>
+    <string name="SecFourQuizAnswer3_3">three</string>
+    <string name="SecFourQuizAnswer1_4">one</string>
+    <string name="SecFourQuizAnswer2_4">two</string>
+    <string name="SecFourQuizAnswer3_4">three</string>
+    <string name="SecFourQuizAnswer1_5">one</string>
+    <string name="SecFourQuizAnswer2_5">two</string>
+    <string name="SecFourQuizAnswer3_5">three</string>
+    <string name="SectionFourAnswerOne">one</string>
+    <string name="SectionFourAnswerTwo">two</string>
+    <string name="SectionFourAnswerThree">three</string>
+    <string name="SectionFourAnswerFour">four</string>
+    <string name="SectionFourAnswerFive">five</string>
 
 
     <string name="SectionFiveTheoryDef">A rational number can be written as a/b, where a and b are integers and b ≠ 0. All whole numbers and fractions are rational.</string>
+    <string name="SectionFiveTheoryDefQuestion">Is every fraction a rational number? (True / False)</string>
+    <string name="SectionFiveTheoryDefAnswerOne">True</string>
+    <string name="SectionFiveTheoryDefAnswerTwo">False</string>
+    <string name="SectionFiveTheoryDefAnswerThree">Neither</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer">True</string>
+
 
     <string name="SectionFiveTheoryProperties">Decimal forms:\n
 ◦ Terminating: denominator has only 2s or 5s.\n
 ◦ Nonterminating: denominator has other primes.\n
 ◦ Periodic: digits or blocks repeat infinitely.</string>
+    <string name="SectionFiveTheoryPropsQuestion">Which decimal form does 1/8 have?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne">Periodic</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo">Terminating</string>
+    <string name="SectionFiveTheoryPropsAnswerThree">Nonterminating non-periodic</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer">Terminating</string>
 
-    <string name="SectionFiveTheoryWorkedExamples">!!! Worked Examples !!!</string>
+
+    <string name="SectionFiveTheoryWorkedExamples">Convert 0.333... to a fraction.\n
+Step 1: Let x = 0.333...\n
+Step 2: Then 10x = 3.333...\n
+Step 3: Subtract: 10x − x = 3, so 9x = 3.\n
+Step 4: x = 3/9 = 1/3.</string>
+    <string name="SectionFiveTheoryWorkedExQuestion">What fraction is equal to 0.333...?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne">3/10</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo">1/4</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree">1/3</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer">1/3</string>
+
     <string name="SectionFiveQuiz">!!! Solve the quiz !!!</string>
-    <string name="SectionFiveAnswerOne">1</string>
-    <string name="SectionFiveAnswerTwo">2</string>
-    <string name="SectionFiveAnswerThree">3</string>
-    <string name="SectionFiveAnswerFour">4</string>
-    <string name="SectionFiveAnswerFive">5</string>
+    <string name="SecFiveQuizAnswer1_1">one</string>
+    <string name="SecFiveQuizAnswer2_1">two</string>
+    <string name="SecFiveQuizAnswer3_1">three</string>
+    <string name="SecFiveQuizAnswer1_2">one</string>
+    <string name="SecFiveQuizAnswer2_2">two</string>
+    <string name="SecFiveQuizAnswer3_2">three</string>
+    <string name="SecFiveQuizAnswer1_3">one</string>
+    <string name="SecFiveQuizAnswer2_3">two</string>
+    <string name="SecFiveQuizAnswer3_3">three</string>
+    <string name="SecFiveQuizAnswer1_4">one</string>
+    <string name="SecFiveQuizAnswer2_4">two</string>
+    <string name="SecFiveQuizAnswer3_4">three</string>
+    <string name="SecFiveQuizAnswer1_5">one</string>
+    <string name="SecFiveQuizAnswer2_5">two</string>
+    <string name="SecFiveQuizAnswer3_5">three</string>
+    <string name="SectionFiveAnswerOne">one</string>
+    <string name="SectionFiveAnswerTwo">two</string>
+    <string name="SectionFiveAnswerThree">three</string>
+    <string name="SectionFiveAnswerFour">four</string>
+    <string name="SectionFiveAnswerFive">five</string>
 
 
     <string name="SectionSixTheoryDef">Numbers are shown on a line: positives right, negatives left.\n
 |a| (modulus) means distance from zero:\n
 ◦ |a| = a if a ≥ 0.\n
 ◦ |a| = -a if a &lt; 0.</string>
+    <string name="SectionSixTheoryDefQuestion">What is |-7|?</string>
+    <string name="SectionSixTheoryDefAnswerOne">-7</string>
+    <string name="SectionSixTheoryDefAnswerTwo">0</string>
+    <string name="SectionSixTheoryDefAnswerThree">7</string>
+    <string name="SectionSixTheoryDefCorrectAnswer">7</string>
 
     <string name="SectionSixTheoryProperties">Modulus properties:\n
 ◦ |a| ≥ 0 and |a| = 0 only for a=0.\n
 ◦ |a| = |-a|.\n
 ◦ |ab| = |a||b|, |a/b| = |a|/|b| (b ≠ 0).</string>
+    <string name="SectionSixTheoryPropsQuestion">Is |-5| = |5|? (True / False)</string>
+    <string name="SectionSixTheoryPropsAnswerOne">True</string>
+    <string name="SectionSixTheoryPropsAnswerTwo">False</string>
+    <string name="SectionSixTheoryPropsAnswerThree">Neither</string>
+    <string name="SectionSixTheoryPropsCorrectAnswer">True</string>
 
-    <string name="SectionSixTheoryWorkedExamples">!!! Worked Examples !!!</string>
+    <string name="SectionSixTheoryWorkedExamples">Calculate |(-3) · 4|.\n
+Step 1: Apply |ab| = |a| · |b|.\n
+Step 2: |(-3) · 4| = |-3| · |4| = 3 · 4 = 12.</string>
+    <string name="SectionSixTheoryWorkedExQuestion">What is |(-3) · 4|?</string>
+    <string name="SectionSixTheoryWorkedExAnswerOne">-12</string>
+    <string name="SectionSixTheoryWorkedExAnswerTwo">7</string>
+    <string name="SectionSixTheoryWorkedExAnswerThree">12</string>
+    <string name="SectionSixTheoryWorkedExCorrectAnswer">12</string>
+
     <string name="SectionSixQuiz">!!! Solve the quiz !!!</string>
-    <string name="SecSixQuizAnswer1_1">answerone</string>
-    <string name="SecSixQuizAnswer2_1">answertwo</string>
-    <string name="SecSixQuizAnswer3_1">answerthree</string>
-    <string name="SecSixQuizAnswer1_2">answerone</string>
-    <string name="SecSixQuizAnswer2_2">answertwo</string>
-    <string name="SecSixQuizAnswer3_2">answerthree</string>
-    <string name="SecSixQuizAnswer1_3">answerone</string>
-    <string name="SecSixQuizAnswer2_3">answertwo</string>
-    <string name="SecSixQuizAnswer3_3">answerthree</string>
-    <string name="SecSixQuizAnswer1_4">answerone</string>
-    <string name="SecSixQuizAnswer2_4">answertwo</string>
-    <string name="SecSixQuizAnswer3_4">answerthree</string>
-    <string name="SecSixQuizAnswer1_5">answerone</string>
-    <string name="SecSixQuizAnswer2_5">answertwo</string>
-    <string name="SecSixQuizAnswer3_5">answerthree</string>
-    <string name="SectionSixAnswerOne">1</string>
-    <string name="SectionSixAnswerTwo">2</string>
-    <string name="SectionSixAnswerThree">3</string>
-    <string name="SectionSixAnswerFour">4</string>
-    <string name="SectionSixAnswerFive">5</string>
+    <string name="SecSixQuizAnswer1_1">one</string>
+    <string name="SecSixQuizAnswer2_1">two</string>
+    <string name="SecSixQuizAnswer3_1">three</string>
+    <string name="SecSixQuizAnswer1_2">one</string>
+    <string name="SecSixQuizAnswer2_2">two</string>
+    <string name="SecSixQuizAnswer3_2">three</string>
+    <string name="SecSixQuizAnswer1_3">one</string>
+    <string name="SecSixQuizAnswer2_3">two</string>
+    <string name="SecSixQuizAnswer3_3">three</string>
+    <string name="SecSixQuizAnswer1_4">one</string>
+    <string name="SecSixQuizAnswer2_4">two</string>
+    <string name="SecSixQuizAnswer3_4">three</string>
+    <string name="SecSixQuizAnswer1_5">one</string>
+    <string name="SecSixQuizAnswer2_5">two</string>
+    <string name="SecSixQuizAnswer3_5">three</string>
+    <string name="SectionSixAnswerOne">one</string>
+    <string name="SectionSixAnswerTwo">two</string>
+    <string name="SectionSixAnswerThree">three</string>
+    <string name="SectionSixAnswerFour">four</string>
+    <string name="SectionSixAnswerFive">five</string>
 </resources>

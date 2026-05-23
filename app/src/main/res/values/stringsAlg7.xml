@@ -1,29 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name_7">License_Project_2</string>
+    <string name="app_name_7">License_Project_2</string>
 
-    <string name="SectionOneTheoryDef_7">A sequence assigns each natural number n a term aₙ; it’s a function on ℕ. Terms: a₁, a₂, a₃…</string>
+    <!-- ===================== SECTION ONE: Sequences – Definition ===================== -->
+    <string name="SectionOneTheoryDef_7">A sequence assigns each natural number n a term aₙ; it\'s a function on ℕ. Terms: a₁, a₂, a₃…</string>
+    <string name="SectionOneTheoryDefQuestion_7">If aₙ = 2n, what is a₅?</string>
+    <string name="SectionOneTheoryDefAnswerOne_7">8</string>
+    <string name="SectionOneTheoryDefAnswerTwo_7">10</string>
+    <string name="SectionOneTheoryDefAnswerThree_7">12</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_7">10</string>
+
     <string name="SectionOneTheoryProperties_7">Finite → first n terms; Infinite → all n. Defined by formula aₙ=f(n) or recurrence rule (e.g. Fibonacci: a₁=1,a₂=1,aₙ₊₂=aₙ₊₁+aₙ). Increasing: aₙ₊₁&gt;aₙ; Decreasing: aₙ₊₁&lt;aₙ; Constant → equal terms.</string>
-    <string name="SectionOneTheoryWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionOneTheoryPropsQuestion_7">Is the sequence aₙ = n² increasing?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_7">True</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_7">False</string>
+    <string name="SectionOneTheoryPropsAnswerThree_7">Neither</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_7">True</string>
+
+    <string name="SectionOneTheoryWorkedExamples_7">Example 1: aₙ = 3n. First five terms: 3, 6, 9, 12, 15. Increasing sequence. ✓
+Example 2: aₙ = 1/n. First five terms: 1, 1/2, 1/3, 1/4, 1/5. Decreasing sequence. ✓
+Example 3: Fibonacci: a₁=1, a₂=1, aₙ=aₙ₋₁+aₙ₋₂. Terms: 1, 1, 2, 3, 5, 8, 13… ✓</string>
+    <string name="SectionOneTheoryWorkedExQuestion_7">For aₙ = 5n, what is a₄?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_7">15</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_7">20</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_7">25</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_7">20</string>
+
     <string name="SectionOneQuiz_7">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_7">one</string>
+    <string name="SecOneQuizAnswer2_1_7">two</string>
+    <string name="SecOneQuizAnswer3_1_7">three</string>
+    <string name="SecOneQuizAnswer1_2_7">one</string>
+    <string name="SecOneQuizAnswer2_2_7">two</string>
+    <string name="SecOneQuizAnswer3_2_7">three</string>
+    <string name="SecOneQuizAnswer1_3_7">one</string>
+    <string name="SecOneQuizAnswer2_3_7">two</string>
+    <string name="SecOneQuizAnswer3_3_7">three</string>
+    <string name="SecOneQuizAnswer1_4_7">one</string>
+    <string name="SecOneQuizAnswer2_4_7">two</string>
+    <string name="SecOneQuizAnswer3_4_7">three</string>
+    <string name="SecOneQuizAnswer1_5_7">one</string>
+    <string name="SecOneQuizAnswer2_5_7">two</string>
+    <string name="SecOneQuizAnswer3_5_7">three</string>
+    <string name="SectionOneAnswerOne_7">one</string>
+    <string name="SectionOneAnswerTwo_7">two</string>
+    <string name="SectionOneAnswerThree_7">three</string>
+    <string name="SectionOneAnswerFour_7">one</string>
+    <string name="SectionOneAnswerFive_7">two</string>
 
+    <!-- ===================== SECTION TWO: Arithmetic Progression ===================== -->
     <string name="SectionTwoTheoryDef_7">Arithmetic progression (A.P.): each term = previous term + constant d.</string>
+    <string name="SectionTwoTheoryDefQuestion_7">In an A.P. with a₁ = 3 and d = 4, what is a₄?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_7">12</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_7">15</string>
+    <string name="SectionTwoTheoryDefAnswerThree_7">18</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_7">15</string>
+
     <string name="SectionTwoTheoryProperties_7">Common difference d=aₙ₊₁−aₙ. Property: aₙ₊₁=(aₙ+aₙ₊₂)/2. nth term: aₙ=a₁+(n−1)d. Sum: Sₙ=(a₁+aₙ)n/2.</string>
-    <string name="SectionTwoTheoryWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryPropsQuestion_7">For an A.P. with a₁ = 2 and d = 3, what is the sum S₄?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_7">20</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_7">26</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_7">32</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_7">26</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_7">Example 1: A.P.: a₁=5, d=3. Find a₆. a₆ = 5 + (6−1)·3 = 5 + 15 = 20. ✓
+Example 2: A.P.: a₁=2, d=4. Find S₅. a₅ = 2 + 4·4 = 18. S₅ = (2+18)·5/2 = 50. ✓
+Example 3: A.P.: 7, 11, 15, 19… Find d. d = 11 − 7 = 4. ✓</string>
+    <string name="SectionTwoTheoryWorkedExQuestion_7">In an A.P. with a₁ = 1 and d = 2, what is a₆?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_7">9</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_7">11</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_7">13</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_7">11</string>
+
     <string name="SectionTwoQuiz_7">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_7">one</string>
+    <string name="SecTwoQuizAnswer2_1_7">two</string>
+    <string name="SecTwoQuizAnswer3_1_7">three</string>
+    <string name="SecTwoQuizAnswer1_2_7">one</string>
+    <string name="SecTwoQuizAnswer2_2_7">two</string>
+    <string name="SecTwoQuizAnswer3_2_7">three</string>
+    <string name="SecTwoQuizAnswer1_3_7">one</string>
+    <string name="SecTwoQuizAnswer2_3_7">two</string>
+    <string name="SecTwoQuizAnswer3_3_7">three</string>
+    <string name="SecTwoQuizAnswer1_4_7">one</string>
+    <string name="SecTwoQuizAnswer2_4_7">two</string>
+    <string name="SecTwoQuizAnswer3_4_7">three</string>
+    <string name="SecTwoQuizAnswer1_5_7">one</string>
+    <string name="SecTwoQuizAnswer2_5_7">two</string>
+    <string name="SecTwoQuizAnswer3_5_7">three</string>
+    <string name="SectionTwoAnswerOne_7">one</string>
+    <string name="SectionTwoAnswerTwo_7">two</string>
+    <string name="SectionTwoAnswerThree_7">three</string>
+    <string name="SectionTwoAnswerFour_7">one</string>
+    <string name="SectionTwoAnswerFive_7">two</string>
 
+    <!-- ===================== SECTION THREE: Geometric Progression ===================== -->
     <string name="SectionThreeTheoryDef_7">Geometric progression (G.P.): each term = previous term × constant q.</string>
+    <string name="SectionThreeTheoryDefQuestion_7">In a G.P. with a₁ = 2 and q = 3, what is a₄?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_7">18</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_7">54</string>
+    <string name="SectionThreeTheoryDefAnswerThree_7">162</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_7">54</string>
+
     <string name="SectionThreeTheoryProperties_7">Common ratio q=aₙ₊₁/aₙ. Property: aₙ₊₁=√(aₙaₙ₊₂). nth term: aₙ=a₁qⁿ⁻¹. Sum: Sₙ=a₁(qⁿ−1)/(q−1), q≠1.</string>
-    <string name="SectionThreeTheoryWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionThreeTheoryPropsQuestion_7">For a G.P. with a₁ = 1 and q = 2, what is S₄?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_7">12</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_7">15</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_7">16</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_7">15</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_7">Example 1: G.P.: a₁=3, q=2. Find a₅. a₅ = 3·2⁴ = 3·16 = 48. ✓
+Example 2: G.P.: a₁=1, q=3. Find S₄. S₄ = 1·(3⁴−1)/(3−1) = (81−1)/2 = 40. ✓
+Example 3: G.P.: 4, 12, 36… Find q. q = 12/4 = 3. ✓</string>
+    <string name="SectionThreeTheoryWorkedExQuestion_7">In a G.P. with a₁ = 5 and q = 2, what is a₃?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_7">15</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_7">20</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_7">25</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_7">20</string>
+
     <string name="SectionThreeQuiz_7">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_7">one</string>
+    <string name="SecThreeQuizAnswer2_1_7">two</string>
+    <string name="SecThreeQuizAnswer3_1_7">three</string>
+    <string name="SecThreeQuizAnswer1_2_7">one</string>
+    <string name="SecThreeQuizAnswer2_2_7">two</string>
+    <string name="SecThreeQuizAnswer3_2_7">three</string>
+    <string name="SecThreeQuizAnswer1_3_7">one</string>
+    <string name="SecThreeQuizAnswer2_3_7">two</string>
+    <string name="SecThreeQuizAnswer3_3_7">three</string>
+    <string name="SecThreeQuizAnswer1_4_7">one</string>
+    <string name="SecThreeQuizAnswer2_4_7">two</string>
+    <string name="SecThreeQuizAnswer3_4_7">three</string>
+    <string name="SecThreeQuizAnswer1_5_7">one</string>
+    <string name="SecThreeQuizAnswer2_5_7">two</string>
+    <string name="SecThreeQuizAnswer3_5_7">three</string>
+    <string name="SectionThreeAnswerOne_7">one</string>
+    <string name="SectionThreeAnswerTwo_7">two</string>
+    <string name="SectionThreeAnswerThree_7">three</string>
+    <string name="SectionThreeAnswerFour_7">one</string>
+    <string name="SectionThreeAnswerFive_7">two</string>
 
+    <!-- ===================== SECTION FOUR: Problems on Progressions ===================== -->
     <string name="SectionFourTheoryDef_7">Problems on Progressions: apply arithmetic and geometric formulas to solve number problems.</string>
-    <string name="SectionFourTheoryProperties_7">Dual-nature: only equal terms (q=1). Insert arithmetic means: e.g., 3 through 19 → d=(19−3)/4=4 → 3,7,11,15,19. Natural sums: e.g., 2-digit numbers sum=4905. Insert geometric means: 1 through 256 → q=4 → 1,1*4,4*4,16*4,64*4. Sequence change: G.P. may become A.P. if term adjusted.</string>
-    <string name="SectionFourWorkedExamples_7">!!! Worked Examples !!!</string>
-    <string name="SectionFourQuiz_7">!!! Solve the Quiz !!!</string>
+    <string name="SectionFourTheoryDefQuestion_7">Insert 3 arithmetic means between 7 and 19. What is the common difference d?</string>
+    <string name="SectionFourTheoryDefAnswerOne_7">2</string>
+    <string name="SectionFourTheoryDefAnswerTwo_7">3</string>
+    <string name="SectionFourTheoryDefAnswerThree_7">4</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_7">3</string>
 
+    <string name="SectionFourTheoryProperties_7">Dual-nature: only equal terms (q=1). Insert arithmetic means: e.g., 7 through 19 → d=(19−7)/4=4 → 7,7,11,15,19. Natural sums: e.g., 2-digit numbers sum=4905. Insert geometric means: 1 through 256 → q=4 → 1,1*4,4*4,16*4,64*4. Sequence change: G.P. may become A.P. if term adjusted.</string>
+    <string name="SectionFourTheoryPropsQuestion_7">Insert 2 geometric means between 2 and 54. What is the common ratio q?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_7">2</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_7">3</string>
+    <string name="SectionFourTheoryPropsAnswerThree_7">4</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_7">3</string>
+
+    <string name="SectionFourTheoryWorkedExamples_7">Example 1: Insert 3 arithmetic means between 2 and 18. d = (18−2)/(3+1) = 4. Sequence: 2, 6, 10, 14, 18. ✓
+Example 2: Sum of all 2-digit multiples of 3: first=12, last=99, d=3. n=(99−12)/3+1=30. S = (12+99)·30/2 = 1665. ✓
+Example 3: Insert 2 geometric means between 3 and 24. q³=24/3=8 → q=2. Sequence: 3, 6, 12, 24. ✓</string>
+    <string name="SectionFourTheoryWorkedExQuestion_7">What is the sum of the first 5 terms of an A.P. with a₁ = 2 and d = 3?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_7">25</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_7">30</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_7">35</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_7">30</string>
+
+    <string name="SectionFourQuiz_7">!!! Solve the Quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_7">one</string>
+    <string name="SecFourQuizAnswer2_1_7">two</string>
+    <string name="SecFourQuizAnswer3_1_7">three</string>
+    <string name="SecFourQuizAnswer1_2_7">one</string>
+    <string name="SecFourQuizAnswer2_2_7">two</string>
+    <string name="SecFourQuizAnswer3_2_7">three</string>
+    <string name="SecFourQuizAnswer1_3_7">one</string>
+    <string name="SecFourQuizAnswer2_3_7">two</string>
+    <string name="SecFourQuizAnswer3_3_7">three</string>
+    <string name="SecFourQuizAnswer1_4_7">one</string>
+    <string name="SecFourQuizAnswer2_4_7">two</string>
+    <string name="SecFourQuizAnswer3_4_7">three</string>
+    <string name="SecFourQuizAnswer1_5_7">one</string>
+    <string name="SecFourQuizAnswer2_5_7">two</string>
+    <string name="SecFourQuizAnswer3_5_7">three</string>
+    <string name="SectionFourAnswerOne_7">one</string>
+    <string name="SectionFourAnswerTwo_7">two</string>
+    <string name="SectionFourAnswerThree_7">three</string>
+    <string name="SectionFourAnswerFour_7">one</string>
+    <string name="SectionFourAnswerFive_7">two</string>
+
+    <!-- ===================== SECTION FIVE: Logarithms ===================== -->
     <string name="SectionFiveTheoryDef_7">Taking Logarithms and Antilogarithms: simplify algebraic expressions using log laws.</string>
+    <string name="SectionFiveTheoryDefQuestion_7">What is log₂(8)?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_7">2</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_7">3</string>
+    <string name="SectionFiveTheoryDefAnswerThree_7">4</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_7">3</string>
+
     <string name="SectionFiveTheoryProperties_7">logₐ(ab)=logₐa+logₐb. logₐ(a/b)=logₐa−logₐb. logₐ(xᵏ)=k·logₐx. Based on a^(logₐb)=b identity.</string>
-    <string name="SectionFiveWorkedExamples_7">!!! Worked Examples !!!</string>
+    <string name="SectionFiveTheoryPropsQuestion_7">Is log₂(4·8) = log₂(4) + log₂(8)?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_7">True</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_7">False</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_7">Neither</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_7">True</string>
+
+    <string name="SectionFiveWorkedExamples_7">Example 1: Simplify log₂(32). 32 = 2⁵ → log₂(32) = 5. ✓
+Example 2: Simplify log₃(27) − log₃(3). = log₃(27/3) = log₃(9) = 2. ✓
+Example 3: Simplify log₅(5⁴). = 4·log₅(5) = 4·1 = 4. ✓</string>
+    <string name="SectionFiveTheoryWorkedExQuestion_7">What is log₃(81)?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_7">3</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_7">4</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_7">5</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_7">4</string>
+
     <string name="SectionFiveQuiz_7">!!! Solve the Quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_7">one</string>
+    <string name="SecFiveQuizAnswer2_1_7">two</string>
+    <string name="SecFiveQuizAnswer3_1_7">three</string>
+    <string name="SecFiveQuizAnswer1_2_7">one</string>
+    <string name="SecFiveQuizAnswer2_2_7">two</string>
+    <string name="SecFiveQuizAnswer3_2_7">three</string>
+    <string name="SecFiveQuizAnswer1_3_7">one</string>
+    <string name="SecFiveQuizAnswer2_3_7">two</string>
+    <string name="SecFiveQuizAnswer3_3_7">three</string>
+    <string name="SecFiveQuizAnswer1_4_7">one</string>
+    <string name="SecFiveQuizAnswer2_4_7">two</string>
+    <string name="SecFiveQuizAnswer3_4_7">three</string>
+    <string name="SecFiveQuizAnswer1_5_7">one</string>
+    <string name="SecFiveQuizAnswer2_5_7">two</string>
+    <string name="SecFiveQuizAnswer3_5_7">three</string>
+    <string name="SectionFiveAnswerOne_7">one</string>
+    <string name="SectionFiveAnswerTwo_7">two</string>
+    <string name="SectionFiveAnswerThree_7">three</string>
+    <string name="SectionFiveAnswerFour_7">one</string>
+    <string name="SectionFiveAnswerFive_7">two</string>
+
 </resources>

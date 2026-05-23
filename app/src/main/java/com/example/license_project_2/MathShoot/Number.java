@@ -1,5 +1,8 @@
 package com.example.license_project_2.MathShoot;
 
+import static com.example.license_project_2.MathShoot.GameView.screenRatioX;
+import static com.example.license_project_2.MathShoot.GameView.screenRatioY;
+
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,25 +12,28 @@ import com.example.license_project_2.R;
 
 public class Number {
     public int speed = 10;
-    int x = 0, y, width, height, numberCounter = 1;
-    Bitmap a, b, c, d, e, f, g, h, i;
+    int x = 0, y, width, height;
+    private final Bitmap display;
 
-    Number(Resources resource){
-        a = BitmapFactory.decodeResource(resource, R.drawable.a);
-        b = BitmapFactory.decodeResource(resource, R.drawable.b);
-        c = BitmapFactory.decodeResource(resource, R.drawable.c);
-        d = BitmapFactory.decodeResource(resource, R.drawable.d);
-        e = BitmapFactory.decodeResource(resource, R.drawable.e);
-        f = BitmapFactory.decodeResource(resource, R.drawable.f);
-        g = BitmapFactory.decodeResource(resource, R.drawable.g);
-        h = BitmapFactory.decodeResource(resource, R.drawable.h);
-        i = BitmapFactory.decodeResource(resource, R.drawable.i);
+    Number(Resources resource, int which){
+        Bitmap a = BitmapFactory.decodeResource(resource, R.drawable.a);
+        Bitmap b = BitmapFactory.decodeResource(resource, R.drawable.b);
+        Bitmap c = BitmapFactory.decodeResource(resource, R.drawable.c);
+        Bitmap d = BitmapFactory.decodeResource(resource, R.drawable.d);
+        Bitmap e = BitmapFactory.decodeResource(resource, R.drawable.e);
+        Bitmap f = BitmapFactory.decodeResource(resource, R.drawable.f);
+        Bitmap g = BitmapFactory.decodeResource(resource, R.drawable.g);
+        Bitmap h = BitmapFactory.decodeResource(resource, R.drawable.h);
+        Bitmap i = BitmapFactory.decodeResource(resource, R.drawable.i);
 
         width = a.getWidth();
         height = a.getHeight();
 
-        width /= 10;
-        height /= 10;
+        width = Math.max(1, (int) ((width / 10f) * screenRatioX));
+        height = Math.max(1, (int) ((height / 10f) * screenRatioY));
+
+        width *= 5;
+        height *= 5;
 
         a = Bitmap.createScaledBitmap(a, width, height, false);
         b = Bitmap.createScaledBitmap(b, width, height, false);
@@ -38,47 +44,16 @@ public class Number {
         g = Bitmap.createScaledBitmap(g, width, height, false);
         h = Bitmap.createScaledBitmap(h, width, height, false);
         i = Bitmap.createScaledBitmap(i, width, height, false);
-
-        y = -height;
+        Bitmap[] frames = {a, b, c, d, e, f, g, h, i};
+        display = frames[Math.floorMod(which, 9)];
     }
 
-//    public Bitmap getNumber(){
-//        if(numberCounter == 1){
-//            numberCounter++;
-//            return a;
-//        }
-//        if(numberCounter == 2){
-//            numberCounter++;
-//            return b;
-//        }
-//        if(numberCounter == 3){
-//            numberCounter++;
-//            return c;
-//        }
-//        if(numberCounter == 4){
-//            numberCounter++;
-//            return d;
-//        }
-//        if(numberCounter == 5){
-//            numberCounter++;
-//            return e;
-//        }
-//        if(numberCounter == 6){
-//            numberCounter++;
-//            return f;
-//        }
-//        if(numberCounter == 7){
-//            numberCounter++;
-//            return g;
-//        }
-//        if(numberCounter == 8){
-//            numberCounter++;
-//            return h;
-//        }
-//        return null;
-//    }
+    public Bitmap getNumber() {
+        return display;
+    }
 
     public Rect getCollisionShape(){
         return new Rect(x, y, x + width, y + height);
     }
 }
+

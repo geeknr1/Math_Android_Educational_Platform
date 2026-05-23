@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot"
+    android:background="@drawable/algebram">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:id="@+id/tutorialguide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Tutorial Guide"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Pick a subject\nAlgebra or Geometry"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/imgone"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathsubjects"
+                    />
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Browse the chapter list and select a chapter"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/imgtwo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathchapters"
+                    />
+                <TextView
+                    android:id="@+id/six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Select a lesson within that chapter to open the lesson page"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/imgthree"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathlessons"
+                    />
+                <TextView
+                    android:id="@+id/seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Each of the lessons contained in the chapters has 4 parts"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="I. Definition — Read the concept, then answer an inline question to unlock the next stage."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/defimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathdef"
+                    />
+                <TextView
+                    android:id="@+id/nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="II. Properties — Review the key properties of the topic and answer the question below them in order to continue."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/propsimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathprops"
+                    />
+                <TextView
+                    android:id="@+id/ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="III. Worked examples — Study the examples, then answer an inline question to continue."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/workedeximg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathexamples"
+                    />
+                <TextView
+                    android:id="@+id/eleven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="IV. Quiz — Complete the full quiz to finish the lesson and finish the lesson."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/quizimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mathquiz"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

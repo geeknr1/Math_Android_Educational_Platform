@@ -1,0 +1,234 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot"
+    android:background="@drawable/algebram">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/lavender_border">
+
+
+                <TextView
+                    android:id="@+id/thirty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="TICTACTOE MATH"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/thirtyone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="You have 9 numbers above the grid and a 3×3 grid with 9 empty cells."
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/numbersimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="75dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/numbers"
+                        />
+                    <ImageView
+                        android:id="@+id/gridimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/grid"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/thirtytwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Below the grid, 3 target results are shown — one per row."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/resultimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/results"
+                    />
+                <TextView
+                    android:id="@+id/thirtythree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Place numbers in the grid so each horizontal row produces its target result."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/placednumbers"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/placednumbers"
+                    />
+                <TextView
+                    android:id="@+id/thirtyfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Each selected number can only be used once."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/selectednumbers"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/usedonce"
+                    />
+                <TextView
+                    android:id="@+id/thirtyeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Score points each time a complete row of 3 is placed correctly."
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/thirtynine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="How do we know that the results are the correct ones?"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/forty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Correct cells — blue fill
+                                  Correct results — green
+                                  Wrong cells — dark grey fill
+                                  Wrong results — red"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/correctimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="75dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/correct"
+                        />
+                    <ImageView
+                        android:id="@+id/wrongimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wrong"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

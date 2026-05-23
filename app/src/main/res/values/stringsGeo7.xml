@@ -2,9 +2,20 @@
 <resources>
     <string name="app_name_14">License_Project_2</string>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION ONE: POLYGONAL REGIONS & AREA          -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
     <string name="SectionOneTheoryDef_14">• A polygonal region includes a polygon and its interior.
 \n • Interior points belong to the region; exterior points do not.
 \n • Figures with equal area are equivalent, not necessarily congruent.</string>
+
+    <!-- Q: Can two figures be equivalent (equal area) without being congruent? Answer: True -->
+    <string name="SectionOneTheoryDefQuestion_14">Can two figures have equal area without being congruent?</string>
+    <string name="SectionOneTheoryDefAnswerOne_14">True</string>
+    <string name="SectionOneTheoryDefAnswerTwo_14">False</string>
+    <string name="SectionOneTheoryDefAnswerThree_14">Neither</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_14">True</string>
 
     <string name="SectionOneTheoryProperties_14">• Every polygon has a positive area.
 \n • Congruent polygons have equal areas.
@@ -12,15 +23,61 @@
 \n • Area of a square is the side squared.
 \n • A part of a figure has area ≤ the whole figure.</string>
 
-    <string name="SectionOneTheoryWorkedExamples_14">• Subdivide complex polygons to compute total area.
-\n • Area depends on the unit of measurement.
-\n • Changing units changes numerical value but not physical space.</string>
+    <!-- Q: If the side of a square is 5, what is its area? Answer: 25 -->
+    <string name="SectionOneTheoryPropsQuestion_14">If the side of a square is 5, what is its area?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_14">10</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_14">25</string>
+    <string name="SectionOneTheoryPropsAnswerThree_14">20</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_14">25</string>
+
+    <string name="SectionOneTheoryWorkedExamples_14">• A complex polygon can be split into simpler non-overlapping parts: e.g. an L-shaped figure split into two rectangles of areas 12 and 8 gives a total area of 20.
+\n • If the unit changes from cm to m (factor of 100), the numerical area value changes by 100², but the physical space stays the same.
+\n • Two rectangles of dimensions 3×4 and 2×6 are not congruent, but both have area 12 — they are equivalent figures.</string>
+
+    <!-- Q: A figure is split into parts with areas 12 and 8. What is the total area? Answer: 20 -->
+    <string name="SectionOneTheoryWorkedExQuestion_14">A polygon is split into two non-overlapping parts with areas 12 and 8. What is the total area?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_14">16</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_14">96</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_14">20</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_14">20</string>
 
     <string name="SectionOneQuiz_14">!!! Solve the Quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_14">one</string>
+    <string name="SecOneQuizAnswer2_1_14">two</string>
+    <string name="SecOneQuizAnswer3_1_14">three</string>
+    <string name="SecOneQuizAnswer1_2_14">one</string>
+    <string name="SecOneQuizAnswer2_2_14">two</string>
+    <string name="SecOneQuizAnswer3_2_14">three</string>
+    <string name="SecOneQuizAnswer1_3_14">one</string>
+    <string name="SecOneQuizAnswer2_3_14">two</string>
+    <string name="SecOneQuizAnswer3_3_14">three</string>
+    <string name="SecOneQuizAnswer1_4_14">one</string>
+    <string name="SecOneQuizAnswer2_4_14">two</string>
+    <string name="SecOneQuizAnswer3_4_14">three</string>
+    <string name="SecOneQuizAnswer1_5_14">one</string>
+    <string name="SecOneQuizAnswer2_5_14">two</string>
+    <string name="SecOneQuizAnswer3_5_14">three</string>
+    <string name="SectionOneAnswerOne_14">one</string>
+    <string name="SectionOneAnswerTwo_14">two</string>
+    <string name="SectionOneAnswerThree_14">three</string>
+    <string name="SectionOneAnswerFour_14">one</string>
+    <string name="SectionOneAnswerFive_14">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION TWO: AREA FORMULAS                     -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionTwoTheoryDef_14">• Base: Any chosen side of a figure.
 \n • Altitude: Perpendicular from opposite side or vertex to the base.
 \n • Used to define areas of triangles and parallelograms.</string>
+
+    <!-- Q: Is the altitude perpendicular to the base? Answer: True -->
+    <string name="SectionTwoTheoryDefQuestion_14">Is the altitude of a triangle or parallelogram perpendicular to the base?</string>
+    <string name="SectionTwoTheoryDefAnswerOne_14">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_14">False</string>
+    <!-- Only 2 answers for True/False — third answer intentionally removed -->
+    <string name="SectionTwoTheoryDefAnswerThree_14"></string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_14">True</string>
 
     <string name="SectionTwoTheoryProperties_14">• Rectangle area = base × altitude.
 \n • Triangle area = ½ × base × altitude.
@@ -30,15 +87,100 @@
 \n • Herons formula: S=√(p(p−a)(p−b)(p−c)).
 \n • Trapezoid area = ½ × sum of bases × altitude.</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_14">!!! Worked Examples !!!</string>
+    <!-- Q: A triangle has base 6 and altitude 4. What is its area? Answer: 12 -->
+    <string name="SectionTwoTheoryPropsQuestion_14">A triangle has base 6 and altitude 4. What is its area?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_14">24</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_14">12</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_14">10</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_14">12</string>
+
+    <string name="SectionTwoTheoryWorkedExamples_14">• Rectangle with base 8 and altitude 5: area = 8 × 5 = 40.
+\n • Triangle with base 10 and altitude 6: area = ½ × 10 × 6 = 30.
+\n • Trapezoid with parallel bases 4 and 8 and altitude 5: area = ½ × (4 + 8) × 5 = 30.</string>
+
+    <!-- Q: A rectangle has base 8 and altitude 5. What is its area? Answer: 40 -->
+    <string name="SectionTwoTheoryWorkedExQuestion_14">A rectangle has base 8 and altitude 5. What is its area?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_14">13</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_14">26</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_14">40</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_14">40</string>
+
     <string name="SectionTwoQuiz_14">!!! Solve the Quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_14">one</string>
+    <string name="SecTwoQuizAnswer2_1_14">two</string>
+    <string name="SecTwoQuizAnswer3_1_14">three</string>
+    <string name="SecTwoQuizAnswer1_2_14">one</string>
+    <string name="SecTwoQuizAnswer2_2_14">two</string>
+    <string name="SecTwoQuizAnswer3_2_14">three</string>
+    <string name="SecTwoQuizAnswer1_3_14">one</string>
+    <string name="SecTwoQuizAnswer2_3_14">two</string>
+    <string name="SecTwoQuizAnswer3_3_14">three</string>
+    <string name="SecTwoQuizAnswer1_4_14">one</string>
+    <string name="SecTwoQuizAnswer2_4_14">two</string>
+    <string name="SecTwoQuizAnswer3_4_14">three</string>
+    <string name="SecTwoQuizAnswer1_5_14">one</string>
+    <string name="SecTwoQuizAnswer2_5_14">two</string>
+    <string name="SecTwoQuizAnswer3_5_14">three</string>
+    <string name="SectionTwoAnswerOne_14">one</string>
+    <string name="SectionTwoAnswerTwo_14">two</string>
+    <string name="SectionTwoAnswerThree_14">three</string>
+    <string name="SectionTwoAnswerFour_14">one</string>
+    <string name="SectionTwoAnswerFive_14">two</string>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!--                  SECTION THREE: SIMILAR POLYGONS & AREA         -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <string name="SectionThreeTheoryDef_14">• Ratio of similitude (k) = corresponding side lengths ratio of similar polygons.</string>
+
+    <!-- Q: Sides 9 and 3 — what is k? Answer: 3 -->
+    <string name="SectionThreeTheoryDefQuestion_14">Two similar polygons have corresponding sides of length 9 and 3. What is the ratio of similitude k?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_14">3</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_14">6</string>
+    <string name="SectionThreeTheoryDefAnswerThree_14">27</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_14">3</string>
 
     <string name="SectionThreeTheoryProperties_14">• Compute area by dividing polygons into triangles.
 \n • Areas of similar polygons ratio = k².
 \n • Convex quadrilateral area = ½ × product of diagonals × sinα.</string>
 
-    <string name="SectionThreeTheoryWorkedExamples_14">!!! Worked Examples !!!</string>
+    <!-- Q: k=3 — what is the ratio of areas? Answer: 9 -->
+    <string name="SectionThreeTheoryPropsQuestion_14">Two similar polygons have ratio of similitude k = 3. What is the ratio of their areas?</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_14">3</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_14">9</string>
+    <string name="SectionThreeTheoryPropsAnswerThree_14">6</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_14">9</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_14">• A hexagon is divided into 4 triangles with areas 6, 8, 5, and 7; total area = 6 + 8 + 5 + 7 = 26.
+\n • Two similar triangles have sides in ratio k = 2; their areas are in ratio k² = 4. If the smaller has area 15, the larger has area 15 × 4 = 60.
+\n • A convex quadrilateral has diagonals of length 8 and 6 meeting at angle 30°: area = ½ × 8 × 6 × sin 30° = ½ × 8 × 6 × ½ = 12.</string>
+
+    <!-- Q: k=2, smaller area=15 — larger area? Answer: 60 -->
+    <string name="SectionThreeTheoryWorkedExQuestion_14">Two similar triangles have ratio of similitude k = 2. If the smaller triangle has area 15, what is the area of the larger triangle?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_14">30</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_14">45</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_14">60</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_14">60</string>
+
     <string name="SectionThreeQuiz_14">!!! Solve the Quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_14">one</string>
+    <string name="SecThreeQuizAnswer2_1_14">two</string>
+    <string name="SecThreeQuizAnswer3_1_14">three</string>
+    <string name="SecThreeQuizAnswer1_2_14">one</string>
+    <string name="SecThreeQuizAnswer2_2_14">two</string>
+    <string name="SecThreeQuizAnswer3_2_14">three</string>
+    <string name="SecThreeQuizAnswer1_3_14">one</string>
+    <string name="SecThreeQuizAnswer2_3_14">two</string>
+    <string name="SecThreeQuizAnswer3_3_14">three</string>
+    <string name="SecThreeQuizAnswer1_4_14">one</string>
+    <string name="SecThreeQuizAnswer2_4_14">two</string>
+    <string name="SecThreeQuizAnswer3_4_14">three</string>
+    <string name="SecThreeQuizAnswer1_5_14">one</string>
+    <string name="SecThreeQuizAnswer2_5_14">two</string>
+    <string name="SecThreeQuizAnswer3_5_14">three</string>
+    <string name="SectionThreeAnswerOne_14">one</string>
+    <string name="SectionThreeAnswerTwo_14">two</string>
+    <string name="SectionThreeAnswerThree_14">three</string>
+    <string name="SectionThreeAnswerFour_14">one</string>
+    <string name="SectionThreeAnswerFive_14">two</string>
 </resources>

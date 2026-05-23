@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot"
+    android:background="@drawable/algebram">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:id="@+id/twentyfour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Games Guide"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/spinrouletteguide"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="Spin Roulette"
+                    android:backgroundTint="#ff0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/mathshootguide"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="Math Shoot"
+                    android:backgroundTint="#ff0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/geododgeguide"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="Geo Dodge"
+                    android:backgroundTint="#ff0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/completemathguide"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="Complete Math"
+                    android:backgroundTint="#ff0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/tictactoemathguide"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="TicTacToe Math"
+                    android:backgroundTint="#ff0000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

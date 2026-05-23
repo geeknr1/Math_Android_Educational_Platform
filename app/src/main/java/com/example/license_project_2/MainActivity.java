@@ -21,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.license_project_2.MathRoulette.RouletteMain;
 
 public class MainActivity extends AppCompatActivity {
-    private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree;
+    private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree, bounceAnimationFour;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -29,14 +29,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView welcome = findViewById(R.id.welcomeMessage);
+        ImageButton appGuide = findViewById(R.id.appguide);
         ImageButton tutorial = findViewById(R.id.Tutorial);
         ImageButton games = findViewById(R.id.Games);
         ImageButton quit = findViewById(R.id.Quit);
 
         welcome.setVisibility(VISIBLE);
+        appGuide.setVisibility(VISIBLE);
         tutorial.setVisibility(VISIBLE);
         games.setVisibility(VISIBLE);
         quit.setVisibility(VISIBLE);
+
+        bounceAnimationFour = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        appGuide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                appGuide.startAnimation(bounceAnimationFour);
+                startActivity(new Intent(MainActivity.this, AppGuide.class));
+            }
+        });
 
         bounceAnimationOne = AnimationUtils.loadAnimation(this, R.anim.bounce);
         tutorial.setOnClickListener(new View.OnClickListener() {

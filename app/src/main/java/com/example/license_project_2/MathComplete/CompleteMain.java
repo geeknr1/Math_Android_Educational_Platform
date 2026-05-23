@@ -126,7 +126,7 @@ public class CompleteMain extends AppCompatActivity {
                                                   "73. Writing Variable Expressions for Division: Amanda has c chocolate bars. She wants to distribute the chocolate bars evenly among 3 friends. Write an expression that shows how many chocolate bars 1 of her friends will receive.",
                                                   "74. Solving Two-Variable Equations: This equation shows how the amount Lucas earns from his after-school job depends on how many hours he works:e = 12h. The variable h represents how many hours he works. The variable e represents how much money he earns.\n How much money will Lucas earn after working for 6 hours?"};
 
-    private static final String[] answers = {"120,240", "6,12,8", "270", "96", "120", "800", "45,50", "6,9", "3000,5100,3450,5610",
+    private static final String[] answers = {"null", "null", "120,240", "6,12,8", "270", "96", "120", "800", "45,50", "6,9", "3000,5100,3450,5610",
                                             "46; 8:35 AM", "200", "400, 10", "18, 6", "196; 3 h 15 min", "1000, 8", "20,480",
                                             "50,10", "120,54", "9,45%,6,40%", "1200,8,10", "120,7,8", "120,2,60", "70,1,70",
                                             "14 3/4", "1 2/3", "1 1/3", "3/8", "1/8", "4", "5 5/6", "61.53", "1.75", "2.60",

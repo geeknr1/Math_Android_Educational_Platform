@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/scrollRoot"
+    android:background="@drawable/algebram">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/lavender_border">
+
+
+                <TextView
+                    android:id="@+id/thirteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="SPIN ROULLETE"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/fourteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="We have a spin containing 4 mathematical subjects, these being Algebra, Geometry, Calculus and Trigonometry."
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fifteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Press Spin— the wheel randomly lands on a math subject."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/rouletteandspin"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/spinroulette"
+                    />
+                <TextView
+                    android:id="@+id/sixteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="A math problem for that subject is displayed."
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/seventeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Type your answer using the keyboard, then press Check to submit."
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/problemimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/completedanswer"
+                    />
+                <TextView
+                    android:id="@+id/eightteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="The correct answers will be highlighted green and the wrong answers will be highlighted red."
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/correctanswer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="75dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/greenanswer"/>
+
+                    <ImageView
+                        android:id="@+id/wronganswer"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/redanswer"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:backgroundTint="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -5,39 +5,165 @@
     <string name="SectionOneTheoryDef_3">• Power with Natural Exponent: aⁿ means multiplying a by itself n times; a¹ = a. a is the base, n is the exponent.\n
 • Common names: a² (square), a³ (cube).\n
 • Root (Evolution): the inverse of powers. The nth root ⁿ√a gives a number whose nth power equals a. √a is the square root, ³√a the cube root.</string>
+    <string name="SectionOneTheoryDefQuestion_3">What is 2⁵?</string>
+    <string name="SectionOneTheoryDefAnswerOne_3">16</string>
+    <string name="SectionOneTheoryDefAnswerTwo_3">32</string>
+    <string name="SectionOneTheoryDefAnswerThree_3">64</string>
+    <string name="SectionOneTheoryDefCorrectAnswer_3">32</string>
+
 
     <string name="SectionOneTheoryProperties_3">• Even powers of negatives are positive; odd powers stay negative.\n
 • 0ⁿ = 0, 1ⁿ = 1.\n
 • Some roots (like √2) are not rational.\n
 • Approximate roots satisfy bⁿ &lt; a &lt; (b + α)ⁿ.</string>
+    <string name="SectionOneTheoryPropsQuestion_3">What is (-3)⁴?</string>
+    <string name="SectionOneTheoryPropsAnswerOne_3">-81</string>
+    <string name="SectionOneTheoryPropsAnswerTwo_3">81</string>
+    <string name="SectionOneTheoryPropsAnswerThree_3">-12</string>
+    <string name="SectionOneTheoryPropsCorrectAnswer_3">81</string>
 
-    <string name="SectionOneTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+
+    <string name="SectionOneTheoryWorkedExamples_3">Estimate √10 to one decimal place.\n
+Step 1: 3² = 9 &lt; 10 &lt; 16 = 4², so 3 &lt; √10 &lt; 4.\n
+Step 2: Try 3.1²= 9.61 &lt; 10 and 3.2² = 10.24 &gt; 10.\n
+Step 3: So 3.1 &lt; √10 &lt; 3.2.\n
+Step 4: Try 3.16² = 9.9856 ≈ 10, so √10 ≈ 3.2.</string>
+    <string name="SectionOneTheoryWorkedExQuestion_3">Between which two consecutive integers does √10 lie?</string>
+    <string name="SectionOneTheoryWorkedExAnswerOne_3">2 and 3</string>
+    <string name="SectionOneTheoryWorkedExAnswerTwo_3">3 and 4</string>
+    <string name="SectionOneTheoryWorkedExAnswerThree_3">4 and 5</string>
+    <string name="SectionOneTheoryWorkedExCorrectAnswer_3">3 and 4</string>
+
+
     <string name="SectionOneQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecOneQuizAnswer1_1_3">one</string>
+    <string name="SecOneQuizAnswer2_1_3">two</string>
+    <string name="SecOneQuizAnswer3_1_3">three</string>
+    <string name="SecOneQuizAnswer1_2_3">one</string>
+    <string name="SecOneQuizAnswer2_2_3">two</string>
+    <string name="SecOneQuizAnswer3_2_3">three</string>
+    <string name="SecOneQuizAnswer1_3_3">one</string>
+    <string name="SecOneQuizAnswer2_3_3">two</string>
+    <string name="SecOneQuizAnswer3_3_3">three</string>
+    <string name="SecOneQuizAnswer1_4_3">one</string>
+    <string name="SecOneQuizAnswer2_4_3">two</string>
+    <string name="SecOneQuizAnswer3_4_3">three</string>
+    <string name="SecOneQuizAnswer1_5_3">one</string>
+    <string name="SecOneQuizAnswer2_5_3">two</string>
+    <string name="SecOneQuizAnswer3_5_3">three</string>
+    <string name="SectionOneAnswerOne_3">one</string>
+    <string name="SectionOneAnswerTwo_3">two</string>
+    <string name="SectionOneAnswerThree_3">three</string>
+    <string name="SectionOneAnswerFour_3">one</string>
+    <string name="SectionOneAnswerFive_3">two</string>
 
 
     <string name="SectionTwoTheoryDef_3">• Irrational numbers have nonterminating, nonrepeating decimals (e.g., √2 = 1.414... ).\n
 • Every positive irrational has a negative counterpart.\n
 • Equal irrationals share identical decimal digits.\n
 • Examples: √2, π, and most logarithms or trigonometric values.</string>
+    <string name="SectionTwoTheoryDefQuestion_3">Is √2 a rational number? (True / False)</string>
+    <string name="SectionTwoTheoryDefAnswerOne_3">True</string>
+    <string name="SectionTwoTheoryDefAnswerTwo_3">False</string>
+    <string name="SectionTwoTheoryDefAnswerThree_3">Neither</string>
+    <string name="SectionTwoTheoryDefCorrectAnswer_3">False</string>
 
     <string name="SectionTwoTheoryProperties_3">• Irrationals come from roots of non-perfect powers.\n
-• They can’t be written as fractions.\n
+• They can\'t be written as fractions.\n
 • Comparison is done digit by digit.\n
 • π and √3 are classic examples.</string>
+    <string name="SectionTwoTheoryPropsQuestion_3">Which of the following is an irrational number?</string>
+    <string name="SectionTwoTheoryPropsAnswerOne_3">1/3</string>
+    <string name="SectionTwoTheoryPropsAnswerTwo_3">√5</string>
+    <string name="SectionTwoTheoryPropsAnswerThree_3">0.25</string>
+    <string name="SectionTwoTheoryPropsCorrectAnswer_3">√5</string>
 
-    <string name="SectionTwoTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionTwoTheoryWorkedExamples_3">Compare √3 and √5 digit by digit.\n
+Step 1: √3 ≈ 1.732...\n
+Step 2: √5 ≈ 2.236...\n
+Step 3: Compare first digits: 1 &lt; 2, so √3 &lt; √5.</string>
+    <string name="SectionTwoTheoryWorkedExQuestion_3">Which is larger: √3 or √5?</string>
+    <string name="SectionTwoTheoryWorkedExAnswerOne_3">√3</string>
+    <string name="SectionTwoTheoryWorkedExAnswerTwo_3">√5</string>
+    <string name="SectionTwoTheoryWorkedExAnswerThree_3">They are equal</string>
+    <string name="SectionTwoTheoryWorkedExCorrectAnswer_3">√5</string>
+
     <string name="SectionTwoQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecTwoQuizAnswer1_1_3">one</string>
+    <string name="SecTwoQuizAnswer2_1_3">two</string>
+    <string name="SecTwoQuizAnswer3_1_3">three</string>
+    <string name="SecTwoQuizAnswer1_2_3">one</string>
+    <string name="SecTwoQuizAnswer2_2_3">two</string>
+    <string name="SecTwoQuizAnswer3_2_3">three</string>
+    <string name="SecTwoQuizAnswer1_3_3">one</string>
+    <string name="SecTwoQuizAnswer2_3_3">two</string>
+    <string name="SecTwoQuizAnswer3_3_3">three</string>
+    <string name="SecTwoQuizAnswer1_4_3">one</string>
+    <string name="SecTwoQuizAnswer2_4_3">two</string>
+    <string name="SecTwoQuizAnswer3_4_3">three</string>
+    <string name="SecTwoQuizAnswer1_5_3">one</string>
+    <string name="SecTwoQuizAnswer2_5_3">two</string>
+    <string name="SecTwoQuizAnswer3_5_3">three</string>
+    <string name="SectionTwoAnswerOne_3">one</string>
+    <string name="SectionTwoAnswerTwo_3">two</string>
+    <string name="SectionTwoAnswerThree_3">three</string>
+    <string name="SectionTwoAnswerFour_3">one</string>
+    <string name="SectionTwoAnswerFive_3">two</string>
 
 
     <string name="SectionThreeTheoryDef_3">• Real Numbers: include all rationals and irrationals.\n
 • Arithmetic laws (commutative, associative, distributive) apply to them.\n
 • Irrationals + rationals may yield rational or irrational results.\n
-• Arithmetical nth root: for a ≥ 0, there’s one non-negative b such that bⁿ = a.\n
+• Arithmetical nth root: for a ≥ 0, there\'s one non-negative b such that bⁿ = a.\n
 • Coordinates: any point (x, y) lies in the plane; distance |M₁M₂| = √((x₂−x₁)² + (y₂−y₁)²).</string>
+    <string name="SectionThreeTheoryDefQuestion_3">What is the distance between points (0, 0) and (3, 4)?</string>
+    <string name="SectionThreeTheoryDefAnswerOne_3">7</string>
+    <string name="SectionThreeTheoryDefAnswerTwo_3">5</string>
+    <string name="SectionThreeTheoryDefAnswerThree_3">√7</string>
+    <string name="SectionThreeTheoryDefCorrectAnswer_3">5</string>
 
-    <string name="SectionThreeTheoryProperties_3">!!! Empty !!!</string>
-    <string name="SectionThreeTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionThreeTheoryProperties_3">Properties of Real Numbers:\n
+• The sum or product of two rationals is always rational.\n
+• The sum of a rational and an irrational is always irrational.\n
+• The product of a nonzero rational and an irrational is always irrational.\n
+• The product of two irrationals can be rational (e.g., √2 · √2 = 2) or irrational.\n
+• Real numbers are ordered: for any a, b, exactly one holds: a &lt; b, a = b, or a &gt; b.</string>
+    <string name="SectionThreeTheoryPropsQuestion_3">Is the sum of a rational and an irrational number always irrational? (True / False)</string>
+    <string name="SectionThreeTheoryPropsAnswerOne_3">True</string>
+    <string name="SectionThreeTheoryPropsAnswerTwo_3">False</string>
+    <string name="SectionThreeTheoryPropsCorrectAnswer_3">True</string>
+
+    <string name="SectionThreeTheoryWorkedExamples_3">Find the distance between M₁(1, 2) and M₂(4, 6).\n
+Step 1: Apply the formula: d = √((4−1)² + (6−2)²).\n
+Step 2: d = √(3² + 4²) = √(9 + 16) = √25.\n
+Step 3: d = 5.</string>
+    <string name="SectionThreeTheoryWorkedExQuestion_3">What is the distance between M₁(1, 2) and M₂(4, 6)?</string>
+    <string name="SectionThreeTheoryWorkedExAnswerOne_3">√7</string>
+    <string name="SectionThreeTheoryWorkedExAnswerTwo_3">7</string>
+    <string name="SectionThreeTheoryWorkedExAnswerThree_3">5</string>
+    <string name="SectionThreeTheoryWorkedExCorrectAnswer_3">5</string>
+
     <string name="SectionThreeQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecThreeQuizAnswer1_1_3">one</string>
+    <string name="SecThreeQuizAnswer2_1_3">two</string>
+    <string name="SecThreeQuizAnswer3_1_3">three</string>
+    <string name="SecThreeQuizAnswer1_2_3">one</string>
+    <string name="SecThreeQuizAnswer2_2_3">two</string>
+    <string name="SecThreeQuizAnswer3_2_3">three</string>
+    <string name="SecThreeQuizAnswer1_3_3">one</string>
+    <string name="SecThreeQuizAnswer2_3_3">two</string>
+    <string name="SecThreeQuizAnswer3_3_3">three</string>
+    <string name="SecThreeQuizAnswer1_4_3">one</string>
+    <string name="SecThreeQuizAnswer2_4_3">two</string>
+    <string name="SecThreeQuizAnswer3_4_3">three</string>
+    <string name="SecThreeQuizAnswer1_5_3">one</string>
+    <string name="SecThreeQuizAnswer2_5_3">two</string>
+    <string name="SecThreeQuizAnswer3_5_3">three</string>
+    <string name="SectionThreeAnswerOne_3">one</string>
+    <string name="SectionThreeAnswerTwo_3">two</string>
+    <string name="SectionThreeAnswerThree_3">three</string>
+    <string name="SectionThreeAnswerFour_3">one</string>
+    <string name="SectionThreeAnswerFive_3">two</string>
 
 
     <string name="SectionFourTheoryDef_3">• Power Rules:\n
@@ -46,36 +172,159 @@
 3. (aᵐ)ⁿ = aᵐⁿ\n
 4. (ab)ⁿ = aⁿbⁿ, (a/b)ⁿ = aⁿ/bⁿ\n
 5. (-a)ⁿ = aⁿ if n even, -aⁿ if odd.</string>
+    <string name="SectionFourTheoryDefQuestion_3">What is 3² · 3³?</string>
+    <string name="SectionFourTheoryDefAnswerOne_3">3⁵</string>
+    <string name="SectionFourTheoryDefAnswerTwo_3">3⁶</string>
+    <string name="SectionFourTheoryDefAnswerThree_3">9⁵</string>
+    <string name="SectionFourTheoryDefCorrectAnswer_3">3⁵</string>
 
-    <string name="SectionFourTheoryProperties_3">!!! Empty !!!</string>
-    <string name="SectionFourTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionFourTheoryProperties_3">Additional Power Properties:\n
+• aᵐ⁺ⁿ = aᵐ · aⁿ (adding exponents corresponds to multiplying powers).\n
+• (aᵐ)ⁿ = aᵐⁿ (a power of a power multiplies exponents).\n
+• For a ≠ 0: aᵐ / aⁿ = aᵐ⁻ⁿ; in particular a⁰ = 1.\n
+• Powers of products and quotients distribute over each factor.\n
+• These rules hold for all integer exponents when the base is nonzero.</string>
+    <string name="SectionFourTheoryPropsQuestion_3">What is (2³)²?</string>
+    <string name="SectionFourTheoryPropsAnswerOne_3">2⁵</string>
+    <string name="SectionFourTheoryPropsAnswerTwo_3">2⁶</string>
+    <string name="SectionFourTheoryPropsAnswerThree_3">4⁶</string>
+    <string name="SectionFourTheoryPropsCorrectAnswer_3">2⁶</string>
+
+    <string name="SectionFourTheoryWorkedExamples_3">Simplify (2² · 2³) / 2⁴.\n
+Step 1: Numerator: 2² · 2³ = 2²⁺³ = 2⁵.\n
+Step 2: Division: 2⁵ / 2⁴ = 2⁵⁻⁴ = 2¹ = 2.\n
+Step 3: Result: 2.</string>
+    <string name="SectionFourTheoryWorkedExQuestion_3">What is (2² · 2³) / 2⁴?</string>
+    <string name="SectionFourTheoryWorkedExAnswerOne_3">4</string>
+    <string name="SectionFourTheoryWorkedExAnswerTwo_3">8</string>
+    <string name="SectionFourTheoryWorkedExAnswerThree_3">2</string>
+    <string name="SectionFourTheoryWorkedExCorrectAnswer_3">2</string>
+
     <string name="SectionFourQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecFourQuizAnswer1_1_3">one</string>
+    <string name="SecFourQuizAnswer2_1_3">two</string>
+    <string name="SecFourQuizAnswer3_1_3">three</string>
+    <string name="SecFourQuizAnswer1_2_3">one</string>
+    <string name="SecFourQuizAnswer2_2_3">two</string>
+    <string name="SecFourQuizAnswer3_2_3">three</string>
+    <string name="SecFourQuizAnswer1_3_3">one</string>
+    <string name="SecFourQuizAnswer2_3_3">two</string>
+    <string name="SecFourQuizAnswer3_3_3">three</string>
+    <string name="SecFourQuizAnswer1_4_3">one</string>
+    <string name="SecFourQuizAnswer2_4_3">two</string>
+    <string name="SecFourQuizAnswer3_4_3">three</string>
+    <string name="SecFourQuizAnswer1_5_3">one</string>
+    <string name="SecFourQuizAnswer2_5_3">two</string>
+    <string name="SecFourQuizAnswer3_5_3">three</string>
+    <string name="SectionFourAnswerOne_3">one</string>
+    <string name="SectionFourAnswerTwo_3">two</string>
+    <string name="SectionFourAnswerThree_3">three</string>
+    <string name="SectionFourAnswerFour_3">one</string>
+    <string name="SectionFourAnswerFive_3">two</string>
 
 
     <string name="SectionFiveTheoryDef_3">• Square root: √a = b if b² = a (a ≥ 0).\n
 • Only one non-negative square root exists.\n
 • Key relation: √a² = |a|.</string>
+    <string name="SectionFiveTheoryDefQuestion_3">What is √(-5)²?</string>
+    <string name="SectionFiveTheoryDefAnswerOne_3">-5</string>
+    <string name="SectionFiveTheoryDefAnswerTwo_3">25</string>
+    <string name="SectionFiveTheoryDefAnswerThree_3">5</string>
+    <string name="SectionFiveTheoryDefCorrectAnswer_3">5</string>
 
     <string name="SectionFiveTheoryProperties_3">• √ab = √a·√b, √(a/b) = √a/√b.\n
 • If a > b > 0, then √a > √b.\n
 • Simplify roots: √a²b = |a|√b; a√b = √a²b.</string>
+    <string name="SectionFiveTheoryPropsQuestion_3">What is √12 simplified?</string>
+    <string name="SectionFiveTheoryPropsAnswerOne_3">2√3</string>
+    <string name="SectionFiveTheoryPropsAnswerTwo_3">3√2</string>
+    <string name="SectionFiveTheoryPropsAnswerThree_3">4√3</string>
+    <string name="SectionFiveTheoryPropsCorrectAnswer_3">2√3</string>
 
-    <string name="SectionFiveTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionFiveTheoryWorkedExamples_3">Simplify √75.\n
+Step 1: Factor: 75 = 25 · 3.\n
+Step 2: Apply rule: √75 = √25 · √3 = 5√3.\n
+Step 3: Result: 5√3.</string>
+    <string name="SectionFiveTheoryWorkedExQuestion_3">What is √75 simplified?</string>
+    <string name="SectionFiveTheoryWorkedExAnswerOne_3">3√5</string>
+    <string name="SectionFiveTheoryWorkedExAnswerTwo_3">25√3</string>
+    <string name="SectionFiveTheoryWorkedExAnswerThree_3">5√3</string>
+    <string name="SectionFiveTheoryWorkedExCorrectAnswer_3">5√3</string>
+
     <string name="SectionFiveQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecFiveQuizAnswer1_1_3">one</string>
+    <string name="SecFiveQuizAnswer2_1_3">two</string>
+    <string name="SecFiveQuizAnswer3_1_3">three</string>
+    <string name="SecFiveQuizAnswer1_2_3">one</string>
+    <string name="SecFiveQuizAnswer2_2_3">two</string>
+    <string name="SecFiveQuizAnswer3_2_3">three</string>
+    <string name="SecFiveQuizAnswer1_3_3">one</string>
+    <string name="SecFiveQuizAnswer2_3_3">two</string>
+    <string name="SecFiveQuizAnswer3_3_3">three</string>
+    <string name="SecFiveQuizAnswer1_4_3">one</string>
+    <string name="SecFiveQuizAnswer2_4_3">two</string>
+    <string name="SecFiveQuizAnswer3_4_3">three</string>
+    <string name="SecFiveQuizAnswer1_5_3">one</string>
+    <string name="SecFiveQuizAnswer2_5_3">two</string>
+    <string name="SecFiveQuizAnswer3_5_3">three</string>
+    <string name="SectionFiveAnswerOne_3">one</string>
+    <string name="SectionFiveAnswerTwo_3">two</string>
+    <string name="SectionFiveAnswerThree_3">three</string>
+    <string name="SectionFiveAnswerFour_3">one</string>
+    <string name="SectionFiveAnswerFive_3">two</string>
 
 
     <string name="SectionSixTheoryDef_3">• Zero exponent: a⁰ = 1 (for a ≠ 0).\n
 • Negative exponent: a⁻ⁿ = 1/aⁿ.\n
 • 0⁰ and 0⁻ⁿ are undefined.</string>
+    <string name="SectionSixTheoryDefQuestion_3">What is 5⁻²?</string>
+    <string name="SectionSixTheoryDefAnswerOne_3">-25</string>
+    <string name="SectionSixTheoryDefAnswerTwo_3">1/25</string>
+    <string name="SectionSixTheoryDefAnswerThree_3">25</string>
+    <string name="SectionSixTheoryDefCorrectAnswer_3">1/25</string>
 
     <string name="SectionSixTheoryProperties_3">• Power laws for integer exponents:\n
 1. aᵖ·aᵠ = aᵖ⁺ᵠ\n
 2. (aᵖ)ᵠ = aᵖᵠ\n
 3. aᵖ/aᵠ = aᵖ⁻ᵠ\n
 4. (ab)ᵖ = aᵖbᵖ, (a/b)ᵖ = aᵖ/bᵖ.</string>
+    <string name="SectionSixTheoryPropsQuestion_3">What is 4⁰?</string>
+    <string name="SectionSixTheoryPropsAnswerOne_3">0</string>
+    <string name="SectionSixTheoryPropsAnswerTwo_3">4</string>
+    <string name="SectionSixTheoryPropsAnswerThree_3">1</string>
+    <string name="SectionSixTheoryPropsCorrectAnswer_3">1</string>
 
-    <string name="SectionSixTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionSixTheoryWorkedExamples_3">Simplify (3⁻² · 3⁴).\n
+Step 1: Apply rule aᵖ · aᵠ = aᵖ⁺ᵠ: 3⁻² · 3⁴ = 3⁻²⁺⁴ = 3².\n
+Step 2: 3² = 9.\n
+Step 3: Result: 9.</string>
+    <string name="SectionSixTheoryWorkedExQuestion_3">What is 3⁻² · 3⁴?</string>
+    <string name="SectionSixTheoryWorkedExAnswerOne_3">3</string>
+    <string name="SectionSixTheoryWorkedExAnswerTwo_3">27</string>
+    <string name="SectionSixTheoryWorkedExAnswerThree_3">9</string>
+    <string name="SectionSixTheoryWorkedExCorrectAnswer_3">9</string>
+
     <string name="SectionSixQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecSixQuizAnswer1_1_3">one</string>
+    <string name="SecSixQuizAnswer2_1_3">two</string>
+    <string name="SecSixQuizAnswer3_1_3">three</string>
+    <string name="SecSixQuizAnswer1_2_3">one</string>
+    <string name="SecSixQuizAnswer2_2_3">two</string>
+    <string name="SecSixQuizAnswer3_2_3">three</string>
+    <string name="SecSixQuizAnswer1_3_3">one</string>
+    <string name="SecSixQuizAnswer2_3_3">two</string>
+    <string name="SecSixQuizAnswer3_3_3">three</string>
+    <string name="SecSixQuizAnswer1_4_3">one</string>
+    <string name="SecSixQuizAnswer2_4_3">two</string>
+    <string name="SecSixQuizAnswer3_4_3">three</string>
+    <string name="SecSixQuizAnswer1_5_3">one</string>
+    <string name="SecSixQuizAnswer2_5_3">two</string>
+    <string name="SecSixQuizAnswer3_5_3">three</string>
+    <string name="SectionSixAnswerOne_3">one</string>
+    <string name="SectionSixAnswerTwo_3">two</string>
+    <string name="SectionSixAnswerThree_3">three</string>
+    <string name="SectionSixAnswerFour_3">one</string>
+    <string name="SectionSixAnswerFive_3">two</string>
 
 
     <string name="SectionSevenTheoryDef_3">• Arithmetical nth root: ⁿ√a = b if bⁿ = a (a ≥ 0).\n
@@ -87,24 +336,116 @@
 5. ᵐ√ⁿ√a = ᵐⁿ√a.\n
 • Like roots: simplifiable only when indices and radicands match.\n
 • Key identity: ⁿ√aⁿ = |a| if n even; = a if n odd.</string>
+    <string name="SectionSevenTheoryDefQuestion_3">What is ³√8?</string>
+    <string name="SectionSevenTheoryDefAnswerOne_3">4</string>
+    <string name="SectionSevenTheoryDefAnswerTwo_3">3</string>
+    <string name="SectionSevenTheoryDefAnswerThree_3">2</string>
+    <string name="SectionSevenTheoryDefCorrectAnswer_3">2</string>
 
-    <string name="SectionSevenTheoryProperties_3">!!! Empty !!!</string>
-    <string name="SectionSevenTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionSevenTheoryProperties_3">Further Root Properties:\n
+• Roots with the same index can be multiplied or divided under one radical sign.\n
+• A root of a root ᵐ√ⁿ√a equals ᵐⁿ√a (multiply the indices).\n
+• To compare roots with different indices, convert them to a common index.\n
+• Rationalizing a denominator removes the root from the bottom: 1/√a = √a/a.\n
+• ⁿ√aⁿ = |a| for even n (always non-negative), and = a for odd n.</string>
+    <string name="SectionSevenTheoryPropsQuestion_3">What is √√16?</string>
+    <string name="SectionSevenTheoryPropsAnswerOne_3">4</string>
+    <string name="SectionSevenTheoryPropsAnswerTwo_3">2</string>
+    <string name="SectionSevenTheoryPropsAnswerThree_3">8</string>
+    <string name="SectionSevenTheoryPropsCorrectAnswer_3">2</string>
+
+    <string name="SectionSevenTheoryWorkedExamples_3">Simplify ⁴√(81x⁸).\n
+Step 1: Write as: ⁴√81 · ⁴√x⁸.\n
+Step 2: ⁴√81 = ⁴√3⁴ = 3.\n
+Step 3: ⁴√x⁸ = x⁸/⁴ = x².\n
+Step 4: Result: 3x².</string>
+    <string name="SectionSevenTheoryWorkedExQuestion_3">What is ⁴√(81x⁸)?</string>
+    <string name="SectionSevenTheoryWorkedExAnswerOne_3">9x²</string>
+    <string name="SectionSevenTheoryWorkedExAnswerTwo_3">3x⁴</string>
+    <string name="SectionSevenTheoryWorkedExAnswerThree_3">3x²</string>
+    <string name="SectionSevenTheoryWorkedExCorrectAnswer_3">3x²</string>
+
     <string name="SectionSevenQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecSevenQuizAnswer1_1_3">one</string>
+    <string name="SecSevenQuizAnswer2_1_3">two</string>
+    <string name="SecSevenQuizAnswer3_1_3">three</string>
+    <string name="SecSevenQuizAnswer1_2_3">one</string>
+    <string name="SecSevenQuizAnswer2_2_3">two</string>
+    <string name="SecSevenQuizAnswer3_2_3">three</string>
+    <string name="SecSevenQuizAnswer1_3_3">one</string>
+    <string name="SecSevenQuizAnswer2_3_3">two</string>
+    <string name="SecSevenQuizAnswer3_3_3">three</string>
+    <string name="SecSevenQuizAnswer1_4_3">one</string>
+    <string name="SecSevenQuizAnswer2_4_3">two</string>
+    <string name="SecSevenQuizAnswer3_4_3">three</string>
+    <string name="SecSevenQuizAnswer1_5_3">one</string>
+    <string name="SecSevenQuizAnswer2_5_3">two</string>
+    <string name="SecSevenQuizAnswer3_5_3">three</string>
+    <string name="SectionSevenAnswerOne_3">one</string>
+    <string name="SectionSevenAnswerTwo_3">two</string>
+    <string name="SectionSevenAnswerThree_3">three</string>
+    <string name="SectionSevenAnswerFour_3">one</string>
+    <string name="SectionSevenAnswerFive_3">two</string>
 
 
     <string name="SectionEightTheoryDef_3">• For a > 0 and x = p/q, aˣ = a^(p/q) = ⁹√aᵖ.\n
 • If a = 0 and x > 0, then aˣ = 0.\n
 • Extends powers to rational exponents.</string>
+    <string name="SectionEightTheoryDefQuestion_3">What is 8^(1/3)?</string>
+    <string name="SectionEightTheoryDefAnswerOne_3">4</string>
+    <string name="SectionEightTheoryDefAnswerTwo_3">3</string>
+    <string name="SectionEightTheoryDefAnswerThree_3">2</string>
+    <string name="SectionEightTheoryDefCorrectAnswer_3">2</string>
 
     <string name="SectionEightTheoryProperties_3">• Power rules remain valid for rational exponents and positive bases.</string>
-    <string name="SectionEightTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionEightTheoryPropsQuestion_3">What is 16^(3/4)?</string>
+    <string name="SectionEightTheoryPropsAnswerOne_3">4</string>
+    <string name="SectionEightTheoryPropsAnswerTwo_3">8</string>
+    <string name="SectionEightTheoryPropsAnswerThree_3">12</string>
+    <string name="SectionEightTheoryPropsCorrectAnswer_3">8</string>
+
+    <string name="SectionEightTheoryWorkedExamples_3">Simplify 27^(2/3).\n
+Step 1: Write as (27^(1/3))².\n
+Step 2: 27^(1/3) = ³√27 = 3.\n
+Step 3: 3² = 9.\n
+Step 4: Result: 9.</string>
+    <string name="SectionEightTheoryWorkedExQuestion_3">What is 27^(2/3)?</string>
+    <string name="SectionEightTheoryWorkedExAnswerOne_3">3</string>
+    <string name="SectionEightTheoryWorkedExAnswerTwo_3">18</string>
+    <string name="SectionEightTheoryWorkedExAnswerThree_3">9</string>
+    <string name="SectionEightTheoryWorkedExCorrectAnswer_3">9</string>
+
     <string name="SectionEightQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecEightQuizAnswer1_1_3">one</string>
+    <string name="SecEightQuizAnswer2_1_3">two</string>
+    <string name="SecEightQuizAnswer3_1_3">three</string>
+    <string name="SecEightQuizAnswer1_2_3">one</string>
+    <string name="SecEightQuizAnswer2_2_3">two</string>
+    <string name="SecEightQuizAnswer3_2_3">three</string>
+    <string name="SecEightQuizAnswer1_3_3">one</string>
+    <string name="SecEightQuizAnswer2_3_3">two</string>
+    <string name="SecEightQuizAnswer3_3_3">three</string>
+    <string name="SecEightQuizAnswer1_4_3">one</string>
+    <string name="SecEightQuizAnswer2_4_3">two</string>
+    <string name="SecEightQuizAnswer3_4_3">three</string>
+    <string name="SecEightQuizAnswer1_5_3">one</string>
+    <string name="SecEightQuizAnswer2_5_3">two</string>
+    <string name="SecEightQuizAnswer3_5_3">three</string>
+    <string name="SectionEightAnswerOne_3">one</string>
+    <string name="SectionEightAnswerTwo_3">two</string>
+    <string name="SectionEightAnswerThree_3">three</string>
+    <string name="SectionEightAnswerFour_3">one</string>
+    <string name="SectionEightAnswerFive_3">two</string>
 
 
     <string name="SectionNineTheoryDef_3">• For irrational exponents, aˣ is defined by limits of rational approximations.\n
 • a⁻ˣ = 1/aˣ.\n
 • The process gives a unique positive result for a > 0.</string>
+    <string name="SectionNineTheoryDefQuestion_3">Is √2^2 a well-defined positive number? (True / False)</string>
+    <string name="SectionNineTheoryDefAnswerOne_3">True</string>
+    <string name="SectionNineTheoryDefAnswerTwo_3">False</string>
+    <string name="SectionNineTheoryDefAnswerThree_3">Neither</string>
+    <string name="SectionNineTheoryDefCorrectAnswer_3">True</string>
 
     <string name="SectionNineTheoryProperties_3">• Power laws for real exponents:\n
 1. aˣ·aʸ = aˣ⁺ʸ\n
@@ -112,7 +453,42 @@
 3. aˣ/aʸ = aˣ⁻ʸ\n
 4. (ab)ˣ = aˣbˣ\n
 5. (a/b)ˣ = aˣ/bˣ.</string>
+    <string name="SectionNineTheoryPropsQuestion_3">What is (2³)⁴ using power laws?</string>
+    <string name="SectionNineTheoryPropsAnswerOne_3">2⁷</string>
+    <string name="SectionNineTheoryPropsAnswerTwo_3">2¹²</string>
+    <string name="SectionNineTheoryPropsAnswerThree_3">8⁴</string>
+    <string name="SectionNineTheoryPropsCorrectAnswer_3">2¹²</string>
 
-    <string name="SectionNineTheoryWorkedExamples_3">!!! Worked Examples !!!</string>
+    <string name="SectionNineTheoryWorkedExamples_3">Simplify 4^√2 · 4^(2−√2).\n
+Step 1: Apply aˣ · aʸ = aˣ⁺ʸ: 4^(√2 + 2 − √2).\n
+Step 2: Simplify exponent: √2 + 2 − √2 = 2.\n
+Step 3: Result: 4² = 16.</string>
+    <string name="SectionNineTheoryWorkedExQuestion_3">What is 4^√2 · 4^(2−√2)?</string>
+    <string name="SectionNineTheoryWorkedExAnswerOne_3">4</string>
+    <string name="SectionNineTheoryWorkedExAnswerTwo_3">8</string>
+    <string name="SectionNineTheoryWorkedExAnswerThree_3">16</string>
+    <string name="SectionNineTheoryWorkedExCorrectAnswer_3">16</string>
+
     <string name="SectionNineQuiz_3">!!! Solve the quiz !!!</string>
+    <string name="SecNineQuizAnswer1_1_3">one</string>
+    <string name="SecNineQuizAnswer2_1_3">two</string>
+    <string name="SecNineQuizAnswer3_1_3">three</string>
+    <string name="SecNineQuizAnswer1_2_3">one</string>
+    <string name="SecNineQuizAnswer2_2_3">two</string>
+    <string name="SecNineQuizAnswer3_2_3">three</string>
+    <string name="SecNineQuizAnswer1_3_3">one</string>
+    <string name="SecNineQuizAnswer2_3_3">two</string>
+    <string name="SecNineQuizAnswer3_3_3">three</string>
+    <string name="SecNineQuizAnswer1_4_3">one</string>
+    <string name="SecNineQuizAnswer2_4_3">two</string>
+    <string name="SecNineQuizAnswer3_4_3">three</string>
+    <string name="SecNineQuizAnswer1_5_3">one</string>
+    <string name="SecNineQuizAnswer2_5_3">two</string>
+    <string name="SecNineQuizAnswer3_5_3">three</string>
+    <string name="SectionNineAnswerOne_3">one</string>
+    <string name="SectionNineAnswerTwo_3">two</string>
+    <string name="SectionNineAnswerThree_3">three</string>
+    <string name="SectionNineAnswerFour_3">one</string>
+    <string name="SectionNineAnswerFive_3">two</string>
+
 </resources>
