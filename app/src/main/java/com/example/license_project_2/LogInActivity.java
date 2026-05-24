@@ -22,6 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import com.example.license_project_2.notifications.ReminderScheduler;
+
 import java.util.Objects;
 
 public class LogInActivity extends AppCompatActivity {
@@ -44,7 +46,7 @@ public class LogInActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    checkUser();
+                checkUser();
             }
         });
 
@@ -99,6 +101,7 @@ public class LogInActivity extends AppCompatActivity {
 
                     if(Objects.equals(passwordFromDB, userPassword)){
                         loginUsername.setError(null);
+                        ReminderScheduler.scheduleAll(LogInActivity.this);
                         Intent intent = new Intent(LogInActivity.this, MainActivity.class);
                         startActivity(intent);
                     }   else{

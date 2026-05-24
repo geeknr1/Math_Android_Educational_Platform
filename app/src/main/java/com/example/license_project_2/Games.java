@@ -19,16 +19,20 @@ import com.example.license_project_2.MathGeometry.GeometryMain;
 import com.example.license_project_2.MathRoulette.RouletteMain;
 import com.example.license_project_2.MathShoot.ShootMain;
 import com.example.license_project_2.MathTicTacToe.TicTacToeMain;
+import com.example.license_project_2.notifications.NotificationBellHelper;
 
 public class Games extends AppCompatActivity {
     private ImageButton gameOne, gameTwo, gameThree, gameFour, gameFive, left, right, back;
     private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree, bounceAnimationFour,
-                      bounceAnimationFive, bounceAnimationSix, bounceAnimationSeven, bounceAnimationEight;
+            bounceAnimationFive, bounceAnimationSix, bounceAnimationSeven, bounceAnimationEight;
+    private NotificationBellHelper notificationBellHelper;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.games);
+
+        notificationBellHelper = NotificationBellHelper.attach(this);
 
         gameOne = findViewById(R.id.GameOne); gameTwo = findViewById(R.id.GameTwo);
         gameThree = findViewById(R.id.GameThree); gameFour = findViewById(R.id.GameFour);
@@ -115,5 +119,13 @@ public class Games extends AppCompatActivity {
                 startActivity(new Intent(Games.this, MainActivity.class));
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (notificationBellHelper != null) {
+            notificationBellHelper.onResume();
+        }
     }
 }

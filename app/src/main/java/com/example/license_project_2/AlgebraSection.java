@@ -779,8 +779,6 @@ public class AlgebraSection extends AppCompatActivity {
 //                }
 //            }
         }
-
-
     }
 
 }

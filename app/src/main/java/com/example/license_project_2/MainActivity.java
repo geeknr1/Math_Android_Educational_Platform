@@ -2,9 +2,12 @@ package com.example.license_project_2;
 
 import static android.view.View.VISIBLE;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,16 +20,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import com.example.license_project_2.notifications.NotificationBellHelper;
+import com.example.license_project_2.notifications.ReminderScheduler;
 
 import com.example.license_project_2.MathRoulette.RouletteMain;
 
 public class MainActivity extends AppCompatActivity {
     private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree, bounceAnimationFour;
+    private NotificationBellHelper notificationBellHelper;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        notificationBellHelper = NotificationBellHelper.attach(this);
+        requestNotificationPermission();
+        ReminderScheduler.scheduleAll(this);
 
         ImageView welcome = findViewById(R.id.welcomeMessage);
         ImageButton appGuide = findViewById(R.id.appguide);
@@ -81,6 +94,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (notificationBellHelper != null) {
+            notificationBellHelper.onResume();
+        }
+    }
+
+    private void requestNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(
+                        this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                        1001
+                );
+            }
+        }
     }
 }
 

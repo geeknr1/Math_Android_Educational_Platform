@@ -63,10 +63,10 @@
 
                     <ImageView
                         android:id="@+id/numbersimg"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="75dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:scaleType="fitXY"
@@ -74,8 +74,8 @@
                         />
                     <ImageView
                         android:id="@+id/gridimg"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
@@ -97,8 +97,8 @@
                     android:textColor="@color/black"/>
                 <ImageView
                     android:id="@+id/resultimg"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
@@ -117,8 +117,8 @@
                     android:textColor="@color/black"/>
                 <ImageView
                     android:id="@+id/placednumbers"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
@@ -137,8 +137,8 @@
                     android:textColor="@color/black"/>
                 <ImageView
                     android:id="@+id/selectednumbers"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
@@ -186,10 +186,10 @@
 
                     <ImageView
                         android:id="@+id/correctimg"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="75dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:scaleType="fitXY"
@@ -197,8 +197,8 @@
                         />
                     <ImageView
                         android:id="@+id/wrongimg"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"

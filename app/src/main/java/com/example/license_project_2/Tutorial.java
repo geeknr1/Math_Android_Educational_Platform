@@ -14,14 +14,19 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.license_project_2.notifications.NotificationBellHelper;
+
 public class Tutorial extends AppCompatActivity {
 
     private Animation bounceAnimationOne, bounceAnimationTwo, bounceAnimationThree;
+    private NotificationBellHelper notificationBellHelper;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.tutorial);
+
+        notificationBellHelper = NotificationBellHelper.attach(this);
 
         TextView takeYourPick = findViewById(R.id.PickSubject);
         ImageButton algebra = findViewById(R.id.Algebra);
@@ -61,5 +66,13 @@ public class Tutorial extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (notificationBellHelper != null) {
+            notificationBellHelper.onResume();
+        }
     }
 }

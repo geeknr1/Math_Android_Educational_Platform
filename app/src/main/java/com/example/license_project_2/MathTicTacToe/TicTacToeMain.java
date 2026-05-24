@@ -58,27 +58,45 @@ public class TicTacToeMain extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.math_tictactoe);
 
-        selectedOne = findViewById(R.id.firstNumber); selectedTwo = findViewById(R.id.secondNumber);
-        selectedThree = findViewById(R.id.thirdNumber); selectedFour = findViewById(R.id.fourthNumber);
-        selectedFive = findViewById(R.id.fifthNumber); selectedSix = findViewById(R.id.sixthNumber);
-        selectedSeven = findViewById(R.id.seventhNumber); selectedEight = findViewById(R.id.eighthNumber);
+        selectedOne = findViewById(R.id.firstNumber);
+        selectedTwo = findViewById(R.id.secondNumber);
+        selectedThree = findViewById(R.id.thirdNumber);
+        selectedFour = findViewById(R.id.fourthNumber);
+        selectedFive = findViewById(R.id.fifthNumber);
+        selectedSix = findViewById(R.id.sixthNumber);
+        selectedSeven = findViewById(R.id.seventhNumber);
+        selectedEight = findViewById(R.id.eighthNumber);
         selectedNine = findViewById(R.id.ninthNumber);
 
-        selectedOne.setVisibility(View.VISIBLE); selectedTwo.setVisibility(View.VISIBLE);
-        selectedThree.setVisibility(View.VISIBLE); selectedFour.setVisibility(View.VISIBLE);
-        selectedFive.setVisibility(View.VISIBLE); selectedSix.setVisibility(View.VISIBLE);
-        selectedSeven.setVisibility(View.VISIBLE); selectedEight.setVisibility(View.VISIBLE);
+        selectedOne.setVisibility(View.VISIBLE);
+        selectedTwo.setVisibility(View.VISIBLE);
+        selectedThree.setVisibility(View.VISIBLE);
+        selectedFour.setVisibility(View.VISIBLE);
+        selectedFive.setVisibility(View.VISIBLE);
+        selectedSix.setVisibility(View.VISIBLE);
+        selectedSeven.setVisibility(View.VISIBLE);
+        selectedEight.setVisibility(View.VISIBLE);
         selectedNine.setVisibility(View.VISIBLE);
 
-        gridOne = findViewById(R.id.chosenOne); gridTwo = findViewById(R.id.chosenTwo);
-        gridThree = findViewById(R.id.chosenThree); gridFour = findViewById(R.id.chosenFour);
-        gridFive = findViewById(R.id.chosenFive); gridSix = findViewById(R.id.chosenSix);
-        gridSeven = findViewById(R.id.chosenSeven); gridEight = findViewById(R.id.chosenEight);
+        gridOne = findViewById(R.id.chosenOne);
+        gridTwo = findViewById(R.id.chosenTwo);
+        gridThree = findViewById(R.id.chosenThree);
+        gridFour = findViewById(R.id.chosenFour);
+        gridFive = findViewById(R.id.chosenFive);
+        gridSix = findViewById(R.id.chosenSix);
+        gridSeven = findViewById(R.id.chosenSeven);
+        gridEight = findViewById(R.id.chosenEight);
         gridNine = findViewById(R.id.chosenNine);
 
-        gridOne.setVisibility(View.VISIBLE); gridTwo.setVisibility(View.VISIBLE); gridThree.setVisibility(View.VISIBLE);
-        gridFour.setVisibility(View.VISIBLE); gridFive.setVisibility(View.VISIBLE); gridSix.setVisibility(View.VISIBLE);
-        gridSeven.setVisibility(View.VISIBLE); gridEight.setVisibility(View.VISIBLE); gridNine.setVisibility(View.VISIBLE);
+        gridOne.setVisibility(View.VISIBLE);
+        gridTwo.setVisibility(View.VISIBLE);
+        gridThree.setVisibility(View.VISIBLE);
+        gridFour.setVisibility(View.VISIBLE);
+        gridFive.setVisibility(View.VISIBLE);
+        gridSix.setVisibility(View.VISIBLE);
+        gridSeven.setVisibility(View.VISIBLE);
+        gridEight.setVisibility(View.VISIBLE);
+        gridNine.setVisibility(View.VISIBLE);
 
         signOne = findViewById(R.id.signOne); signTwo = findViewById(R.id.signTwo); signThree = findViewById(R.id.signThree);
         signFour = findViewById(R.id.signFour); signFive = findViewById(R.id.signFive); signSix = findViewById(R.id.signSix);

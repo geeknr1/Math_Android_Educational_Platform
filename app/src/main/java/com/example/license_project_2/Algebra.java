@@ -18,17 +18,22 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.license_project_2.notifications.NotificationBellHelper;
+
 public class Algebra extends AppCompatActivity {
     private TextView welcome;
     private TextView choose;
     private ImageButton back;
     private Animation bounceAnimation;
     private char underDash = '_', emptySpace = ' ';
+    private NotificationBellHelper notificationBellHelper;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.algebra);
+
+        notificationBellHelper = NotificationBellHelper.attach(this);
 
         welcome = findViewById(R.id.welcome);
         welcome.setVisibility(VISIBLE);
@@ -91,5 +96,13 @@ public class Algebra extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (notificationBellHelper != null) {
+            notificationBellHelper.onResume();
+        }
     }
 }

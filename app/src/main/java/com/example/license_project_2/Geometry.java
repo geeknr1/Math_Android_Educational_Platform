@@ -18,16 +18,21 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.license_project_2.notifications.NotificationBellHelper;
+
 public class Geometry extends AppCompatActivity {
     private TextView welcome;
     private TextView choose;
     private ImageButton back;
     private Animation bounceAnimation;
+    private NotificationBellHelper notificationBellHelper;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.geometry);
+
+        notificationBellHelper = NotificationBellHelper.attach(this);
 
         welcome = findViewById(R.id.welcome);
         welcome.setVisibility(VISIBLE);
@@ -89,5 +94,13 @@ public class Geometry extends AppCompatActivity {
         adapter.setDropDownViewResource(R.layout.dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(listener);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (notificationBellHelper != null) {
+            notificationBellHelper.onResume();
+        }
     }
 }

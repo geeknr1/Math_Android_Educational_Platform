@@ -16,4 +16,24 @@
     <string name="regular_polygons___length_of_circumference___area_of_a_circle">Regular Polygons. Length of Circumference. Area of a circle</string>
     <string name="fundamentals_of_solid_geometry">Fundamentals of Solid Geometry</string>
 
+    <string name="notif_bell_content_desc">Notifications</string>
+    <string name="notif_back_content_desc">Back</string>
+    <string name="notif_screen_title">Notifications</string>
+    <string name="notif_mark_all_read">Mark all read</string>
+    <string name="notif_empty_message">No notifications right now. Check back later!</string>
+    <string name="notif_channel_name">Study Reminders</string>
+    <string name="notif_channel_description">Daily reminders to practice math</string>
+
+    <string name="notif_daily_study_title">Daily practice</string>
+    <string name="notif_daily_study_message">You haven\'t practiced today — start a tutorial!</string>
+    <string name="notif_daily_study_push_message">Time to practice math! Open the app and start a tutorial.</string>
+
+    <string name="notif_tutorial_algebra_title">Algebra chapters</string>
+    <string name="notif_tutorial_algebra_message">Continue learning algebra — pick a chapter to study.</string>
+    <string name="notif_tutorial_geometry_title">Geometry chapters</string>
+    <string name="notif_tutorial_geometry_message">Continue learning geometry — pick a chapter to study.</string>
+
+    <string name="notif_game_highscore_title">Beat your high score!</string>
+    <string name="notif_game_highscore_message">Your best score is %1$d points. Can you beat it?</string>
+
 </resources>
