@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.license_project_2.audio.BackgroundMusicHelper;
 
 import com.example.license_project_2.Games;
 import com.example.license_project_2.MathRoulette.RouletteMain;
@@ -126,7 +128,7 @@ public class CompleteMain extends AppCompatActivity {
             "73. Writing Variable Expressions for Division: Amanda has c chocolate bars. She wants to distribute the chocolate bars evenly among 3 friends. Write an expression that shows how many chocolate bars 1 of her friends will receive.",
             "74. Solving Two-Variable Equations: This equation shows how the amount Lucas earns from his after-school job depends on how many hours he works:e = 12h. The variable h represents how many hours he works. The variable e represents how much money he earns.\n How much money will Lucas earn after working for 6 hours?"};
 
-    private static final String[] answers = {"null", "null", "120,240", "6,12,8", "270", "96", "120", "800", "45,50", "6,9", "3000,5100,3450,5610",
+    private static final String[] answers = {"120,240", "6,12,8", "270", "96", "120", "800", "45,50", "6,9", "3000,5100,3450,5610",
             "46; 8:35 AM", "200", "400, 10", "18, 6", "196; 3 h 15 min", "1000, 8", "20,480",
             "50,10", "120,54", "9,45%,6,40%", "1200,8,10", "120,7,8", "120,2,60", "70,1,70",
             "14 3/4", "1 2/3", "1 1/3", "3/8", "1/8", "4", "5 5/6", "61.53", "1.75", "2.60",
@@ -140,23 +142,23 @@ public class CompleteMain extends AppCompatActivity {
     private int wordProblemIndexTwo = 1;
     private int indexOne, indexTwo;
     private int buttonIndex = 0;
-    //    public static final String PROGRESS = "progress";
-//    public static final String CURRENT_PROBLEM_REQUIREMENT_ONE = "requirementOne";
-//    public static final String CURRENT_PROBLEM_REQUIREMENT_TWO = "requirementTwo";
-//    public static final String CURRENT_LEVEL = "level";
-//    public static final String SHARED_PREFS = "sharedPrefs";
     private ProgressBar progressBar;
     private int progressValue = 0;
     private TextView startGame, congrats;
     private ImageView startEmoji, emoji;
-    // private String stringOne, stringTwo;
     private SpannableString problemStringOne, problemStringTwo;
+    private BackgroundMusicHelper backgroundMusicHelper;
+    private DbHelper database;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.math_complete);
+
+        backgroundMusicHelper = new BackgroundMusicHelper();
+        database = new DbHelper(this);
 
         problemOne = findViewById(R.id.selectedProblem);
         problemTwo = findViewById(R.id.selectedProblemTwo);
@@ -175,25 +177,32 @@ public class CompleteMain extends AppCompatActivity {
         emoji = findViewById(R.id.emoji);
         progressBar = findViewById(R.id.progressBarMathComplete);
 
-        startGame.setVisibility(View.VISIBLE);
-        startEmoji.setVisibility(View.VISIBLE);
-        problemOne.setVisibility(View.GONE);
-        problemTwo.setVisibility(View.GONE);
-        answerOne.setVisibility(View.GONE);
-        answerTwo.setVisibility(View.GONE);
-        checkOne.setVisibility(View.GONE);
-        checkTwo.setVisibility(View.GONE);
-        level.setVisibility(View.VISIBLE);
-        next.setVisibility(View.VISIBLE);
-        quit.setVisibility(View.VISIBLE);
-        save.setVisibility(View.VISIBLE);
-        reset.setVisibility(View.VISIBLE);
-        congrats.setVisibility(View.GONE);
-        emoji.setVisibility(View.GONE);
-        progressBar.setVisibility(View.VISIBLE);
-
-        buttonIndex = 0;
-        level.setText("Level " + String.valueOf(buttonIndex));
+        int[] saved = database.loadProgress();
+        if(saved != null){
+            buttonIndex = saved[0];
+            wordProblemIndexOne = saved[1];
+            wordProblemIndexTwo = saved[2];
+            progressValue = saved[3];
+            restoreGameUI();
+        } else {
+            startGame.setVisibility(View.VISIBLE);
+            startEmoji.setVisibility(View.VISIBLE);
+            problemOne.setVisibility(View.GONE);
+            problemTwo.setVisibility(View.GONE);
+            answerOne.setVisibility(View.GONE);
+            answerTwo.setVisibility(View.GONE);
+            hideCheckButtons();
+            level.setVisibility(View.VISIBLE);
+            next.setVisibility(View.VISIBLE);
+            quit.setVisibility(View.VISIBLE);
+            save.setVisibility(View.VISIBLE);
+            reset.setVisibility(View.VISIBLE);
+            congrats.setVisibility(View.GONE);
+            emoji.setVisibility(View.GONE);
+            progressBar.setVisibility(View.VISIBLE);
+            buttonIndex = 0;
+            level.setText("Level " + String.valueOf(buttonIndex));
+        }
 
         bounceAnimationOne = AnimationUtils.loadAnimation(this, R.anim.bounce);
         bounceAnimationTwo = AnimationUtils.loadAnimation(this, R.anim.bounce);
@@ -244,40 +253,8 @@ public class CompleteMain extends AppCompatActivity {
                     problemTwo.setText(newProblemStringTwo);
                     level.setText("Level " + String.valueOf(buttonIndex));
 
-                    checkOne.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            checkOne.startAnimation(bounceAnimationThree);
-                            String stringAnswerOne = answerOne.getText().toString().trim();
-                            if(stringAnswerOne.equals(answers[indexOne])){
-                                answerOne.setTextColor(GREEN);
-                                Toast.makeText(CompleteMain.this, "Correct", Toast.LENGTH_SHORT).show();
-                            }
-                            else{
-                                answerOne.setTextColor(RED);
-                                Toast.makeText(CompleteMain.this, "Wrong", Toast.LENGTH_SHORT).show();
-                            }
-                            //checkOne.setVisibility(View.GONE);
-                        }
-                    });
-
-                    checkTwo.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            checkTwo.startAnimation(bounceAnimationFour);
-                            String stringAnswerTwo = answerTwo.getText().toString().trim();
-                            if(stringAnswerTwo.equals(answers[indexTwo])){
-                                answerTwo.setTextColor(GREEN);
-                                Toast.makeText(CompleteMain.this, "Correct", Toast.LENGTH_SHORT).show();
-                            }
-                            else{
-                                answerTwo.setTextColor(RED);
-                                Toast.makeText(CompleteMain.this, "Wrong", Toast.LENGTH_SHORT).show();
-                            }
-                            //checkTwo.setVisibility(View.GONE);
-                        }
-                    });
-                    //saveData();
+                    checkFirstAnswer(indexOne);
+                    checkSecondAnswer(indexTwo);
                     wordProblemIndexOne += 2; wordProblemIndexTwo += 2;
                 }
                 else{
@@ -287,8 +264,7 @@ public class CompleteMain extends AppCompatActivity {
                     problemTwo.setVisibility(View.GONE);
                     answerOne.setVisibility(View.GONE);
                     answerTwo.setVisibility(View.GONE);
-                    checkOne.setVisibility(View.GONE);
-                    checkTwo.setVisibility(View.GONE);
+                    hideCheckButtons();
                     level.setVisibility(View.GONE);
                     next.setVisibility(View.GONE);
                     quit.setVisibility(View.VISIBLE);
@@ -301,6 +277,8 @@ public class CompleteMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 save.startAnimation(bounceAnimationSave);
+                database.saveProgress(buttonIndex, wordProblemIndexOne, wordProblemIndexTwo, progressValue);
+                Toast.makeText(CompleteMain.this, "Progress saved!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -327,8 +305,7 @@ public class CompleteMain extends AppCompatActivity {
                 answerOne.setText(""); answerTwo.setText("");
                 answerOne.setTextColor(0xFF000000);
                 answerTwo.setTextColor(0xFF000000);
-                checkOne.setVisibility(View.GONE);
-                checkTwo.setVisibility(View.GONE);
+                hideCheckButtons();
                 level.setVisibility(View.VISIBLE);
                 next.setVisibility(View.VISIBLE);
                 quit.setVisibility(View.VISIBLE);
@@ -347,5 +324,131 @@ public class CompleteMain extends AppCompatActivity {
                 startActivity(new Intent(CompleteMain.this, Games.class));
             }
         });
+    }
+
+    private void hideCheckButtons() {
+        checkOne.clearAnimation();
+        checkTwo.clearAnimation();
+        checkOne.setVisibility(View.GONE);
+        checkTwo.setVisibility(View.GONE);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        backgroundMusicHelper.start(this, R.raw.filetwo);
+    }
+
+    @Override
+    protected void onPause() {
+        backgroundMusicHelper.pause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        backgroundMusicHelper.stop();
+        super.onDestroy();
+    }
+
+    public void initialVisibility(){
+        startGame.setVisibility(View.VISIBLE);
+        startEmoji.setVisibility(View.VISIBLE);
+        problemOne.setVisibility(View.GONE);
+        problemTwo.setVisibility(View.GONE);
+        answerOne.setVisibility(View.GONE);
+        answerTwo.setVisibility(View.GONE);
+        hideCheckButtons();
+        level.setVisibility(View.VISIBLE);
+        next.setVisibility(View.VISIBLE);
+        quit.setVisibility(View.VISIBLE);
+        save.setVisibility(View.VISIBLE);
+        reset.setVisibility(View.VISIBLE);
+        congrats.setVisibility(View.GONE);
+        emoji.setVisibility(View.GONE);
+        progressBar.setVisibility(View.VISIBLE);
+        level.setText("Level " + String.valueOf(buttonIndex));
+    }
+
+    public void checkFirstAnswer(int indexOne){
+        checkOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkOne.startAnimation(bounceAnimationThree);
+                String stringAnswerOne = answerOne.getText().toString().trim();
+                if(stringAnswerOne.equals(answers[indexOne])){
+                    answerOne.setTextColor(GREEN);
+                    Toast.makeText(CompleteMain.this, "Correct", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    answerOne.setTextColor(RED);
+                    Toast.makeText(CompleteMain.this, "Wrong", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    public void checkSecondAnswer(int indexTwo){
+        checkTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkTwo.startAnimation(bounceAnimationFour);
+                String stringAnswerTwo = answerTwo.getText().toString().trim();
+                if(stringAnswerTwo.equals(answers[indexTwo])){
+                    answerTwo.setTextColor(GREEN);
+                    Toast.makeText(CompleteMain.this, "Correct", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    answerTwo.setTextColor(RED);
+                    Toast.makeText(CompleteMain.this, "Wrong", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void restoreGameUI(){
+        if(buttonIndex == 0){
+            initialVisibility();
+            return;
+        }
+        indexOne = wordProblemIndexOne - 2;
+        indexTwo = wordProblemIndexTwo - 2;
+
+        SpannableString newProblemStringOne = new SpannableString(requirements[indexOne]);
+        SpannableString newProblemStringTwo = new SpannableString(requirements[indexTwo]);
+        problemOne.setText(newProblemStringOne);
+        problemTwo.setText(newProblemStringTwo);
+        level.setText("Level " + String.valueOf(buttonIndex));
+        progressBar.setProgress(progressValue);
+
+        answerOne.setText("");
+        answerTwo.setText("");
+        answerOne.setTextColor(0xFF000000);
+        answerTwo.setTextColor(0xFF000000);
+
+        startGame.setVisibility(View.GONE);
+        startEmoji.setVisibility(View.GONE);
+        problemOne.setVisibility(View.VISIBLE);
+        problemTwo.setVisibility(View.VISIBLE);
+        answerOne.setVisibility(View.VISIBLE);
+        answerTwo.setVisibility(View.VISIBLE);
+        checkOne.setVisibility(View.VISIBLE);
+        checkTwo.setVisibility(View.VISIBLE);
+        level.setVisibility(View.VISIBLE);
+        next.setVisibility(View.VISIBLE);
+        quit.setVisibility(View.VISIBLE);
+        save.setVisibility(View.VISIBLE);
+        reset.setVisibility(View.VISIBLE);
+        congrats.setVisibility(View.GONE);
+        emoji.setVisibility(View.GONE);
+        progressBar.setVisibility(View.VISIBLE);
+
+        final int capturedIndexOne = indexOne;
+        final int capturedIndexTwo = indexTwo;
+        checkFirstAnswer(capturedIndexOne);
+        checkSecondAnswer(capturedIndexTwo);
+
+        Toast.makeText(this, "Progress restored to level" + buttonIndex, Toast.LENGTH_SHORT).show();
     }
 }

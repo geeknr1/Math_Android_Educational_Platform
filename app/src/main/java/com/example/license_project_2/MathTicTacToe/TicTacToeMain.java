@@ -25,8 +25,10 @@ import java.util.Set;
 import java.text.DecimalFormat;
 
 import com.example.license_project_2.R;
+import com.example.license_project_2.audio.BackgroundMusicHelper;
 
 public class TicTacToeMain extends AppCompatActivity {
+    private BackgroundMusicHelper backgroundMusicHelper;
     private TextView selectedOne, selectedTwo, selectedThree, selectedFour, selectedFive,
                         selectedSix, selectedSeven, selectedEight, selectedNine;
     private TextView gridOne, gridTwo, gridThree, gridFour, gridFive, gridSix, gridSeven,
@@ -57,6 +59,8 @@ public class TicTacToeMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.math_tictactoe);
+
+        backgroundMusicHelper = new BackgroundMusicHelper();
 
         selectedOne = findViewById(R.id.firstNumber);
         selectedTwo = findViewById(R.id.secondNumber);
@@ -1033,5 +1037,23 @@ public class TicTacToeMain extends AppCompatActivity {
         selectedNine.setEnabled(true);
         selectedNine.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.circular_button, null));
         selectedNine.setTextColor(Color.parseColor("#ffffff"));
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        backgroundMusicHelper.start(this, R.raw.filefive);
+    }
+
+    @Override
+    protected void onPause() {
+        backgroundMusicHelper.pause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        backgroundMusicHelper.stop();
+        super.onDestroy();
     }
 }

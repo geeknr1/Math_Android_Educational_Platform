@@ -43,8 +43,8 @@
 
             <ImageView
                 android:id="@+id/ivNewHighest"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="75dp"
                 android:background="@drawable/rewardgame"
                 android:visibility="gone"/>

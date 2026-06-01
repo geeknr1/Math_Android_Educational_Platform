@@ -30,7 +30,7 @@
                 android:layout_height="50dp"
                 android:layout_marginRight="100dp"
                 android:background="@drawable/rounded_button"
-                android:text="BACK"
+                android:text="SAVE"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/white"
