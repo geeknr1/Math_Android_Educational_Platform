@@ -22,71 +22,71 @@ TechnologyRoleJavaPrimary programming languageAndroid StudioDevelopment environm
 
 Project Structure
 com.example.license_project_2/
-│
-├── MainActivity.java               # Home screen — Tutorial, Games, App Guide
-├── Tutorial.java                   # Subject picker — Algebra or Geometry
-├── Algebra.java                    # Algebra chapter spinners (7 chapters)
-├── AlgebraSection.java             # 4-stage lesson logic for Algebra
-├── AlgebraSections.java            # Enum — all 44 Algebra lesson contents
-├── Geometry.java                   # Geometry chapter spinners (9 chapters)
-├── GeometrySection.java            # 4-stage lesson logic for Geometry
-├── GeometrySections.java           # Enum — all 33 Geometry lesson contents
-├── Games.java                      # Games hub — navigates to all 5 games
-├── LogInActivity.java              # Login screen with Firebase validation
-├── SignUpActivity.java             # Registration screen with Firebase storage
-├── HelperClass.java                # User data model (POJO)
-├── AppGuide.java                   # App guide hub
-├── TutorialGuide.java              # Tutorial guide screen
-├── GamesGuide.java                 # Games guide hub
-├── SpinRouletteGuide.java          # Spin Roulette guide
-├── MathShootGuide.java             # Math Shoot guide
-├── GeoDodgeGuide.java              # Geo Dodge guide
-├── CompleteMathGuide.java          # Complete Math guide
-├── TicTacToeMathGuide.java         # TicTacToe Math guide
-├── NotificationAdapter.java        # RecyclerView adapter for notifications list
-├── NotificationsActivity.java      # Notifications screen
-│
-├── MathRoulette/
-│   └── RouletteMain.java           # Spin Roulette game
-│
-├── MathShoot/
-│   ├── ShootMain.java              # Math Shoot start screen
-│   ├── GameActivity.java           # Math Shoot game activity
-│   ├── GameView.java               # SurfaceView game loop
-│   ├── Flight.java                 # Player plane logic
-│   ├── Bullet.java                 # Bullet logic
-│   ├── Number.java                 # Target number logic
-│   ├── Background.java             # Scrolling background
-│   └── GameOverShoot.java          # Game over screen
-│
-├── MathGeometry/
-│   ├── GeometryMain.java           # Geo Dodge start screen
-│   ├── GameView.java               # Canvas game loop
-│   ├── Figure.java                 # Falling geometric shapes
-│   ├── Explosion.java              # Explosion animation
-│   └── GameOver.java               # Game over screen
-│
-├── MathComplete/
-│   └── CompleteMain.java           # Complete Math game
-│
-├── MathTicTacToe/
-│   ├── TicTacToeMain.java          # TicTacToe Math game
-│   └── GameOverTwo.java            # Game over screen
-│
-└── notifications/
-    ├── NotificationProvider.java       # Interface for notification providers
-    ├── NotificationItem.java           # Notification data model
-    ├── NotificationRegistry.java       # Aggregates all providers
-    ├── NotificationRepository.java     # Persists read/unread state
-    ├── NotificationBellHelper.java     # Attaches bell + badge to any activity
-    ├── NotificationChannelHelper.java  # Creates Android notification channel
-    ├── ReminderScheduler.java          # Schedules AlarmManager alarms
-    ├── ReminderReceiver.java           # Receives alarms and fires notifications
-    ├── BootReceiver.java               # Reschedules alarms after device reboot
-    └── providers/
-        ├── DailyStudyReminderProvider.java   # Daily 18:00 study reminder
-        ├── TutorialReminderProvider.java     # Algebra & Geometry reminders
-        └── GameHighScoreProvider.java        # High score notification
+
+; MainActivity.java               # Home screen — Tutorial, Games, App Guide
+; Tutorial.java                   # Subject picker — Algebra or Geometry
+; Algebra.java                    # Algebra chapter spinners (7 chapters)
+; AlgebraSection.java             # 4-stage lesson logic for Algebra
+; AlgebraSections.java            # Enum — all 44 Algebra lesson contents
+; Geometry.java                   # Geometry chapter spinners (9 chapters)
+; GeometrySection.java            # 4-stage lesson logic for Geometry
+; GeometrySections.java           # Enum — all 33 Geometry lesson contents
+; Games.java                      # Games hub — navigates to all 5 games
+; LogInActivity.java              # Login screen with Firebase validation
+; SignUpActivity.java             # Registration screen with Firebase storage
+; HelperClass.java                # User data model (POJO)
+; AppGuide.java                   # App guide hub
+; TutorialGuide.java              # Tutorial guide screen
+; GamesGuide.java                 # Games guide hub
+; SpinRouletteGuide.java          # Spin Roulette guide
+; MathShootGuide.java             # Math Shoot guide
+; GeoDodgeGuide.java              # Geo Dodge guide
+; CompleteMathGuide.java          # Complete Math guide
+; TicTacToeMathGuide.java         # TicTacToe Math guide
+; NotificationAdapter.java        # RecyclerView adapter for notifications list
+; NotificationsActivity.java      # Notifications screen
+
+MathRoulette/
+  RouletteMain.java           # Spin Roulette game
+
+MathShoot/
+ ShootMain.java              # Math Shoot start screen
+; GameActivity.java           # Math Shoot game activity
+; GameView.java               # SurfaceView game loop
+; Flight.java                 # Player plane logic
+; Bullet.java                 # Bullet logic
+; Number.java                 # Target number logic
+; Background.java             # Scrolling background
+; GameOverShoot.java          # Game over screen
+
+ MathGeometry/
+; GeometryMain.java           # Geo Dodge start screen
+; GameView.java               # Canvas game loop
+; Figure.java                 # Falling geometric shapes
+; Explosion.java              # Explosion animation
+; GameOver.java               # Game over screen
+
+ MathComplete/
+ CompleteMain.java           # Complete Math game
+
+ MathTicTacToe/
+ TicTacToeMain.java          # TicTacToe Math game
+; GameOverTwo.java            # Game over screen
+
+notifications/
+ NotificationProvider.java       # Interface for notification providers
+; NotificationItem.java           # Notification data model
+; NotificationRegistry.java       # Aggregates all providers
+; NotificationRepository.java     # Persists read/unread state
+; NotificationBellHelper.java     # Attaches bell + badge to any activity
+; NotificationChannelHelper.java  # Creates Android notification channel
+; ReminderScheduler.java          # Schedules AlarmManager alarms
+; ReminderReceiver.java           # Receives alarms and fires notifications
+; BootReceiver.java               # Reschedules alarms after device reboot
+     providers/
+         DailyStudyReminderProvider.java   # Daily 18:00 study reminder
+        ; TutorialReminderProvider.java     # Algebra & Geometry reminders
+        ; GameHighScoreProvider.java        # High score notification
 
 Tutorial Section:
 The tutorial is organized into two subjects: Algebra (7 chapters, 44 lessons) and Geometry (9 chapters, 33 lessons).
