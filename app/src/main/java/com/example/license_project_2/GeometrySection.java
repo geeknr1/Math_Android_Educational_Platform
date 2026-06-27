@@ -17,8 +17,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//import com.kofigyan.stateprogressbar.StateProgressBar;
-
 public class GeometrySection extends AppCompatActivity {
 
     private int sectionIndex = 0;

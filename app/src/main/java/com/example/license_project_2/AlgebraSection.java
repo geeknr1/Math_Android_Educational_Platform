@@ -17,14 +17,10 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-//import com.example.license_project_2.Quiz;
-//import com.example.license_project_2.Question;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
-//import com.kofigyan.stateprogressbar.StateProgressBar;
 
 public class AlgebraSection extends AppCompatActivity {
 

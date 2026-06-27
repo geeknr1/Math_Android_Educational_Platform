@@ -102,29 +102,56 @@ public class TicTacToeMain extends AppCompatActivity {
         gridEight.setVisibility(View.VISIBLE);
         gridNine.setVisibility(View.VISIBLE);
 
-        signOne = findViewById(R.id.signOne); signTwo = findViewById(R.id.signTwo); signThree = findViewById(R.id.signThree);
-        signFour = findViewById(R.id.signFour); signFive = findViewById(R.id.signFive); signSix = findViewById(R.id.signSix);
+        signOne = findViewById(R.id.signOne);
+        signTwo = findViewById(R.id.signTwo);
+        signThree = findViewById(R.id.signThree);
+        signFour = findViewById(R.id.signFour);
+        signFive = findViewById(R.id.signFive);
+        signSix = findViewById(R.id.signSix);
 
-        signOne.setVisibility(View.VISIBLE); signTwo.setVisibility(View.VISIBLE); signThree.setVisibility(View.VISIBLE);
-        signFour.setVisibility(View.VISIBLE); signFive.setVisibility(View.VISIBLE); signSix.setVisibility(View.VISIBLE);
+        signOne.setVisibility(View.VISIBLE);
+        signTwo.setVisibility(View.VISIBLE);
+        signThree.setVisibility(View.VISIBLE);
+        signFour.setVisibility(View.VISIBLE);
+        signFive.setVisibility(View.VISIBLE);
+        signSix.setVisibility(View.VISIBLE);
 
-        columnAnsOne = findViewById(R.id.resultOne); columnAnsTwo = findViewById(R.id.resultTwo);
-        columnAnsThree = findViewById(R.id.resultThree); checkAnswer = findViewById(R.id.checking);
+        columnAnsOne = findViewById(R.id.resultOne);
+        columnAnsTwo = findViewById(R.id.resultTwo);
+        columnAnsThree = findViewById(R.id.resultThree);
+        checkAnswer = findViewById(R.id.checking);
 
-        columnAnsOne.setVisibility(View.VISIBLE); columnAnsTwo.setVisibility(View.VISIBLE);
-        columnAnsThree.setVisibility(View.VISIBLE); checkAnswer.setVisibility(View.VISIBLE);
+        columnAnsOne.setVisibility(View.VISIBLE);
+        columnAnsTwo.setVisibility(View.VISIBLE);
+        columnAnsThree.setVisibility(View.VISIBLE);
+        checkAnswer.setVisibility(View.VISIBLE);
 
-        resetValues = findViewById(R.id.resetValues); quitGame = findViewById(R.id.quitGame);
-        resetValues.setVisibility(View.VISIBLE); quitGame.setVisibility(View.VISIBLE);
+        resetValues = findViewById(R.id.resetValues);
+        quitGame = findViewById(R.id.quitGame);
+        resetValues.setVisibility(View.VISIBLE);
+        quitGame.setVisibility(View.VISIBLE);
 
-        gridOne.setText("0"); gridTwo.setText("0"); gridThree.setText("0"); gridFour.setText("0"); gridFive.setText("0");
-        gridSix.setText("0"); gridSeven.setText("0"); gridEight.setText("0"); gridNine.setText("0");
+        gridOne.setText("0");
+        gridTwo.setText("0");
+        gridThree.setText("0");
+        gridFour.setText("0");
+        gridFive.setText("0");
+        gridSix.setText("0");
+        gridSeven.setText("0");
+        gridEight.setText("0");
+        gridNine.setText("0");
 
         valuesFound();
         plusPlus();
-        selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-        selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-        selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+        selectNumber(selectedOne, selectOne);
+        selectNumber(selectedTwo, selectTwo);
+        selectNumber(selectedThree, selectThree);
+        selectNumber(selectedFour, selectFour);
+        selectNumber(selectedFive, selectFive);
+        selectNumber(selectedSix, selectSix);
+        selectNumber(selectedSeven, selectSeven);
+        selectNumber(selectedEight, selectEight);
+        selectNumber(selectedNine, selectNine);
 
         checkAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -168,10 +195,18 @@ public class TicTacToeMain extends AppCompatActivity {
                 setInitialSlotDesign();
 
                 if(clickIndex % 16 == 1){
-                    valuesFound(); plusPlus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    plusPlus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -184,10 +219,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 2){
-                    valuesFound(); minusMinus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    minusMinus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -200,10 +243,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 3){
-                    valuesFound(); plusMinus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    plusMinus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -216,10 +267,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 4){
-                    valuesFound(); minusPlus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    minusPlus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForMinusPlus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -233,10 +292,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 5){
-                    valuesFound(); productProduct(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    productProduct();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForProductProduct();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -250,10 +317,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 6){
-                    valuesFound(); divisionDivision(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    divisionDivision();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForDivisionDivision();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -267,10 +342,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 11){
-                    valuesFound(); productDivision(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    productDivision();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForProductDivision();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -284,10 +367,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 12){
-                    valuesFound(); divisionProduct(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    divisionProduct();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForDivisionProduct();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -301,10 +392,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 7){
-                    valuesFound(); plusProduct(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    plusProduct();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForPlusProduct();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -318,10 +417,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 8){
-                    valuesFound(); productPlus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    productPlus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForProductPlus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -335,10 +442,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 9){
-                    valuesFound(); minusProduct(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    minusProduct();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForMinusProduct();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -352,10 +467,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 10){
-                    valuesFound(); productMinus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    productMinus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForProductMinus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -369,10 +492,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 13){
-                    valuesFound(); divisionPlus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    divisionPlus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForDivisionPlus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -386,10 +517,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 14){
-                    valuesFound(); plusDivision(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    plusDivision();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForPlusDivision();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -403,10 +542,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 15){
-                    valuesFound(); divisionMinus(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    divisionMinus();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForDivisionMinus();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -420,10 +567,18 @@ public class TicTacToeMain extends AppCompatActivity {
                     });
                 }
                 if(clickIndex % 16 == 0){
-                    valuesFound(); minusDivision(); setInitialSlotDesign();
-                    selectNumber(selectedOne, selectOne); selectNumber(selectedTwo, selectTwo); selectNumber(selectedThree, selectThree);
-                    selectNumber(selectedFour, selectFour); selectNumber(selectedFive, selectFive); selectNumber(selectedSix, selectSix);
-                    selectNumber(selectedSeven, selectSeven); selectNumber(selectedEight, selectEight); selectNumber(selectedNine, selectNine);
+                    valuesFound();
+                    minusDivision();
+                    setInitialSlotDesign();
+                    selectNumber(selectedOne, selectOne);
+                    selectNumber(selectedTwo, selectTwo);
+                    selectNumber(selectedThree, selectThree);
+                    selectNumber(selectedFour, selectFour);
+                    selectNumber(selectedFive, selectFive);
+                    selectNumber(selectedSix, selectSix);
+                    selectNumber(selectedSeven, selectSeven);
+                    selectNumber(selectedEight, selectEight);
+                    selectNumber(selectedNine, selectNine);
                     setResultValuesForMinusDivision();
 
                     checkAnswer.setOnClickListener(new View.OnClickListener() {
@@ -468,9 +623,15 @@ public class TicTacToeMain extends AppCompatActivity {
                 counterNumbers++;
             }
         }
-        selectOne = numbers.get(0); selectTwo = numbers.get(1); selectThree = numbers.get(2);
-        selectFour = numbers.get(3); selectFive = numbers.get(4); selectSix = numbers.get(5);
-        selectSeven = numbers.get(6); selectEight = numbers.get(7); selectNine = numbers.get(8);
+        selectOne = numbers.get(0);
+        selectTwo = numbers.get(1);
+        selectThree = numbers.get(2);
+        selectFour = numbers.get(3);
+        selectFive = numbers.get(4);
+        selectSix = numbers.get(5);
+        selectSeven = numbers.get(6);
+        selectEight = numbers.get(7);
+        selectNine = numbers.get(8);
     }
     public void valuesFound(){
         selectOne = possibleNumbers[random.nextInt(possibleNumbers.length)];
@@ -497,100 +658,148 @@ public class TicTacToeMain extends AppCompatActivity {
     }
 
     public void plusPlus(){
-        signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.plus);
-        signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.plus);
-        signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.plus);
+        signOne.setImageResource(R.drawable.plus);
+        signTwo.setImageResource(R.drawable.plus);
+        signThree.setImageResource(R.drawable.plus);
+        signFour.setImageResource(R.drawable.plus);
+        signFive.setImageResource(R.drawable.plus);
+        signSix.setImageResource(R.drawable.plus);
         setResultValuesForPlusPlus();
     }
 
     public void minusMinus(){
-        signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.minus);
-        signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.minus);
-        signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.minus);
+        signOne.setImageResource(R.drawable.minus);
+        signTwo.setImageResource(R.drawable.minus);
+        signThree.setImageResource(R.drawable.minus);
+        signFour.setImageResource(R.drawable.minus);
+        signFive.setImageResource(R.drawable.minus);
+        signSix.setImageResource(R.drawable.minus);
         setResultValuesForMinusMinus();
     }
     public void plusMinus(){
-        signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.minus);
-        signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.minus);
-        signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.minus);
+        signOne.setImageResource(R.drawable.plus);
+        signTwo.setImageResource(R.drawable.minus);
+        signThree.setImageResource(R.drawable.plus);
+        signFour.setImageResource(R.drawable.minus);
+        signFive.setImageResource(R.drawable.plus);
+        signSix.setImageResource(R.drawable.minus);
         setResultValuesForPlusMinus();
     }
     public void minusPlus(){
-        signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.plus);
-        signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.plus);
-        signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.plus);
+        signOne.setImageResource(R.drawable.minus);
+        signTwo.setImageResource(R.drawable.plus);
+        signThree.setImageResource(R.drawable.minus);
+        signFour.setImageResource(R.drawable.plus);
+        signFive.setImageResource(R.drawable.minus);
+        signSix.setImageResource(R.drawable.plus);
         setResultValuesForMinusPlus();
     }
     public void productProduct(){
-        signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.product);
-        signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.product);
-        signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.product);
+        signOne.setImageResource(R.drawable.product);
+        signTwo.setImageResource(R.drawable.product);
+        signThree.setImageResource(R.drawable.product);
+        signFour.setImageResource(R.drawable.product);
+        signFive.setImageResource(R.drawable.product);
+        signSix.setImageResource(R.drawable.product);
         setResultValuesForProductProduct();
     }
     public void divisionDivision(){
-        signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.division);
-        signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.division);
-        signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.division);
+        signOne.setImageResource(R.drawable.division);
+        signTwo.setImageResource(R.drawable.division);
+        signThree.setImageResource(R.drawable.division);
+        signFour.setImageResource(R.drawable.division);
+        signFive.setImageResource(R.drawable.division);
+        signSix.setImageResource(R.drawable.division);
         setResultValuesForDivisionDivision();
     }
     public void productDivision(){
-        signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.division);
-        signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.division);
-        signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.division);
+        signOne.setImageResource(R.drawable.product);
+        signTwo.setImageResource(R.drawable.division);
+        signThree.setImageResource(R.drawable.product);
+        signFour.setImageResource(R.drawable.division);
+        signFive.setImageResource(R.drawable.product);
+        signSix.setImageResource(R.drawable.division);
         setResultValuesForProductDivision();
     }
     public void divisionProduct(){
-        signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.product);
-        signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.product);
-        signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.product);
+        signOne.setImageResource(R.drawable.division);
+        signTwo.setImageResource(R.drawable.product);
+        signThree.setImageResource(R.drawable.division);
+        signFour.setImageResource(R.drawable.product);
+        signFive.setImageResource(R.drawable.division);
+        signSix.setImageResource(R.drawable.product);
         setResultValuesForDivisionProduct();
     }
     public void plusProduct(){
-        signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.product);
-        signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.product);
-        signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.product);
+        signOne.setImageResource(R.drawable.plus);
+        signTwo.setImageResource(R.drawable.product);
+        signThree.setImageResource(R.drawable.plus);
+        signFour.setImageResource(R.drawable.product);
+        signFive.setImageResource(R.drawable.plus);
+        signSix.setImageResource(R.drawable.product);
         setResultValuesForPlusProduct();
     }
     public void productPlus(){
-        signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.plus);
-        signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.plus);
-        signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.plus);
+        signOne.setImageResource(R.drawable.product);
+        signTwo.setImageResource(R.drawable.plus);
+        signThree.setImageResource(R.drawable.product);
+        signFour.setImageResource(R.drawable.plus);
+        signFive.setImageResource(R.drawable.product);
+        signSix.setImageResource(R.drawable.plus);
         setResultValuesForProductPlus();
     }
     public void minusProduct(){
-        signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.product);
-        signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.product);
-        signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.product);
+        signOne.setImageResource(R.drawable.minus);
+        signTwo.setImageResource(R.drawable.product);
+        signThree.setImageResource(R.drawable.minus);
+        signFour.setImageResource(R.drawable.product);
+        signFive.setImageResource(R.drawable.minus);
+        signSix.setImageResource(R.drawable.product);
         setResultValuesForMinusProduct();
     }
     public void productMinus(){
-        signOne.setImageResource(R.drawable.product); signTwo.setImageResource(R.drawable.minus);
-        signThree.setImageResource(R.drawable.product); signFour.setImageResource(R.drawable.minus);
-        signFive.setImageResource(R.drawable.product); signSix.setImageResource(R.drawable.minus);
+        signOne.setImageResource(R.drawable.product);
+        signTwo.setImageResource(R.drawable.minus);
+        signThree.setImageResource(R.drawable.product);
+        signFour.setImageResource(R.drawable.minus);
+        signFive.setImageResource(R.drawable.product);
+        signSix.setImageResource(R.drawable.minus);
         setResultValuesForProductMinus();
     }
     public void plusDivision(){
-        signOne.setImageResource(R.drawable.plus); signTwo.setImageResource(R.drawable.division);
-        signThree.setImageResource(R.drawable.plus); signFour.setImageResource(R.drawable.division);
-        signFive.setImageResource(R.drawable.plus); signSix.setImageResource(R.drawable.division);
+        signOne.setImageResource(R.drawable.plus);
+        signTwo.setImageResource(R.drawable.division);
+        signThree.setImageResource(R.drawable.plus);
+        signFour.setImageResource(R.drawable.division);
+        signFive.setImageResource(R.drawable.plus);
+        signSix.setImageResource(R.drawable.division);
         setResultValuesForPlusDivision();
     }
     public void divisionPlus(){
-        signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.plus);
-        signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.plus);
-        signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.plus);
+        signOne.setImageResource(R.drawable.division);
+        signTwo.setImageResource(R.drawable.plus);
+        signThree.setImageResource(R.drawable.division);
+        signFour.setImageResource(R.drawable.plus);
+        signFive.setImageResource(R.drawable.division);
+        signSix.setImageResource(R.drawable.plus);
         setResultValuesForDivisionPlus();
     }
     public void minusDivision(){
-        signOne.setImageResource(R.drawable.minus); signTwo.setImageResource(R.drawable.division);
-        signThree.setImageResource(R.drawable.minus); signFour.setImageResource(R.drawable.division);
-        signFive.setImageResource(R.drawable.minus); signSix.setImageResource(R.drawable.division);
+        signOne.setImageResource(R.drawable.minus);
+        signTwo.setImageResource(R.drawable.division);
+        signThree.setImageResource(R.drawable.minus);
+        signFour.setImageResource(R.drawable.division);
+        signFive.setImageResource(R.drawable.minus);
+        signSix.setImageResource(R.drawable.division);
         setResultValuesForMinusDivision();
     }
     public void divisionMinus(){
-        signOne.setImageResource(R.drawable.division); signTwo.setImageResource(R.drawable.minus);
-        signThree.setImageResource(R.drawable.division); signFour.setImageResource(R.drawable.minus);
-        signFive.setImageResource(R.drawable.division); signSix.setImageResource(R.drawable.minus);
+        signOne.setImageResource(R.drawable.division);
+        signTwo.setImageResource(R.drawable.minus);
+        signThree.setImageResource(R.drawable.division);
+        signFour.setImageResource(R.drawable.minus);
+        signFive.setImageResource(R.drawable.division);
+        signSix.setImageResource(R.drawable.minus);
         setResultValuesForDivisionMinus();
     }
 
@@ -687,9 +896,15 @@ public class TicTacToeMain extends AppCompatActivity {
             if (!numbers.contains(pad)) numbers.add(pad);
             else numbers.add(select[0]);
         }
-        numberOne = numbers.get(0); numberTwo = numbers.get(1); numberThree = numbers.get(2);
-        numberFour = numbers.get(3); numberFive = numbers.get(4); numberSix = numbers.get(5);
-        numberSeven = numbers.get(6); numberEight = numbers.get(7); numberNine = numbers.get(8);
+        numberOne = numbers.get(0);
+        numberTwo = numbers.get(1);
+        numberThree = numbers.get(2);
+        numberFour = numbers.get(3);
+        numberFive = numbers.get(4);
+        numberSix = numbers.get(5);
+        numberSeven = numbers.get(6);
+        numberEight = numbers.get(7);
+        numberNine = numbers.get(8);
     }
 
     public void setFactors(){
@@ -740,9 +955,11 @@ public class TicTacToeMain extends AppCompatActivity {
     public void setResultValuesForPlusPlus(){
         convertGridValuesToIntegers();
         setFactors();
-        resultOne = numberOne + numberTwo + numberThree; resultTwo = numberFour + numberFive + numberSix;
+        resultOne = numberOne + numberTwo + numberThree;
+        resultTwo = numberFour + numberFive + numberSix;
         resultThree = numberSeven + numberEight + numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -757,9 +974,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForMinusMinus(){
         setFactors();
-        resultOne = numberOne - numberTwo - numberThree; resultTwo = numberFour - numberFive - numberSix;
+        resultOne = numberOne - numberTwo - numberThree;
+        resultTwo = numberFour - numberFive - numberSix;
         resultThree = numberSeven - numberEight - numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -773,9 +992,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForPlusMinus(){
         setFactors();
-        resultOne = numberOne + numberTwo - numberThree; resultTwo = numberFour + numberFive - numberSix;
+        resultOne = numberOne + numberTwo - numberThree;
+        resultTwo = numberFour + numberFive - numberSix;
         resultThree = numberSeven + numberEight - numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -789,9 +1010,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForMinusPlus(){
         setFactors();
-        resultOne = numberOne - numberTwo + numberThree; resultTwo = numberFour - numberFive + numberSix;
+        resultOne = numberOne - numberTwo + numberThree;
+        resultTwo = numberFour - numberFive + numberSix;
         resultThree = numberSeven - numberEight + numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -805,9 +1028,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForProductProduct(){
         setFactors();
-        resultOne = numberOne * numberTwo * numberThree; resultTwo = numberFour * numberFive * numberSix;
+        resultOne = numberOne * numberTwo * numberThree;
+        resultTwo = numberFour * numberFive * numberSix;
         resultThree = numberSeven * numberEight * numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -875,9 +1100,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForPlusProduct(){
         setFactors();
-        resultOne = numberOne + numberTwo * numberThree; resultTwo = numberFour + numberFive * numberSix;
+        resultOne = numberOne + numberTwo * numberThree;
+        resultTwo = numberFour + numberFive * numberSix;
         resultThree = numberSeven + numberEight * numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -891,9 +1118,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForProductPlus(){
         setFactors();
-        resultOne = numberOne * numberTwo + numberThree; resultTwo = numberFour * numberFive + numberSix;
+        resultOne = numberOne * numberTwo + numberThree;
+        resultTwo = numberFour * numberFive + numberSix;
         resultThree = numberSeven * numberEight + numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -907,9 +1136,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForMinusProduct(){
         setFactors();
-        resultOne = numberOne - numberTwo * numberThree; resultTwo = numberFour - numberFive * numberSix;
+        resultOne = numberOne - numberTwo * numberThree;
+        resultTwo = numberFour - numberFive * numberSix;
         resultThree = numberSeven - numberEight * numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 
@@ -923,9 +1154,11 @@ public class TicTacToeMain extends AppCompatActivity {
 
     public void setResultValuesForProductMinus(){
         setFactors();
-        resultOne = numberOne * numberTwo - numberThree; resultTwo = numberFour * numberFive - numberSix;
+        resultOne = numberOne * numberTwo - numberThree;
+        resultTwo = numberFour * numberFive - numberSix;
         resultThree = numberSeven * numberEight - numberNine;
-        columnAnsOne.setText(String.valueOf(resultOne)); columnAnsTwo.setText(String.valueOf(resultTwo));
+        columnAnsOne.setText(String.valueOf(resultOne));
+        columnAnsTwo.setText(String.valueOf(resultTwo));
         columnAnsThree.setText(String.valueOf(resultThree));
     }
 

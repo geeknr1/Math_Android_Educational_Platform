@@ -5,8 +5,7 @@
         <item>@string/whole_numbers_and_fractions</item>
         <item>Arithmetic_Operations_on_Whole_Numbers</item>
         <item>Prime_and_Composite_Natural_Numbers </item>
-        <item>Common_Divisors_and_Multiples___
-              Least_Common_Multiple</item>
+        <item>Common_Divisors_and_Multiples___Least_Common_Multiple</item>
         <item>Fractions_and_Arithmetic_Operations_on_Them</item>
         <item>Rational_Numbers___
               Periodic_Fractions.</item>
@@ -16,8 +15,7 @@
 
     <string-array name="Approximate_Calculations">
         <item>@string/approximate_calculations</item>
-        <item>Exact_and_Composite_Values_of_Quantities___
-              Method_of_Bounds</item>
+        <item>Exact_and_Composite_Values_of_Quantities___Method_of_Bounds</item>
         <item>Absolute_and_Relative_Errors</item>
         <item>Notation_of_Approximate_Values_of_Numbers</item>
         <item>Addition_and_Subtraction_of_Approximate_Values_of_Numbers</item>
